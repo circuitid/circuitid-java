@@ -13,7 +13,7 @@
 
 package com.circuitid.client;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-20T02:01:34.106Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-20T02:04:31.696Z[UTC]")
 public class Configuration {
     public static final String VERSION = "0.47.8";
 

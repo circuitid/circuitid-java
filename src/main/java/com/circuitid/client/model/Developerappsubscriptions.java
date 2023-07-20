@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Developerappsubscriptions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-20T02:01:34.106Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-20T02:04:31.696Z[UTC]")
 public class Developerappsubscriptions {
   public static final String SERIALIZED_NAME_DEVELOPER_APP = "developerApp";
   @SerializedName(SERIALIZED_NAME_DEVELOPER_APP)
