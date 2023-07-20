@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * ResponseUsers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-20T02:04:31.696Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-20T03:15:48.668Z[UTC]")
 public class ResponseUsers {
   public static final String SERIALIZED_NAME_CREATED_BY_USER_ID = "createdByUserId";
   @SerializedName(SERIALIZED_NAME_CREATED_BY_USER_ID)
