@@ -19,12 +19,12 @@ Search and retrieve multiple objects simultaneously.
 ### Example
 ```java
 // Import classes:
-import invalidPackageName.ApiClient;
-import invalidPackageName.ApiException;
-import invalidPackageName.Configuration;
-import invalidPackageName.auth.*;
-import invalidPackageName.models.*;
-import CircuitID.InvoiceItemsApi;
+import com.circuitid.client.ApiClient;
+import com.circuitid.client.ApiException;
+import com.circuitid.client.Configuration;
+import com.circuitid.client.auth.*;
+import com.circuitid.client.models.*;
+import com.circuitid.client.api.InvoiceItemsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -109,12 +109,12 @@ Get an object from the REST API Endpoint by its unique id.
 ### Example
 ```java
 // Import classes:
-import invalidPackageName.ApiClient;
-import invalidPackageName.ApiException;
-import invalidPackageName.Configuration;
-import invalidPackageName.auth.*;
-import invalidPackageName.models.*;
-import CircuitID.InvoiceItemsApi;
+import com.circuitid.client.ApiClient;
+import com.circuitid.client.ApiException;
+import com.circuitid.client.Configuration;
+import com.circuitid.client.auth.*;
+import com.circuitid.client.models.*;
+import com.circuitid.client.api.InvoiceItemsApi;
 
 public class Example {
   public static void main(String[] args) {

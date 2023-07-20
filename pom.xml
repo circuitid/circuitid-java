@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
-    <artifactId>openapi-java-client</artifactId>
+    <groupId>com.circuitid</groupId>
+    <artifactId>circuitid-java-client</artifactId>
     <packaging>jar</packaging>
-    <name>openapi-java-client</name>
+    <name>circuitid-java-client</name>
     <version>0.47.8</version>
-    <url>https://github.com/openapitools/openapi-generator</url>
-    <description>OpenAPI Java</description>
+    <url>https://github.com/circuitid/circuitid-java.git</url>
+    <description>Circuit ID Java Client</description>
     <scm>
         <connection>scm:git:git@github.com:openapitools/openapi-generator.git</connection>
         <developerConnection>scm:git:git@github.com:openapitools/openapi-generator.git</developerConnection>
@@ -16,18 +16,18 @@
 
     <licenses>
         <license>
-            <name>Unlicense</name>
-            <url>http://unlicense.org</url>
+            <name>Circuit ID MSA</name>
+            <url>https://www.circuitid.com/legal/legal-msa.htm</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <developers>
         <developer>
-            <name>OpenAPI-Generator Contributors</name>
-            <email>team@openapitools.org</email>
-            <organization>OpenAPITools.org</organization>
-            <organizationUrl>http://openapitools.org</organizationUrl>
+            <name>Brandon Lee</name>
+            <email>support@circuitid.com</email>
+            <organization>Circuit ID, Inc.</organization>
+            <organizationUrl>https://www.circuitid.com</organizationUrl>
         </developer>
     </developers>
 

@@ -18,12 +18,12 @@ Returns an object containing the requested information.
 ### Example
 ```java
 // Import classes:
-import invalidPackageName.ApiClient;
-import invalidPackageName.ApiException;
-import invalidPackageName.Configuration;
-import invalidPackageName.auth.*;
-import invalidPackageName.models.*;
-import CircuitID.InfoApi;
+import com.circuitid.client.ApiClient;
+import com.circuitid.client.ApiException;
+import com.circuitid.client.Configuration;
+import com.circuitid.client.auth.*;
+import com.circuitid.client.models.*;
+import com.circuitid.client.api.InfoApi;
 
 public class Example {
   public static void main(String[] args) {

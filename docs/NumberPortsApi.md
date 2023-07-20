@@ -21,12 +21,12 @@ Add a new object to the system.
 ### Example
 ```java
 // Import classes:
-import invalidPackageName.ApiClient;
-import invalidPackageName.ApiException;
-import invalidPackageName.Configuration;
-import invalidPackageName.auth.*;
-import invalidPackageName.models.*;
-import CircuitID.NumberPortsApi;
+import com.circuitid.client.ApiClient;
+import com.circuitid.client.ApiException;
+import com.circuitid.client.Configuration;
+import com.circuitid.client.auth.*;
+import com.circuitid.client.models.*;
+import com.circuitid.client.api.NumberPortsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -99,12 +99,12 @@ Search and retrieve multiple objects simultaneously.
 ### Example
 ```java
 // Import classes:
-import invalidPackageName.ApiClient;
-import invalidPackageName.ApiException;
-import invalidPackageName.Configuration;
-import invalidPackageName.auth.*;
-import invalidPackageName.models.*;
-import CircuitID.NumberPortsApi;
+import com.circuitid.client.ApiClient;
+import com.circuitid.client.ApiException;
+import com.circuitid.client.Configuration;
+import com.circuitid.client.auth.*;
+import com.circuitid.client.models.*;
+import com.circuitid.client.api.NumberPortsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -189,12 +189,12 @@ Get an object from the REST API Endpoint by its unique id.
 ### Example
 ```java
 // Import classes:
-import invalidPackageName.ApiClient;
-import invalidPackageName.ApiException;
-import invalidPackageName.Configuration;
-import invalidPackageName.auth.*;
-import invalidPackageName.models.*;
-import CircuitID.NumberPortsApi;
+import com.circuitid.client.ApiClient;
+import com.circuitid.client.ApiException;
+import com.circuitid.client.Configuration;
+import com.circuitid.client.auth.*;
+import com.circuitid.client.models.*;
+import com.circuitid.client.api.NumberPortsApi;
 
 public class Example {
   public static void main(String[] args) {
@@ -268,12 +268,12 @@ Make updates to specific fields within the record without replacing the entire d
 ### Example
 ```java
 // Import classes:
-import invalidPackageName.ApiClient;
-import invalidPackageName.ApiException;
-import invalidPackageName.Configuration;
-import invalidPackageName.auth.*;
-import invalidPackageName.models.*;
-import CircuitID.NumberPortsApi;
+import com.circuitid.client.ApiClient;
+import com.circuitid.client.ApiException;
+import com.circuitid.client.Configuration;
+import com.circuitid.client.auth.*;
+import com.circuitid.client.models.*;
+import com.circuitid.client.api.NumberPortsApi;
 
 public class Example {
   public static void main(String[] args) {
