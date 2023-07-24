@@ -16,16 +16,21 @@ info:
     \ team.\n                \nHappy coding!"
   termsOfService: https://www.circuitid.com/legal/legal-msa.htm
   title: Circuit ID REST API
-  version: 0.47.8
+  version: 0.47.16
   x-logo:
     url: https://cdn.circuitid.com/images/logos/circuitid-logo.png
 servers:
 - description: Production
-  url: https://cloud9.circuitid.com
+  url: https://rest.circuitid.com
 security:
 - jwt: []
 tags:
-- description: Create and returns a JWT that can be used to access the API endpoints.
+- description: "The Authentication services creates and returns a JWT that can be\
+    \ used for short-term access to the API endpoints.  To create long-term tokens\
+    \ one (1) year or greater, create a <a href='#tag/User-Tokens/operation/createUserToken'>User\
+    \ Token (/usertokens)</a> via the API or in the <a href='https://console.circuitid.com/'\
+    \ target='_blank'>Online Portal.</a><br><br>Long-term tokens are recommended for\
+    \ server applications."
   name: Authentication
 - description: Accepted Senders represent authorized users who have the privilege
     to send Faxes and/or SMS messages. These designated individuals or entities are
@@ -96,7 +101,7 @@ tags:
     \ of faxes, encompassing all the necessary settings for fax-related activities.\
     \ These accounts serve as a centralized platform where users can configure their\
     \ fax preferences and to manage contact information."
-  name: Fax Account
+  name: Fax Accounts
 - description: "The Find Numbers service provides users with the ability to search\
     \ for various types of phone numbers, including local, international, toll-free,\
     \ and SMS/MMS numbers. Through this service, users can easily discover and obtain\
@@ -3084,7 +3089,7 @@ paths:
   /directories/{id}:
     delete:
       description: "Delete an object by id, removing it from the service."
-      operationId: removeDirectorie
+      operationId: removedirectory
       parameters:
       - $ref: '#/components/parameters/id'
       responses:
@@ -3121,7 +3126,7 @@ paths:
       x-accepts: application/json
     get:
       description: Get an object from the REST API Endpoint by its unique id.
-      operationId: getDirectorie
+      operationId: getdirectory
       parameters:
       - $ref: '#/components/parameters/id'
       responses:
@@ -3165,7 +3170,7 @@ paths:
     patch:
       description: Make updates to specific fields within the record without replacing
         the entire dataset.
-      operationId: patchDirectorie
+      operationId: patchdirectory
       parameters:
       - $ref: '#/components/parameters/id'
       requestBody:
@@ -3251,7 +3256,7 @@ paths:
       x-accepts: application/json
     post:
       description: Add a new object to the system.
-      operationId: createDirectorie
+      operationId: createdirectory
       requestBody:
         content:
           application/json:
@@ -3546,7 +3551,7 @@ paths:
   /faxes/{id}:
     delete:
       description: "Delete an object by id, removing it from the service."
-      operationId: removeFaxe
+      operationId: removeFax
       parameters:
       - $ref: '#/components/parameters/id'
       responses:
@@ -3583,7 +3588,7 @@ paths:
       x-accepts: application/json
     get:
       description: Get an object from the REST API Endpoint by its unique id.
-      operationId: getFaxe
+      operationId: getFax
       parameters:
       - $ref: '#/components/parameters/id'
       responses:
@@ -3667,7 +3672,7 @@ paths:
       x-accepts: application/json
     post:
       description: Add a new object to the system.
-      operationId: createFaxe
+      operationId: createFax
       requestBody:
         content:
           application/json:
@@ -3744,7 +3749,7 @@ paths:
           $ref: '#/components/responses/503'
       summary: Delete object by id
       tags:
-      - Fax Account
+      - Fax Accounts
       x-accepts: application/json
     get:
       description: Get an object from the REST API Endpoint by its unique id.
@@ -3787,7 +3792,7 @@ paths:
           $ref: '#/components/responses/503'
       summary: Get object by id
       tags:
-      - Fax Account
+      - Fax Accounts
       x-accepts: application/json
     patch:
       description: Make updates to specific fields within the record without replacing
@@ -3832,13 +3837,13 @@ paths:
           $ref: '#/components/responses/503'
       summary: Patch object's data
       tags:
-      - Fax Account
+      - Fax Accounts
       x-content-type: application/json
       x-accepts: application/json
   /faxaccounts:
     get:
       description: 'Search and retrieve multiple objects simultaneously. '
-      operationId: findFaxAccount
+      operationId: findFaxAccounts
       parameters:
       - $ref: '#/components/parameters/search'
       - $ref: '#/components/parameters/limit'
@@ -3852,7 +3857,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/findFaxAccount_200_response'
+                $ref: '#/components/schemas/findFaxAccounts_200_response'
           description: A JSON object containing the requested data
         "400":
           $ref: '#/components/responses/400'
@@ -3874,7 +3879,7 @@ paths:
           $ref: '#/components/responses/503'
       summary: Find multiple objects
       tags:
-      - Fax Account
+      - Fax Accounts
       x-accepts: application/json
     post:
       description: Add a new object to the system.
@@ -3916,7 +3921,7 @@ paths:
           $ref: '#/components/responses/503'
       summary: Create a new object
       tags:
-      - Fax Account
+      - Fax Accounts
       x-content-type: application/json
       x-accepts: application/json
   /findnumbers:
@@ -4806,7 +4811,7 @@ paths:
   /info:
     get:
       description: Returns an object containing the requested information.
-      operationId: findInfo
+      operationId: getInfo
       responses:
         "200":
           content:
@@ -11502,7 +11507,7 @@ components:
       - limit
       - skip
       - total
-    findFaxAccount_200_response:
+    findFaxAccounts_200_response:
       example:
         total: ""
         data: ""
@@ -12035,9 +12040,9 @@ components:
       name: Authorization
       type: apiKey
 x-tagGroups:
-- name: Endpoints
+- name: Clients
   tags:
-  - service
+  - client
   - Authentication
   - Accepted Senders
   - Announcements
@@ -12058,7 +12063,7 @@ x-tagGroups:
   - Domains
   - DNS Records
   - Faxes
-  - Fax Account
+  - Fax Accounts
   - Find Numbers
   - Firewall
   - Groups

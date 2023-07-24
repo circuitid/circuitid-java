@@ -1,19 +1,19 @@
 # DirectoriesApi
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**createDirectorie**](DirectoriesApi.md#createDirectorie) | **POST** /directories | Create a new object |
+| [**createdirectory**](DirectoriesApi.md#createdirectory) | **POST** /directories | Create a new object |
 | [**findDirectories**](DirectoriesApi.md#findDirectories) | **GET** /directories | Find multiple objects |
-| [**getDirectorie**](DirectoriesApi.md#getDirectorie) | **GET** /directories/{id} | Get object by id |
-| [**patchDirectorie**](DirectoriesApi.md#patchDirectorie) | **PATCH** /directories/{id} | Patch object&#39;s data |
-| [**removeDirectorie**](DirectoriesApi.md#removeDirectorie) | **DELETE** /directories/{id} | Delete object by id |
+| [**getdirectory**](DirectoriesApi.md#getdirectory) | **GET** /directories/{id} | Get object by id |
+| [**patchdirectory**](DirectoriesApi.md#patchdirectory) | **PATCH** /directories/{id} | Patch object&#39;s data |
+| [**removedirectory**](DirectoriesApi.md#removedirectory) | **DELETE** /directories/{id} | Delete object by id |
 
 
-<a id="createDirectorie"></a>
-# **createDirectorie**
-> Object createDirectorie(directories)
+<a id="createdirectory"></a>
+# **createdirectory**
+> Object createdirectory(directories)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -43,10 +43,10 @@ public class Example {
     DirectoriesApi apiInstance = new DirectoriesApi(defaultClient);
     Directories directories = new Directories(); // Directories | The JSON object that will be posted to the REST API endpoint.
     try {
-      Object result = apiInstance.createDirectorie(directories);
+      Object result = apiInstance.createdirectory(directories);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling DirectoriesApi#createDirectorie");
+      System.err.println("Exception when calling DirectoriesApi#createdirectory");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -110,7 +110,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -179,9 +179,9 @@ public class Example {
 | **500** |  |  -  |
 | **503** |  |  -  |
 
-<a id="getDirectorie"></a>
-# **getDirectorie**
-> Object getDirectorie(id)
+<a id="getdirectory"></a>
+# **getdirectory**
+> Object getdirectory(id)
 
 Get object by id
 
@@ -200,7 +200,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -211,10 +211,10 @@ public class Example {
     DirectoriesApi apiInstance = new DirectoriesApi(defaultClient);
     Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
-      Object result = apiInstance.getDirectorie(id);
+      Object result = apiInstance.getdirectory(id);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling DirectoriesApi#getDirectorie");
+      System.err.println("Exception when calling DirectoriesApi#getdirectory");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -258,9 +258,9 @@ public class Example {
 | **500** |  |  -  |
 | **503** |  |  -  |
 
-<a id="patchDirectorie"></a>
-# **patchDirectorie**
-> Object patchDirectorie(id, directories)
+<a id="patchdirectory"></a>
+# **patchdirectory**
+> Object patchdirectory(id, directories)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -291,10 +291,10 @@ public class Example {
     Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     Directories directories = new Directories(); // Directories | The request data.
     try {
-      Object result = apiInstance.patchDirectorie(id, directories);
+      Object result = apiInstance.patchdirectory(id, directories);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling DirectoriesApi#patchDirectorie");
+      System.err.println("Exception when calling DirectoriesApi#patchdirectory");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -338,9 +338,9 @@ public class Example {
 | **500** |  |  -  |
 | **503** |  |  -  |
 
-<a id="removeDirectorie"></a>
-# **removeDirectorie**
-> Object removeDirectorie(id)
+<a id="removedirectory"></a>
+# **removedirectory**
+> Object removedirectory(id)
 
 Delete object by id
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -370,10 +370,10 @@ public class Example {
     DirectoriesApi apiInstance = new DirectoriesApi(defaultClient);
     Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
-      Object result = apiInstance.removeDirectorie(id);
+      Object result = apiInstance.removedirectory(id);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling DirectoriesApi#removeDirectorie");
+      System.err.println("Exception when calling DirectoriesApi#removedirectory");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());

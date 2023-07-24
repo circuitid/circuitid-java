@@ -1,18 +1,18 @@
 # FaxesApi
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**createFaxe**](FaxesApi.md#createFaxe) | **POST** /faxes | Create a new object |
+| [**createFax**](FaxesApi.md#createFax) | **POST** /faxes | Create a new object |
 | [**findFaxes**](FaxesApi.md#findFaxes) | **GET** /faxes | Find multiple objects |
-| [**getFaxe**](FaxesApi.md#getFaxe) | **GET** /faxes/{id} | Get object by id |
-| [**removeFaxe**](FaxesApi.md#removeFaxe) | **DELETE** /faxes/{id} | Delete object by id |
+| [**getFax**](FaxesApi.md#getFax) | **GET** /faxes/{id} | Get object by id |
+| [**removeFax**](FaxesApi.md#removeFax) | **DELETE** /faxes/{id} | Delete object by id |
 
 
-<a id="createFaxe"></a>
-# **createFaxe**
-> Object createFaxe(faxes)
+<a id="createFax"></a>
+# **createFax**
+> Object createFax(faxes)
 
 Create a new object
 
@@ -31,7 +31,7 @@ import com.circuitid.client.api.FaxesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -42,10 +42,10 @@ public class Example {
     FaxesApi apiInstance = new FaxesApi(defaultClient);
     Faxes faxes = new Faxes(); // Faxes | The JSON object that will be posted to the REST API endpoint.
     try {
-      Object result = apiInstance.createFaxe(faxes);
+      Object result = apiInstance.createFax(faxes);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling FaxesApi#createFaxe");
+      System.err.println("Exception when calling FaxesApi#createFax");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -109,7 +109,7 @@ import com.circuitid.client.api.FaxesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -178,9 +178,9 @@ public class Example {
 | **500** |  |  -  |
 | **503** |  |  -  |
 
-<a id="getFaxe"></a>
-# **getFaxe**
-> Object getFaxe(id)
+<a id="getFax"></a>
+# **getFax**
+> Object getFax(id)
 
 Get object by id
 
@@ -199,7 +199,7 @@ import com.circuitid.client.api.FaxesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -210,10 +210,10 @@ public class Example {
     FaxesApi apiInstance = new FaxesApi(defaultClient);
     Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
-      Object result = apiInstance.getFaxe(id);
+      Object result = apiInstance.getFax(id);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling FaxesApi#getFaxe");
+      System.err.println("Exception when calling FaxesApi#getFax");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -257,9 +257,9 @@ public class Example {
 | **500** |  |  -  |
 | **503** |  |  -  |
 
-<a id="removeFaxe"></a>
-# **removeFaxe**
-> Object removeFaxe(id)
+<a id="removeFax"></a>
+# **removeFax**
+> Object removeFax(id)
 
 Delete object by id
 
@@ -278,7 +278,7 @@ import com.circuitid.client.api.FaxesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,10 +289,10 @@ public class Example {
     FaxesApi apiInstance = new FaxesApi(defaultClient);
     Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
-      Object result = apiInstance.removeFaxe(id);
+      Object result = apiInstance.removeFax(id);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling FaxesApi#removeFaxe");
+      System.err.println("Exception when calling FaxesApi#removeFax");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());

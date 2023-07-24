@@ -1,8 +1,8 @@
 # circuitid-java-client
 
 Circuit ID REST API
-- API version: 0.47.8
-  - Build date: 2023-07-20T03:15:48.668Z[UTC]
+- API version: 0.47.16
+  - Build date: 2023-07-24T07:17:39.853Z[UTC]
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -48,7 +48,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.circuitid</groupId>
   <artifactId>circuitid-java-client</artifactId>
-  <version>0.47.8</version>
+  <version>0.47.16</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -64,7 +64,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.circuitid:circuitid-java-client:0.47.8"
+     implementation "com.circuitid:circuitid-java-client:0.47.16"
   }
 ```
 
@@ -78,7 +78,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/circuitid-java-client-0.47.8.jar`
+* `target/circuitid-java-client-0.47.16.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -98,7 +98,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -125,7 +125,7 @@ public class Example {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -197,26 +197,26 @@ Class | Method | HTTP request | Description
 *DeveloperAppsApi* | [**getDeveloperApp**](docs/DeveloperAppsApi.md#getDeveloperApp) | **GET** /developerapps/{id} | Get object by id
 *DeveloperAppsApi* | [**patchDeveloperApp**](docs/DeveloperAppsApi.md#patchDeveloperApp) | **PATCH** /developerapps/{id} | Patch object&#39;s data
 *DeveloperAppsApi* | [**removeDeveloperApp**](docs/DeveloperAppsApi.md#removeDeveloperApp) | **DELETE** /developerapps/{id} | Delete object by id
-*DirectoriesApi* | [**createDirectorie**](docs/DirectoriesApi.md#createDirectorie) | **POST** /directories | Create a new object
+*DirectoriesApi* | [**createdirectory**](docs/DirectoriesApi.md#createdirectory) | **POST** /directories | Create a new object
 *DirectoriesApi* | [**findDirectories**](docs/DirectoriesApi.md#findDirectories) | **GET** /directories | Find multiple objects
-*DirectoriesApi* | [**getDirectorie**](docs/DirectoriesApi.md#getDirectorie) | **GET** /directories/{id} | Get object by id
-*DirectoriesApi* | [**patchDirectorie**](docs/DirectoriesApi.md#patchDirectorie) | **PATCH** /directories/{id} | Patch object&#39;s data
-*DirectoriesApi* | [**removeDirectorie**](docs/DirectoriesApi.md#removeDirectorie) | **DELETE** /directories/{id} | Delete object by id
+*DirectoriesApi* | [**getdirectory**](docs/DirectoriesApi.md#getdirectory) | **GET** /directories/{id} | Get object by id
+*DirectoriesApi* | [**patchdirectory**](docs/DirectoriesApi.md#patchdirectory) | **PATCH** /directories/{id} | Patch object&#39;s data
+*DirectoriesApi* | [**removedirectory**](docs/DirectoriesApi.md#removedirectory) | **DELETE** /directories/{id} | Delete object by id
 *DnsRecordsApi* | [**findDNSRecords**](docs/DnsRecordsApi.md#findDNSRecords) | **GET** /dnsrecords | Find multiple objects
 *DomainsApi* | [**createDomain**](docs/DomainsApi.md#createDomain) | **POST** /domains | Create a new object
 *DomainsApi* | [**findDomains**](docs/DomainsApi.md#findDomains) | **GET** /domains | Find multiple objects
 *DomainsApi* | [**getDomain**](docs/DomainsApi.md#getDomain) | **GET** /domains/{id} | Get object by id
 *DomainsApi* | [**patchDomain**](docs/DomainsApi.md#patchDomain) | **PATCH** /domains/{id} | Patch object&#39;s data
 *DomainsApi* | [**removeDomain**](docs/DomainsApi.md#removeDomain) | **DELETE** /domains/{id} | Delete object by id
-*FaxAccountApi* | [**createFaxAccount**](docs/FaxAccountApi.md#createFaxAccount) | **POST** /faxaccounts | Create a new object
-*FaxAccountApi* | [**findFaxAccount**](docs/FaxAccountApi.md#findFaxAccount) | **GET** /faxaccounts | Find multiple objects
-*FaxAccountApi* | [**getFaxAccount**](docs/FaxAccountApi.md#getFaxAccount) | **GET** /faxaccounts/{id} | Get object by id
-*FaxAccountApi* | [**patchFaxAccount**](docs/FaxAccountApi.md#patchFaxAccount) | **PATCH** /faxaccounts/{id} | Patch object&#39;s data
-*FaxAccountApi* | [**removeFaxAccount**](docs/FaxAccountApi.md#removeFaxAccount) | **DELETE** /faxaccounts/{id} | Delete object by id
-*FaxesApi* | [**createFaxe**](docs/FaxesApi.md#createFaxe) | **POST** /faxes | Create a new object
+*FaxAccountsApi* | [**createFaxAccount**](docs/FaxAccountsApi.md#createFaxAccount) | **POST** /faxaccounts | Create a new object
+*FaxAccountsApi* | [**findFaxAccounts**](docs/FaxAccountsApi.md#findFaxAccounts) | **GET** /faxaccounts | Find multiple objects
+*FaxAccountsApi* | [**getFaxAccount**](docs/FaxAccountsApi.md#getFaxAccount) | **GET** /faxaccounts/{id} | Get object by id
+*FaxAccountsApi* | [**patchFaxAccount**](docs/FaxAccountsApi.md#patchFaxAccount) | **PATCH** /faxaccounts/{id} | Patch object&#39;s data
+*FaxAccountsApi* | [**removeFaxAccount**](docs/FaxAccountsApi.md#removeFaxAccount) | **DELETE** /faxaccounts/{id} | Delete object by id
+*FaxesApi* | [**createFax**](docs/FaxesApi.md#createFax) | **POST** /faxes | Create a new object
 *FaxesApi* | [**findFaxes**](docs/FaxesApi.md#findFaxes) | **GET** /faxes | Find multiple objects
-*FaxesApi* | [**getFaxe**](docs/FaxesApi.md#getFaxe) | **GET** /faxes/{id} | Get object by id
-*FaxesApi* | [**removeFaxe**](docs/FaxesApi.md#removeFaxe) | **DELETE** /faxes/{id} | Delete object by id
+*FaxesApi* | [**getFax**](docs/FaxesApi.md#getFax) | **GET** /faxes/{id} | Get object by id
+*FaxesApi* | [**removeFax**](docs/FaxesApi.md#removeFax) | **DELETE** /faxes/{id} | Delete object by id
 *FindNumbersApi* | [**findFindNumbers**](docs/FindNumbersApi.md#findFindNumbers) | **GET** /findnumbers | Find multiple objects
 *FirewallApi* | [**createFirewall**](docs/FirewallApi.md#createFirewall) | **POST** /firewall | Create a new object
 *FirewallApi* | [**findFirewall**](docs/FirewallApi.md#findFirewall) | **GET** /firewall | Find multiple objects
@@ -238,7 +238,7 @@ Class | Method | HTTP request | Description
 *HolidaysApi* | [**getHoliday**](docs/HolidaysApi.md#getHoliday) | **GET** /holidays/{id} | Get object by id
 *HolidaysApi* | [**patchHoliday**](docs/HolidaysApi.md#patchHoliday) | **PATCH** /holidays/{id} | Patch object&#39;s data
 *HolidaysApi* | [**removeHoliday**](docs/HolidaysApi.md#removeHoliday) | **DELETE** /holidays/{id} | Delete object by id
-*InfoApi* | [**findInfo**](docs/InfoApi.md#findInfo) | **GET** /info | Get object
+*InfoApi* | [**getInfo**](docs/InfoApi.md#getInfo) | **GET** /info | Get object
 *InvoiceItemsApi* | [**findInvoiceItems**](docs/InvoiceItemsApi.md#findInvoiceItems) | **GET** /invoiceitems | Find multiple objects
 *InvoiceItemsApi* | [**getInvoiceItem**](docs/InvoiceItemsApi.md#getInvoiceItem) | **GET** /invoiceitems/{id} | Get object by id
 *InvoicesApi* | [**findInvoices**](docs/InvoicesApi.md#findInvoices) | **GET** /invoices | Find multiple objects
@@ -367,7 +367,7 @@ Class | Method | HTTP request | Description
  - [FindDeveloperApps200Response](docs/FindDeveloperApps200Response.md)
  - [FindDirectories200Response](docs/FindDirectories200Response.md)
  - [FindDomains200Response](docs/FindDomains200Response.md)
- - [FindFaxAccount200Response](docs/FindFaxAccount200Response.md)
+ - [FindFaxAccounts200Response](docs/FindFaxAccounts200Response.md)
  - [FindFaxes200Response](docs/FindFaxes200Response.md)
  - [FindFirewall200Response](docs/FindFirewall200Response.md)
  - [FindGroupMembers200Response](docs/FindGroupMembers200Response.md)

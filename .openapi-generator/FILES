@@ -41,7 +41,7 @@ docs/DirectoriesApi.md
 docs/DnsRecordsApi.md
 docs/Domains.md
 docs/DomainsApi.md
-docs/FaxAccountApi.md
+docs/FaxAccountsApi.md
 docs/Faxaccounts.md
 docs/Faxes.md
 docs/FaxesApi.md
@@ -61,7 +61,7 @@ docs/FindDeveloperAppSubscriptions200Response.md
 docs/FindDeveloperApps200Response.md
 docs/FindDirectories200Response.md
 docs/FindDomains200Response.md
-docs/FindFaxAccount200Response.md
+docs/FindFaxAccounts200Response.md
 docs/FindFaxes200Response.md
 docs/FindFirewall200Response.md
 docs/FindGroupMembers200Response.md
@@ -182,7 +182,7 @@ src/main/java/com/circuitid/client/api/DeveloperAppsApi.java
 src/main/java/com/circuitid/client/api/DirectoriesApi.java
 src/main/java/com/circuitid/client/api/DnsRecordsApi.java
 src/main/java/com/circuitid/client/api/DomainsApi.java
-src/main/java/com/circuitid/client/api/FaxAccountApi.java
+src/main/java/com/circuitid/client/api/FaxAccountsApi.java
 src/main/java/com/circuitid/client/api/FaxesApi.java
 src/main/java/com/circuitid/client/api/FindNumbersApi.java
 src/main/java/com/circuitid/client/api/FirewallApi.java
@@ -250,7 +250,7 @@ src/main/java/com/circuitid/client/model/FindDeveloperAppSubscriptions200Respons
 src/main/java/com/circuitid/client/model/FindDeveloperApps200Response.java
 src/main/java/com/circuitid/client/model/FindDirectories200Response.java
 src/main/java/com/circuitid/client/model/FindDomains200Response.java
-src/main/java/com/circuitid/client/model/FindFaxAccount200Response.java
+src/main/java/com/circuitid/client/model/FindFaxAccounts200Response.java
 src/main/java/com/circuitid/client/model/FindFaxes200Response.java
 src/main/java/com/circuitid/client/model/FindFirewall200Response.java
 src/main/java/com/circuitid/client/model/FindGroupMembers200Response.java
@@ -322,7 +322,7 @@ src/test/java/com/circuitid/client/api/DeveloperAppsApiTest.java
 src/test/java/com/circuitid/client/api/DirectoriesApiTest.java
 src/test/java/com/circuitid/client/api/DnsRecordsApiTest.java
 src/test/java/com/circuitid/client/api/DomainsApiTest.java
-src/test/java/com/circuitid/client/api/FaxAccountApiTest.java
+src/test/java/com/circuitid/client/api/FaxAccountsApiTest.java
 src/test/java/com/circuitid/client/api/FaxesApiTest.java
 src/test/java/com/circuitid/client/api/FindNumbersApiTest.java
 src/test/java/com/circuitid/client/api/FirewallApiTest.java
@@ -384,7 +384,7 @@ src/test/java/com/circuitid/client/model/FindDeveloperAppSubscriptions200Respons
 src/test/java/com/circuitid/client/model/FindDeveloperApps200ResponseTest.java
 src/test/java/com/circuitid/client/model/FindDirectories200ResponseTest.java
 src/test/java/com/circuitid/client/model/FindDomains200ResponseTest.java
-src/test/java/com/circuitid/client/model/FindFaxAccount200ResponseTest.java
+src/test/java/com/circuitid/client/model/FindFaxAccounts200ResponseTest.java
 src/test/java/com/circuitid/client/model/FindFaxes200ResponseTest.java
 src/test/java/com/circuitid/client/model/FindFirewall200ResponseTest.java
 src/test/java/com/circuitid/client/model/FindGroupMembers200ResponseTest.java

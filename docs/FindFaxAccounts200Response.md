@@ -1,6 +1,6 @@
 
 
-# FindFaxAccount200Response
+# FindFaxAccounts200Response
 
 
 ## Properties

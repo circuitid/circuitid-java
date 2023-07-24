@@ -1,14 +1,14 @@
-# FaxAccountApi
+# FaxAccountsApi
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**createFaxAccount**](FaxAccountApi.md#createFaxAccount) | **POST** /faxaccounts | Create a new object |
-| [**findFaxAccount**](FaxAccountApi.md#findFaxAccount) | **GET** /faxaccounts | Find multiple objects |
-| [**getFaxAccount**](FaxAccountApi.md#getFaxAccount) | **GET** /faxaccounts/{id} | Get object by id |
-| [**patchFaxAccount**](FaxAccountApi.md#patchFaxAccount) | **PATCH** /faxaccounts/{id} | Patch object&#39;s data |
-| [**removeFaxAccount**](FaxAccountApi.md#removeFaxAccount) | **DELETE** /faxaccounts/{id} | Delete object by id |
+| [**createFaxAccount**](FaxAccountsApi.md#createFaxAccount) | **POST** /faxaccounts | Create a new object |
+| [**findFaxAccounts**](FaxAccountsApi.md#findFaxAccounts) | **GET** /faxaccounts | Find multiple objects |
+| [**getFaxAccount**](FaxAccountsApi.md#getFaxAccount) | **GET** /faxaccounts/{id} | Get object by id |
+| [**patchFaxAccount**](FaxAccountsApi.md#patchFaxAccount) | **PATCH** /faxaccounts/{id} | Patch object&#39;s data |
+| [**removeFaxAccount**](FaxAccountsApi.md#removeFaxAccount) | **DELETE** /faxaccounts/{id} | Delete object by id |
 
 
 <a id="createFaxAccount"></a>
@@ -27,12 +27,12 @@ import com.circuitid.client.ApiException;
 import com.circuitid.client.Configuration;
 import com.circuitid.client.auth.*;
 import com.circuitid.client.models.*;
-import com.circuitid.client.api.FaxAccountApi;
+import com.circuitid.client.api.FaxAccountsApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -40,13 +40,13 @@ public class Example {
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
     //jwt.setApiKeyPrefix("Token");
 
-    FaxAccountApi apiInstance = new FaxAccountApi(defaultClient);
+    FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
     Faxaccounts faxaccounts = new Faxaccounts(); // Faxaccounts | The JSON object that will be posted to the REST API endpoint.
     try {
       Object result = apiInstance.createFaxAccount(faxaccounts);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling FaxAccountApi#createFaxAccount");
+      System.err.println("Exception when calling FaxAccountsApi#createFaxAccount");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -89,9 +89,9 @@ public class Example {
 | **500** |  |  -  |
 | **503** |  |  -  |
 
-<a id="findFaxAccount"></a>
-# **findFaxAccount**
-> FindFaxAccount200Response findFaxAccount($search, $limit, $skip, $sort, $select, $or, $and)
+<a id="findFaxAccounts"></a>
+# **findFaxAccounts**
+> FindFaxAccounts200Response findFaxAccounts($search, $limit, $skip, $sort, $select, $or, $and)
 
 Find multiple objects
 
@@ -105,12 +105,12 @@ import com.circuitid.client.ApiException;
 import com.circuitid.client.Configuration;
 import com.circuitid.client.auth.*;
 import com.circuitid.client.models.*;
-import com.circuitid.client.api.FaxAccountApi;
+import com.circuitid.client.api.FaxAccountsApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -118,7 +118,7 @@ public class Example {
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
     //jwt.setApiKeyPrefix("Token");
 
-    FaxAccountApi apiInstance = new FaxAccountApi(defaultClient);
+    FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
     Object $search = null; // Object | Filter results by the specified value.
     Object $limit = null; // Object | $limit will return only the number of results you specify.
     Object $skip = null; // Object | $skip will skip the specified number of results.
@@ -127,10 +127,10 @@ public class Example {
     Object $or = null; // Object | Find all records that match any of the given criteria.
     Object $and = null; // Object | Find all records that match all of the given criteria.
     try {
-      FindFaxAccount200Response result = apiInstance.findFaxAccount($search, $limit, $skip, $sort, $select, $or, $and);
+      FindFaxAccounts200Response result = apiInstance.findFaxAccounts($search, $limit, $skip, $sort, $select, $or, $and);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling FaxAccountApi#findFaxAccount");
+      System.err.println("Exception when calling FaxAccountsApi#findFaxAccounts");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -154,7 +154,7 @@ public class Example {
 
 ### Return type
 
-[**FindFaxAccount200Response**](FindFaxAccount200Response.md)
+[**FindFaxAccounts200Response**](FindFaxAccounts200Response.md)
 
 ### Authorization
 
@@ -195,12 +195,12 @@ import com.circuitid.client.ApiException;
 import com.circuitid.client.Configuration;
 import com.circuitid.client.auth.*;
 import com.circuitid.client.models.*;
-import com.circuitid.client.api.FaxAccountApi;
+import com.circuitid.client.api.FaxAccountsApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -208,13 +208,13 @@ public class Example {
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
     //jwt.setApiKeyPrefix("Token");
 
-    FaxAccountApi apiInstance = new FaxAccountApi(defaultClient);
+    FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
     Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
       Object result = apiInstance.getFaxAccount(id);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling FaxAccountApi#getFaxAccount");
+      System.err.println("Exception when calling FaxAccountsApi#getFaxAccount");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -274,12 +274,12 @@ import com.circuitid.client.ApiException;
 import com.circuitid.client.Configuration;
 import com.circuitid.client.auth.*;
 import com.circuitid.client.models.*;
-import com.circuitid.client.api.FaxAccountApi;
+import com.circuitid.client.api.FaxAccountsApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -287,14 +287,14 @@ public class Example {
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
     //jwt.setApiKeyPrefix("Token");
 
-    FaxAccountApi apiInstance = new FaxAccountApi(defaultClient);
+    FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
     Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     Faxaccounts faxaccounts = new Faxaccounts(); // Faxaccounts | The request data.
     try {
       Object result = apiInstance.patchFaxAccount(id, faxaccounts);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling FaxAccountApi#patchFaxAccount");
+      System.err.println("Exception when calling FaxAccountsApi#patchFaxAccount");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -354,12 +354,12 @@ import com.circuitid.client.ApiException;
 import com.circuitid.client.Configuration;
 import com.circuitid.client.auth.*;
 import com.circuitid.client.models.*;
-import com.circuitid.client.api.FaxAccountApi;
+import com.circuitid.client.api.FaxAccountsApi;
 
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -367,13 +367,13 @@ public class Example {
     // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
     //jwt.setApiKeyPrefix("Token");
 
-    FaxAccountApi apiInstance = new FaxAccountApi(defaultClient);
+    FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
     Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
       Object result = apiInstance.removeFaxAccount(id);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling FaxAccountApi#removeFaxAccount");
+      System.err.println("Exception when calling FaxAccountsApi#removeFaxAccount");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());

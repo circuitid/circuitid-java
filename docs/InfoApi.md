@@ -1,15 +1,15 @@
 # InfoApi
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**findInfo**](InfoApi.md#findInfo) | **GET** /info | Get object |
+| [**getInfo**](InfoApi.md#getInfo) | **GET** /info | Get object |
 
 
-<a id="findInfo"></a>
-# **findInfo**
-> Object findInfo()
+<a id="getInfo"></a>
+# **getInfo**
+> Object getInfo()
 
 Get object
 
@@ -28,7 +28,7 @@ import com.circuitid.client.api.InfoApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -38,10 +38,10 @@ public class Example {
 
     InfoApi apiInstance = new InfoApi(defaultClient);
     try {
-      Object result = apiInstance.findInfo();
+      Object result = apiInstance.getInfo();
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling InfoApi#findInfo");
+      System.err.println("Exception when calling InfoApi#getInfo");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
