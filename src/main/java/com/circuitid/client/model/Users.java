@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Users
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:19:13.415Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
 public class Users {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -109,223 +109,25 @@ public class Users {
   @SerializedName(SERIALIZED_NAME_AVATAR)
   private Object avatar = null;
 
-  /**
-   * Gets or Sets language
-   */
-  @JsonAdapter(LanguageEnum.Adapter.class)
-  public enum LanguageEnum {
-    FR("fr"),
-    
-    EN("en"),
-    
-    JA("ja"),
-    
-    DE("de"),
-    
-    ES("es");
-
-    private Object value;
-
-    LanguageEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static LanguageEnum fromValue(Object value) {
-      for (LanguageEnum b : LanguageEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<LanguageEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final LanguageEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public LanguageEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return LanguageEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_LANGUAGE = "language";
   @SerializedName(SERIALIZED_NAME_LANGUAGE)
-  private LanguageEnum language = en;
-
-  /**
-   * Gets or Sets isPrimary
-   */
-  @JsonAdapter(IsPrimaryEnum.Adapter.class)
-  public enum IsPrimaryEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    IsPrimaryEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static IsPrimaryEnum fromValue(Object value) {
-      for (IsPrimaryEnum b : IsPrimaryEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<IsPrimaryEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final IsPrimaryEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public IsPrimaryEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return IsPrimaryEnum.fromValue(value);
-      }
-    }
-  }
+  private Object language = null;
 
   public static final String SERIALIZED_NAME_IS_PRIMARY = "isPrimary";
   @SerializedName(SERIALIZED_NAME_IS_PRIMARY)
-  private IsPrimaryEnum isPrimary = 0;
-
-  /**
-   * Gets or Sets status
-   */
-  @JsonAdapter(StatusEnum.Adapter.class)
-  public enum StatusEnum {
-    ACTIVE("active"),
-    
-    DISABLED("disabled"),
-    
-    TERMINATED("terminated");
-
-    private Object value;
-
-    StatusEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static StatusEnum fromValue(Object value) {
-      for (StatusEnum b : StatusEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<StatusEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public StatusEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return StatusEnum.fromValue(value);
-      }
-    }
-  }
+  private Object isPrimary = null;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private StatusEnum status = active;
-
-  /**
-   * Gets or Sets vmGreetingType
-   */
-  @JsonAdapter(VmGreetingTypeEnum.Adapter.class)
-  public enum VmGreetingTypeEnum {
-    DEFAULT("default"),
-    
-    MP3("mp3"),
-    
-    NUMBER("number");
-
-    private Object value;
-
-    VmGreetingTypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static VmGreetingTypeEnum fromValue(Object value) {
-      for (VmGreetingTypeEnum b : VmGreetingTypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<VmGreetingTypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final VmGreetingTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public VmGreetingTypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return VmGreetingTypeEnum.fromValue(value);
-      }
-    }
-  }
+  private Object status = null;
 
   public static final String SERIALIZED_NAME_VM_GREETING_TYPE = "vmGreetingType";
   @SerializedName(SERIALIZED_NAME_VM_GREETING_TYPE)
-  private VmGreetingTypeEnum vmGreetingType = default;
+  private Object vmGreetingType = null;
 
   public static final String SERIALIZED_NAME_VM_TIMEOUT = "vmTimeout";
   @SerializedName(SERIALIZED_NAME_VM_TIMEOUT)
-  private Object vmTimeout = 20;
+  private Object vmTimeout = null;
 
   public static final String SERIALIZED_NAME_VM_FILE = "vmFile";
   @SerializedName(SERIALIZED_NAME_VM_FILE)
@@ -337,7 +139,7 @@ public class Users {
 
   public static final String SERIALIZED_NAME_PIN = "pin";
   @SerializedName(SERIALIZED_NAME_PIN)
-  private Object pin = 1234;
+  private Object pin = null;
 
   public static final String SERIALIZED_NAME_NUMBER = "number";
   @SerializedName(SERIALIZED_NAME_NUMBER)
@@ -351,488 +153,49 @@ public class Users {
   @SerializedName(SERIALIZED_NAME_CALLER_ID_NUMBER)
   private Object callerIdNumber = null;
 
-  /**
-   * Gets or Sets adminPermission
-   */
-  @JsonAdapter(AdminPermissionEnum.Adapter.class)
-  public enum AdminPermissionEnum {
-    R("r"),
-    
-    RW("rw"),
-    
-    NULL("null");
-
-    private Object value;
-
-    AdminPermissionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static AdminPermissionEnum fromValue(Object value) {
-      for (AdminPermissionEnum b : AdminPermissionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<AdminPermissionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final AdminPermissionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public AdminPermissionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return AdminPermissionEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_ADMIN_PERMISSION = "adminPermission";
   @SerializedName(SERIALIZED_NAME_ADMIN_PERMISSION)
-  private AdminPermissionEnum adminPermission = null;
-
-  /**
-   * Gets or Sets billingPermission
-   */
-  @JsonAdapter(BillingPermissionEnum.Adapter.class)
-  public enum BillingPermissionEnum {
-    R("r"),
-    
-    RW("rw"),
-    
-    NULL("null");
-
-    private Object value;
-
-    BillingPermissionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static BillingPermissionEnum fromValue(Object value) {
-      for (BillingPermissionEnum b : BillingPermissionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<BillingPermissionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final BillingPermissionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public BillingPermissionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return BillingPermissionEnum.fromValue(value);
-      }
-    }
-  }
+  private Object adminPermission = null;
 
   public static final String SERIALIZED_NAME_BILLING_PERMISSION = "billingPermission";
   @SerializedName(SERIALIZED_NAME_BILLING_PERMISSION)
-  private BillingPermissionEnum billingPermission = null;
-
-  /**
-   * Gets or Sets phonePermission
-   */
-  @JsonAdapter(PhonePermissionEnum.Adapter.class)
-  public enum PhonePermissionEnum {
-    R("r"),
-    
-    RW("rw"),
-    
-    NULL("null");
-
-    private Object value;
-
-    PhonePermissionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static PhonePermissionEnum fromValue(Object value) {
-      for (PhonePermissionEnum b : PhonePermissionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<PhonePermissionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final PhonePermissionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public PhonePermissionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return PhonePermissionEnum.fromValue(value);
-      }
-    }
-  }
+  private Object billingPermission = null;
 
   public static final String SERIALIZED_NAME_PHONE_PERMISSION = "phonePermission";
   @SerializedName(SERIALIZED_NAME_PHONE_PERMISSION)
-  private PhonePermissionEnum phonePermission = null;
-
-  /**
-   * Gets or Sets agilePermission
-   */
-  @JsonAdapter(AgilePermissionEnum.Adapter.class)
-  public enum AgilePermissionEnum {
-    R("r"),
-    
-    RW("rw"),
-    
-    NULL("null");
-
-    private Object value;
-
-    AgilePermissionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static AgilePermissionEnum fromValue(Object value) {
-      for (AgilePermissionEnum b : AgilePermissionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<AgilePermissionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final AgilePermissionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public AgilePermissionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return AgilePermissionEnum.fromValue(value);
-      }
-    }
-  }
+  private Object phonePermission = null;
 
   public static final String SERIALIZED_NAME_AGILE_PERMISSION = "agilePermission";
   @SerializedName(SERIALIZED_NAME_AGILE_PERMISSION)
-  private AgilePermissionEnum agilePermission = null;
-
-  /**
-   * Gets or Sets jobServerPermission
-   */
-  @JsonAdapter(JobServerPermissionEnum.Adapter.class)
-  public enum JobServerPermissionEnum {
-    R("r"),
-    
-    RW("rw"),
-    
-    NULL("null");
-
-    private Object value;
-
-    JobServerPermissionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static JobServerPermissionEnum fromValue(Object value) {
-      for (JobServerPermissionEnum b : JobServerPermissionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<JobServerPermissionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final JobServerPermissionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public JobServerPermissionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return JobServerPermissionEnum.fromValue(value);
-      }
-    }
-  }
+  private Object agilePermission = null;
 
   public static final String SERIALIZED_NAME_JOB_SERVER_PERMISSION = "jobServerPermission";
   @SerializedName(SERIALIZED_NAME_JOB_SERVER_PERMISSION)
-  private JobServerPermissionEnum jobServerPermission = null;
-
-  /**
-   * Gets or Sets mediaServerPermission
-   */
-  @JsonAdapter(MediaServerPermissionEnum.Adapter.class)
-  public enum MediaServerPermissionEnum {
-    R("r"),
-    
-    RW("rw"),
-    
-    NULL("null");
-
-    private Object value;
-
-    MediaServerPermissionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static MediaServerPermissionEnum fromValue(Object value) {
-      for (MediaServerPermissionEnum b : MediaServerPermissionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<MediaServerPermissionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final MediaServerPermissionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public MediaServerPermissionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return MediaServerPermissionEnum.fromValue(value);
-      }
-    }
-  }
+  private Object jobServerPermission = null;
 
   public static final String SERIALIZED_NAME_MEDIA_SERVER_PERMISSION = "mediaServerPermission";
   @SerializedName(SERIALIZED_NAME_MEDIA_SERVER_PERMISSION)
-  private MediaServerPermissionEnum mediaServerPermission = null;
-
-  /**
-   * Gets or Sets mailServerPermission
-   */
-  @JsonAdapter(MailServerPermissionEnum.Adapter.class)
-  public enum MailServerPermissionEnum {
-    R("r"),
-    
-    RW("rw"),
-    
-    NULL("null");
-
-    private Object value;
-
-    MailServerPermissionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static MailServerPermissionEnum fromValue(Object value) {
-      for (MailServerPermissionEnum b : MailServerPermissionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<MailServerPermissionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final MailServerPermissionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public MailServerPermissionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return MailServerPermissionEnum.fromValue(value);
-      }
-    }
-  }
+  private Object mediaServerPermission = null;
 
   public static final String SERIALIZED_NAME_MAIL_SERVER_PERMISSION = "mailServerPermission";
   @SerializedName(SERIALIZED_NAME_MAIL_SERVER_PERMISSION)
-  private MailServerPermissionEnum mailServerPermission = null;
-
-  /**
-   * Gets or Sets superAdminPermission
-   */
-  @JsonAdapter(SuperAdminPermissionEnum.Adapter.class)
-  public enum SuperAdminPermissionEnum {
-    R("r"),
-    
-    RW("rw"),
-    
-    NULL("null");
-
-    private Object value;
-
-    SuperAdminPermissionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static SuperAdminPermissionEnum fromValue(Object value) {
-      for (SuperAdminPermissionEnum b : SuperAdminPermissionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<SuperAdminPermissionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final SuperAdminPermissionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public SuperAdminPermissionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return SuperAdminPermissionEnum.fromValue(value);
-      }
-    }
-  }
+  private Object mailServerPermission = null;
 
   public static final String SERIALIZED_NAME_SUPER_ADMIN_PERMISSION = "superAdminPermission";
   @SerializedName(SERIALIZED_NAME_SUPER_ADMIN_PERMISSION)
-  private SuperAdminPermissionEnum superAdminPermission = null;
+  private Object superAdminPermission = null;
 
   public static final String SERIALIZED_NAME_TIMEZONE = "timezone";
   @SerializedName(SERIALIZED_NAME_TIMEZONE)
   private Object timezone = null;
 
-  /**
-   * Gets or Sets vmTranscription
-   */
-  @JsonAdapter(VmTranscriptionEnum.Adapter.class)
-  public enum VmTranscriptionEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    VmTranscriptionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static VmTranscriptionEnum fromValue(Object value) {
-      for (VmTranscriptionEnum b : VmTranscriptionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<VmTranscriptionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final VmTranscriptionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public VmTranscriptionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return VmTranscriptionEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_VM_TRANSCRIPTION = "vmTranscription";
   @SerializedName(SERIALIZED_NAME_VM_TRANSCRIPTION)
-  private VmTranscriptionEnum vmTranscription = 0;
+  private Object vmTranscription = null;
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)
-  private Object communication = {notifications={email=true, sms=true}, missedCalls={email=true, sms=true}, callRecordings={email=true, sms=true}, newsletters={email=true, sms=true}, voicemails={email=true, sms=true}, web={sounds=true}};
+  private Object communication = null;
 
   public Users() {
   }
@@ -1131,7 +494,7 @@ public class Users {
   }
 
 
-  public Users language(LanguageEnum language) {
+  public Users language(Object language) {
     
     this.language = language;
     return this;
@@ -1142,17 +505,17 @@ public class Users {
    * @return language
   **/
   @javax.annotation.Nullable
-  public LanguageEnum getLanguage() {
+  public Object getLanguage() {
     return language;
   }
 
 
-  public void setLanguage(LanguageEnum language) {
+  public void setLanguage(Object language) {
     this.language = language;
   }
 
 
-  public Users isPrimary(IsPrimaryEnum isPrimary) {
+  public Users isPrimary(Object isPrimary) {
     
     this.isPrimary = isPrimary;
     return this;
@@ -1163,17 +526,17 @@ public class Users {
    * @return isPrimary
   **/
   @javax.annotation.Nullable
-  public IsPrimaryEnum getIsPrimary() {
+  public Object getIsPrimary() {
     return isPrimary;
   }
 
 
-  public void setIsPrimary(IsPrimaryEnum isPrimary) {
+  public void setIsPrimary(Object isPrimary) {
     this.isPrimary = isPrimary;
   }
 
 
-  public Users status(StatusEnum status) {
+  public Users status(Object status) {
     
     this.status = status;
     return this;
@@ -1184,17 +547,17 @@ public class Users {
    * @return status
   **/
   @javax.annotation.Nullable
-  public StatusEnum getStatus() {
+  public Object getStatus() {
     return status;
   }
 
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(Object status) {
     this.status = status;
   }
 
 
-  public Users vmGreetingType(VmGreetingTypeEnum vmGreetingType) {
+  public Users vmGreetingType(Object vmGreetingType) {
     
     this.vmGreetingType = vmGreetingType;
     return this;
@@ -1205,12 +568,12 @@ public class Users {
    * @return vmGreetingType
   **/
   @javax.annotation.Nullable
-  public VmGreetingTypeEnum getVmGreetingType() {
+  public Object getVmGreetingType() {
     return vmGreetingType;
   }
 
 
-  public void setVmGreetingType(VmGreetingTypeEnum vmGreetingType) {
+  public void setVmGreetingType(Object vmGreetingType) {
     this.vmGreetingType = vmGreetingType;
   }
 
@@ -1362,7 +725,7 @@ public class Users {
   }
 
 
-  public Users adminPermission(AdminPermissionEnum adminPermission) {
+  public Users adminPermission(Object adminPermission) {
     
     this.adminPermission = adminPermission;
     return this;
@@ -1373,17 +736,17 @@ public class Users {
    * @return adminPermission
   **/
   @javax.annotation.Nullable
-  public AdminPermissionEnum getAdminPermission() {
+  public Object getAdminPermission() {
     return adminPermission;
   }
 
 
-  public void setAdminPermission(AdminPermissionEnum adminPermission) {
+  public void setAdminPermission(Object adminPermission) {
     this.adminPermission = adminPermission;
   }
 
 
-  public Users billingPermission(BillingPermissionEnum billingPermission) {
+  public Users billingPermission(Object billingPermission) {
     
     this.billingPermission = billingPermission;
     return this;
@@ -1394,17 +757,17 @@ public class Users {
    * @return billingPermission
   **/
   @javax.annotation.Nullable
-  public BillingPermissionEnum getBillingPermission() {
+  public Object getBillingPermission() {
     return billingPermission;
   }
 
 
-  public void setBillingPermission(BillingPermissionEnum billingPermission) {
+  public void setBillingPermission(Object billingPermission) {
     this.billingPermission = billingPermission;
   }
 
 
-  public Users phonePermission(PhonePermissionEnum phonePermission) {
+  public Users phonePermission(Object phonePermission) {
     
     this.phonePermission = phonePermission;
     return this;
@@ -1415,17 +778,17 @@ public class Users {
    * @return phonePermission
   **/
   @javax.annotation.Nullable
-  public PhonePermissionEnum getPhonePermission() {
+  public Object getPhonePermission() {
     return phonePermission;
   }
 
 
-  public void setPhonePermission(PhonePermissionEnum phonePermission) {
+  public void setPhonePermission(Object phonePermission) {
     this.phonePermission = phonePermission;
   }
 
 
-  public Users agilePermission(AgilePermissionEnum agilePermission) {
+  public Users agilePermission(Object agilePermission) {
     
     this.agilePermission = agilePermission;
     return this;
@@ -1436,17 +799,17 @@ public class Users {
    * @return agilePermission
   **/
   @javax.annotation.Nullable
-  public AgilePermissionEnum getAgilePermission() {
+  public Object getAgilePermission() {
     return agilePermission;
   }
 
 
-  public void setAgilePermission(AgilePermissionEnum agilePermission) {
+  public void setAgilePermission(Object agilePermission) {
     this.agilePermission = agilePermission;
   }
 
 
-  public Users jobServerPermission(JobServerPermissionEnum jobServerPermission) {
+  public Users jobServerPermission(Object jobServerPermission) {
     
     this.jobServerPermission = jobServerPermission;
     return this;
@@ -1457,17 +820,17 @@ public class Users {
    * @return jobServerPermission
   **/
   @javax.annotation.Nullable
-  public JobServerPermissionEnum getJobServerPermission() {
+  public Object getJobServerPermission() {
     return jobServerPermission;
   }
 
 
-  public void setJobServerPermission(JobServerPermissionEnum jobServerPermission) {
+  public void setJobServerPermission(Object jobServerPermission) {
     this.jobServerPermission = jobServerPermission;
   }
 
 
-  public Users mediaServerPermission(MediaServerPermissionEnum mediaServerPermission) {
+  public Users mediaServerPermission(Object mediaServerPermission) {
     
     this.mediaServerPermission = mediaServerPermission;
     return this;
@@ -1478,17 +841,17 @@ public class Users {
    * @return mediaServerPermission
   **/
   @javax.annotation.Nullable
-  public MediaServerPermissionEnum getMediaServerPermission() {
+  public Object getMediaServerPermission() {
     return mediaServerPermission;
   }
 
 
-  public void setMediaServerPermission(MediaServerPermissionEnum mediaServerPermission) {
+  public void setMediaServerPermission(Object mediaServerPermission) {
     this.mediaServerPermission = mediaServerPermission;
   }
 
 
-  public Users mailServerPermission(MailServerPermissionEnum mailServerPermission) {
+  public Users mailServerPermission(Object mailServerPermission) {
     
     this.mailServerPermission = mailServerPermission;
     return this;
@@ -1499,17 +862,17 @@ public class Users {
    * @return mailServerPermission
   **/
   @javax.annotation.Nullable
-  public MailServerPermissionEnum getMailServerPermission() {
+  public Object getMailServerPermission() {
     return mailServerPermission;
   }
 
 
-  public void setMailServerPermission(MailServerPermissionEnum mailServerPermission) {
+  public void setMailServerPermission(Object mailServerPermission) {
     this.mailServerPermission = mailServerPermission;
   }
 
 
-  public Users superAdminPermission(SuperAdminPermissionEnum superAdminPermission) {
+  public Users superAdminPermission(Object superAdminPermission) {
     
     this.superAdminPermission = superAdminPermission;
     return this;
@@ -1520,12 +883,12 @@ public class Users {
    * @return superAdminPermission
   **/
   @javax.annotation.Nullable
-  public SuperAdminPermissionEnum getSuperAdminPermission() {
+  public Object getSuperAdminPermission() {
     return superAdminPermission;
   }
 
 
-  public void setSuperAdminPermission(SuperAdminPermissionEnum superAdminPermission) {
+  public void setSuperAdminPermission(Object superAdminPermission) {
     this.superAdminPermission = superAdminPermission;
   }
 
@@ -1551,7 +914,7 @@ public class Users {
   }
 
 
-  public Users vmTranscription(VmTranscriptionEnum vmTranscription) {
+  public Users vmTranscription(Object vmTranscription) {
     
     this.vmTranscription = vmTranscription;
     return this;
@@ -1562,12 +925,12 @@ public class Users {
    * @return vmTranscription
   **/
   @javax.annotation.Nullable
-  public VmTranscriptionEnum getVmTranscription() {
+  public Object getVmTranscription() {
     return vmTranscription;
   }
 
 
-  public void setVmTranscription(VmTranscriptionEnum vmTranscription) {
+  public void setVmTranscription(Object vmTranscription) {
     this.vmTranscription = vmTranscription;
   }
 

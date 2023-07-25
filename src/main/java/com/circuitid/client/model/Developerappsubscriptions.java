@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Developerappsubscriptions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:19:13.415Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
 public class Developerappsubscriptions {
   public static final String SERIALIZED_NAME_DEVELOPER_APP = "developerApp";
   @SerializedName(SERIALIZED_NAME_DEVELOPER_APP)
@@ -67,58 +67,11 @@ public class Developerappsubscriptions {
 
   public static final String SERIALIZED_NAME_PERMISSIONS = "permissions";
   @SerializedName(SERIALIZED_NAME_PERMISSIONS)
-  private Object permissions = {};
-
-  /**
-   * Gets or Sets requireId
-   */
-  @JsonAdapter(RequireIdEnum.Adapter.class)
-  public enum RequireIdEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    RequireIdEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static RequireIdEnum fromValue(Object value) {
-      for (RequireIdEnum b : RequireIdEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<RequireIdEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final RequireIdEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public RequireIdEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return RequireIdEnum.fromValue(value);
-      }
-    }
-  }
+  private Object permissions = null;
 
   public static final String SERIALIZED_NAME_REQUIRE_ID = "requireId";
   @SerializedName(SERIALIZED_NAME_REQUIRE_ID)
-  private RequireIdEnum requireId = 0;
+  private Object requireId = null;
 
   public static final String SERIALIZED_NAME_SERVICES = "services";
   @SerializedName(SERIALIZED_NAME_SERVICES)
@@ -215,7 +168,7 @@ public class Developerappsubscriptions {
   }
 
 
-  public Developerappsubscriptions requireId(RequireIdEnum requireId) {
+  public Developerappsubscriptions requireId(Object requireId) {
     
     this.requireId = requireId;
     return this;
@@ -226,12 +179,12 @@ public class Developerappsubscriptions {
    * @return requireId
   **/
   @javax.annotation.Nullable
-  public RequireIdEnum getRequireId() {
+  public Object getRequireId() {
     return requireId;
   }
 
 
-  public void setRequireId(RequireIdEnum requireId) {
+  public void setRequireId(Object requireId) {
     this.requireId = requireId;
   }
 

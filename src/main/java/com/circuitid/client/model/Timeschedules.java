@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Timeschedules
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:19:13.415Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
 public class Timeschedules {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -62,31 +62,31 @@ public class Timeschedules {
 
   public static final String SERIALIZED_NAME_SUNDAY = "sunday";
   @SerializedName(SERIALIZED_NAME_SUNDAY)
-  private Object sunday = {schedules=[{start=12:00 AM, end=12:00 AM}]};
+  private Object sunday = null;
 
   public static final String SERIALIZED_NAME_MONDAY = "monday";
   @SerializedName(SERIALIZED_NAME_MONDAY)
-  private Object monday = {schedules=[{start=12:00 AM, end=12:00 AM}]};
+  private Object monday = null;
 
   public static final String SERIALIZED_NAME_TUESDAY = "tuesday";
   @SerializedName(SERIALIZED_NAME_TUESDAY)
-  private Object tuesday = {schedules=[{start=12:00 AM, end=12:00 AM}]};
+  private Object tuesday = null;
 
   public static final String SERIALIZED_NAME_WEDNESDAY = "wednesday";
   @SerializedName(SERIALIZED_NAME_WEDNESDAY)
-  private Object wednesday = {schedules=[{start=12:00 AM, end=12:00 AM}]};
+  private Object wednesday = null;
 
   public static final String SERIALIZED_NAME_THURSDAY = "thursday";
   @SerializedName(SERIALIZED_NAME_THURSDAY)
-  private Object thursday = {schedules=[{start=12:00 AM, end=12:00 AM}]};
+  private Object thursday = null;
 
   public static final String SERIALIZED_NAME_FRIDAY = "friday";
   @SerializedName(SERIALIZED_NAME_FRIDAY)
-  private Object friday = {schedules=[{start=12:00 AM, end=12:00 AM}]};
+  private Object friday = null;
 
   public static final String SERIALIZED_NAME_SATURDAY = "saturday";
   @SerializedName(SERIALIZED_NAME_SATURDAY)
-  private Object saturday = {schedules=[{start=12:00 AM, end=12:00 AM}]};
+  private Object saturday = null;
 
   public Timeschedules() {
   }

@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Menus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:19:13.415Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
 public class Menus {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -59,113 +59,19 @@ public class Menus {
 
   public static final String SERIALIZED_NAME_MAX_EXTENSION_LENGTH = "maxExtensionLength";
   @SerializedName(SERIALIZED_NAME_MAX_EXTENSION_LENGTH)
-  private Object maxExtensionLength = 4;
-
-  /**
-   * Gets or Sets speechRecognition
-   */
-  @JsonAdapter(SpeechRecognitionEnum.Adapter.class)
-  public enum SpeechRecognitionEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    SpeechRecognitionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static SpeechRecognitionEnum fromValue(Object value) {
-      for (SpeechRecognitionEnum b : SpeechRecognitionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<SpeechRecognitionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final SpeechRecognitionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public SpeechRecognitionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return SpeechRecognitionEnum.fromValue(value);
-      }
-    }
-  }
+  private Object maxExtensionLength = null;
 
   public static final String SERIALIZED_NAME_SPEECH_RECOGNITION = "speechRecognition";
   @SerializedName(SERIALIZED_NAME_SPEECH_RECOGNITION)
-  private SpeechRecognitionEnum speechRecognition = 0;
+  private Object speechRecognition = null;
 
   public static final String SERIALIZED_NAME_DIRECTORY = "directory";
   @SerializedName(SERIALIZED_NAME_DIRECTORY)
   private Object directory = null;
 
-  /**
-   * Gets or Sets greetingType
-   */
-  @JsonAdapter(GreetingTypeEnum.Adapter.class)
-  public enum GreetingTypeEnum {
-    TTS("tts"),
-    
-    MP3("mp3");
-
-    private Object value;
-
-    GreetingTypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static GreetingTypeEnum fromValue(Object value) {
-      for (GreetingTypeEnum b : GreetingTypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<GreetingTypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final GreetingTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public GreetingTypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return GreetingTypeEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_GREETING_TYPE = "greetingType";
   @SerializedName(SERIALIZED_NAME_GREETING_TYPE)
-  private GreetingTypeEnum greetingType = null;
+  private Object greetingType = null;
 
   public static final String SERIALIZED_NAME_GREETING_T_T_S = "greetingTTS";
   @SerializedName(SERIALIZED_NAME_GREETING_T_T_S)
@@ -175,251 +81,37 @@ public class Menus {
   @SerializedName(SERIALIZED_NAME_MENU_VOICE)
   private Object menuVoice = null;
 
-  /**
-   * Gets or Sets exitSound
-   */
-  @JsonAdapter(ExitSoundEnum.Adapter.class)
-  public enum ExitSoundEnum {
-    DEFAULT("default"),
-    
-    MP3("mp3");
-
-    private Object value;
-
-    ExitSoundEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static ExitSoundEnum fromValue(Object value) {
-      for (ExitSoundEnum b : ExitSoundEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<ExitSoundEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final ExitSoundEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public ExitSoundEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return ExitSoundEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_EXIT_SOUND = "exitSound";
   @SerializedName(SERIALIZED_NAME_EXIT_SOUND)
-  private ExitSoundEnum exitSound = default;
-
-  /**
-   * Gets or Sets transferAnnouncement
-   */
-  @JsonAdapter(TransferAnnouncementEnum.Adapter.class)
-  public enum TransferAnnouncementEnum {
-    DEFAULT("default"),
-    
-    MP3("mp3"),
-    
-    NONE("none");
-
-    private Object value;
-
-    TransferAnnouncementEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static TransferAnnouncementEnum fromValue(Object value) {
-      for (TransferAnnouncementEnum b : TransferAnnouncementEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<TransferAnnouncementEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final TransferAnnouncementEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public TransferAnnouncementEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return TransferAnnouncementEnum.fromValue(value);
-      }
-    }
-  }
+  private Object exitSound = null;
 
   public static final String SERIALIZED_NAME_TRANSFER_ANNOUNCEMENT = "transferAnnouncement";
   @SerializedName(SERIALIZED_NAME_TRANSFER_ANNOUNCEMENT)
-  private TransferAnnouncementEnum transferAnnouncement = default;
+  private Object transferAnnouncement = null;
 
   public static final String SERIALIZED_NAME_MAX_FAILURES = "maxFailures";
   @SerializedName(SERIALIZED_NAME_MAX_FAILURES)
-  private Object maxFailures = 3;
+  private Object maxFailures = null;
 
   public static final String SERIALIZED_NAME_MAX_TIMEOUTS = "maxTimeouts";
   @SerializedName(SERIALIZED_NAME_MAX_TIMEOUTS)
-  private Object maxTimeouts = 3;
+  private Object maxTimeouts = null;
 
   public static final String SERIALIZED_NAME_TIMEOUT = "timeout";
   @SerializedName(SERIALIZED_NAME_TIMEOUT)
-  private Object timeout = 10;
-
-  /**
-   * Gets or Sets touchToneTerminators
-   */
-  @JsonAdapter(TouchToneTerminatorsEnum.Adapter.class)
-  public enum TouchToneTerminatorsEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    TouchToneTerminatorsEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static TouchToneTerminatorsEnum fromValue(Object value) {
-      for (TouchToneTerminatorsEnum b : TouchToneTerminatorsEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<TouchToneTerminatorsEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final TouchToneTerminatorsEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public TouchToneTerminatorsEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return TouchToneTerminatorsEnum.fromValue(value);
-      }
-    }
-  }
+  private Object timeout = null;
 
   public static final String SERIALIZED_NAME_TOUCH_TONE_TERMINATORS = "touchToneTerminators";
   @SerializedName(SERIALIZED_NAME_TOUCH_TONE_TERMINATORS)
-  private TouchToneTerminatorsEnum touchToneTerminators = 1;
+  private Object touchToneTerminators = null;
 
   public static final String SERIALIZED_NAME_TIMESCHEDULE = "timeschedule";
   @SerializedName(SERIALIZED_NAME_TIMESCHEDULE)
   private Object timeschedule = null;
 
-  /**
-   * Gets or Sets destinationType
-   */
-  @JsonAdapter(DestinationTypeEnum.Adapter.class)
-  public enum DestinationTypeEnum {
-    ANNOUNCEMENTS("announcements"),
-    
-    DIRECTORIES("directories"),
-    
-    PARK("park"),
-    
-    NUMBERS("numbers"),
-    
-    MENUS("menus"),
-    
-    USERS("users"),
-    
-    SERVERS("servers"),
-    
-    INBOUNDRULES("inboundrules"),
-    
-    CALLQUEUES("callqueues"),
-    
-    FAXACCOUNTS("faxaccounts"),
-    
-    CALLFORWARDING("callforwarding"),
-    
-    HANGUP("hangup"),
-    
-    PHONEINBOUNDRULES("phoneinboundrules"),
-    
-    VOICEMAILACCOUNTS("voicemailaccounts");
-
-    private Object value;
-
-    DestinationTypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static DestinationTypeEnum fromValue(Object value) {
-      for (DestinationTypeEnum b : DestinationTypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<DestinationTypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final DestinationTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public DestinationTypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return DestinationTypeEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_DESTINATION_TYPE = "destinationType";
   @SerializedName(SERIALIZED_NAME_DESTINATION_TYPE)
-  private DestinationTypeEnum destinationType = null;
+  private Object destinationType = null;
 
   public static final String SERIALIZED_NAME_DESTINATION = "destination";
   @SerializedName(SERIALIZED_NAME_DESTINATION)
@@ -478,7 +170,7 @@ public class Menus {
   }
 
 
-  public Menus speechRecognition(SpeechRecognitionEnum speechRecognition) {
+  public Menus speechRecognition(Object speechRecognition) {
     
     this.speechRecognition = speechRecognition;
     return this;
@@ -489,12 +181,12 @@ public class Menus {
    * @return speechRecognition
   **/
   @javax.annotation.Nullable
-  public SpeechRecognitionEnum getSpeechRecognition() {
+  public Object getSpeechRecognition() {
     return speechRecognition;
   }
 
 
-  public void setSpeechRecognition(SpeechRecognitionEnum speechRecognition) {
+  public void setSpeechRecognition(Object speechRecognition) {
     this.speechRecognition = speechRecognition;
   }
 
@@ -520,7 +212,7 @@ public class Menus {
   }
 
 
-  public Menus greetingType(GreetingTypeEnum greetingType) {
+  public Menus greetingType(Object greetingType) {
     
     this.greetingType = greetingType;
     return this;
@@ -531,12 +223,12 @@ public class Menus {
    * @return greetingType
   **/
   @javax.annotation.Nullable
-  public GreetingTypeEnum getGreetingType() {
+  public Object getGreetingType() {
     return greetingType;
   }
 
 
-  public void setGreetingType(GreetingTypeEnum greetingType) {
+  public void setGreetingType(Object greetingType) {
     this.greetingType = greetingType;
   }
 
@@ -583,7 +275,7 @@ public class Menus {
   }
 
 
-  public Menus exitSound(ExitSoundEnum exitSound) {
+  public Menus exitSound(Object exitSound) {
     
     this.exitSound = exitSound;
     return this;
@@ -594,17 +286,17 @@ public class Menus {
    * @return exitSound
   **/
   @javax.annotation.Nullable
-  public ExitSoundEnum getExitSound() {
+  public Object getExitSound() {
     return exitSound;
   }
 
 
-  public void setExitSound(ExitSoundEnum exitSound) {
+  public void setExitSound(Object exitSound) {
     this.exitSound = exitSound;
   }
 
 
-  public Menus transferAnnouncement(TransferAnnouncementEnum transferAnnouncement) {
+  public Menus transferAnnouncement(Object transferAnnouncement) {
     
     this.transferAnnouncement = transferAnnouncement;
     return this;
@@ -615,12 +307,12 @@ public class Menus {
    * @return transferAnnouncement
   **/
   @javax.annotation.Nullable
-  public TransferAnnouncementEnum getTransferAnnouncement() {
+  public Object getTransferAnnouncement() {
     return transferAnnouncement;
   }
 
 
-  public void setTransferAnnouncement(TransferAnnouncementEnum transferAnnouncement) {
+  public void setTransferAnnouncement(Object transferAnnouncement) {
     this.transferAnnouncement = transferAnnouncement;
   }
 
@@ -688,7 +380,7 @@ public class Menus {
   }
 
 
-  public Menus touchToneTerminators(TouchToneTerminatorsEnum touchToneTerminators) {
+  public Menus touchToneTerminators(Object touchToneTerminators) {
     
     this.touchToneTerminators = touchToneTerminators;
     return this;
@@ -699,12 +391,12 @@ public class Menus {
    * @return touchToneTerminators
   **/
   @javax.annotation.Nullable
-  public TouchToneTerminatorsEnum getTouchToneTerminators() {
+  public Object getTouchToneTerminators() {
     return touchToneTerminators;
   }
 
 
-  public void setTouchToneTerminators(TouchToneTerminatorsEnum touchToneTerminators) {
+  public void setTouchToneTerminators(Object touchToneTerminators) {
     this.touchToneTerminators = touchToneTerminators;
   }
 
@@ -730,7 +422,7 @@ public class Menus {
   }
 
 
-  public Menus destinationType(DestinationTypeEnum destinationType) {
+  public Menus destinationType(Object destinationType) {
     
     this.destinationType = destinationType;
     return this;
@@ -741,12 +433,12 @@ public class Menus {
    * @return destinationType
   **/
   @javax.annotation.Nullable
-  public DestinationTypeEnum getDestinationType() {
+  public Object getDestinationType() {
     return destinationType;
   }
 
 
-  public void setDestinationType(DestinationTypeEnum destinationType) {
+  public void setDestinationType(Object destinationType) {
     this.destinationType = destinationType;
   }
 

@@ -8816,9 +8816,7 @@ components:
       properties:
         username: {}
         password: {}
-        strategy:
-          enum:
-          - local
+        strategy: {}
       required:
       - password
       - strategy
@@ -8830,11 +8828,7 @@ components:
         service:
           description: ObjectId (unique 12 bytes ID)
         serviceRef: {}
-        ref:
-          enum:
-          - users
-          - domains
-          - contacts
+        ref: {}
       required:
       - object
       - ref
@@ -8844,10 +8838,7 @@ components:
       properties:
         name:
           maxLength: 45
-        type:
-          enum:
-          - tts
-          - mp3
+        type: {}
         voice: {}
         text:
           maxLength: 255
@@ -8883,78 +8874,37 @@ components:
       properties:
         name:
           maxLength: 45
-        strategy:
-          enum:
-          - ring-all
-          - longest-idle-agent
-          - round-robin
-          - top-down
-          - agent-with-least-talk-time
-          - agent-with-fewest-calls
-          - sequentially-by-agent-order
-          - random
+        strategy: {}
         announcePosition:
           format: int32
         moh:
-          default: deafult
           maxLength: 255
         callerResumeTimeout:
-          default: 3600
           format: int32
         maxWaitTime:
-          default: 300
           format: int32
         maxWaitTimeNoAgent:
-          default: 300
           format: int32
         maxNoAnswer:
-          default: 1000000
           format: int32
         noAnswerDelayTimeout:
-          default: 60
           format: int32
         rejectTimeout:
-          default: 60
           format: int32
         busyTimeout:
-          default: 60
           format: int32
         wrapUpTimeout:
-          default: 10
           format: int32
-        timeBasedScore:
-          default: queue
-          enum:
-          - queue
-          - system
-        tierRulesApply:
-          default: false
-          enum:
-          - true
-          - false
-        tierRuleNoAgentNoWait:
-          default: true
-          enum:
-          - true
-          - false
+        timeBasedScore: {}
+        tierRulesApply: {}
+        tierRuleNoAgentNoWait: {}
         tierRuleWaitSecond:
-          default: 300
           format: int32
-        tierRuleWaitMultiplyLevel:
-          default: true
-          enum:
-          - true
-          - false
-        abandonedResumeAllowed:
-          default: true
-          enum:
-          - true
-          - false
+        tierRuleWaitMultiplyLevel: {}
+        abandonedResumeAllowed: {}
         discardAbandonedAfter:
-          default: 14400
           format: int32
         maxWaitTimeNoAgentTimeReached:
-          default: 5
           format: int32
       required:
       - abandonedResumeAllowed
@@ -8977,10 +8927,8 @@ components:
         user:
           description: ObjectId (unique 12 bytes ID)
         priority:
-          default: 1
           format: int32
         tier:
-          default: 1
           format: int32
       required:
       - callqueue
@@ -8994,10 +8942,7 @@ components:
         users: {}
         avatar:
           maxLength: 512
-        direct:
-          enum:
-          - true
-          - false
+        direct: {}
       required:
       - users
     clients:
@@ -9013,17 +8958,9 @@ components:
           maxLength: 45
           minLength: 1
         manufacture:
-          enum:
-          - cisco
-          - grandstream
-          - polycom
           maxLength: 20
           minLength: 4
         status:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
       required:
       - mac
@@ -9034,22 +8971,11 @@ components:
         contacts: {}
         number:
           description: ObjectId (unique 12 bytes ID)
-        channel:
-          enum:
-          - email
-          - sms
-          - phone
-        ref:
-          enum:
-          - contacts
-          - users
+        channel: {}
+        ref: {}
         object:
           description: ObjectId (unique 12 bytes ID)
-        status:
-          default: open
-          enum:
-          - open
-          - resolved
+        status: {}
       required:
       - channel
       - object
@@ -9065,10 +8991,7 @@ components:
         to: {}
         text:
           maxLength: 2048
-        direction:
-          enum:
-          - inbound
-          - outbound
+        direction: {}
         attachments: {}
         referenceId:
           maxLength: 255
@@ -9086,30 +9009,13 @@ components:
           minLength: 6
         dialInPin:
           format: int32
-        isUserRoom:
-          enum:
-          - true
-          - false
-        isChatRoom:
-          enum:
-          - true
-          - false
+        isUserRoom: {}
+        isChatRoom: {}
         lobby:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         requirePasscode:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
-        share:
-          enum:
-          - groups
-          - customers
+        share: {}
         chatroom:
           description: ObjectId (unique 12 bytes ID)
       required:
@@ -9118,19 +9024,12 @@ components:
       properties:
         name:
           maxLength: 45
-        status:
-          default: active
-          enum:
-          - active
-          - suspended
-          - terminated
-          - fraud
+        status: {}
         websiteUrl:
           maxLength: 255
         logo:
           maxLength: 255
         credit:
-          default: 0
           format: int32
         adminUserId:
           description: ObjectId (unique 12 bytes ID)
@@ -9139,84 +9038,43 @@ components:
         callRecordingUserId:
           description: ObjectId (unique 12 bytes ID)
         callForwardingCallLimit:
-          default: 10
           format: int32
         supportUserId:
           description: ObjectId (unique 12 bytes ID)
         automaticRefillAmount:
-          default: 0
           format: int32
         lowBalanceAlertAmount:
-          default: 0
           format: int32
         lowBalanceAlertAt:
           format: date-time
         lowBalanceAlertCount:
-          default: 0
           format: int32
         lastAutomaticRefillInvoice:
           description: ObjectId (unique 12 bytes ID)
         internationalCalling:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         createdByIP:
           maxLength: 45
           minLength: 8
         callDebug:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         mediaBypass:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         accountLock:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
         callRecording:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         cdrRetention:
-          default: 12
           format: int32
         cnamLookUps:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         holdMusic:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         transcribeCalls:
-          enum:
-          - 1
-          - 0
           format: int32
         maxOutboundCallRate:
-          default: 1
           format: int32
-        defaultBillMethod:
-          default: credit
-          enum:
-          - credit
-          - paymentmethod
+        defaultBillMethod: {}
       required:
       - defaultBillMethod
       - name
@@ -9226,31 +9084,15 @@ components:
           maxLength: 45
         description:
           maxLength: 4096
-        type:
-          enum:
-          - events
-        visibility:
-          enum:
-          - private
-          - public
+        type: {}
+        visibility: {}
         requireId:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         isFree:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
         feeDescription:
           maxLength: 4096
-        integrationType:
-          enum:
-          - webhook
-          - client
+        integrationType: {}
         services:
           items:
             enum:
@@ -9278,20 +9120,9 @@ components:
           maxLength: 1024
         privacyPolicyUrl:
           maxLength: 1024
-        permissions:
-          default: {}
-        status:
-          default: pending
-          enum:
-          - active
-          - disabled
-          - suspended
-          - error
-          - pending
-        webhookAuthType:
-          enum:
-          - header
-          - usernameAndPassword
+        permissions: {}
+        status: {}
+        webhookAuthType: {}
         webhookUsername:
           maxLength: 255
         webhookPassword:
@@ -9316,13 +9147,8 @@ components:
           description: ObjectId (unique 12 bytes ID)
         ref:
           maxLength: 45
-        permissions:
-          default: {}
+        permissions: {}
         requireId:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         services:
           items:
@@ -9350,10 +9176,7 @@ components:
       properties:
         name:
           maxLength: 45
-        type:
-          enum:
-          - customers
-          - groups
+        type: {}
         groups:
           items:
             ref: groups
@@ -9368,10 +9191,6 @@ components:
           maxLength: 255
           minLength: 2
         status:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
       required:
       - name
@@ -9382,25 +9201,15 @@ components:
         callerDestination:
           maxLength: 45
         pages:
-          default: 0
           format: int32
         statusCode:
           format: int32
         transferedPages:
-          default: 0
           format: int32
-        status:
-          default: processing
-          enum:
-          - failed
-          - success
-          - processing
+        status: {}
         error:
           maxLength: 255
-        type:
-          enum:
-          - send
-          - receive
+        type: {}
         order:
           description: ObjectId (unique 12 bytes ID)
         file:
@@ -9412,7 +9221,6 @@ components:
         faxAccount:
           description: ObjectId (unique 12 bytes ID)
         retries:
-          default: 0
           format: int32
         invoice:
           description: ObjectId (unique 12 bytes ID)
@@ -9449,39 +9257,19 @@ components:
           maxLength: 255
         priority:
           format: int32
-        type:
-          enum:
-          - allow
-          - deny
-        target:
-          enum:
-          - numbers
-          - ipaddresses
-          - sms
-        direction:
-          enum:
-          - inbound
-          - outbound
-          - both
+        type: {}
+        target: {}
+        direction: {}
         param:
           maxLength: 45
           minLength: 1
         hits:
           format: int32
         ai:
-          default: 0
-          enum:
-          - 0
-          - 1
           format: int32
         status:
-          default: 1
-          enum:
-          - 0
-          - 1
           format: int32
         notificationHits:
-          default: 1
           format: int32
       required:
       - name
@@ -9496,10 +9284,6 @@ components:
         description:
           maxLength: 255
         status:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
       required:
       - name
@@ -9511,11 +9295,7 @@ components:
           description: ObjectId (unique 12 bytes ID)
         priority:
           format: int32
-        ref:
-          enum:
-          - users
-          - servers
-          - ipaddresses
+        ref: {}
       required:
       - group
       - object
@@ -9534,27 +9314,8 @@ components:
             items:
               format: date-time
         status:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
-        destinationType:
-          enum:
-          - announcements
-          - directories
-          - park
-          - numbers
-          - menus
-          - users
-          - servers
-          - inboundrules
-          - callqueues
-          - faxaccounts
-          - callforwarding
-          - hangup
-          - phoneinboundrules
-          - voicemailaccounts
+        destinationType: {}
         destination:
           description: ObjectId (unique 12 bytes ID)
         ref:
@@ -9580,7 +9341,6 @@ components:
         taxes:
           format: int32
         quantity:
-          default: 1
           format: int32
         invoice:
           description: ObjectId (unique 12 bytes ID)
@@ -9610,14 +9370,7 @@ components:
           format: date-time
         dueAt:
           format: date-time
-        status:
-          default: open
-          enum:
-          - open
-          - closed
-          - collection
-          - onHold
-          - error
+        status: {}
         error: {}
       required:
       - amount
@@ -9643,66 +9396,27 @@ components:
         name:
           maxLength: 45
         maxExtensionLength:
-          default: 4
           format: int32
         speechRecognition:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         directory:
           description: ObjectId (unique 12 bytes ID)
-        greetingType:
-          enum:
-          - tts
-          - mp3
+        greetingType: {}
         greetingTTS: {}
         menuVoice: {}
-        exitSound:
-          default: default
-          enum:
-          - default
-          - mp3
-        transferAnnouncement:
-          default: default
-          enum:
-          - default
-          - mp3
-          - none
+        exitSound: {}
+        transferAnnouncement: {}
         maxFailures:
-          default: 3
           format: int32
         maxTimeouts:
-          default: 3
           format: int32
         timeout:
-          default: 10
           format: int32
         touchToneTerminators:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
         timeschedule:
           description: ObjectId (unique 12 bytes ID)
-        destinationType:
-          enum:
-          - announcements
-          - directories
-          - park
-          - numbers
-          - menus
-          - users
-          - servers
-          - inboundrules
-          - callqueues
-          - faxaccounts
-          - callforwarding
-          - hangup
-          - phoneinboundrules
-          - voicemailaccounts
+        destinationType: {}
         destination:
           description: ObjectId (unique 12 bytes ID)
         ref:
@@ -9722,22 +9436,7 @@ components:
         digit:
           format: int32
         menus: {}
-        destinationType:
-          enum:
-          - announcements
-          - directories
-          - park
-          - numbers
-          - menus
-          - users
-          - servers
-          - inboundrules
-          - callqueues
-          - faxaccounts
-          - callforwarding
-          - hangup
-          - phoneinboundrules
-          - voicemailaccounts
+        destinationType: {}
         destination:
           description: ObjectId (unique 12 bytes ID)
         ref:
@@ -9762,49 +9461,22 @@ components:
         order:
           description: ObjectId (unique 12 bytes ID)
         subscriberOptin:
-          enum:
-          - 1
-          - 0
           format: int32
         subscriberOptout:
-          enum:
-          - 1
-          - 0
           format: int32
         subscriberHelp:
-          enum:
-          - 1
-          - 0
           format: int32
         numberPool:
-          enum:
-          - 1
-          - 0
           format: int32
         directLending:
-          enum:
-          - 1
-          - 0
           format: int32
         embeddedLink:
-          enum:
-          - 1
-          - 0
           format: int32
         embeddedPhone:
-          enum:
-          - 1
-          - 0
           format: int32
         affiliateMarketing:
-          enum:
-          - 1
-          - 0
           format: int32
         ageGated:
-          enum:
-          - 1
-          - 0
           format: int32
         mnos: {}
         referenceId:
@@ -9838,10 +9510,7 @@ components:
           description: ObjectId (unique 12 bytes ID)
         order:
           description: ObjectId (unique 12 bytes ID)
-        status:
-          enum:
-          - verified
-          - unverified
+        status: {}
         brandRelationship:
           maxLength: 45
         vertical:
@@ -9864,10 +9533,6 @@ components:
     numbers:
       properties:
         inUse:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
         name:
           maxLength: 20
@@ -9886,34 +9551,14 @@ components:
         providerOrderId:
           maxLength: 45
         fax:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         voice:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         status:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
         sms:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         mms:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         changeRegionOrderId:
           maxLength: 45
@@ -9943,64 +9588,21 @@ components:
         messageCampaign:
           description: ObjectId (unique 12 bytes ID)
           maxLength: 45
-        messageClass:
-          enum:
-          - P2P
-          - A2PLC
-          - A2P8XX
-        messageType:
-          enum:
-          - SMS
-          - MMS
-          - SMSMMS
-          - SMS_ALT
-          - MMS_ALT
-          - SMSMMS_ALT
+        messageClass: {}
+        messageType: {}
         messageCampaignOrderId:
           maxLength: 45
         messageCampaignOrderDate:
           format: date-time
         e911Supported:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         callerNameSupported:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         directoryListingSupported:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         messagingSupported:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
-        destinationType:
-          default: park
-          enum:
-          - announcements
-          - directories
-          - park
-          - numbers
-          - menus
-          - users
-          - servers
-          - inboundrules
-          - callqueues
-          - faxaccounts
-          - callforwarding
-          - hangup
-          - phoneinboundrules
-          - voicemailaccounts
+        destinationType: {}
         destination:
           description: ObjectId (unique 12 bytes ID)
         ref:
@@ -10018,14 +9620,8 @@ components:
       properties:
         name:
           maxLength: 45
-        type:
-          enum:
-          - port in
-          - port out
-        typeOfService:
-          enum:
-          - business
-          - residence
+        type: {}
+        typeOfService: {}
         authorizedPerson:
           maxLength: 45
         desiredDueDate:
@@ -10038,36 +9634,11 @@ components:
         office:
           description: ObjectId (unique 12 bytes ID)
         e911:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         invoice:
           description: ObjectId (unique 12 bytes ID)
-        status:
-          default: processing
-          enum:
-          - processing
-          - failed
-          - error
-          - completed
-        destinationType:
-          enum:
-          - announcements
-          - directories
-          - park
-          - numbers
-          - menus
-          - users
-          - servers
-          - inboundrules
-          - callqueues
-          - faxaccounts
-          - callforwarding
-          - hangup
-          - phoneinboundrules
-          - voicemailaccounts
+        status: {}
+        destinationType: {}
         destination:
           description: ObjectId (unique 12 bytes ID)
         ref:
@@ -10142,10 +9713,6 @@ components:
         description:
           maxLength: 255
         status:
-          default: 1
-          enum:
-          - 0
-          - 1
           format: int32
         outboundCallerId:
           maxLength: 45
@@ -10162,30 +9729,10 @@ components:
         timeout:
           format: int32
         status:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
         priority:
-          default: 1
           format: int32
-        destinationType:
-          enum:
-          - announcements
-          - directories
-          - park
-          - numbers
-          - menus
-          - users
-          - servers
-          - inboundrules
-          - callqueues
-          - faxaccounts
-          - callforwarding
-          - hangup
-          - phoneinboundrules
-          - voicemailaccounts
+        destinationType: {}
         destination:
           description: ObjectId (unique 12 bytes ID)
         ref:
@@ -10208,25 +9755,14 @@ components:
         phoneoutboundrule:
           description: ObjectId (unique 12 bytes ID)
         status:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
         priority:
-          default: 1
           format: int32
         startingChars:
           maxLength: 20
         contains:
           maxLength: 20
-        lengthType:
-          enum:
-          - atleast
-          - exactly
-          - range
-          - any
-          - null
+        lengthType: {}
         length:
           format: int32
         appendChars:
@@ -10241,17 +9777,8 @@ components:
           format: int32
         removeEndingChars:
           format: int32
-        route:
-          default: default
-          enum:
-          - default
-          - group
-          - pstn
-        routingType:
-          enum:
-          - priority
-          - lb
-          - simultaneous
+        route: {}
+        routingType: {}
       required:
       - name
       - phoneoutboundrule
@@ -10287,46 +9814,27 @@ components:
           maxLength: 45
           minLength: 5
         port:
-          default: 5060
           format: int32
         callerId:
           maxLength: 45
-        type:
-          enum:
-          - sip
-          - skype
+        type: {}
         domesticOutboundCallLimit:
-          default: 10
           format: int32
         domesticInboundCallLimit:
-          default: 10
           format: int32
         internationalOutboundCallLimit:
-          default: 10
           format: int32
         tollFreeChannelLimit:
-          default: 10
           format: int32
         inboundSipTrunkingOrder:
           description: ObjectId (unique 12 bytes ID)
         outboundSipTrunkingOrder:
           description: ObjectId (unique 12 bytes ID)
         noInstantRingBack:
-          enum:
-          - 1
-          - 0
           format: int32
         bypassMedia:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
         disableRTPAutoAdjust:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
       required:
       - domesticInboundCallLimit
@@ -10343,41 +9851,13 @@ components:
           maxLength: 45
         timezone:
           maxLength: 45
-        sunday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-        monday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-        tuesday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-        wednesday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-        thursday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-        friday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-        saturday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
+        sunday: {}
+        monday: {}
+        tuesday: {}
+        wednesday: {}
+        thursday: {}
+        friday: {}
+        saturday: {}
       required:
       - friday
       - monday
@@ -10424,41 +9904,18 @@ components:
         avatar:
           maxLength: 255
         language:
-          default: en
-          enum:
-          - fr
-          - en
-          - ja
-          - de
-          - es
           maxLength: 5
         isPrimary:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
-        status:
-          default: active
-          enum:
-          - active
-          - disabled
-          - terminated
-        vmGreetingType:
-          default: default
-          enum:
-          - default
-          - mp3
-          - number
+        status: {}
+        vmGreetingType: {}
         vmTimeout:
-          default: 20
           format: int32
         vmFile:
           description: ObjectId (unique 12 bytes ID)
         vmPlaybackNumber:
           maxLength: 20
         pin:
-          default: 1234
           format: int32
         number:
           description: ObjectId (unique 12 bytes ID)
@@ -10466,72 +9923,18 @@ components:
           description: ObjectId (unique 12 bytes ID)
         callerIdNumber:
           maxLength: 20
-        adminPermission:
-          enum:
-          - r
-          - rw
-          - null
-        billingPermission:
-          enum:
-          - r
-          - rw
-          - null
-        phonePermission:
-          enum:
-          - r
-          - rw
-          - null
-        agilePermission:
-          enum:
-          - r
-          - rw
-          - null
-        jobServerPermission:
-          enum:
-          - r
-          - rw
-          - null
-        mediaServerPermission:
-          enum:
-          - r
-          - rw
-          - null
-        mailServerPermission:
-          enum:
-          - r
-          - rw
-          - null
-        superAdminPermission:
-          enum:
-          - r
-          - rw
-          - null
+        adminPermission: {}
+        billingPermission: {}
+        phonePermission: {}
+        agilePermission: {}
+        jobServerPermission: {}
+        mediaServerPermission: {}
+        mailServerPermission: {}
+        superAdminPermission: {}
         timezone: {}
         vmTranscription:
-          default: 0
-          enum:
-          - 1
-          - 0
           format: int32
-        communication:
-          default:
-            notifications:
-              email: true
-              sms: true
-            missedCalls:
-              email: true
-              sms: true
-            callRecordings:
-              email: true
-              sms: true
-            newsletters:
-              email: true
-              sms: true
-            voicemails:
-              email: true
-              sms: true
-            web:
-              sounds: true
+        communication: {}
       required:
       - email
       - first
@@ -10548,13 +9951,8 @@ components:
         token:
           maxLength: 2048
         expiresInYears:
-          default: 1
           format: int32
         status:
-          default: 1
-          enum:
-          - 1
-          - 0
           format: int32
       required:
       - expiresInYears
