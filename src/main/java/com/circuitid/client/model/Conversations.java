@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Conversations
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Conversations {
   public static final String SERIALIZED_NAME_CONTACTS = "contacts";
   @SerializedName(SERIALIZED_NAME_CONTACTS)
@@ -61,21 +61,164 @@ public class Conversations {
   @SerializedName(SERIALIZED_NAME_NUMBER)
   private Object number = null;
 
+  /**
+   * Gets or Sets channel
+   */
+  @JsonAdapter(ChannelEnum.Adapter.class)
+  public enum ChannelEnum {
+    EMAIL("email"),
+    
+    SMS("sms"),
+    
+    PHONE("phone");
+
+    private Object value;
+
+    ChannelEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static ChannelEnum fromValue(Object value) {
+      for (ChannelEnum b : ChannelEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<ChannelEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final ChannelEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public ChannelEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return ChannelEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_CHANNEL = "channel";
   @SerializedName(SERIALIZED_NAME_CHANNEL)
-  private Object channel = null;
+  private ChannelEnum channel = null;
+
+  /**
+   * Gets or Sets ref
+   */
+  @JsonAdapter(RefEnum.Adapter.class)
+  public enum RefEnum {
+    CONTACTS("contacts"),
+    
+    USERS("users");
+
+    private Object value;
+
+    RefEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static RefEnum fromValue(Object value) {
+      for (RefEnum b : RefEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<RefEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final RefEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public RefEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return RefEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_REF = "ref";
   @SerializedName(SERIALIZED_NAME_REF)
-  private Object ref = null;
+  private RefEnum ref = null;
 
   public static final String SERIALIZED_NAME_OBJECT = "object";
   @SerializedName(SERIALIZED_NAME_OBJECT)
   private Object _object = null;
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    OPEN("open"),
+    
+    RESOLVED("resolved");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = null;
+  private StatusEnum status = null;
 
   public Conversations() {
   }
@@ -122,7 +265,7 @@ public class Conversations {
   }
 
 
-  public Conversations channel(Object channel) {
+  public Conversations channel(ChannelEnum channel) {
     
     this.channel = channel;
     return this;
@@ -133,17 +276,17 @@ public class Conversations {
    * @return channel
   **/
   @javax.annotation.Nullable
-  public Object getChannel() {
+  public ChannelEnum getChannel() {
     return channel;
   }
 
 
-  public void setChannel(Object channel) {
+  public void setChannel(ChannelEnum channel) {
     this.channel = channel;
   }
 
 
-  public Conversations ref(Object ref) {
+  public Conversations ref(RefEnum ref) {
     
     this.ref = ref;
     return this;
@@ -154,12 +297,12 @@ public class Conversations {
    * @return ref
   **/
   @javax.annotation.Nullable
-  public Object getRef() {
+  public RefEnum getRef() {
     return ref;
   }
 
 
-  public void setRef(Object ref) {
+  public void setRef(RefEnum ref) {
     this.ref = ref;
   }
 
@@ -185,7 +328,7 @@ public class Conversations {
   }
 
 
-  public Conversations status(Object status) {
+  public Conversations status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -196,12 +339,12 @@ public class Conversations {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 

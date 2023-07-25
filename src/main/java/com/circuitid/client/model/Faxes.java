@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Faxes
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Faxes {
   public static final String SERIALIZED_NAME_CALLER_ID_NUMBER = "callerIdNumber";
   @SerializedName(SERIALIZED_NAME_CALLER_ID_NUMBER)
@@ -73,17 +73,113 @@ public class Faxes {
   @SerializedName(SERIALIZED_NAME_TRANSFERED_PAGES)
   private Object transferedPages = null;
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    FAILED("failed"),
+    
+    SUCCESS("success"),
+    
+    PROCESSING("processing");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = null;
+  private StatusEnum status = null;
 
   public static final String SERIALIZED_NAME_ERROR = "error";
   @SerializedName(SERIALIZED_NAME_ERROR)
   private Object error = null;
 
+  /**
+   * Gets or Sets type
+   */
+  @JsonAdapter(TypeEnum.Adapter.class)
+  public enum TypeEnum {
+    SEND("send"),
+    
+    RECEIVE("receive");
+
+    private Object value;
+
+    TypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TypeEnum fromValue(Object value) {
+      for (TypeEnum b : TypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return TypeEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
-  private Object type = null;
+  private TypeEnum type = null;
 
   public static final String SERIALIZED_NAME_ORDER = "order";
   @SerializedName(SERIALIZED_NAME_ORDER)
@@ -229,7 +325,7 @@ public class Faxes {
   }
 
 
-  public Faxes status(Object status) {
+  public Faxes status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -240,12 +336,12 @@ public class Faxes {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 
@@ -271,7 +367,7 @@ public class Faxes {
   }
 
 
-  public Faxes type(Object type) {
+  public Faxes type(TypeEnum type) {
     
     this.type = type;
     return this;
@@ -282,12 +378,12 @@ public class Faxes {
    * @return type
   **/
   @javax.annotation.Nullable
-  public Object getType() {
+  public TypeEnum getType() {
     return type;
   }
 
 
-  public void setType(Object type) {
+  public void setType(TypeEnum type) {
     this.type = type;
   }
 

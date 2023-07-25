@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Chatrooms
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Chatrooms {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -65,9 +65,56 @@ public class Chatrooms {
   @SerializedName(SERIALIZED_NAME_AVATAR)
   private Object avatar = null;
 
+  /**
+   * Gets or Sets direct
+   */
+  @JsonAdapter(DirectEnum.Adapter.class)
+  public enum DirectEnum {
+    TRUE("true"),
+    
+    FALSE("false");
+
+    private Object value;
+
+    DirectEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DirectEnum fromValue(Object value) {
+      for (DirectEnum b : DirectEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DirectEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DirectEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DirectEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DirectEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_DIRECT = "direct";
   @SerializedName(SERIALIZED_NAME_DIRECT)
-  private Object direct = null;
+  private DirectEnum direct = null;
 
   public Chatrooms() {
   }
@@ -135,7 +182,7 @@ public class Chatrooms {
   }
 
 
-  public Chatrooms direct(Object direct) {
+  public Chatrooms direct(DirectEnum direct) {
     
     this.direct = direct;
     return this;
@@ -146,12 +193,12 @@ public class Chatrooms {
    * @return direct
   **/
   @javax.annotation.Nullable
-  public Object getDirect() {
+  public DirectEnum getDirect() {
     return direct;
   }
 
 
-  public void setDirect(Object direct) {
+  public void setDirect(DirectEnum direct) {
     this.direct = direct;
   }
 

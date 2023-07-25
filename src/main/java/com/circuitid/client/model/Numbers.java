@@ -51,11 +51,58 @@ import com.circuitid.client.JSON;
 /**
  * Numbers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Numbers {
+  /**
+   * Gets or Sets inUse
+   */
+  @JsonAdapter(InUseEnum.Adapter.class)
+  public enum InUseEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    InUseEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static InUseEnum fromValue(Object value) {
+      for (InUseEnum b : InUseEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<InUseEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final InUseEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public InUseEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return InUseEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_IN_USE = "inUse";
   @SerializedName(SERIALIZED_NAME_IN_USE)
-  private Object inUse = null;
+  private InUseEnum inUse = null;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -85,25 +132,260 @@ public class Numbers {
   @SerializedName(SERIALIZED_NAME_PROVIDER_ORDER_ID)
   private Object providerOrderId = null;
 
+  /**
+   * Gets or Sets fax
+   */
+  @JsonAdapter(FaxEnum.Adapter.class)
+  public enum FaxEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    FaxEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static FaxEnum fromValue(Object value) {
+      for (FaxEnum b : FaxEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<FaxEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final FaxEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public FaxEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return FaxEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_FAX = "fax";
   @SerializedName(SERIALIZED_NAME_FAX)
-  private Object fax = null;
+  private FaxEnum fax = null;
+
+  /**
+   * Gets or Sets voice
+   */
+  @JsonAdapter(VoiceEnum.Adapter.class)
+  public enum VoiceEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    VoiceEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static VoiceEnum fromValue(Object value) {
+      for (VoiceEnum b : VoiceEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<VoiceEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final VoiceEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public VoiceEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return VoiceEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_VOICE = "voice";
   @SerializedName(SERIALIZED_NAME_VOICE)
-  private Object voice = null;
+  private VoiceEnum voice = null;
+
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = null;
+  private StatusEnum status = null;
+
+  /**
+   * Gets or Sets sms
+   */
+  @JsonAdapter(SmsEnum.Adapter.class)
+  public enum SmsEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    SmsEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static SmsEnum fromValue(Object value) {
+      for (SmsEnum b : SmsEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<SmsEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final SmsEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public SmsEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return SmsEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_SMS = "sms";
   @SerializedName(SERIALIZED_NAME_SMS)
-  private Object sms = null;
+  private SmsEnum sms = null;
+
+  /**
+   * Gets or Sets mms
+   */
+  @JsonAdapter(MmsEnum.Adapter.class)
+  public enum MmsEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    MmsEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static MmsEnum fromValue(Object value) {
+      for (MmsEnum b : MmsEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<MmsEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final MmsEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public MmsEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return MmsEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_MMS = "mms";
   @SerializedName(SERIALIZED_NAME_MMS)
-  private Object mms = null;
+  private MmsEnum mms = null;
 
   public static final String SERIALIZED_NAME_CHANGE_REGION_ORDER_ID = "changeRegionOrderId";
   @SerializedName(SERIALIZED_NAME_CHANGE_REGION_ORDER_ID)
@@ -153,13 +435,117 @@ public class Numbers {
   @SerializedName(SERIALIZED_NAME_MESSAGE_CAMPAIGN)
   private Object messageCampaign = null;
 
+  /**
+   * Gets or Sets messageClass
+   */
+  @JsonAdapter(MessageClassEnum.Adapter.class)
+  public enum MessageClassEnum {
+    P2P("P2P"),
+    
+    A2PLC("A2PLC"),
+    
+    A2P8XX("A2P8XX");
+
+    private Object value;
+
+    MessageClassEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static MessageClassEnum fromValue(Object value) {
+      for (MessageClassEnum b : MessageClassEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<MessageClassEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final MessageClassEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public MessageClassEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return MessageClassEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_MESSAGE_CLASS = "messageClass";
   @SerializedName(SERIALIZED_NAME_MESSAGE_CLASS)
-  private Object messageClass = null;
+  private MessageClassEnum messageClass = null;
+
+  /**
+   * Gets or Sets messageType
+   */
+  @JsonAdapter(MessageTypeEnum.Adapter.class)
+  public enum MessageTypeEnum {
+    SMS("SMS"),
+    
+    MMS("MMS"),
+    
+    SMSMMS("SMSMMS"),
+    
+    SMS_ALT("SMS_ALT"),
+    
+    MMS_ALT("MMS_ALT"),
+    
+    SMSMMS_ALT("SMSMMS_ALT");
+
+    private Object value;
+
+    MessageTypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static MessageTypeEnum fromValue(Object value) {
+      for (MessageTypeEnum b : MessageTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<MessageTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final MessageTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public MessageTypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return MessageTypeEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_MESSAGE_TYPE = "messageType";
   @SerializedName(SERIALIZED_NAME_MESSAGE_TYPE)
-  private Object messageType = null;
+  private MessageTypeEnum messageType = null;
 
   public static final String SERIALIZED_NAME_MESSAGE_CAMPAIGN_ORDER_ID = "messageCampaignOrderId";
   @SerializedName(SERIALIZED_NAME_MESSAGE_CAMPAIGN_ORDER_ID)
@@ -169,25 +555,284 @@ public class Numbers {
   @SerializedName(SERIALIZED_NAME_MESSAGE_CAMPAIGN_ORDER_DATE)
   private Object messageCampaignOrderDate = null;
 
+  /**
+   * Gets or Sets e911Supported
+   */
+  @JsonAdapter(E911SupportedEnum.Adapter.class)
+  public enum E911SupportedEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    E911SupportedEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static E911SupportedEnum fromValue(Object value) {
+      for (E911SupportedEnum b : E911SupportedEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<E911SupportedEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final E911SupportedEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public E911SupportedEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return E911SupportedEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_E911_SUPPORTED = "e911Supported";
   @SerializedName(SERIALIZED_NAME_E911_SUPPORTED)
-  private Object e911Supported = null;
+  private E911SupportedEnum e911Supported = null;
+
+  /**
+   * Gets or Sets callerNameSupported
+   */
+  @JsonAdapter(CallerNameSupportedEnum.Adapter.class)
+  public enum CallerNameSupportedEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    CallerNameSupportedEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static CallerNameSupportedEnum fromValue(Object value) {
+      for (CallerNameSupportedEnum b : CallerNameSupportedEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<CallerNameSupportedEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final CallerNameSupportedEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public CallerNameSupportedEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return CallerNameSupportedEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_CALLER_NAME_SUPPORTED = "callerNameSupported";
   @SerializedName(SERIALIZED_NAME_CALLER_NAME_SUPPORTED)
-  private Object callerNameSupported = null;
+  private CallerNameSupportedEnum callerNameSupported = null;
+
+  /**
+   * Gets or Sets directoryListingSupported
+   */
+  @JsonAdapter(DirectoryListingSupportedEnum.Adapter.class)
+  public enum DirectoryListingSupportedEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    DirectoryListingSupportedEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DirectoryListingSupportedEnum fromValue(Object value) {
+      for (DirectoryListingSupportedEnum b : DirectoryListingSupportedEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DirectoryListingSupportedEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DirectoryListingSupportedEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DirectoryListingSupportedEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DirectoryListingSupportedEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_DIRECTORY_LISTING_SUPPORTED = "directoryListingSupported";
   @SerializedName(SERIALIZED_NAME_DIRECTORY_LISTING_SUPPORTED)
-  private Object directoryListingSupported = null;
+  private DirectoryListingSupportedEnum directoryListingSupported = null;
+
+  /**
+   * Gets or Sets messagingSupported
+   */
+  @JsonAdapter(MessagingSupportedEnum.Adapter.class)
+  public enum MessagingSupportedEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    MessagingSupportedEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static MessagingSupportedEnum fromValue(Object value) {
+      for (MessagingSupportedEnum b : MessagingSupportedEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<MessagingSupportedEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final MessagingSupportedEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public MessagingSupportedEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return MessagingSupportedEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_MESSAGING_SUPPORTED = "messagingSupported";
   @SerializedName(SERIALIZED_NAME_MESSAGING_SUPPORTED)
-  private Object messagingSupported = null;
+  private MessagingSupportedEnum messagingSupported = null;
+
+  /**
+   * Gets or Sets destinationType
+   */
+  @JsonAdapter(DestinationTypeEnum.Adapter.class)
+  public enum DestinationTypeEnum {
+    ANNOUNCEMENTS("announcements"),
+    
+    DIRECTORIES("directories"),
+    
+    PARK("park"),
+    
+    NUMBERS("numbers"),
+    
+    MENUS("menus"),
+    
+    USERS("users"),
+    
+    SERVERS("servers"),
+    
+    INBOUNDRULES("inboundrules"),
+    
+    CALLQUEUES("callqueues"),
+    
+    FAXACCOUNTS("faxaccounts"),
+    
+    CALLFORWARDING("callforwarding"),
+    
+    HANGUP("hangup"),
+    
+    PHONEINBOUNDRULES("phoneinboundrules"),
+    
+    VOICEMAILACCOUNTS("voicemailaccounts");
+
+    private Object value;
+
+    DestinationTypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DestinationTypeEnum fromValue(Object value) {
+      for (DestinationTypeEnum b : DestinationTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DestinationTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DestinationTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DestinationTypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DestinationTypeEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_DESTINATION_TYPE = "destinationType";
   @SerializedName(SERIALIZED_NAME_DESTINATION_TYPE)
-  private Object destinationType = null;
+  private DestinationTypeEnum destinationType = null;
 
   public static final String SERIALIZED_NAME_DESTINATION = "destination";
   @SerializedName(SERIALIZED_NAME_DESTINATION)
@@ -204,7 +849,7 @@ public class Numbers {
   public Numbers() {
   }
 
-  public Numbers inUse(Object inUse) {
+  public Numbers inUse(InUseEnum inUse) {
     
     this.inUse = inUse;
     return this;
@@ -215,12 +860,12 @@ public class Numbers {
    * @return inUse
   **/
   @javax.annotation.Nullable
-  public Object getInUse() {
+  public InUseEnum getInUse() {
     return inUse;
   }
 
 
-  public void setInUse(Object inUse) {
+  public void setInUse(InUseEnum inUse) {
     this.inUse = inUse;
   }
 
@@ -372,7 +1017,7 @@ public class Numbers {
   }
 
 
-  public Numbers fax(Object fax) {
+  public Numbers fax(FaxEnum fax) {
     
     this.fax = fax;
     return this;
@@ -383,17 +1028,17 @@ public class Numbers {
    * @return fax
   **/
   @javax.annotation.Nullable
-  public Object getFax() {
+  public FaxEnum getFax() {
     return fax;
   }
 
 
-  public void setFax(Object fax) {
+  public void setFax(FaxEnum fax) {
     this.fax = fax;
   }
 
 
-  public Numbers voice(Object voice) {
+  public Numbers voice(VoiceEnum voice) {
     
     this.voice = voice;
     return this;
@@ -404,17 +1049,17 @@ public class Numbers {
    * @return voice
   **/
   @javax.annotation.Nullable
-  public Object getVoice() {
+  public VoiceEnum getVoice() {
     return voice;
   }
 
 
-  public void setVoice(Object voice) {
+  public void setVoice(VoiceEnum voice) {
     this.voice = voice;
   }
 
 
-  public Numbers status(Object status) {
+  public Numbers status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -425,17 +1070,17 @@ public class Numbers {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 
 
-  public Numbers sms(Object sms) {
+  public Numbers sms(SmsEnum sms) {
     
     this.sms = sms;
     return this;
@@ -446,17 +1091,17 @@ public class Numbers {
    * @return sms
   **/
   @javax.annotation.Nullable
-  public Object getSms() {
+  public SmsEnum getSms() {
     return sms;
   }
 
 
-  public void setSms(Object sms) {
+  public void setSms(SmsEnum sms) {
     this.sms = sms;
   }
 
 
-  public Numbers mms(Object mms) {
+  public Numbers mms(MmsEnum mms) {
     
     this.mms = mms;
     return this;
@@ -467,12 +1112,12 @@ public class Numbers {
    * @return mms
   **/
   @javax.annotation.Nullable
-  public Object getMms() {
+  public MmsEnum getMms() {
     return mms;
   }
 
 
-  public void setMms(Object mms) {
+  public void setMms(MmsEnum mms) {
     this.mms = mms;
   }
 
@@ -729,7 +1374,7 @@ public class Numbers {
   }
 
 
-  public Numbers messageClass(Object messageClass) {
+  public Numbers messageClass(MessageClassEnum messageClass) {
     
     this.messageClass = messageClass;
     return this;
@@ -740,17 +1385,17 @@ public class Numbers {
    * @return messageClass
   **/
   @javax.annotation.Nullable
-  public Object getMessageClass() {
+  public MessageClassEnum getMessageClass() {
     return messageClass;
   }
 
 
-  public void setMessageClass(Object messageClass) {
+  public void setMessageClass(MessageClassEnum messageClass) {
     this.messageClass = messageClass;
   }
 
 
-  public Numbers messageType(Object messageType) {
+  public Numbers messageType(MessageTypeEnum messageType) {
     
     this.messageType = messageType;
     return this;
@@ -761,12 +1406,12 @@ public class Numbers {
    * @return messageType
   **/
   @javax.annotation.Nullable
-  public Object getMessageType() {
+  public MessageTypeEnum getMessageType() {
     return messageType;
   }
 
 
-  public void setMessageType(Object messageType) {
+  public void setMessageType(MessageTypeEnum messageType) {
     this.messageType = messageType;
   }
 
@@ -813,7 +1458,7 @@ public class Numbers {
   }
 
 
-  public Numbers e911Supported(Object e911Supported) {
+  public Numbers e911Supported(E911SupportedEnum e911Supported) {
     
     this.e911Supported = e911Supported;
     return this;
@@ -824,17 +1469,17 @@ public class Numbers {
    * @return e911Supported
   **/
   @javax.annotation.Nullable
-  public Object getE911Supported() {
+  public E911SupportedEnum getE911Supported() {
     return e911Supported;
   }
 
 
-  public void setE911Supported(Object e911Supported) {
+  public void setE911Supported(E911SupportedEnum e911Supported) {
     this.e911Supported = e911Supported;
   }
 
 
-  public Numbers callerNameSupported(Object callerNameSupported) {
+  public Numbers callerNameSupported(CallerNameSupportedEnum callerNameSupported) {
     
     this.callerNameSupported = callerNameSupported;
     return this;
@@ -845,17 +1490,17 @@ public class Numbers {
    * @return callerNameSupported
   **/
   @javax.annotation.Nullable
-  public Object getCallerNameSupported() {
+  public CallerNameSupportedEnum getCallerNameSupported() {
     return callerNameSupported;
   }
 
 
-  public void setCallerNameSupported(Object callerNameSupported) {
+  public void setCallerNameSupported(CallerNameSupportedEnum callerNameSupported) {
     this.callerNameSupported = callerNameSupported;
   }
 
 
-  public Numbers directoryListingSupported(Object directoryListingSupported) {
+  public Numbers directoryListingSupported(DirectoryListingSupportedEnum directoryListingSupported) {
     
     this.directoryListingSupported = directoryListingSupported;
     return this;
@@ -866,17 +1511,17 @@ public class Numbers {
    * @return directoryListingSupported
   **/
   @javax.annotation.Nullable
-  public Object getDirectoryListingSupported() {
+  public DirectoryListingSupportedEnum getDirectoryListingSupported() {
     return directoryListingSupported;
   }
 
 
-  public void setDirectoryListingSupported(Object directoryListingSupported) {
+  public void setDirectoryListingSupported(DirectoryListingSupportedEnum directoryListingSupported) {
     this.directoryListingSupported = directoryListingSupported;
   }
 
 
-  public Numbers messagingSupported(Object messagingSupported) {
+  public Numbers messagingSupported(MessagingSupportedEnum messagingSupported) {
     
     this.messagingSupported = messagingSupported;
     return this;
@@ -887,17 +1532,17 @@ public class Numbers {
    * @return messagingSupported
   **/
   @javax.annotation.Nullable
-  public Object getMessagingSupported() {
+  public MessagingSupportedEnum getMessagingSupported() {
     return messagingSupported;
   }
 
 
-  public void setMessagingSupported(Object messagingSupported) {
+  public void setMessagingSupported(MessagingSupportedEnum messagingSupported) {
     this.messagingSupported = messagingSupported;
   }
 
 
-  public Numbers destinationType(Object destinationType) {
+  public Numbers destinationType(DestinationTypeEnum destinationType) {
     
     this.destinationType = destinationType;
     return this;
@@ -908,12 +1553,12 @@ public class Numbers {
    * @return destinationType
   **/
   @javax.annotation.Nullable
-  public Object getDestinationType() {
+  public DestinationTypeEnum getDestinationType() {
     return destinationType;
   }
 
 
-  public void setDestinationType(Object destinationType) {
+  public void setDestinationType(DestinationTypeEnum destinationType) {
     this.destinationType = destinationType;
   }
 

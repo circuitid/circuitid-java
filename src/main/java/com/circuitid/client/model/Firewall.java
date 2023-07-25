@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Firewall
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Firewall {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -65,17 +65,162 @@ public class Firewall {
   @SerializedName(SERIALIZED_NAME_PRIORITY)
   private Object priority = null;
 
+  /**
+   * Gets or Sets type
+   */
+  @JsonAdapter(TypeEnum.Adapter.class)
+  public enum TypeEnum {
+    ALLOW("allow"),
+    
+    DENY("deny");
+
+    private Object value;
+
+    TypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TypeEnum fromValue(Object value) {
+      for (TypeEnum b : TypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return TypeEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
-  private Object type = null;
+  private TypeEnum type = null;
+
+  /**
+   * Gets or Sets target
+   */
+  @JsonAdapter(TargetEnum.Adapter.class)
+  public enum TargetEnum {
+    NUMBERS("numbers"),
+    
+    IPADDRESSES("ipaddresses"),
+    
+    SMS("sms");
+
+    private Object value;
+
+    TargetEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TargetEnum fromValue(Object value) {
+      for (TargetEnum b : TargetEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TargetEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TargetEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TargetEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return TargetEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_TARGET = "target";
   @SerializedName(SERIALIZED_NAME_TARGET)
-  private Object target = null;
+  private TargetEnum target = null;
+
+  /**
+   * Gets or Sets direction
+   */
+  @JsonAdapter(DirectionEnum.Adapter.class)
+  public enum DirectionEnum {
+    INBOUND("inbound"),
+    
+    OUTBOUND("outbound"),
+    
+    BOTH("both");
+
+    private Object value;
+
+    DirectionEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DirectionEnum fromValue(Object value) {
+      for (DirectionEnum b : DirectionEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DirectionEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DirectionEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DirectionEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DirectionEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_DIRECTION = "direction";
   @SerializedName(SERIALIZED_NAME_DIRECTION)
-  private Object direction = null;
+  private DirectionEnum direction = null;
 
   public static final String SERIALIZED_NAME_PARAM = "param";
   @SerializedName(SERIALIZED_NAME_PARAM)
@@ -85,13 +230,107 @@ public class Firewall {
   @SerializedName(SERIALIZED_NAME_HITS)
   private Object hits = null;
 
+  /**
+   * Gets or Sets ai
+   */
+  @JsonAdapter(AiEnum.Adapter.class)
+  public enum AiEnum {
+    _0("0"),
+    
+    _1("1");
+
+    private Object value;
+
+    AiEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static AiEnum fromValue(Object value) {
+      for (AiEnum b : AiEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<AiEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final AiEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public AiEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return AiEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_AI = "ai";
   @SerializedName(SERIALIZED_NAME_AI)
-  private Object ai = null;
+  private AiEnum ai = null;
+
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    _0("0"),
+    
+    _1("1");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = null;
+  private StatusEnum status = null;
 
   public static final String SERIALIZED_NAME_NOTIFICATION_HITS = "notificationHits";
   @SerializedName(SERIALIZED_NAME_NOTIFICATION_HITS)
@@ -163,7 +402,7 @@ public class Firewall {
   }
 
 
-  public Firewall type(Object type) {
+  public Firewall type(TypeEnum type) {
     
     this.type = type;
     return this;
@@ -174,17 +413,17 @@ public class Firewall {
    * @return type
   **/
   @javax.annotation.Nullable
-  public Object getType() {
+  public TypeEnum getType() {
     return type;
   }
 
 
-  public void setType(Object type) {
+  public void setType(TypeEnum type) {
     this.type = type;
   }
 
 
-  public Firewall target(Object target) {
+  public Firewall target(TargetEnum target) {
     
     this.target = target;
     return this;
@@ -195,17 +434,17 @@ public class Firewall {
    * @return target
   **/
   @javax.annotation.Nullable
-  public Object getTarget() {
+  public TargetEnum getTarget() {
     return target;
   }
 
 
-  public void setTarget(Object target) {
+  public void setTarget(TargetEnum target) {
     this.target = target;
   }
 
 
-  public Firewall direction(Object direction) {
+  public Firewall direction(DirectionEnum direction) {
     
     this.direction = direction;
     return this;
@@ -216,12 +455,12 @@ public class Firewall {
    * @return direction
   **/
   @javax.annotation.Nullable
-  public Object getDirection() {
+  public DirectionEnum getDirection() {
     return direction;
   }
 
 
-  public void setDirection(Object direction) {
+  public void setDirection(DirectionEnum direction) {
     this.direction = direction;
   }
 
@@ -268,7 +507,7 @@ public class Firewall {
   }
 
 
-  public Firewall ai(Object ai) {
+  public Firewall ai(AiEnum ai) {
     
     this.ai = ai;
     return this;
@@ -279,17 +518,17 @@ public class Firewall {
    * @return ai
   **/
   @javax.annotation.Nullable
-  public Object getAi() {
+  public AiEnum getAi() {
     return ai;
   }
 
 
-  public void setAi(Object ai) {
+  public void setAi(AiEnum ai) {
     this.ai = ai;
   }
 
 
-  public Firewall status(Object status) {
+  public Firewall status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -300,12 +539,12 @@ public class Firewall {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 

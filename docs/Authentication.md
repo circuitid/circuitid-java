@@ -9,7 +9,15 @@
 |------------ | ------------- | ------------- | -------------|
 |**username** | **Object** |  |  |
 |**password** | **Object** |  |  |
-|**strategy** | **Object** |  |  |
+|**strategy** | [**StrategyEnum**](#StrategyEnum) |  |  |
+
+
+
+## Enum: StrategyEnum
+
+| Name | Value |
+|---- | -----|
+| LOCAL | &quot;local&quot; |
 
 
 

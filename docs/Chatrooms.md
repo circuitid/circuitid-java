@@ -10,7 +10,16 @@
 |**name** | **Object** |  |  [optional] |
 |**users** | **Object** |  |  |
 |**avatar** | **Object** |  |  [optional] |
-|**direct** | **Object** |  |  [optional] |
+|**direct** | [**DirectEnum**](#DirectEnum) |  |  [optional] |
+
+
+
+## Enum: DirectEnum
+
+| Name | Value |
+|---- | -----|
+| TRUE | &quot;true&quot; |
+| FALSE | &quot;false&quot; |
 
 
 

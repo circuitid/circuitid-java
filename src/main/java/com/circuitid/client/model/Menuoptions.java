@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Menuoptions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Menuoptions {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -65,9 +65,80 @@ public class Menuoptions {
   @SerializedName(SERIALIZED_NAME_MENUS)
   private Object menus = null;
 
+  /**
+   * Gets or Sets destinationType
+   */
+  @JsonAdapter(DestinationTypeEnum.Adapter.class)
+  public enum DestinationTypeEnum {
+    ANNOUNCEMENTS("announcements"),
+    
+    DIRECTORIES("directories"),
+    
+    PARK("park"),
+    
+    NUMBERS("numbers"),
+    
+    MENUS("menus"),
+    
+    USERS("users"),
+    
+    SERVERS("servers"),
+    
+    INBOUNDRULES("inboundrules"),
+    
+    CALLQUEUES("callqueues"),
+    
+    FAXACCOUNTS("faxaccounts"),
+    
+    CALLFORWARDING("callforwarding"),
+    
+    HANGUP("hangup"),
+    
+    PHONEINBOUNDRULES("phoneinboundrules"),
+    
+    VOICEMAILACCOUNTS("voicemailaccounts");
+
+    private Object value;
+
+    DestinationTypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DestinationTypeEnum fromValue(Object value) {
+      for (DestinationTypeEnum b : DestinationTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DestinationTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DestinationTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DestinationTypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DestinationTypeEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_DESTINATION_TYPE = "destinationType";
   @SerializedName(SERIALIZED_NAME_DESTINATION_TYPE)
-  private Object destinationType = null;
+  private DestinationTypeEnum destinationType = null;
 
   public static final String SERIALIZED_NAME_DESTINATION = "destination";
   @SerializedName(SERIALIZED_NAME_DESTINATION)
@@ -147,7 +218,7 @@ public class Menuoptions {
   }
 
 
-  public Menuoptions destinationType(Object destinationType) {
+  public Menuoptions destinationType(DestinationTypeEnum destinationType) {
     
     this.destinationType = destinationType;
     return this;
@@ -158,12 +229,12 @@ public class Menuoptions {
    * @return destinationType
   **/
   @javax.annotation.Nullable
-  public Object getDestinationType() {
+  public DestinationTypeEnum getDestinationType() {
     return destinationType;
   }
 
 
-  public void setDestinationType(Object destinationType) {
+  public void setDestinationType(DestinationTypeEnum destinationType) {
     this.destinationType = destinationType;
   }
 

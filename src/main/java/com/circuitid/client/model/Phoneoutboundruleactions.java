@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Phoneoutboundruleactions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Phoneoutboundruleactions {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -65,9 +65,56 @@ public class Phoneoutboundruleactions {
   @SerializedName(SERIALIZED_NAME_PHONEOUTBOUNDRULE)
   private Object phoneoutboundrule = null;
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = null;
+  private StatusEnum status = null;
 
   public static final String SERIALIZED_NAME_PRIORITY = "priority";
   @SerializedName(SERIALIZED_NAME_PRIORITY)
@@ -81,9 +128,62 @@ public class Phoneoutboundruleactions {
   @SerializedName(SERIALIZED_NAME_CONTAINS)
   private Object contains = null;
 
+  /**
+   * Gets or Sets lengthType
+   */
+  @JsonAdapter(LengthTypeEnum.Adapter.class)
+  public enum LengthTypeEnum {
+    ATLEAST("atleast"),
+    
+    EXACTLY("exactly"),
+    
+    RANGE("range"),
+    
+    ANY("any"),
+    
+    NULL("null");
+
+    private Object value;
+
+    LengthTypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static LengthTypeEnum fromValue(Object value) {
+      for (LengthTypeEnum b : LengthTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<LengthTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final LengthTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public LengthTypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return LengthTypeEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_LENGTH_TYPE = "lengthType";
   @SerializedName(SERIALIZED_NAME_LENGTH_TYPE)
-  private Object lengthType = null;
+  private LengthTypeEnum lengthType = null;
 
   public static final String SERIALIZED_NAME_LENGTH = "length";
   @SerializedName(SERIALIZED_NAME_LENGTH)
@@ -113,13 +213,111 @@ public class Phoneoutboundruleactions {
   @SerializedName(SERIALIZED_NAME_REMOVE_ENDING_CHARS)
   private Object removeEndingChars = null;
 
+  /**
+   * Gets or Sets route
+   */
+  @JsonAdapter(RouteEnum.Adapter.class)
+  public enum RouteEnum {
+    DEFAULT("default"),
+    
+    GROUP("group"),
+    
+    PSTN("pstn");
+
+    private Object value;
+
+    RouteEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static RouteEnum fromValue(Object value) {
+      for (RouteEnum b : RouteEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<RouteEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final RouteEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public RouteEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return RouteEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_ROUTE = "route";
   @SerializedName(SERIALIZED_NAME_ROUTE)
-  private Object route = null;
+  private RouteEnum route = null;
+
+  /**
+   * Gets or Sets routingType
+   */
+  @JsonAdapter(RoutingTypeEnum.Adapter.class)
+  public enum RoutingTypeEnum {
+    PRIORITY("priority"),
+    
+    LB("lb"),
+    
+    SIMULTANEOUS("simultaneous");
+
+    private Object value;
+
+    RoutingTypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static RoutingTypeEnum fromValue(Object value) {
+      for (RoutingTypeEnum b : RoutingTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<RoutingTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final RoutingTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public RoutingTypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return RoutingTypeEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_ROUTING_TYPE = "routingType";
   @SerializedName(SERIALIZED_NAME_ROUTING_TYPE)
-  private Object routingType = null;
+  private RoutingTypeEnum routingType = null;
 
   public Phoneoutboundruleactions() {
   }
@@ -187,7 +385,7 @@ public class Phoneoutboundruleactions {
   }
 
 
-  public Phoneoutboundruleactions status(Object status) {
+  public Phoneoutboundruleactions status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -198,12 +396,12 @@ public class Phoneoutboundruleactions {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 
@@ -271,7 +469,7 @@ public class Phoneoutboundruleactions {
   }
 
 
-  public Phoneoutboundruleactions lengthType(Object lengthType) {
+  public Phoneoutboundruleactions lengthType(LengthTypeEnum lengthType) {
     
     this.lengthType = lengthType;
     return this;
@@ -282,12 +480,12 @@ public class Phoneoutboundruleactions {
    * @return lengthType
   **/
   @javax.annotation.Nullable
-  public Object getLengthType() {
+  public LengthTypeEnum getLengthType() {
     return lengthType;
   }
 
 
-  public void setLengthType(Object lengthType) {
+  public void setLengthType(LengthTypeEnum lengthType) {
     this.lengthType = lengthType;
   }
 
@@ -439,7 +637,7 @@ public class Phoneoutboundruleactions {
   }
 
 
-  public Phoneoutboundruleactions route(Object route) {
+  public Phoneoutboundruleactions route(RouteEnum route) {
     
     this.route = route;
     return this;
@@ -450,17 +648,17 @@ public class Phoneoutboundruleactions {
    * @return route
   **/
   @javax.annotation.Nullable
-  public Object getRoute() {
+  public RouteEnum getRoute() {
     return route;
   }
 
 
-  public void setRoute(Object route) {
+  public void setRoute(RouteEnum route) {
     this.route = route;
   }
 
 
-  public Phoneoutboundruleactions routingType(Object routingType) {
+  public Phoneoutboundruleactions routingType(RoutingTypeEnum routingType) {
     
     this.routingType = routingType;
     return this;
@@ -471,12 +669,12 @@ public class Phoneoutboundruleactions {
    * @return routingType
   **/
   @javax.annotation.Nullable
-  public Object getRoutingType() {
+  public RoutingTypeEnum getRoutingType() {
     return routingType;
   }
 
 
-  public void setRoutingType(Object routingType) {
+  public void setRoutingType(RoutingTypeEnum routingType) {
     this.routingType = routingType;
   }
 

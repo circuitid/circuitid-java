@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Conferencerooms
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Conferencerooms {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -65,25 +65,260 @@ public class Conferencerooms {
   @SerializedName(SERIALIZED_NAME_DIAL_IN_PIN)
   private Object dialInPin = null;
 
+  /**
+   * Gets or Sets isUserRoom
+   */
+  @JsonAdapter(IsUserRoomEnum.Adapter.class)
+  public enum IsUserRoomEnum {
+    TRUE("true"),
+    
+    FALSE("false");
+
+    private Object value;
+
+    IsUserRoomEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static IsUserRoomEnum fromValue(Object value) {
+      for (IsUserRoomEnum b : IsUserRoomEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<IsUserRoomEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final IsUserRoomEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public IsUserRoomEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return IsUserRoomEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_IS_USER_ROOM = "isUserRoom";
   @SerializedName(SERIALIZED_NAME_IS_USER_ROOM)
-  private Object isUserRoom = null;
+  private IsUserRoomEnum isUserRoom = null;
+
+  /**
+   * Gets or Sets isChatRoom
+   */
+  @JsonAdapter(IsChatRoomEnum.Adapter.class)
+  public enum IsChatRoomEnum {
+    TRUE("true"),
+    
+    FALSE("false");
+
+    private Object value;
+
+    IsChatRoomEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static IsChatRoomEnum fromValue(Object value) {
+      for (IsChatRoomEnum b : IsChatRoomEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<IsChatRoomEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final IsChatRoomEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public IsChatRoomEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return IsChatRoomEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_IS_CHAT_ROOM = "isChatRoom";
   @SerializedName(SERIALIZED_NAME_IS_CHAT_ROOM)
-  private Object isChatRoom = null;
+  private IsChatRoomEnum isChatRoom = null;
+
+  /**
+   * Gets or Sets lobby
+   */
+  @JsonAdapter(LobbyEnum.Adapter.class)
+  public enum LobbyEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    LobbyEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static LobbyEnum fromValue(Object value) {
+      for (LobbyEnum b : LobbyEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<LobbyEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final LobbyEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public LobbyEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return LobbyEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_LOBBY = "lobby";
   @SerializedName(SERIALIZED_NAME_LOBBY)
-  private Object lobby = null;
+  private LobbyEnum lobby = null;
+
+  /**
+   * Gets or Sets requirePasscode
+   */
+  @JsonAdapter(RequirePasscodeEnum.Adapter.class)
+  public enum RequirePasscodeEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    RequirePasscodeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static RequirePasscodeEnum fromValue(Object value) {
+      for (RequirePasscodeEnum b : RequirePasscodeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<RequirePasscodeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final RequirePasscodeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public RequirePasscodeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return RequirePasscodeEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_REQUIRE_PASSCODE = "requirePasscode";
   @SerializedName(SERIALIZED_NAME_REQUIRE_PASSCODE)
-  private Object requirePasscode = null;
+  private RequirePasscodeEnum requirePasscode = null;
+
+  /**
+   * Gets or Sets share
+   */
+  @JsonAdapter(ShareEnum.Adapter.class)
+  public enum ShareEnum {
+    GROUPS("groups"),
+    
+    CUSTOMERS("customers");
+
+    private Object value;
+
+    ShareEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static ShareEnum fromValue(Object value) {
+      for (ShareEnum b : ShareEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<ShareEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final ShareEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public ShareEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return ShareEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_SHARE = "share";
   @SerializedName(SERIALIZED_NAME_SHARE)
-  private Object share = null;
+  private ShareEnum share = null;
 
   public static final String SERIALIZED_NAME_CHATROOM = "chatroom";
   @SerializedName(SERIALIZED_NAME_CHATROOM)
@@ -155,7 +390,7 @@ public class Conferencerooms {
   }
 
 
-  public Conferencerooms isUserRoom(Object isUserRoom) {
+  public Conferencerooms isUserRoom(IsUserRoomEnum isUserRoom) {
     
     this.isUserRoom = isUserRoom;
     return this;
@@ -166,17 +401,17 @@ public class Conferencerooms {
    * @return isUserRoom
   **/
   @javax.annotation.Nullable
-  public Object getIsUserRoom() {
+  public IsUserRoomEnum getIsUserRoom() {
     return isUserRoom;
   }
 
 
-  public void setIsUserRoom(Object isUserRoom) {
+  public void setIsUserRoom(IsUserRoomEnum isUserRoom) {
     this.isUserRoom = isUserRoom;
   }
 
 
-  public Conferencerooms isChatRoom(Object isChatRoom) {
+  public Conferencerooms isChatRoom(IsChatRoomEnum isChatRoom) {
     
     this.isChatRoom = isChatRoom;
     return this;
@@ -187,17 +422,17 @@ public class Conferencerooms {
    * @return isChatRoom
   **/
   @javax.annotation.Nullable
-  public Object getIsChatRoom() {
+  public IsChatRoomEnum getIsChatRoom() {
     return isChatRoom;
   }
 
 
-  public void setIsChatRoom(Object isChatRoom) {
+  public void setIsChatRoom(IsChatRoomEnum isChatRoom) {
     this.isChatRoom = isChatRoom;
   }
 
 
-  public Conferencerooms lobby(Object lobby) {
+  public Conferencerooms lobby(LobbyEnum lobby) {
     
     this.lobby = lobby;
     return this;
@@ -208,17 +443,17 @@ public class Conferencerooms {
    * @return lobby
   **/
   @javax.annotation.Nullable
-  public Object getLobby() {
+  public LobbyEnum getLobby() {
     return lobby;
   }
 
 
-  public void setLobby(Object lobby) {
+  public void setLobby(LobbyEnum lobby) {
     this.lobby = lobby;
   }
 
 
-  public Conferencerooms requirePasscode(Object requirePasscode) {
+  public Conferencerooms requirePasscode(RequirePasscodeEnum requirePasscode) {
     
     this.requirePasscode = requirePasscode;
     return this;
@@ -229,17 +464,17 @@ public class Conferencerooms {
    * @return requirePasscode
   **/
   @javax.annotation.Nullable
-  public Object getRequirePasscode() {
+  public RequirePasscodeEnum getRequirePasscode() {
     return requirePasscode;
   }
 
 
-  public void setRequirePasscode(Object requirePasscode) {
+  public void setRequirePasscode(RequirePasscodeEnum requirePasscode) {
     this.requirePasscode = requirePasscode;
   }
 
 
-  public Conferencerooms share(Object share) {
+  public Conferencerooms share(ShareEnum share) {
     
     this.share = share;
     return this;
@@ -250,12 +485,12 @@ public class Conferencerooms {
    * @return share
   **/
   @javax.annotation.Nullable
-  public Object getShare() {
+  public ShareEnum getShare() {
     return share;
   }
 
 
-  public void setShare(Object share) {
+  public void setShare(ShareEnum share) {
     this.share = share;
   }
 

@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Messagecampaigns
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Messagecampaigns {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -69,41 +69,464 @@ public class Messagecampaigns {
   @SerializedName(SERIALIZED_NAME_ORDER)
   private Object order = null;
 
+  /**
+   * Gets or Sets subscriberOptin
+   */
+  @JsonAdapter(SubscriberOptinEnum.Adapter.class)
+  public enum SubscriberOptinEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    SubscriberOptinEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static SubscriberOptinEnum fromValue(Object value) {
+      for (SubscriberOptinEnum b : SubscriberOptinEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<SubscriberOptinEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final SubscriberOptinEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public SubscriberOptinEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return SubscriberOptinEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_SUBSCRIBER_OPTIN = "subscriberOptin";
   @SerializedName(SERIALIZED_NAME_SUBSCRIBER_OPTIN)
-  private Object subscriberOptin = null;
+  private SubscriberOptinEnum subscriberOptin = null;
+
+  /**
+   * Gets or Sets subscriberOptout
+   */
+  @JsonAdapter(SubscriberOptoutEnum.Adapter.class)
+  public enum SubscriberOptoutEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    SubscriberOptoutEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static SubscriberOptoutEnum fromValue(Object value) {
+      for (SubscriberOptoutEnum b : SubscriberOptoutEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<SubscriberOptoutEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final SubscriberOptoutEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public SubscriberOptoutEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return SubscriberOptoutEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_SUBSCRIBER_OPTOUT = "subscriberOptout";
   @SerializedName(SERIALIZED_NAME_SUBSCRIBER_OPTOUT)
-  private Object subscriberOptout = null;
+  private SubscriberOptoutEnum subscriberOptout = null;
+
+  /**
+   * Gets or Sets subscriberHelp
+   */
+  @JsonAdapter(SubscriberHelpEnum.Adapter.class)
+  public enum SubscriberHelpEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    SubscriberHelpEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static SubscriberHelpEnum fromValue(Object value) {
+      for (SubscriberHelpEnum b : SubscriberHelpEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<SubscriberHelpEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final SubscriberHelpEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public SubscriberHelpEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return SubscriberHelpEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_SUBSCRIBER_HELP = "subscriberHelp";
   @SerializedName(SERIALIZED_NAME_SUBSCRIBER_HELP)
-  private Object subscriberHelp = null;
+  private SubscriberHelpEnum subscriberHelp = null;
+
+  /**
+   * Gets or Sets numberPool
+   */
+  @JsonAdapter(NumberPoolEnum.Adapter.class)
+  public enum NumberPoolEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    NumberPoolEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static NumberPoolEnum fromValue(Object value) {
+      for (NumberPoolEnum b : NumberPoolEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<NumberPoolEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final NumberPoolEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public NumberPoolEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return NumberPoolEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_NUMBER_POOL = "numberPool";
   @SerializedName(SERIALIZED_NAME_NUMBER_POOL)
-  private Object numberPool = null;
+  private NumberPoolEnum numberPool = null;
+
+  /**
+   * Gets or Sets directLending
+   */
+  @JsonAdapter(DirectLendingEnum.Adapter.class)
+  public enum DirectLendingEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    DirectLendingEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DirectLendingEnum fromValue(Object value) {
+      for (DirectLendingEnum b : DirectLendingEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DirectLendingEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DirectLendingEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DirectLendingEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DirectLendingEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_DIRECT_LENDING = "directLending";
   @SerializedName(SERIALIZED_NAME_DIRECT_LENDING)
-  private Object directLending = null;
+  private DirectLendingEnum directLending = null;
+
+  /**
+   * Gets or Sets embeddedLink
+   */
+  @JsonAdapter(EmbeddedLinkEnum.Adapter.class)
+  public enum EmbeddedLinkEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    EmbeddedLinkEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static EmbeddedLinkEnum fromValue(Object value) {
+      for (EmbeddedLinkEnum b : EmbeddedLinkEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<EmbeddedLinkEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final EmbeddedLinkEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public EmbeddedLinkEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return EmbeddedLinkEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_EMBEDDED_LINK = "embeddedLink";
   @SerializedName(SERIALIZED_NAME_EMBEDDED_LINK)
-  private Object embeddedLink = null;
+  private EmbeddedLinkEnum embeddedLink = null;
+
+  /**
+   * Gets or Sets embeddedPhone
+   */
+  @JsonAdapter(EmbeddedPhoneEnum.Adapter.class)
+  public enum EmbeddedPhoneEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    EmbeddedPhoneEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static EmbeddedPhoneEnum fromValue(Object value) {
+      for (EmbeddedPhoneEnum b : EmbeddedPhoneEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<EmbeddedPhoneEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final EmbeddedPhoneEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public EmbeddedPhoneEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return EmbeddedPhoneEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_EMBEDDED_PHONE = "embeddedPhone";
   @SerializedName(SERIALIZED_NAME_EMBEDDED_PHONE)
-  private Object embeddedPhone = null;
+  private EmbeddedPhoneEnum embeddedPhone = null;
+
+  /**
+   * Gets or Sets affiliateMarketing
+   */
+  @JsonAdapter(AffiliateMarketingEnum.Adapter.class)
+  public enum AffiliateMarketingEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    AffiliateMarketingEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static AffiliateMarketingEnum fromValue(Object value) {
+      for (AffiliateMarketingEnum b : AffiliateMarketingEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<AffiliateMarketingEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final AffiliateMarketingEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public AffiliateMarketingEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return AffiliateMarketingEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_AFFILIATE_MARKETING = "affiliateMarketing";
   @SerializedName(SERIALIZED_NAME_AFFILIATE_MARKETING)
-  private Object affiliateMarketing = null;
+  private AffiliateMarketingEnum affiliateMarketing = null;
+
+  /**
+   * Gets or Sets ageGated
+   */
+  @JsonAdapter(AgeGatedEnum.Adapter.class)
+  public enum AgeGatedEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    AgeGatedEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static AgeGatedEnum fromValue(Object value) {
+      for (AgeGatedEnum b : AgeGatedEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<AgeGatedEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final AgeGatedEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public AgeGatedEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return AgeGatedEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_AGE_GATED = "ageGated";
   @SerializedName(SERIALIZED_NAME_AGE_GATED)
-  private Object ageGated = null;
+  private AgeGatedEnum ageGated = null;
 
   public static final String SERIALIZED_NAME_MNOS = "mnos";
   @SerializedName(SERIALIZED_NAME_MNOS)
@@ -228,7 +651,7 @@ public class Messagecampaigns {
   }
 
 
-  public Messagecampaigns subscriberOptin(Object subscriberOptin) {
+  public Messagecampaigns subscriberOptin(SubscriberOptinEnum subscriberOptin) {
     
     this.subscriberOptin = subscriberOptin;
     return this;
@@ -239,17 +662,17 @@ public class Messagecampaigns {
    * @return subscriberOptin
   **/
   @javax.annotation.Nullable
-  public Object getSubscriberOptin() {
+  public SubscriberOptinEnum getSubscriberOptin() {
     return subscriberOptin;
   }
 
 
-  public void setSubscriberOptin(Object subscriberOptin) {
+  public void setSubscriberOptin(SubscriberOptinEnum subscriberOptin) {
     this.subscriberOptin = subscriberOptin;
   }
 
 
-  public Messagecampaigns subscriberOptout(Object subscriberOptout) {
+  public Messagecampaigns subscriberOptout(SubscriberOptoutEnum subscriberOptout) {
     
     this.subscriberOptout = subscriberOptout;
     return this;
@@ -260,17 +683,17 @@ public class Messagecampaigns {
    * @return subscriberOptout
   **/
   @javax.annotation.Nullable
-  public Object getSubscriberOptout() {
+  public SubscriberOptoutEnum getSubscriberOptout() {
     return subscriberOptout;
   }
 
 
-  public void setSubscriberOptout(Object subscriberOptout) {
+  public void setSubscriberOptout(SubscriberOptoutEnum subscriberOptout) {
     this.subscriberOptout = subscriberOptout;
   }
 
 
-  public Messagecampaigns subscriberHelp(Object subscriberHelp) {
+  public Messagecampaigns subscriberHelp(SubscriberHelpEnum subscriberHelp) {
     
     this.subscriberHelp = subscriberHelp;
     return this;
@@ -281,17 +704,17 @@ public class Messagecampaigns {
    * @return subscriberHelp
   **/
   @javax.annotation.Nullable
-  public Object getSubscriberHelp() {
+  public SubscriberHelpEnum getSubscriberHelp() {
     return subscriberHelp;
   }
 
 
-  public void setSubscriberHelp(Object subscriberHelp) {
+  public void setSubscriberHelp(SubscriberHelpEnum subscriberHelp) {
     this.subscriberHelp = subscriberHelp;
   }
 
 
-  public Messagecampaigns numberPool(Object numberPool) {
+  public Messagecampaigns numberPool(NumberPoolEnum numberPool) {
     
     this.numberPool = numberPool;
     return this;
@@ -302,17 +725,17 @@ public class Messagecampaigns {
    * @return numberPool
   **/
   @javax.annotation.Nullable
-  public Object getNumberPool() {
+  public NumberPoolEnum getNumberPool() {
     return numberPool;
   }
 
 
-  public void setNumberPool(Object numberPool) {
+  public void setNumberPool(NumberPoolEnum numberPool) {
     this.numberPool = numberPool;
   }
 
 
-  public Messagecampaigns directLending(Object directLending) {
+  public Messagecampaigns directLending(DirectLendingEnum directLending) {
     
     this.directLending = directLending;
     return this;
@@ -323,17 +746,17 @@ public class Messagecampaigns {
    * @return directLending
   **/
   @javax.annotation.Nullable
-  public Object getDirectLending() {
+  public DirectLendingEnum getDirectLending() {
     return directLending;
   }
 
 
-  public void setDirectLending(Object directLending) {
+  public void setDirectLending(DirectLendingEnum directLending) {
     this.directLending = directLending;
   }
 
 
-  public Messagecampaigns embeddedLink(Object embeddedLink) {
+  public Messagecampaigns embeddedLink(EmbeddedLinkEnum embeddedLink) {
     
     this.embeddedLink = embeddedLink;
     return this;
@@ -344,17 +767,17 @@ public class Messagecampaigns {
    * @return embeddedLink
   **/
   @javax.annotation.Nullable
-  public Object getEmbeddedLink() {
+  public EmbeddedLinkEnum getEmbeddedLink() {
     return embeddedLink;
   }
 
 
-  public void setEmbeddedLink(Object embeddedLink) {
+  public void setEmbeddedLink(EmbeddedLinkEnum embeddedLink) {
     this.embeddedLink = embeddedLink;
   }
 
 
-  public Messagecampaigns embeddedPhone(Object embeddedPhone) {
+  public Messagecampaigns embeddedPhone(EmbeddedPhoneEnum embeddedPhone) {
     
     this.embeddedPhone = embeddedPhone;
     return this;
@@ -365,17 +788,17 @@ public class Messagecampaigns {
    * @return embeddedPhone
   **/
   @javax.annotation.Nullable
-  public Object getEmbeddedPhone() {
+  public EmbeddedPhoneEnum getEmbeddedPhone() {
     return embeddedPhone;
   }
 
 
-  public void setEmbeddedPhone(Object embeddedPhone) {
+  public void setEmbeddedPhone(EmbeddedPhoneEnum embeddedPhone) {
     this.embeddedPhone = embeddedPhone;
   }
 
 
-  public Messagecampaigns affiliateMarketing(Object affiliateMarketing) {
+  public Messagecampaigns affiliateMarketing(AffiliateMarketingEnum affiliateMarketing) {
     
     this.affiliateMarketing = affiliateMarketing;
     return this;
@@ -386,17 +809,17 @@ public class Messagecampaigns {
    * @return affiliateMarketing
   **/
   @javax.annotation.Nullable
-  public Object getAffiliateMarketing() {
+  public AffiliateMarketingEnum getAffiliateMarketing() {
     return affiliateMarketing;
   }
 
 
-  public void setAffiliateMarketing(Object affiliateMarketing) {
+  public void setAffiliateMarketing(AffiliateMarketingEnum affiliateMarketing) {
     this.affiliateMarketing = affiliateMarketing;
   }
 
 
-  public Messagecampaigns ageGated(Object ageGated) {
+  public Messagecampaigns ageGated(AgeGatedEnum ageGated) {
     
     this.ageGated = ageGated;
     return this;
@@ -407,12 +830,12 @@ public class Messagecampaigns {
    * @return ageGated
   **/
   @javax.annotation.Nullable
-  public Object getAgeGated() {
+  public AgeGatedEnum getAgeGated() {
     return ageGated;
   }
 
 
-  public void setAgeGated(Object ageGated) {
+  public void setAgeGated(AgeGatedEnum ageGated) {
     this.ageGated = ageGated;
   }
 

@@ -51,19 +51,113 @@ import com.circuitid.client.JSON;
 /**
  * Numberports
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Numberports {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   private Object name = null;
 
+  /**
+   * Gets or Sets type
+   */
+  @JsonAdapter(TypeEnum.Adapter.class)
+  public enum TypeEnum {
+    IN("port in"),
+    
+    OUT("port out");
+
+    private Object value;
+
+    TypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TypeEnum fromValue(Object value) {
+      for (TypeEnum b : TypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return TypeEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
-  private Object type = null;
+  private TypeEnum type = null;
+
+  /**
+   * Gets or Sets typeOfService
+   */
+  @JsonAdapter(TypeOfServiceEnum.Adapter.class)
+  public enum TypeOfServiceEnum {
+    BUSINESS("business"),
+    
+    RESIDENCE("residence");
+
+    private Object value;
+
+    TypeOfServiceEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TypeOfServiceEnum fromValue(Object value) {
+      for (TypeOfServiceEnum b : TypeOfServiceEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TypeOfServiceEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TypeOfServiceEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TypeOfServiceEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return TypeOfServiceEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_TYPE_OF_SERVICE = "typeOfService";
   @SerializedName(SERIALIZED_NAME_TYPE_OF_SERVICE)
-  private Object typeOfService = null;
+  private TypeOfServiceEnum typeOfService = null;
 
   public static final String SERIALIZED_NAME_AUTHORIZED_PERSON = "authorizedPerson";
   @SerializedName(SERIALIZED_NAME_AUTHORIZED_PERSON)
@@ -85,21 +179,190 @@ public class Numberports {
   @SerializedName(SERIALIZED_NAME_OFFICE)
   private Object office = null;
 
+  /**
+   * Gets or Sets e911
+   */
+  @JsonAdapter(E911Enum.Adapter.class)
+  public enum E911Enum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    E911Enum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static E911Enum fromValue(Object value) {
+      for (E911Enum b : E911Enum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<E911Enum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final E911Enum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public E911Enum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return E911Enum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_E911 = "e911";
   @SerializedName(SERIALIZED_NAME_E911)
-  private Object e911 = null;
+  private E911Enum e911 = null;
 
   public static final String SERIALIZED_NAME_INVOICE = "invoice";
   @SerializedName(SERIALIZED_NAME_INVOICE)
   private Object invoice = null;
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    PROCESSING("processing"),
+    
+    FAILED("failed"),
+    
+    ERROR("error"),
+    
+    COMPLETED("completed");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = null;
+  private StatusEnum status = null;
+
+  /**
+   * Gets or Sets destinationType
+   */
+  @JsonAdapter(DestinationTypeEnum.Adapter.class)
+  public enum DestinationTypeEnum {
+    ANNOUNCEMENTS("announcements"),
+    
+    DIRECTORIES("directories"),
+    
+    PARK("park"),
+    
+    NUMBERS("numbers"),
+    
+    MENUS("menus"),
+    
+    USERS("users"),
+    
+    SERVERS("servers"),
+    
+    INBOUNDRULES("inboundrules"),
+    
+    CALLQUEUES("callqueues"),
+    
+    FAXACCOUNTS("faxaccounts"),
+    
+    CALLFORWARDING("callforwarding"),
+    
+    HANGUP("hangup"),
+    
+    PHONEINBOUNDRULES("phoneinboundrules"),
+    
+    VOICEMAILACCOUNTS("voicemailaccounts");
+
+    private Object value;
+
+    DestinationTypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DestinationTypeEnum fromValue(Object value) {
+      for (DestinationTypeEnum b : DestinationTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DestinationTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DestinationTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DestinationTypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DestinationTypeEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_DESTINATION_TYPE = "destinationType";
   @SerializedName(SERIALIZED_NAME_DESTINATION_TYPE)
-  private Object destinationType = null;
+  private DestinationTypeEnum destinationType = null;
 
   public static final String SERIALIZED_NAME_DESTINATION = "destination";
   @SerializedName(SERIALIZED_NAME_DESTINATION)
@@ -137,7 +400,7 @@ public class Numberports {
   }
 
 
-  public Numberports type(Object type) {
+  public Numberports type(TypeEnum type) {
     
     this.type = type;
     return this;
@@ -148,17 +411,17 @@ public class Numberports {
    * @return type
   **/
   @javax.annotation.Nullable
-  public Object getType() {
+  public TypeEnum getType() {
     return type;
   }
 
 
-  public void setType(Object type) {
+  public void setType(TypeEnum type) {
     this.type = type;
   }
 
 
-  public Numberports typeOfService(Object typeOfService) {
+  public Numberports typeOfService(TypeOfServiceEnum typeOfService) {
     
     this.typeOfService = typeOfService;
     return this;
@@ -169,12 +432,12 @@ public class Numberports {
    * @return typeOfService
   **/
   @javax.annotation.Nullable
-  public Object getTypeOfService() {
+  public TypeOfServiceEnum getTypeOfService() {
     return typeOfService;
   }
 
 
-  public void setTypeOfService(Object typeOfService) {
+  public void setTypeOfService(TypeOfServiceEnum typeOfService) {
     this.typeOfService = typeOfService;
   }
 
@@ -284,7 +547,7 @@ public class Numberports {
   }
 
 
-  public Numberports e911(Object e911) {
+  public Numberports e911(E911Enum e911) {
     
     this.e911 = e911;
     return this;
@@ -295,12 +558,12 @@ public class Numberports {
    * @return e911
   **/
   @javax.annotation.Nullable
-  public Object getE911() {
+  public E911Enum getE911() {
     return e911;
   }
 
 
-  public void setE911(Object e911) {
+  public void setE911(E911Enum e911) {
     this.e911 = e911;
   }
 
@@ -326,7 +589,7 @@ public class Numberports {
   }
 
 
-  public Numberports status(Object status) {
+  public Numberports status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -337,17 +600,17 @@ public class Numberports {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 
 
-  public Numberports destinationType(Object destinationType) {
+  public Numberports destinationType(DestinationTypeEnum destinationType) {
     
     this.destinationType = destinationType;
     return this;
@@ -358,12 +621,12 @@ public class Numberports {
    * @return destinationType
   **/
   @javax.annotation.Nullable
-  public Object getDestinationType() {
+  public DestinationTypeEnum getDestinationType() {
     return destinationType;
   }
 
 
-  public void setDestinationType(Object destinationType) {
+  public void setDestinationType(DestinationTypeEnum destinationType) {
     this.destinationType = destinationType;
   }
 

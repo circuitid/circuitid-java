@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Clients
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Clients {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -69,13 +69,109 @@ public class Clients {
   @SerializedName(SERIALIZED_NAME_HTTP_USER_AGENT)
   private Object httpUserAgent = null;
 
+  /**
+   * Gets or Sets manufacture
+   */
+  @JsonAdapter(ManufactureEnum.Adapter.class)
+  public enum ManufactureEnum {
+    CISCO("cisco"),
+    
+    GRANDSTREAM("grandstream"),
+    
+    POLYCOM("polycom");
+
+    private Object value;
+
+    ManufactureEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static ManufactureEnum fromValue(Object value) {
+      for (ManufactureEnum b : ManufactureEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<ManufactureEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final ManufactureEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public ManufactureEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return ManufactureEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_MANUFACTURE = "manufacture";
   @SerializedName(SERIALIZED_NAME_MANUFACTURE)
-  private Object manufacture = null;
+  private ManufactureEnum manufacture = null;
+
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = null;
+  private StatusEnum status = null;
 
   public Clients() {
   }
@@ -164,7 +260,7 @@ public class Clients {
   }
 
 
-  public Clients manufacture(Object manufacture) {
+  public Clients manufacture(ManufactureEnum manufacture) {
     
     this.manufacture = manufacture;
     return this;
@@ -175,17 +271,17 @@ public class Clients {
    * @return manufacture
   **/
   @javax.annotation.Nullable
-  public Object getManufacture() {
+  public ManufactureEnum getManufacture() {
     return manufacture;
   }
 
 
-  public void setManufacture(Object manufacture) {
+  public void setManufacture(ManufactureEnum manufacture) {
     this.manufacture = manufacture;
   }
 
 
-  public Clients status(Object status) {
+  public Clients status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -196,12 +292,12 @@ public class Clients {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 

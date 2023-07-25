@@ -51,15 +51,66 @@ import com.circuitid.client.JSON;
 /**
  * Customers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:21:28.674Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
 public class Customers {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   private Object name = null;
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    ACTIVE("active"),
+    
+    SUSPENDED("suspended"),
+    
+    TERMINATED("terminated"),
+    
+    FRAUD("fraud");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = null;
+  private StatusEnum status = null;
 
   public static final String SERIALIZED_NAME_WEBSITE_URL = "websiteUrl";
   @SerializedName(SERIALIZED_NAME_WEBSITE_URL)
@@ -113,53 +164,476 @@ public class Customers {
   @SerializedName(SERIALIZED_NAME_LAST_AUTOMATIC_REFILL_INVOICE)
   private Object lastAutomaticRefillInvoice = null;
 
+  /**
+   * Gets or Sets internationalCalling
+   */
+  @JsonAdapter(InternationalCallingEnum.Adapter.class)
+  public enum InternationalCallingEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    InternationalCallingEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static InternationalCallingEnum fromValue(Object value) {
+      for (InternationalCallingEnum b : InternationalCallingEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<InternationalCallingEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final InternationalCallingEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public InternationalCallingEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return InternationalCallingEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_INTERNATIONAL_CALLING = "internationalCalling";
   @SerializedName(SERIALIZED_NAME_INTERNATIONAL_CALLING)
-  private Object internationalCalling = null;
+  private InternationalCallingEnum internationalCalling = null;
 
   public static final String SERIALIZED_NAME_CREATED_BY_I_P = "createdByIP";
   @SerializedName(SERIALIZED_NAME_CREATED_BY_I_P)
   private Object createdByIP = null;
 
+  /**
+   * Gets or Sets callDebug
+   */
+  @JsonAdapter(CallDebugEnum.Adapter.class)
+  public enum CallDebugEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    CallDebugEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static CallDebugEnum fromValue(Object value) {
+      for (CallDebugEnum b : CallDebugEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<CallDebugEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final CallDebugEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public CallDebugEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return CallDebugEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_CALL_DEBUG = "callDebug";
   @SerializedName(SERIALIZED_NAME_CALL_DEBUG)
-  private Object callDebug = null;
+  private CallDebugEnum callDebug = null;
+
+  /**
+   * Gets or Sets mediaBypass
+   */
+  @JsonAdapter(MediaBypassEnum.Adapter.class)
+  public enum MediaBypassEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    MediaBypassEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static MediaBypassEnum fromValue(Object value) {
+      for (MediaBypassEnum b : MediaBypassEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<MediaBypassEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final MediaBypassEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public MediaBypassEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return MediaBypassEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_MEDIA_BYPASS = "mediaBypass";
   @SerializedName(SERIALIZED_NAME_MEDIA_BYPASS)
-  private Object mediaBypass = null;
+  private MediaBypassEnum mediaBypass = null;
+
+  /**
+   * Gets or Sets accountLock
+   */
+  @JsonAdapter(AccountLockEnum.Adapter.class)
+  public enum AccountLockEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    AccountLockEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static AccountLockEnum fromValue(Object value) {
+      for (AccountLockEnum b : AccountLockEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<AccountLockEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final AccountLockEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public AccountLockEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return AccountLockEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_ACCOUNT_LOCK = "accountLock";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_LOCK)
-  private Object accountLock = null;
+  private AccountLockEnum accountLock = null;
+
+  /**
+   * Gets or Sets callRecording
+   */
+  @JsonAdapter(CallRecordingEnum.Adapter.class)
+  public enum CallRecordingEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    CallRecordingEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static CallRecordingEnum fromValue(Object value) {
+      for (CallRecordingEnum b : CallRecordingEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<CallRecordingEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final CallRecordingEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public CallRecordingEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return CallRecordingEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_CALL_RECORDING = "callRecording";
   @SerializedName(SERIALIZED_NAME_CALL_RECORDING)
-  private Object callRecording = null;
+  private CallRecordingEnum callRecording = null;
 
   public static final String SERIALIZED_NAME_CDR_RETENTION = "cdrRetention";
   @SerializedName(SERIALIZED_NAME_CDR_RETENTION)
   private Object cdrRetention = null;
 
+  /**
+   * Gets or Sets cnamLookUps
+   */
+  @JsonAdapter(CnamLookUpsEnum.Adapter.class)
+  public enum CnamLookUpsEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    CnamLookUpsEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static CnamLookUpsEnum fromValue(Object value) {
+      for (CnamLookUpsEnum b : CnamLookUpsEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<CnamLookUpsEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final CnamLookUpsEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public CnamLookUpsEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return CnamLookUpsEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_CNAM_LOOK_UPS = "cnamLookUps";
   @SerializedName(SERIALIZED_NAME_CNAM_LOOK_UPS)
-  private Object cnamLookUps = null;
+  private CnamLookUpsEnum cnamLookUps = null;
+
+  /**
+   * Gets or Sets holdMusic
+   */
+  @JsonAdapter(HoldMusicEnum.Adapter.class)
+  public enum HoldMusicEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    HoldMusicEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static HoldMusicEnum fromValue(Object value) {
+      for (HoldMusicEnum b : HoldMusicEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<HoldMusicEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final HoldMusicEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public HoldMusicEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return HoldMusicEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_HOLD_MUSIC = "holdMusic";
   @SerializedName(SERIALIZED_NAME_HOLD_MUSIC)
-  private Object holdMusic = null;
+  private HoldMusicEnum holdMusic = null;
+
+  /**
+   * Gets or Sets transcribeCalls
+   */
+  @JsonAdapter(TranscribeCallsEnum.Adapter.class)
+  public enum TranscribeCallsEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    TranscribeCallsEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static TranscribeCallsEnum fromValue(Object value) {
+      for (TranscribeCallsEnum b : TranscribeCallsEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<TranscribeCallsEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final TranscribeCallsEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public TranscribeCallsEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return TranscribeCallsEnum.fromValue(value);
+      }
+    }
+  }
 
   public static final String SERIALIZED_NAME_TRANSCRIBE_CALLS = "transcribeCalls";
   @SerializedName(SERIALIZED_NAME_TRANSCRIBE_CALLS)
-  private Object transcribeCalls = null;
+  private TranscribeCallsEnum transcribeCalls = null;
 
   public static final String SERIALIZED_NAME_MAX_OUTBOUND_CALL_RATE = "maxOutboundCallRate";
   @SerializedName(SERIALIZED_NAME_MAX_OUTBOUND_CALL_RATE)
   private Object maxOutboundCallRate = null;
 
+  /**
+   * Gets or Sets defaultBillMethod
+   */
+  @JsonAdapter(DefaultBillMethodEnum.Adapter.class)
+  public enum DefaultBillMethodEnum {
+    CREDIT("credit"),
+    
+    PAYMENTMETHOD("paymentmethod");
+
+    private Object value;
+
+    DefaultBillMethodEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DefaultBillMethodEnum fromValue(Object value) {
+      for (DefaultBillMethodEnum b : DefaultBillMethodEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DefaultBillMethodEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DefaultBillMethodEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DefaultBillMethodEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DefaultBillMethodEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_DEFAULT_BILL_METHOD = "defaultBillMethod";
   @SerializedName(SERIALIZED_NAME_DEFAULT_BILL_METHOD)
-  private Object defaultBillMethod = null;
+  private DefaultBillMethodEnum defaultBillMethod = null;
 
   public Customers() {
   }
@@ -185,7 +659,7 @@ public class Customers {
   }
 
 
-  public Customers status(Object status) {
+  public Customers status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -196,12 +670,12 @@ public class Customers {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 
@@ -479,7 +953,7 @@ public class Customers {
   }
 
 
-  public Customers internationalCalling(Object internationalCalling) {
+  public Customers internationalCalling(InternationalCallingEnum internationalCalling) {
     
     this.internationalCalling = internationalCalling;
     return this;
@@ -490,12 +964,12 @@ public class Customers {
    * @return internationalCalling
   **/
   @javax.annotation.Nullable
-  public Object getInternationalCalling() {
+  public InternationalCallingEnum getInternationalCalling() {
     return internationalCalling;
   }
 
 
-  public void setInternationalCalling(Object internationalCalling) {
+  public void setInternationalCalling(InternationalCallingEnum internationalCalling) {
     this.internationalCalling = internationalCalling;
   }
 
@@ -521,7 +995,7 @@ public class Customers {
   }
 
 
-  public Customers callDebug(Object callDebug) {
+  public Customers callDebug(CallDebugEnum callDebug) {
     
     this.callDebug = callDebug;
     return this;
@@ -532,17 +1006,17 @@ public class Customers {
    * @return callDebug
   **/
   @javax.annotation.Nullable
-  public Object getCallDebug() {
+  public CallDebugEnum getCallDebug() {
     return callDebug;
   }
 
 
-  public void setCallDebug(Object callDebug) {
+  public void setCallDebug(CallDebugEnum callDebug) {
     this.callDebug = callDebug;
   }
 
 
-  public Customers mediaBypass(Object mediaBypass) {
+  public Customers mediaBypass(MediaBypassEnum mediaBypass) {
     
     this.mediaBypass = mediaBypass;
     return this;
@@ -553,17 +1027,17 @@ public class Customers {
    * @return mediaBypass
   **/
   @javax.annotation.Nullable
-  public Object getMediaBypass() {
+  public MediaBypassEnum getMediaBypass() {
     return mediaBypass;
   }
 
 
-  public void setMediaBypass(Object mediaBypass) {
+  public void setMediaBypass(MediaBypassEnum mediaBypass) {
     this.mediaBypass = mediaBypass;
   }
 
 
-  public Customers accountLock(Object accountLock) {
+  public Customers accountLock(AccountLockEnum accountLock) {
     
     this.accountLock = accountLock;
     return this;
@@ -574,17 +1048,17 @@ public class Customers {
    * @return accountLock
   **/
   @javax.annotation.Nullable
-  public Object getAccountLock() {
+  public AccountLockEnum getAccountLock() {
     return accountLock;
   }
 
 
-  public void setAccountLock(Object accountLock) {
+  public void setAccountLock(AccountLockEnum accountLock) {
     this.accountLock = accountLock;
   }
 
 
-  public Customers callRecording(Object callRecording) {
+  public Customers callRecording(CallRecordingEnum callRecording) {
     
     this.callRecording = callRecording;
     return this;
@@ -595,12 +1069,12 @@ public class Customers {
    * @return callRecording
   **/
   @javax.annotation.Nullable
-  public Object getCallRecording() {
+  public CallRecordingEnum getCallRecording() {
     return callRecording;
   }
 
 
-  public void setCallRecording(Object callRecording) {
+  public void setCallRecording(CallRecordingEnum callRecording) {
     this.callRecording = callRecording;
   }
 
@@ -626,7 +1100,7 @@ public class Customers {
   }
 
 
-  public Customers cnamLookUps(Object cnamLookUps) {
+  public Customers cnamLookUps(CnamLookUpsEnum cnamLookUps) {
     
     this.cnamLookUps = cnamLookUps;
     return this;
@@ -637,17 +1111,17 @@ public class Customers {
    * @return cnamLookUps
   **/
   @javax.annotation.Nullable
-  public Object getCnamLookUps() {
+  public CnamLookUpsEnum getCnamLookUps() {
     return cnamLookUps;
   }
 
 
-  public void setCnamLookUps(Object cnamLookUps) {
+  public void setCnamLookUps(CnamLookUpsEnum cnamLookUps) {
     this.cnamLookUps = cnamLookUps;
   }
 
 
-  public Customers holdMusic(Object holdMusic) {
+  public Customers holdMusic(HoldMusicEnum holdMusic) {
     
     this.holdMusic = holdMusic;
     return this;
@@ -658,17 +1132,17 @@ public class Customers {
    * @return holdMusic
   **/
   @javax.annotation.Nullable
-  public Object getHoldMusic() {
+  public HoldMusicEnum getHoldMusic() {
     return holdMusic;
   }
 
 
-  public void setHoldMusic(Object holdMusic) {
+  public void setHoldMusic(HoldMusicEnum holdMusic) {
     this.holdMusic = holdMusic;
   }
 
 
-  public Customers transcribeCalls(Object transcribeCalls) {
+  public Customers transcribeCalls(TranscribeCallsEnum transcribeCalls) {
     
     this.transcribeCalls = transcribeCalls;
     return this;
@@ -679,12 +1153,12 @@ public class Customers {
    * @return transcribeCalls
   **/
   @javax.annotation.Nullable
-  public Object getTranscribeCalls() {
+  public TranscribeCallsEnum getTranscribeCalls() {
     return transcribeCalls;
   }
 
 
-  public void setTranscribeCalls(Object transcribeCalls) {
+  public void setTranscribeCalls(TranscribeCallsEnum transcribeCalls) {
     this.transcribeCalls = transcribeCalls;
   }
 
@@ -710,7 +1184,7 @@ public class Customers {
   }
 
 
-  public Customers defaultBillMethod(Object defaultBillMethod) {
+  public Customers defaultBillMethod(DefaultBillMethodEnum defaultBillMethod) {
     
     this.defaultBillMethod = defaultBillMethod;
     return this;
@@ -721,12 +1195,12 @@ public class Customers {
    * @return defaultBillMethod
   **/
   @javax.annotation.Nullable
-  public Object getDefaultBillMethod() {
+  public DefaultBillMethodEnum getDefaultBillMethod() {
     return defaultBillMethod;
   }
 
 
-  public void setDefaultBillMethod(Object defaultBillMethod) {
+  public void setDefaultBillMethod(DefaultBillMethodEnum defaultBillMethod) {
     this.defaultBillMethod = defaultBillMethod;
   }
 
