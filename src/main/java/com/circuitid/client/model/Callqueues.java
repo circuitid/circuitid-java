@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Callqueues
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Callqueues {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -67,71 +67,71 @@ public class Callqueues {
 
   public static final String SERIALIZED_NAME_MOH = "moh";
   @SerializedName(SERIALIZED_NAME_MOH)
-  private Object moh = deafult;
+  private Object moh = null;
 
   public static final String SERIALIZED_NAME_CALLER_RESUME_TIMEOUT = "callerResumeTimeout";
   @SerializedName(SERIALIZED_NAME_CALLER_RESUME_TIMEOUT)
-  private Object callerResumeTimeout = 3600;
+  private Object callerResumeTimeout = null;
 
   public static final String SERIALIZED_NAME_MAX_WAIT_TIME = "maxWaitTime";
   @SerializedName(SERIALIZED_NAME_MAX_WAIT_TIME)
-  private Object maxWaitTime = 300;
+  private Object maxWaitTime = null;
 
   public static final String SERIALIZED_NAME_MAX_WAIT_TIME_NO_AGENT = "maxWaitTimeNoAgent";
   @SerializedName(SERIALIZED_NAME_MAX_WAIT_TIME_NO_AGENT)
-  private Object maxWaitTimeNoAgent = 300;
+  private Object maxWaitTimeNoAgent = null;
 
   public static final String SERIALIZED_NAME_MAX_NO_ANSWER = "maxNoAnswer";
   @SerializedName(SERIALIZED_NAME_MAX_NO_ANSWER)
-  private Object maxNoAnswer = 1000000;
+  private Object maxNoAnswer = null;
 
   public static final String SERIALIZED_NAME_NO_ANSWER_DELAY_TIMEOUT = "noAnswerDelayTimeout";
   @SerializedName(SERIALIZED_NAME_NO_ANSWER_DELAY_TIMEOUT)
-  private Object noAnswerDelayTimeout = 60;
+  private Object noAnswerDelayTimeout = null;
 
   public static final String SERIALIZED_NAME_REJECT_TIMEOUT = "rejectTimeout";
   @SerializedName(SERIALIZED_NAME_REJECT_TIMEOUT)
-  private Object rejectTimeout = 60;
+  private Object rejectTimeout = null;
 
   public static final String SERIALIZED_NAME_BUSY_TIMEOUT = "busyTimeout";
   @SerializedName(SERIALIZED_NAME_BUSY_TIMEOUT)
-  private Object busyTimeout = 60;
+  private Object busyTimeout = null;
 
   public static final String SERIALIZED_NAME_WRAP_UP_TIMEOUT = "wrapUpTimeout";
   @SerializedName(SERIALIZED_NAME_WRAP_UP_TIMEOUT)
-  private Object wrapUpTimeout = 10;
+  private Object wrapUpTimeout = null;
 
   public static final String SERIALIZED_NAME_TIME_BASED_SCORE = "timeBasedScore";
   @SerializedName(SERIALIZED_NAME_TIME_BASED_SCORE)
-  private Object timeBasedScore = queue;
+  private Object timeBasedScore = null;
 
   public static final String SERIALIZED_NAME_TIER_RULES_APPLY = "tierRulesApply";
   @SerializedName(SERIALIZED_NAME_TIER_RULES_APPLY)
-  private Object tierRulesApply = false;
+  private Object tierRulesApply = null;
 
   public static final String SERIALIZED_NAME_TIER_RULE_NO_AGENT_NO_WAIT = "tierRuleNoAgentNoWait";
   @SerializedName(SERIALIZED_NAME_TIER_RULE_NO_AGENT_NO_WAIT)
-  private Object tierRuleNoAgentNoWait = true;
+  private Object tierRuleNoAgentNoWait = null;
 
   public static final String SERIALIZED_NAME_TIER_RULE_WAIT_SECOND = "tierRuleWaitSecond";
   @SerializedName(SERIALIZED_NAME_TIER_RULE_WAIT_SECOND)
-  private Object tierRuleWaitSecond = 300;
+  private Object tierRuleWaitSecond = null;
 
   public static final String SERIALIZED_NAME_TIER_RULE_WAIT_MULTIPLY_LEVEL = "tierRuleWaitMultiplyLevel";
   @SerializedName(SERIALIZED_NAME_TIER_RULE_WAIT_MULTIPLY_LEVEL)
-  private Object tierRuleWaitMultiplyLevel = true;
+  private Object tierRuleWaitMultiplyLevel = null;
 
   public static final String SERIALIZED_NAME_ABANDONED_RESUME_ALLOWED = "abandonedResumeAllowed";
   @SerializedName(SERIALIZED_NAME_ABANDONED_RESUME_ALLOWED)
-  private Object abandonedResumeAllowed = true;
+  private Object abandonedResumeAllowed = null;
 
   public static final String SERIALIZED_NAME_DISCARD_ABANDONED_AFTER = "discardAbandonedAfter";
   @SerializedName(SERIALIZED_NAME_DISCARD_ABANDONED_AFTER)
-  private Object discardAbandonedAfter = 14400;
+  private Object discardAbandonedAfter = null;
 
   public static final String SERIALIZED_NAME_MAX_WAIT_TIME_NO_AGENT_TIME_REACHED = "maxWaitTimeNoAgentTimeReached";
   @SerializedName(SERIALIZED_NAME_MAX_WAIT_TIME_NO_AGENT_TIME_REACHED)
-  private Object maxWaitTimeNoAgentTimeReached = 5;
+  private Object maxWaitTimeNoAgentTimeReached = null;
 
   public Callqueues() {
   }

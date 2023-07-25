@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Users
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Users {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -111,23 +111,23 @@ public class Users {
 
   public static final String SERIALIZED_NAME_LANGUAGE = "language";
   @SerializedName(SERIALIZED_NAME_LANGUAGE)
-  private Object language = en;
+  private Object language = null;
 
   public static final String SERIALIZED_NAME_IS_PRIMARY = "isPrimary";
   @SerializedName(SERIALIZED_NAME_IS_PRIMARY)
-  private Object isPrimary = 0;
+  private Object isPrimary = null;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = active;
+  private Object status = null;
 
   public static final String SERIALIZED_NAME_VM_GREETING_TYPE = "vmGreetingType";
   @SerializedName(SERIALIZED_NAME_VM_GREETING_TYPE)
-  private Object vmGreetingType = default;
+  private Object vmGreetingType = null;
 
   public static final String SERIALIZED_NAME_VM_TIMEOUT = "vmTimeout";
   @SerializedName(SERIALIZED_NAME_VM_TIMEOUT)
-  private Object vmTimeout = 20;
+  private Object vmTimeout = null;
 
   public static final String SERIALIZED_NAME_VM_FILE = "vmFile";
   @SerializedName(SERIALIZED_NAME_VM_FILE)
@@ -139,7 +139,7 @@ public class Users {
 
   public static final String SERIALIZED_NAME_PIN = "pin";
   @SerializedName(SERIALIZED_NAME_PIN)
-  private Object pin = 1234;
+  private Object pin = null;
 
   public static final String SERIALIZED_NAME_NUMBER = "number";
   @SerializedName(SERIALIZED_NAME_NUMBER)
@@ -187,15 +187,15 @@ public class Users {
 
   public static final String SERIALIZED_NAME_TIMEZONE = "timezone";
   @SerializedName(SERIALIZED_NAME_TIMEZONE)
-  private Object timezone = America/New_York;
+  private Object timezone = null;
 
   public static final String SERIALIZED_NAME_VM_TRANSCRIPTION = "vmTranscription";
   @SerializedName(SERIALIZED_NAME_VM_TRANSCRIPTION)
-  private Object vmTranscription = 0;
+  private Object vmTranscription = null;
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)
-  private Object communication = {notifications={email=true, sms=true}, missedCalls={email=true, sms=true}, callRecordings={email=true, sms=true}, newsletters={email=true, sms=true}, voicemails={email=true, sms=true}, web={sounds=true}};
+  private Object communication = null;
 
   public Users() {
   }

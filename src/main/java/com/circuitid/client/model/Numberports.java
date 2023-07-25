@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Numberports
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Numberports {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -87,7 +87,7 @@ public class Numberports {
 
   public static final String SERIALIZED_NAME_E911 = "e911";
   @SerializedName(SERIALIZED_NAME_E911)
-  private Object e911 = 0;
+  private Object e911 = null;
 
   public static final String SERIALIZED_NAME_INVOICE = "invoice";
   @SerializedName(SERIALIZED_NAME_INVOICE)
@@ -95,7 +95,7 @@ public class Numberports {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = processing;
+  private Object status = null;
 
   public static final String SERIALIZED_NAME_DESTINATION_TYPE = "destinationType";
   @SerializedName(SERIALIZED_NAME_DESTINATION_TYPE)

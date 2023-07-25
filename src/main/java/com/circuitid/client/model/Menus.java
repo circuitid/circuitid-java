@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Menus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Menus {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -59,11 +59,11 @@ public class Menus {
 
   public static final String SERIALIZED_NAME_MAX_EXTENSION_LENGTH = "maxExtensionLength";
   @SerializedName(SERIALIZED_NAME_MAX_EXTENSION_LENGTH)
-  private Object maxExtensionLength = 4;
+  private Object maxExtensionLength = null;
 
   public static final String SERIALIZED_NAME_SPEECH_RECOGNITION = "speechRecognition";
   @SerializedName(SERIALIZED_NAME_SPEECH_RECOGNITION)
-  private Object speechRecognition = 0;
+  private Object speechRecognition = null;
 
   public static final String SERIALIZED_NAME_DIRECTORY = "directory";
   @SerializedName(SERIALIZED_NAME_DIRECTORY)
@@ -83,27 +83,27 @@ public class Menus {
 
   public static final String SERIALIZED_NAME_EXIT_SOUND = "exitSound";
   @SerializedName(SERIALIZED_NAME_EXIT_SOUND)
-  private Object exitSound = default;
+  private Object exitSound = null;
 
   public static final String SERIALIZED_NAME_TRANSFER_ANNOUNCEMENT = "transferAnnouncement";
   @SerializedName(SERIALIZED_NAME_TRANSFER_ANNOUNCEMENT)
-  private Object transferAnnouncement = default;
+  private Object transferAnnouncement = null;
 
   public static final String SERIALIZED_NAME_MAX_FAILURES = "maxFailures";
   @SerializedName(SERIALIZED_NAME_MAX_FAILURES)
-  private Object maxFailures = 3;
+  private Object maxFailures = null;
 
   public static final String SERIALIZED_NAME_MAX_TIMEOUTS = "maxTimeouts";
   @SerializedName(SERIALIZED_NAME_MAX_TIMEOUTS)
-  private Object maxTimeouts = 3;
+  private Object maxTimeouts = null;
 
   public static final String SERIALIZED_NAME_TIMEOUT = "timeout";
   @SerializedName(SERIALIZED_NAME_TIMEOUT)
-  private Object timeout = 10;
+  private Object timeout = null;
 
   public static final String SERIALIZED_NAME_TOUCH_TONE_TERMINATORS = "touchToneTerminators";
   @SerializedName(SERIALIZED_NAME_TOUCH_TONE_TERMINATORS)
-  private Object touchToneTerminators = 1;
+  private Object touchToneTerminators = null;
 
   public static final String SERIALIZED_NAME_TIMESCHEDULE = "timeschedule";
   @SerializedName(SERIALIZED_NAME_TIMESCHEDULE)

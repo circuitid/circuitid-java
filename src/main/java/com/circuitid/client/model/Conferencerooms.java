@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Conferencerooms
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Conferencerooms {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -75,11 +75,11 @@ public class Conferencerooms {
 
   public static final String SERIALIZED_NAME_LOBBY = "lobby";
   @SerializedName(SERIALIZED_NAME_LOBBY)
-  private Object lobby = 0;
+  private Object lobby = null;
 
   public static final String SERIALIZED_NAME_REQUIRE_PASSCODE = "requirePasscode";
   @SerializedName(SERIALIZED_NAME_REQUIRE_PASSCODE)
-  private Object requirePasscode = 0;
+  private Object requirePasscode = null;
 
   public static final String SERIALIZED_NAME_SHARE = "share";
   @SerializedName(SERIALIZED_NAME_SHARE)

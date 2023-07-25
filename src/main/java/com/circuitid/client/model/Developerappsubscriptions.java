@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Developerappsubscriptions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Developerappsubscriptions {
   public static final String SERIALIZED_NAME_DEVELOPER_APP = "developerApp";
   @SerializedName(SERIALIZED_NAME_DEVELOPER_APP)
@@ -67,11 +67,11 @@ public class Developerappsubscriptions {
 
   public static final String SERIALIZED_NAME_PERMISSIONS = "permissions";
   @SerializedName(SERIALIZED_NAME_PERMISSIONS)
-  private Object permissions = {};
+  private Object permissions = null;
 
   public static final String SERIALIZED_NAME_REQUIRE_ID = "requireId";
   @SerializedName(SERIALIZED_NAME_REQUIRE_ID)
-  private Object requireId = 0;
+  private Object requireId = null;
 
   public static final String SERIALIZED_NAME_SERVICES = "services";
   @SerializedName(SERIALIZED_NAME_SERVICES)

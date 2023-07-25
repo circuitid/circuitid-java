@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Conversations
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Conversations {
   public static final String SERIALIZED_NAME_CONTACTS = "contacts";
   @SerializedName(SERIALIZED_NAME_CONTACTS)
@@ -75,7 +75,7 @@ public class Conversations {
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = open;
+  private Object status = null;
 
   public Conversations() {
   }

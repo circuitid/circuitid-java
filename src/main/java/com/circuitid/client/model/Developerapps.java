@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Developerapps
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Developerapps {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -71,11 +71,11 @@ public class Developerapps {
 
   public static final String SERIALIZED_NAME_REQUIRE_ID = "requireId";
   @SerializedName(SERIALIZED_NAME_REQUIRE_ID)
-  private Object requireId = 0;
+  private Object requireId = null;
 
   public static final String SERIALIZED_NAME_IS_FREE = "isFree";
   @SerializedName(SERIALIZED_NAME_IS_FREE)
-  private Object isFree = 1;
+  private Object isFree = null;
 
   public static final String SERIALIZED_NAME_FEE_DESCRIPTION = "feeDescription";
   @SerializedName(SERIALIZED_NAME_FEE_DESCRIPTION)
@@ -111,11 +111,11 @@ public class Developerapps {
 
   public static final String SERIALIZED_NAME_PERMISSIONS = "permissions";
   @SerializedName(SERIALIZED_NAME_PERMISSIONS)
-  private Object permissions = {};
+  private Object permissions = null;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = pending;
+  private Object status = null;
 
   public static final String SERIALIZED_NAME_WEBHOOK_AUTH_TYPE = "webhookAuthType";
   @SerializedName(SERIALIZED_NAME_WEBHOOK_AUTH_TYPE)

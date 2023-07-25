@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Servers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Servers {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -63,7 +63,7 @@ public class Servers {
 
   public static final String SERIALIZED_NAME_PORT = "port";
   @SerializedName(SERIALIZED_NAME_PORT)
-  private Object port = 5060;
+  private Object port = null;
 
   public static final String SERIALIZED_NAME_CALLER_ID = "callerId";
   @SerializedName(SERIALIZED_NAME_CALLER_ID)
@@ -75,19 +75,19 @@ public class Servers {
 
   public static final String SERIALIZED_NAME_DOMESTIC_OUTBOUND_CALL_LIMIT = "domesticOutboundCallLimit";
   @SerializedName(SERIALIZED_NAME_DOMESTIC_OUTBOUND_CALL_LIMIT)
-  private Object domesticOutboundCallLimit = 10;
+  private Object domesticOutboundCallLimit = null;
 
   public static final String SERIALIZED_NAME_DOMESTIC_INBOUND_CALL_LIMIT = "domesticInboundCallLimit";
   @SerializedName(SERIALIZED_NAME_DOMESTIC_INBOUND_CALL_LIMIT)
-  private Object domesticInboundCallLimit = 10;
+  private Object domesticInboundCallLimit = null;
 
   public static final String SERIALIZED_NAME_INTERNATIONAL_OUTBOUND_CALL_LIMIT = "internationalOutboundCallLimit";
   @SerializedName(SERIALIZED_NAME_INTERNATIONAL_OUTBOUND_CALL_LIMIT)
-  private Object internationalOutboundCallLimit = 10;
+  private Object internationalOutboundCallLimit = null;
 
   public static final String SERIALIZED_NAME_TOLL_FREE_CHANNEL_LIMIT = "tollFreeChannelLimit";
   @SerializedName(SERIALIZED_NAME_TOLL_FREE_CHANNEL_LIMIT)
-  private Object tollFreeChannelLimit = 10;
+  private Object tollFreeChannelLimit = null;
 
   public static final String SERIALIZED_NAME_INBOUND_SIP_TRUNKING_ORDER = "inboundSipTrunkingOrder";
   @SerializedName(SERIALIZED_NAME_INBOUND_SIP_TRUNKING_ORDER)
@@ -103,11 +103,11 @@ public class Servers {
 
   public static final String SERIALIZED_NAME_BYPASS_MEDIA = "bypassMedia";
   @SerializedName(SERIALIZED_NAME_BYPASS_MEDIA)
-  private Object bypassMedia = 0;
+  private Object bypassMedia = null;
 
   public static final String SERIALIZED_NAME_DISABLE_R_T_P_AUTO_ADJUST = "disableRTPAutoAdjust";
   @SerializedName(SERIALIZED_NAME_DISABLE_R_T_P_AUTO_ADJUST)
-  private Object disableRTPAutoAdjust = 0;
+  private Object disableRTPAutoAdjust = null;
 
   public Servers() {
   }

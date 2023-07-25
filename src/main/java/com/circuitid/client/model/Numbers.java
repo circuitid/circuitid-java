@@ -51,11 +51,11 @@ import com.circuitid.client.JSON;
 /**
  * Numbers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:46:54.095Z[UTC]")
 public class Numbers {
   public static final String SERIALIZED_NAME_IN_USE = "inUse";
   @SerializedName(SERIALIZED_NAME_IN_USE)
-  private Object inUse = 1;
+  private Object inUse = null;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -87,23 +87,23 @@ public class Numbers {
 
   public static final String SERIALIZED_NAME_FAX = "fax";
   @SerializedName(SERIALIZED_NAME_FAX)
-  private Object fax = 0;
+  private Object fax = null;
 
   public static final String SERIALIZED_NAME_VOICE = "voice";
   @SerializedName(SERIALIZED_NAME_VOICE)
-  private Object voice = 0;
+  private Object voice = null;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = 1;
+  private Object status = null;
 
   public static final String SERIALIZED_NAME_SMS = "sms";
   @SerializedName(SERIALIZED_NAME_SMS)
-  private Object sms = 0;
+  private Object sms = null;
 
   public static final String SERIALIZED_NAME_MMS = "mms";
   @SerializedName(SERIALIZED_NAME_MMS)
-  private Object mms = 0;
+  private Object mms = null;
 
   public static final String SERIALIZED_NAME_CHANGE_REGION_ORDER_ID = "changeRegionOrderId";
   @SerializedName(SERIALIZED_NAME_CHANGE_REGION_ORDER_ID)
@@ -171,23 +171,23 @@ public class Numbers {
 
   public static final String SERIALIZED_NAME_E911_SUPPORTED = "e911Supported";
   @SerializedName(SERIALIZED_NAME_E911_SUPPORTED)
-  private Object e911Supported = 0;
+  private Object e911Supported = null;
 
   public static final String SERIALIZED_NAME_CALLER_NAME_SUPPORTED = "callerNameSupported";
   @SerializedName(SERIALIZED_NAME_CALLER_NAME_SUPPORTED)
-  private Object callerNameSupported = 0;
+  private Object callerNameSupported = null;
 
   public static final String SERIALIZED_NAME_DIRECTORY_LISTING_SUPPORTED = "directoryListingSupported";
   @SerializedName(SERIALIZED_NAME_DIRECTORY_LISTING_SUPPORTED)
-  private Object directoryListingSupported = 0;
+  private Object directoryListingSupported = null;
 
   public static final String SERIALIZED_NAME_MESSAGING_SUPPORTED = "messagingSupported";
   @SerializedName(SERIALIZED_NAME_MESSAGING_SUPPORTED)
-  private Object messagingSupported = 0;
+  private Object messagingSupported = null;
 
   public static final String SERIALIZED_NAME_DESTINATION_TYPE = "destinationType";
   @SerializedName(SERIALIZED_NAME_DESTINATION_TYPE)
-  private Object destinationType = park;
+  private Object destinationType = null;
 
   public static final String SERIALIZED_NAME_DESTINATION = "destination";
   @SerializedName(SERIALIZED_NAME_DESTINATION)
