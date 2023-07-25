@@ -1,8 +1,8 @@
 # circuitid-java-client
 
 Circuit ID REST API
-- API version: 0.47.16
-  - Build date: 2023-07-25T10:14:36.990Z[UTC]
+- API version: 0.47.17
+  - Build date: 2023-07-25T10:15:18.745Z[UTC]
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -48,7 +48,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.circuitid</groupId>
   <artifactId>circuitid-java-client</artifactId>
-  <version>0.47.16</version>
+  <version>0.47.17</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -64,7 +64,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.circuitid:circuitid-java-client:0.47.16"
+     implementation "com.circuitid:circuitid-java-client:0.47.17"
   }
 ```
 
@@ -78,7 +78,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/circuitid-java-client-0.47.16.jar`
+* `target/circuitid-java-client-0.47.17.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -98,7 +98,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -125,7 +125,7 @@ public class Example {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

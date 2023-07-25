@@ -5,7 +5,7 @@
     <artifactId>circuitid-java-client</artifactId>
     <packaging>jar</packaging>
     <name>circuitid-java-client</name>
-    <version>0.47.16</version>
+    <version>0.47.17</version>
     <url>https://github.com/circuitid/circuitid-java.git</url>
     <description>Circuit ID Java Client</description>
     <scm>
