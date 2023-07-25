@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Developerapps
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:40:30.810Z[UTC]")
 public class Developerapps {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -73,9 +73,56 @@ public class Developerapps {
   @SerializedName(SERIALIZED_NAME_REQUIRE_ID)
   private Object requireId = null;
 
+  /**
+   * Gets or Sets isFree
+   */
+  @JsonAdapter(IsFreeEnum.Adapter.class)
+  public enum IsFreeEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    IsFreeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static IsFreeEnum fromValue(Object value) {
+      for (IsFreeEnum b : IsFreeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<IsFreeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final IsFreeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public IsFreeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return IsFreeEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_IS_FREE = "isFree";
   @SerializedName(SERIALIZED_NAME_IS_FREE)
-  private Object isFree = 1;
+  private IsFreeEnum isFree = 1;
 
   public static final String SERIALIZED_NAME_FEE_DESCRIPTION = "feeDescription";
   @SerializedName(SERIALIZED_NAME_FEE_DESCRIPTION)
@@ -113,9 +160,62 @@ public class Developerapps {
   @SerializedName(SERIALIZED_NAME_PERMISSIONS)
   private Object permissions = {};
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    ACTIVE("active"),
+    
+    DISABLED("disabled"),
+    
+    SUSPENDED("suspended"),
+    
+    ERROR("error"),
+    
+    PENDING("pending");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = pending;
+  private StatusEnum status = pending;
 
   public static final String SERIALIZED_NAME_WEBHOOK_AUTH_TYPE = "webhookAuthType";
   @SerializedName(SERIALIZED_NAME_WEBHOOK_AUTH_TYPE)
@@ -245,7 +345,7 @@ public class Developerapps {
   }
 
 
-  public Developerapps isFree(Object isFree) {
+  public Developerapps isFree(IsFreeEnum isFree) {
     
     this.isFree = isFree;
     return this;
@@ -256,12 +356,12 @@ public class Developerapps {
    * @return isFree
   **/
   @javax.annotation.Nullable
-  public Object getIsFree() {
+  public IsFreeEnum getIsFree() {
     return isFree;
   }
 
 
-  public void setIsFree(Object isFree) {
+  public void setIsFree(IsFreeEnum isFree) {
     this.isFree = isFree;
   }
 
@@ -455,7 +555,7 @@ public class Developerapps {
   }
 
 
-  public Developerapps status(Object status) {
+  public Developerapps status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -466,12 +566,12 @@ public class Developerapps {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 

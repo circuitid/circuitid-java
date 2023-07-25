@@ -7,7 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**inUse** | **Object** |  |  [optional] |
+|**inUse** | [**InUseEnum**](#InUseEnum) |  |  [optional] |
 |**name** | **Object** |  |  |
 |**countryCode** | **Object** |  |  |
 |**amount** | **Object** |  |  [optional] |
@@ -17,7 +17,7 @@
 |**providerOrderId** | **Object** |  |  [optional] |
 |**fax** | **Object** |  |  [optional] |
 |**voice** | **Object** |  |  [optional] |
-|**status** | **Object** |  |  [optional] |
+|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
 |**sms** | **Object** |  |  [optional] |
 |**mms** | **Object** |  |  [optional] |
 |**changeRegionOrderId** | **Object** |  |  [optional] |
@@ -40,10 +40,49 @@
 |**callerNameSupported** | **Object** |  |  [optional] |
 |**directoryListingSupported** | **Object** |  |  [optional] |
 |**messagingSupported** | **Object** |  |  [optional] |
-|**destinationType** | **Object** |  |  |
+|**destinationType** | [**DestinationTypeEnum**](#DestinationTypeEnum) |  |  |
 |**destination** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**ref** | **Object** |  |  [optional] |
 |**callForwardingDestination** | **Object** |  |  [optional] |
+
+
+
+## Enum: InUseEnum
+
+| Name | Value |
+|---- | -----|
+| _1 | &quot;1&quot; |
+| _0 | &quot;0&quot; |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| _1 | &quot;1&quot; |
+| _0 | &quot;0&quot; |
+
+
+
+## Enum: DestinationTypeEnum
+
+| Name | Value |
+|---- | -----|
+| ANNOUNCEMENTS | &quot;announcements&quot; |
+| DIRECTORIES | &quot;directories&quot; |
+| PARK | &quot;park&quot; |
+| NUMBERS | &quot;numbers&quot; |
+| MENUS | &quot;menus&quot; |
+| USERS | &quot;users&quot; |
+| SERVERS | &quot;servers&quot; |
+| INBOUNDRULES | &quot;inboundrules&quot; |
+| CALLQUEUES | &quot;callqueues&quot; |
+| FAXACCOUNTS | &quot;faxaccounts&quot; |
+| CALLFORWARDING | &quot;callforwarding&quot; |
+| HANGUP | &quot;hangup&quot; |
+| PHONEINBOUNDRULES | &quot;phoneinboundrules&quot; |
+| VOICEMAILACCOUNTS | &quot;voicemailaccounts&quot; |
 
 
 

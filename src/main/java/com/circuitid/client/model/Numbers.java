@@ -51,11 +51,58 @@ import com.circuitid.client.JSON;
 /**
  * Numbers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:40:30.810Z[UTC]")
 public class Numbers {
+  /**
+   * Gets or Sets inUse
+   */
+  @JsonAdapter(InUseEnum.Adapter.class)
+  public enum InUseEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    InUseEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static InUseEnum fromValue(Object value) {
+      for (InUseEnum b : InUseEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<InUseEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final InUseEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public InUseEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return InUseEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_IN_USE = "inUse";
   @SerializedName(SERIALIZED_NAME_IN_USE)
-  private Object inUse = 1;
+  private InUseEnum inUse = 1;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -93,9 +140,56 @@ public class Numbers {
   @SerializedName(SERIALIZED_NAME_VOICE)
   private Object voice = null;
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = 1;
+  private StatusEnum status = 1;
 
   public static final String SERIALIZED_NAME_SMS = "sms";
   @SerializedName(SERIALIZED_NAME_SMS)
@@ -185,9 +279,80 @@ public class Numbers {
   @SerializedName(SERIALIZED_NAME_MESSAGING_SUPPORTED)
   private Object messagingSupported = null;
 
+  /**
+   * Gets or Sets destinationType
+   */
+  @JsonAdapter(DestinationTypeEnum.Adapter.class)
+  public enum DestinationTypeEnum {
+    ANNOUNCEMENTS("announcements"),
+    
+    DIRECTORIES("directories"),
+    
+    PARK("park"),
+    
+    NUMBERS("numbers"),
+    
+    MENUS("menus"),
+    
+    USERS("users"),
+    
+    SERVERS("servers"),
+    
+    INBOUNDRULES("inboundrules"),
+    
+    CALLQUEUES("callqueues"),
+    
+    FAXACCOUNTS("faxaccounts"),
+    
+    CALLFORWARDING("callforwarding"),
+    
+    HANGUP("hangup"),
+    
+    PHONEINBOUNDRULES("phoneinboundrules"),
+    
+    VOICEMAILACCOUNTS("voicemailaccounts");
+
+    private Object value;
+
+    DestinationTypeEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DestinationTypeEnum fromValue(Object value) {
+      for (DestinationTypeEnum b : DestinationTypeEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DestinationTypeEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DestinationTypeEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DestinationTypeEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DestinationTypeEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_DESTINATION_TYPE = "destinationType";
   @SerializedName(SERIALIZED_NAME_DESTINATION_TYPE)
-  private Object destinationType = park;
+  private DestinationTypeEnum destinationType = park;
 
   public static final String SERIALIZED_NAME_DESTINATION = "destination";
   @SerializedName(SERIALIZED_NAME_DESTINATION)
@@ -204,7 +369,7 @@ public class Numbers {
   public Numbers() {
   }
 
-  public Numbers inUse(Object inUse) {
+  public Numbers inUse(InUseEnum inUse) {
     
     this.inUse = inUse;
     return this;
@@ -215,12 +380,12 @@ public class Numbers {
    * @return inUse
   **/
   @javax.annotation.Nullable
-  public Object getInUse() {
+  public InUseEnum getInUse() {
     return inUse;
   }
 
 
-  public void setInUse(Object inUse) {
+  public void setInUse(InUseEnum inUse) {
     this.inUse = inUse;
   }
 
@@ -414,7 +579,7 @@ public class Numbers {
   }
 
 
-  public Numbers status(Object status) {
+  public Numbers status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -425,12 +590,12 @@ public class Numbers {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 
@@ -897,7 +1062,7 @@ public class Numbers {
   }
 
 
-  public Numbers destinationType(Object destinationType) {
+  public Numbers destinationType(DestinationTypeEnum destinationType) {
     
     this.destinationType = destinationType;
     return this;
@@ -908,12 +1073,12 @@ public class Numbers {
    * @return destinationType
   **/
   @javax.annotation.Nullable
-  public Object getDestinationType() {
+  public DestinationTypeEnum getDestinationType() {
     return destinationType;
   }
 
 
-  public void setDestinationType(Object destinationType) {
+  public void setDestinationType(DestinationTypeEnum destinationType) {
     this.destinationType = destinationType;
   }
 

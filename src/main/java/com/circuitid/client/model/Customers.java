@@ -51,15 +51,66 @@ import com.circuitid.client.JSON;
 /**
  * Customers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:40:30.810Z[UTC]")
 public class Customers {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   private Object name = null;
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    ACTIVE("active"),
+    
+    SUSPENDED("suspended"),
+    
+    TERMINATED("terminated"),
+    
+    FRAUD("fraud");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = active;
+  private StatusEnum status = active;
 
   public static final String SERIALIZED_NAME_WEBSITE_URL = "websiteUrl";
   @SerializedName(SERIALIZED_NAME_WEBSITE_URL)
@@ -129,9 +180,56 @@ public class Customers {
   @SerializedName(SERIALIZED_NAME_MEDIA_BYPASS)
   private Object mediaBypass = null;
 
+  /**
+   * Gets or Sets accountLock
+   */
+  @JsonAdapter(AccountLockEnum.Adapter.class)
+  public enum AccountLockEnum {
+    _1("1"),
+    
+    _0("0");
+
+    private Object value;
+
+    AccountLockEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static AccountLockEnum fromValue(Object value) {
+      for (AccountLockEnum b : AccountLockEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<AccountLockEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final AccountLockEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public AccountLockEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return AccountLockEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_ACCOUNT_LOCK = "accountLock";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_LOCK)
-  private Object accountLock = 1;
+  private AccountLockEnum accountLock = 1;
 
   public static final String SERIALIZED_NAME_CALL_RECORDING = "callRecording";
   @SerializedName(SERIALIZED_NAME_CALL_RECORDING)
@@ -157,9 +255,56 @@ public class Customers {
   @SerializedName(SERIALIZED_NAME_MAX_OUTBOUND_CALL_RATE)
   private Object maxOutboundCallRate = 1;
 
+  /**
+   * Gets or Sets defaultBillMethod
+   */
+  @JsonAdapter(DefaultBillMethodEnum.Adapter.class)
+  public enum DefaultBillMethodEnum {
+    CREDIT("credit"),
+    
+    PAYMENTMETHOD("paymentmethod");
+
+    private Object value;
+
+    DefaultBillMethodEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static DefaultBillMethodEnum fromValue(Object value) {
+      for (DefaultBillMethodEnum b : DefaultBillMethodEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<DefaultBillMethodEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final DefaultBillMethodEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public DefaultBillMethodEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return DefaultBillMethodEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_DEFAULT_BILL_METHOD = "defaultBillMethod";
   @SerializedName(SERIALIZED_NAME_DEFAULT_BILL_METHOD)
-  private Object defaultBillMethod = credit;
+  private DefaultBillMethodEnum defaultBillMethod = credit;
 
   public Customers() {
   }
@@ -185,7 +330,7 @@ public class Customers {
   }
 
 
-  public Customers status(Object status) {
+  public Customers status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -196,12 +341,12 @@ public class Customers {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 
@@ -563,7 +708,7 @@ public class Customers {
   }
 
 
-  public Customers accountLock(Object accountLock) {
+  public Customers accountLock(AccountLockEnum accountLock) {
     
     this.accountLock = accountLock;
     return this;
@@ -574,12 +719,12 @@ public class Customers {
    * @return accountLock
   **/
   @javax.annotation.Nullable
-  public Object getAccountLock() {
+  public AccountLockEnum getAccountLock() {
     return accountLock;
   }
 
 
-  public void setAccountLock(Object accountLock) {
+  public void setAccountLock(AccountLockEnum accountLock) {
     this.accountLock = accountLock;
   }
 
@@ -710,7 +855,7 @@ public class Customers {
   }
 
 
-  public Customers defaultBillMethod(Object defaultBillMethod) {
+  public Customers defaultBillMethod(DefaultBillMethodEnum defaultBillMethod) {
     
     this.defaultBillMethod = defaultBillMethod;
     return this;
@@ -721,12 +866,12 @@ public class Customers {
    * @return defaultBillMethod
   **/
   @javax.annotation.Nullable
-  public Object getDefaultBillMethod() {
+  public DefaultBillMethodEnum getDefaultBillMethod() {
     return defaultBillMethod;
   }
 
 
-  public void setDefaultBillMethod(Object defaultBillMethod) {
+  public void setDefaultBillMethod(DefaultBillMethodEnum defaultBillMethod) {
     this.defaultBillMethod = defaultBillMethod;
   }
 

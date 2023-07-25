@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Phoneoutboundrules
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:40:30.810Z[UTC]")
 public class Phoneoutboundrules {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -61,9 +61,56 @@ public class Phoneoutboundrules {
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
   private Object description = null;
 
+  /**
+   * Gets or Sets status
+   */
+  @JsonAdapter(StatusEnum.Adapter.class)
+  public enum StatusEnum {
+    _0("0"),
+    
+    _1("1");
+
+    private Object value;
+
+    StatusEnum(Object value) {
+      this.value = value;
+    }
+
+    public Object getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static StatusEnum fromValue(Object value) {
+      for (StatusEnum b : StatusEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      return null;
+    }
+
+    public static class Adapter extends TypeAdapter<StatusEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public StatusEnum read(final JsonReader jsonReader) throws IOException {
+        Object value =  jsonReader.nextObject();
+        return StatusEnum.fromValue(value);
+      }
+    }
+  }
+
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private Object status = 1;
+  private StatusEnum status = 1;
 
   public static final String SERIALIZED_NAME_OUTBOUND_CALLER_ID = "outboundCallerId";
   @SerializedName(SERIALIZED_NAME_OUTBOUND_CALLER_ID)
@@ -114,7 +161,7 @@ public class Phoneoutboundrules {
   }
 
 
-  public Phoneoutboundrules status(Object status) {
+  public Phoneoutboundrules status(StatusEnum status) {
     
     this.status = status;
     return this;
@@ -125,12 +172,12 @@ public class Phoneoutboundrules {
    * @return status
   **/
   @javax.annotation.Nullable
-  public Object getStatus() {
+  public StatusEnum getStatus() {
     return status;
   }
 
 
-  public void setStatus(Object status) {
+  public void setStatus(StatusEnum status) {
     this.status = status;
   }
 

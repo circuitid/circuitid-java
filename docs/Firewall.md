@@ -16,8 +16,17 @@
 |**param** | **Object** |  |  |
 |**hits** | **Object** |  |  [optional] |
 |**ai** | **Object** |  |  [optional] |
-|**status** | **Object** |  |  [optional] |
+|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
 |**notificationHits** | **Object** |  |  [optional] |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| _0 | &quot;0&quot; |
+| _1 | &quot;1&quot; |
 
 
 

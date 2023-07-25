@@ -10,7 +10,7 @@
 |**name** | **Object** |  |  |
 |**group** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**phoneoutboundrule** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**status** | **Object** |  |  [optional] |
+|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
 |**priority** | **Object** |  |  |
 |**startingChars** | **Object** |  |  [optional] |
 |**contains** | **Object** |  |  [optional] |
@@ -22,8 +22,27 @@
 |**rangeEnd** | **Object** |  |  [optional] |
 |**removeStartingChars** | **Object** |  |  [optional] |
 |**removeEndingChars** | **Object** |  |  [optional] |
-|**route** | **Object** |  |  |
+|**route** | [**RouteEnum**](#RouteEnum) |  |  |
 |**routingType** | **Object** |  |  [optional] |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| _1 | &quot;1&quot; |
+| _0 | &quot;0&quot; |
+
+
+
+## Enum: RouteEnum
+
+| Name | Value |
+|---- | -----|
+| DEFAULT | &quot;default&quot; |
+| GROUP | &quot;group&quot; |
+| PSTN | &quot;pstn&quot; |
 
 
 
