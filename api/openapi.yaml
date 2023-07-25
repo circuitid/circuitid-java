@@ -10342,7 +10342,6 @@ components:
         name:
           maxLength: 45
         timezone:
-          default: America/New_York
           maxLength: 45
         sunday:
           default:
@@ -10507,8 +10506,7 @@ components:
           - r
           - rw
           - null
-        timezone:
-          default: America/New_York
+        timezone: {}
         vmTranscription:
           default: 0
           enum:

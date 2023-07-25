@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Timeschedules
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:15:18.745Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:19:13.415Z[UTC]")
 public class Timeschedules {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -58,7 +58,7 @@ public class Timeschedules {
 
   public static final String SERIALIZED_NAME_TIMEZONE = "timezone";
   @SerializedName(SERIALIZED_NAME_TIMEZONE)
-  private Object timezone = America/New_York;
+  private Object timezone = null;
 
   public static final String SERIALIZED_NAME_SUNDAY = "sunday";
   @SerializedName(SERIALIZED_NAME_SUNDAY)
