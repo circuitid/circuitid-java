@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Callqueues
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
 public class Callqueues {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -107,7 +107,7 @@ public class Callqueues {
 
   public static final String SERIALIZED_NAME_TIER_RULES_APPLY = "tierRulesApply";
   @SerializedName(SERIALIZED_NAME_TIER_RULES_APPLY)
-  private Object tierRulesApply = false;
+  private Object tierRulesApply = null;
 
   public static final String SERIALIZED_NAME_TIER_RULE_NO_AGENT_NO_WAIT = "tierRuleNoAgentNoWait";
   @SerializedName(SERIALIZED_NAME_TIER_RULE_NO_AGENT_NO_WAIT)

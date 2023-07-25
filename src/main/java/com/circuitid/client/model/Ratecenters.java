@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Ratecenters
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
 public class Ratecenters {
   public static final String SERIALIZED_NAME_NPA = "npa";
   @SerializedName(SERIALIZED_NAME_NPA)

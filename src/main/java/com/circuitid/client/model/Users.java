@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Users
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
 public class Users {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -115,7 +115,7 @@ public class Users {
 
   public static final String SERIALIZED_NAME_IS_PRIMARY = "isPrimary";
   @SerializedName(SERIALIZED_NAME_IS_PRIMARY)
-  private Object isPrimary = 0;
+  private Object isPrimary = null;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -191,7 +191,7 @@ public class Users {
 
   public static final String SERIALIZED_NAME_VM_TRANSCRIPTION = "vmTranscription";
   @SerializedName(SERIALIZED_NAME_VM_TRANSCRIPTION)
-  private Object vmTranscription = 0;
+  private Object vmTranscription = null;
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)

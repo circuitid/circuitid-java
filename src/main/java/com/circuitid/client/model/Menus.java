@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Menus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
 public class Menus {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -63,7 +63,7 @@ public class Menus {
 
   public static final String SERIALIZED_NAME_SPEECH_RECOGNITION = "speechRecognition";
   @SerializedName(SERIALIZED_NAME_SPEECH_RECOGNITION)
-  private Object speechRecognition = 0;
+  private Object speechRecognition = null;
 
   public static final String SERIALIZED_NAME_DIRECTORY = "directory";
   @SerializedName(SERIALIZED_NAME_DIRECTORY)

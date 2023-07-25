@@ -8906,8 +8906,7 @@ components:
           format: int32
         timeBasedScore:
           default: queue
-        tierRulesApply:
-          default: false
+        tierRulesApply: {}
         tierRuleNoAgentNoWait:
           default: true
         tierRuleWaitSecond:
@@ -9033,10 +9032,8 @@ components:
         isUserRoom: {}
         isChatRoom: {}
         lobby:
-          default: 0
           format: int32
         requirePasscode:
-          default: 0
           format: int32
         share: {}
         chatroom:
@@ -9054,7 +9051,6 @@ components:
         logo:
           maxLength: 255
         credit:
-          default: 0
           format: int32
         adminUserId:
           description: ObjectId (unique 12 bytes ID)
@@ -9068,44 +9064,35 @@ components:
         supportUserId:
           description: ObjectId (unique 12 bytes ID)
         automaticRefillAmount:
-          default: 0
           format: int32
         lowBalanceAlertAmount:
-          default: 0
           format: int32
         lowBalanceAlertAt:
           format: date-time
         lowBalanceAlertCount:
-          default: 0
           format: int32
         lastAutomaticRefillInvoice:
           description: ObjectId (unique 12 bytes ID)
         internationalCalling:
-          default: 0
           format: int32
         createdByIP:
           maxLength: 45
           minLength: 8
         callDebug:
-          default: 0
           format: int32
         mediaBypass:
-          default: 0
           format: int32
         accountLock:
           default: 1
           format: int32
         callRecording:
-          default: 0
           format: int32
         cdrRetention:
           default: 12
           format: int32
         cnamLookUps:
-          default: 0
           format: int32
         holdMusic:
-          default: 0
           format: int32
         transcribeCalls:
           format: int32
@@ -9126,7 +9113,6 @@ components:
         type: {}
         visibility: {}
         requireId:
-          default: 0
           format: int32
         isFree:
           default: 1
@@ -9193,7 +9179,6 @@ components:
         permissions:
           default: {}
         requireId:
-          default: 0
           format: int32
         services:
           items:
@@ -9236,7 +9221,6 @@ components:
           maxLength: 255
           minLength: 2
         status:
-          default: 0
           format: int32
       required:
       - name
@@ -9247,12 +9231,10 @@ components:
         callerDestination:
           maxLength: 45
         pages:
-          default: 0
           format: int32
         statusCode:
           format: int32
         transferedPages:
-          default: 0
           format: int32
         status:
           default: processing
@@ -9270,7 +9252,6 @@ components:
         faxAccount:
           description: ObjectId (unique 12 bytes ID)
         retries:
-          default: 0
           format: int32
         invoice:
           description: ObjectId (unique 12 bytes ID)
@@ -9316,7 +9297,6 @@ components:
         hits:
           format: int32
         ai:
-          default: 0
           format: int32
         status:
           default: 1
@@ -9456,7 +9436,6 @@ components:
           default: 4
           format: int32
         speechRecognition:
-          default: 0
           format: int32
         directory:
           description: ObjectId (unique 12 bytes ID)
@@ -9617,19 +9596,15 @@ components:
         providerOrderId:
           maxLength: 45
         fax:
-          default: 0
           format: int32
         voice:
-          default: 0
           format: int32
         status:
           default: 1
           format: int32
         sms:
-          default: 0
           format: int32
         mms:
-          default: 0
           format: int32
         changeRegionOrderId:
           maxLength: 45
@@ -9666,16 +9641,12 @@ components:
         messageCampaignOrderDate:
           format: date-time
         e911Supported:
-          default: 0
           format: int32
         callerNameSupported:
-          default: 0
           format: int32
         directoryListingSupported:
-          default: 0
           format: int32
         messagingSupported:
-          default: 0
           format: int32
         destinationType:
           default: park
@@ -9710,7 +9681,6 @@ components:
         office:
           description: ObjectId (unique 12 bytes ID)
         e911:
-          default: 0
           format: int32
         invoice:
           description: ObjectId (unique 12 bytes ID)
@@ -9922,10 +9892,8 @@ components:
         noInstantRingBack:
           format: int32
         bypassMedia:
-          default: 0
           format: int32
         disableRTPAutoAdjust:
-          default: 0
           format: int32
       required:
       - domesticInboundCallLimit
@@ -10027,7 +9995,6 @@ components:
           default: en
           maxLength: 5
         isPrimary:
-          default: 0
           format: int32
         status:
           default: active
@@ -10060,7 +10027,6 @@ components:
         timezone:
           default: America/New_York
         vmTranscription:
-          default: 0
           format: int32
         communication:
           default:

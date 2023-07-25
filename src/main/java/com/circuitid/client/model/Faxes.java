@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Faxes
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
 public class Faxes {
   public static final String SERIALIZED_NAME_CALLER_ID_NUMBER = "callerIdNumber";
   @SerializedName(SERIALIZED_NAME_CALLER_ID_NUMBER)
@@ -63,7 +63,7 @@ public class Faxes {
 
   public static final String SERIALIZED_NAME_PAGES = "pages";
   @SerializedName(SERIALIZED_NAME_PAGES)
-  private Object pages = 0;
+  private Object pages = null;
 
   public static final String SERIALIZED_NAME_STATUS_CODE = "statusCode";
   @SerializedName(SERIALIZED_NAME_STATUS_CODE)
@@ -71,7 +71,7 @@ public class Faxes {
 
   public static final String SERIALIZED_NAME_TRANSFERED_PAGES = "transferedPages";
   @SerializedName(SERIALIZED_NAME_TRANSFERED_PAGES)
-  private Object transferedPages = 0;
+  private Object transferedPages = null;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -107,7 +107,7 @@ public class Faxes {
 
   public static final String SERIALIZED_NAME_RETRIES = "retries";
   @SerializedName(SERIALIZED_NAME_RETRIES)
-  private Object retries = 0;
+  private Object retries = null;
 
   public static final String SERIALIZED_NAME_INVOICE = "invoice";
   @SerializedName(SERIALIZED_NAME_INVOICE)

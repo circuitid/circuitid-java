@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Servers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
 public class Servers {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -103,11 +103,11 @@ public class Servers {
 
   public static final String SERIALIZED_NAME_BYPASS_MEDIA = "bypassMedia";
   @SerializedName(SERIALIZED_NAME_BYPASS_MEDIA)
-  private Object bypassMedia = 0;
+  private Object bypassMedia = null;
 
   public static final String SERIALIZED_NAME_DISABLE_R_T_P_AUTO_ADJUST = "disableRTPAutoAdjust";
   @SerializedName(SERIALIZED_NAME_DISABLE_R_T_P_AUTO_ADJUST)
-  private Object disableRTPAutoAdjust = 0;
+  private Object disableRTPAutoAdjust = null;
 
   public Servers() {
   }

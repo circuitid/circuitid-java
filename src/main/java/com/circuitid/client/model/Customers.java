@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Customers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:39:03.806Z[UTC]")
 public class Customers {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -71,7 +71,7 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_CREDIT = "credit";
   @SerializedName(SERIALIZED_NAME_CREDIT)
-  private Object credit = 0;
+  private Object credit = null;
 
   public static final String SERIALIZED_NAME_ADMIN_USER_ID = "adminUserId";
   @SerializedName(SERIALIZED_NAME_ADMIN_USER_ID)
@@ -95,11 +95,11 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_AUTOMATIC_REFILL_AMOUNT = "automaticRefillAmount";
   @SerializedName(SERIALIZED_NAME_AUTOMATIC_REFILL_AMOUNT)
-  private Object automaticRefillAmount = 0;
+  private Object automaticRefillAmount = null;
 
   public static final String SERIALIZED_NAME_LOW_BALANCE_ALERT_AMOUNT = "lowBalanceAlertAmount";
   @SerializedName(SERIALIZED_NAME_LOW_BALANCE_ALERT_AMOUNT)
-  private Object lowBalanceAlertAmount = 0;
+  private Object lowBalanceAlertAmount = null;
 
   public static final String SERIALIZED_NAME_LOW_BALANCE_ALERT_AT = "lowBalanceAlertAt";
   @SerializedName(SERIALIZED_NAME_LOW_BALANCE_ALERT_AT)
@@ -107,7 +107,7 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_LOW_BALANCE_ALERT_COUNT = "lowBalanceAlertCount";
   @SerializedName(SERIALIZED_NAME_LOW_BALANCE_ALERT_COUNT)
-  private Object lowBalanceAlertCount = 0;
+  private Object lowBalanceAlertCount = null;
 
   public static final String SERIALIZED_NAME_LAST_AUTOMATIC_REFILL_INVOICE = "lastAutomaticRefillInvoice";
   @SerializedName(SERIALIZED_NAME_LAST_AUTOMATIC_REFILL_INVOICE)
@@ -115,7 +115,7 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_INTERNATIONAL_CALLING = "internationalCalling";
   @SerializedName(SERIALIZED_NAME_INTERNATIONAL_CALLING)
-  private Object internationalCalling = 0;
+  private Object internationalCalling = null;
 
   public static final String SERIALIZED_NAME_CREATED_BY_I_P = "createdByIP";
   @SerializedName(SERIALIZED_NAME_CREATED_BY_I_P)
@@ -123,11 +123,11 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_CALL_DEBUG = "callDebug";
   @SerializedName(SERIALIZED_NAME_CALL_DEBUG)
-  private Object callDebug = 0;
+  private Object callDebug = null;
 
   public static final String SERIALIZED_NAME_MEDIA_BYPASS = "mediaBypass";
   @SerializedName(SERIALIZED_NAME_MEDIA_BYPASS)
-  private Object mediaBypass = 0;
+  private Object mediaBypass = null;
 
   public static final String SERIALIZED_NAME_ACCOUNT_LOCK = "accountLock";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_LOCK)
@@ -135,7 +135,7 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_CALL_RECORDING = "callRecording";
   @SerializedName(SERIALIZED_NAME_CALL_RECORDING)
-  private Object callRecording = 0;
+  private Object callRecording = null;
 
   public static final String SERIALIZED_NAME_CDR_RETENTION = "cdrRetention";
   @SerializedName(SERIALIZED_NAME_CDR_RETENTION)
@@ -143,11 +143,11 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_CNAM_LOOK_UPS = "cnamLookUps";
   @SerializedName(SERIALIZED_NAME_CNAM_LOOK_UPS)
-  private Object cnamLookUps = 0;
+  private Object cnamLookUps = null;
 
   public static final String SERIALIZED_NAME_HOLD_MUSIC = "holdMusic";
   @SerializedName(SERIALIZED_NAME_HOLD_MUSIC)
-  private Object holdMusic = 0;
+  private Object holdMusic = null;
 
   public static final String SERIALIZED_NAME_TRANSCRIBE_CALLS = "transcribeCalls";
   @SerializedName(SERIALIZED_NAME_TRANSCRIBE_CALLS)
