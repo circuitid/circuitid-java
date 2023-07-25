@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * FindRateCenters200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
 public class FindRateCenters200Response {
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)

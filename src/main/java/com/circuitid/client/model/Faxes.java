@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Faxes
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
 public class Faxes {
   public static final String SERIALIZED_NAME_CALLER_ID_NUMBER = "callerIdNumber";
   @SerializedName(SERIALIZED_NAME_CALLER_ID_NUMBER)
@@ -63,7 +63,7 @@ public class Faxes {
 
   public static final String SERIALIZED_NAME_PAGES = "pages";
   @SerializedName(SERIALIZED_NAME_PAGES)
-  private Object pages = null;
+  private Object pages = 0;
 
   public static final String SERIALIZED_NAME_STATUS_CODE = "statusCode";
   @SerializedName(SERIALIZED_NAME_STATUS_CODE)
@@ -71,115 +71,19 @@ public class Faxes {
 
   public static final String SERIALIZED_NAME_TRANSFERED_PAGES = "transferedPages";
   @SerializedName(SERIALIZED_NAME_TRANSFERED_PAGES)
-  private Object transferedPages = null;
-
-  /**
-   * Gets or Sets status
-   */
-  @JsonAdapter(StatusEnum.Adapter.class)
-  public enum StatusEnum {
-    FAILED("failed"),
-    
-    SUCCESS("success"),
-    
-    PROCESSING("processing");
-
-    private Object value;
-
-    StatusEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static StatusEnum fromValue(Object value) {
-      for (StatusEnum b : StatusEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<StatusEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public StatusEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return StatusEnum.fromValue(value);
-      }
-    }
-  }
+  private Object transferedPages = 0;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private StatusEnum status = null;
+  private Object status = processing;
 
   public static final String SERIALIZED_NAME_ERROR = "error";
   @SerializedName(SERIALIZED_NAME_ERROR)
   private Object error = null;
 
-  /**
-   * Gets or Sets type
-   */
-  @JsonAdapter(TypeEnum.Adapter.class)
-  public enum TypeEnum {
-    SEND("send"),
-    
-    RECEIVE("receive");
-
-    private Object value;
-
-    TypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static TypeEnum fromValue(Object value) {
-      for (TypeEnum b : TypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<TypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public TypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return TypeEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
-  private TypeEnum type = null;
+  private Object type = null;
 
   public static final String SERIALIZED_NAME_ORDER = "order";
   @SerializedName(SERIALIZED_NAME_ORDER)
@@ -203,7 +107,7 @@ public class Faxes {
 
   public static final String SERIALIZED_NAME_RETRIES = "retries";
   @SerializedName(SERIALIZED_NAME_RETRIES)
-  private Object retries = null;
+  private Object retries = 0;
 
   public static final String SERIALIZED_NAME_INVOICE = "invoice";
   @SerializedName(SERIALIZED_NAME_INVOICE)
@@ -325,7 +229,7 @@ public class Faxes {
   }
 
 
-  public Faxes status(StatusEnum status) {
+  public Faxes status(Object status) {
     
     this.status = status;
     return this;
@@ -336,12 +240,12 @@ public class Faxes {
    * @return status
   **/
   @javax.annotation.Nullable
-  public StatusEnum getStatus() {
+  public Object getStatus() {
     return status;
   }
 
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(Object status) {
     this.status = status;
   }
 
@@ -367,7 +271,7 @@ public class Faxes {
   }
 
 
-  public Faxes type(TypeEnum type) {
+  public Faxes type(Object type) {
     
     this.type = type;
     return this;
@@ -378,12 +282,12 @@ public class Faxes {
    * @return type
   **/
   @javax.annotation.Nullable
-  public TypeEnum getType() {
+  public Object getType() {
     return type;
   }
 
 
-  public void setType(TypeEnum type) {
+  public void setType(Object type) {
     this.type = type;
   }
 

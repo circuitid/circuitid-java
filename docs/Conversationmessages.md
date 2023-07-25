@@ -12,18 +12,9 @@
 |**fromNumber** | **Object** |  |  |
 |**to** | **Object** |  |  |
 |**text** | **Object** |  |  [optional] |
-|**direction** | [**DirectionEnum**](#DirectionEnum) |  |  |
+|**direction** | **Object** |  |  |
 |**attachments** | **Object** |  |  [optional] |
 |**referenceId** | **Object** |  |  [optional] |
-
-
-
-## Enum: DirectionEnum
-
-| Name | Value |
-|---- | -----|
-| INBOUND | &quot;inbound&quot; |
-| OUTBOUND | &quot;outbound&quot; |
 
 
 

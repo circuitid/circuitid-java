@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Acceptedsenders
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
 public class Acceptedsenders {
   public static final String SERIALIZED_NAME_OBJECT = "object";
   @SerializedName(SERIALIZED_NAME_OBJECT)
@@ -64,58 +64,9 @@ public class Acceptedsenders {
   @SerializedName(SERIALIZED_NAME_SERVICE_REF)
   private Object serviceRef = null;
 
-  /**
-   * Gets or Sets ref
-   */
-  @JsonAdapter(RefEnum.Adapter.class)
-  public enum RefEnum {
-    USERS("users"),
-    
-    DOMAINS("domains"),
-    
-    CONTACTS("contacts");
-
-    private Object value;
-
-    RefEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static RefEnum fromValue(Object value) {
-      for (RefEnum b : RefEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<RefEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final RefEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public RefEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return RefEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_REF = "ref";
   @SerializedName(SERIALIZED_NAME_REF)
-  private RefEnum ref = null;
+  private Object ref = null;
 
   public Acceptedsenders() {
   }
@@ -183,7 +134,7 @@ public class Acceptedsenders {
   }
 
 
-  public Acceptedsenders ref(RefEnum ref) {
+  public Acceptedsenders ref(Object ref) {
     
     this.ref = ref;
     return this;
@@ -194,12 +145,12 @@ public class Acceptedsenders {
    * @return ref
   **/
   @javax.annotation.Nullable
-  public RefEnum getRef() {
+  public Object getRef() {
     return ref;
   }
 
 
-  public void setRef(RefEnum ref) {
+  public void setRef(Object ref) {
     this.ref = ref;
   }
 

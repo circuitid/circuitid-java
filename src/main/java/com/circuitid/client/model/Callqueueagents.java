@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Callqueueagents
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
 public class Callqueueagents {
   public static final String SERIALIZED_NAME_CALLQUEUE = "callqueue";
   @SerializedName(SERIALIZED_NAME_CALLQUEUE)
@@ -62,11 +62,11 @@ public class Callqueueagents {
 
   public static final String SERIALIZED_NAME_PRIORITY = "priority";
   @SerializedName(SERIALIZED_NAME_PRIORITY)
-  private Object priority = null;
+  private Object priority = 1;
 
   public static final String SERIALIZED_NAME_TIER = "tier";
   @SerializedName(SERIALIZED_NAME_TIER)
-  private Object tier = null;
+  private Object tier = 1;
 
   public Callqueueagents() {
   }

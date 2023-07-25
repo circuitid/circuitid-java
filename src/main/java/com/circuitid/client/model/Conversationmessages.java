@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Conversationmessages
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
 public class Conversationmessages {
   public static final String SERIALIZED_NAME_CONVERSATION = "conversation";
   @SerializedName(SERIALIZED_NAME_CONVERSATION)
@@ -73,56 +73,9 @@ public class Conversationmessages {
   @SerializedName(SERIALIZED_NAME_TEXT)
   private Object text = null;
 
-  /**
-   * Gets or Sets direction
-   */
-  @JsonAdapter(DirectionEnum.Adapter.class)
-  public enum DirectionEnum {
-    INBOUND("inbound"),
-    
-    OUTBOUND("outbound");
-
-    private Object value;
-
-    DirectionEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static DirectionEnum fromValue(Object value) {
-      for (DirectionEnum b : DirectionEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<DirectionEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final DirectionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public DirectionEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return DirectionEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_DIRECTION = "direction";
   @SerializedName(SERIALIZED_NAME_DIRECTION)
-  private DirectionEnum direction = null;
+  private Object direction = null;
 
   public static final String SERIALIZED_NAME_ATTACHMENTS = "attachments";
   @SerializedName(SERIALIZED_NAME_ATTACHMENTS)
@@ -240,7 +193,7 @@ public class Conversationmessages {
   }
 
 
-  public Conversationmessages direction(DirectionEnum direction) {
+  public Conversationmessages direction(Object direction) {
     
     this.direction = direction;
     return this;
@@ -251,12 +204,12 @@ public class Conversationmessages {
    * @return direction
   **/
   @javax.annotation.Nullable
-  public DirectionEnum getDirection() {
+  public Object getDirection() {
     return direction;
   }
 
 
-  public void setDirection(DirectionEnum direction) {
+  public void setDirection(Object direction) {
     this.direction = direction;
   }
 

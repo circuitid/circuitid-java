@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Developerapps
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
 public class Developerapps {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -61,262 +61,29 @@ public class Developerapps {
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
   private Object description = null;
 
-  /**
-   * Gets or Sets type
-   */
-  @JsonAdapter(TypeEnum.Adapter.class)
-  public enum TypeEnum {
-    EVENTS("events");
-
-    private Object value;
-
-    TypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static TypeEnum fromValue(Object value) {
-      for (TypeEnum b : TypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<TypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public TypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return TypeEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
-  private TypeEnum type = null;
-
-  /**
-   * Gets or Sets visibility
-   */
-  @JsonAdapter(VisibilityEnum.Adapter.class)
-  public enum VisibilityEnum {
-    PRIVATE("private"),
-    
-    PUBLIC("public");
-
-    private Object value;
-
-    VisibilityEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static VisibilityEnum fromValue(Object value) {
-      for (VisibilityEnum b : VisibilityEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<VisibilityEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final VisibilityEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public VisibilityEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return VisibilityEnum.fromValue(value);
-      }
-    }
-  }
+  private Object type = null;
 
   public static final String SERIALIZED_NAME_VISIBILITY = "visibility";
   @SerializedName(SERIALIZED_NAME_VISIBILITY)
-  private VisibilityEnum visibility = null;
-
-  /**
-   * Gets or Sets requireId
-   */
-  @JsonAdapter(RequireIdEnum.Adapter.class)
-  public enum RequireIdEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    RequireIdEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static RequireIdEnum fromValue(Object value) {
-      for (RequireIdEnum b : RequireIdEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<RequireIdEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final RequireIdEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public RequireIdEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return RequireIdEnum.fromValue(value);
-      }
-    }
-  }
+  private Object visibility = null;
 
   public static final String SERIALIZED_NAME_REQUIRE_ID = "requireId";
   @SerializedName(SERIALIZED_NAME_REQUIRE_ID)
-  private RequireIdEnum requireId = null;
-
-  /**
-   * Gets or Sets isFree
-   */
-  @JsonAdapter(IsFreeEnum.Adapter.class)
-  public enum IsFreeEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    IsFreeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static IsFreeEnum fromValue(Object value) {
-      for (IsFreeEnum b : IsFreeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<IsFreeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final IsFreeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public IsFreeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return IsFreeEnum.fromValue(value);
-      }
-    }
-  }
+  private Object requireId = 0;
 
   public static final String SERIALIZED_NAME_IS_FREE = "isFree";
   @SerializedName(SERIALIZED_NAME_IS_FREE)
-  private IsFreeEnum isFree = null;
+  private Object isFree = 1;
 
   public static final String SERIALIZED_NAME_FEE_DESCRIPTION = "feeDescription";
   @SerializedName(SERIALIZED_NAME_FEE_DESCRIPTION)
   private Object feeDescription = null;
 
-  /**
-   * Gets or Sets integrationType
-   */
-  @JsonAdapter(IntegrationTypeEnum.Adapter.class)
-  public enum IntegrationTypeEnum {
-    WEBHOOK("webhook"),
-    
-    CLIENT("client");
-
-    private Object value;
-
-    IntegrationTypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static IntegrationTypeEnum fromValue(Object value) {
-      for (IntegrationTypeEnum b : IntegrationTypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<IntegrationTypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final IntegrationTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public IntegrationTypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return IntegrationTypeEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_INTEGRATION_TYPE = "integrationType";
   @SerializedName(SERIALIZED_NAME_INTEGRATION_TYPE)
-  private IntegrationTypeEnum integrationType = null;
+  private Object integrationType = null;
 
   public static final String SERIALIZED_NAME_SERVICES = "services";
   @SerializedName(SERIALIZED_NAME_SERVICES)
@@ -344,115 +111,15 @@ public class Developerapps {
 
   public static final String SERIALIZED_NAME_PERMISSIONS = "permissions";
   @SerializedName(SERIALIZED_NAME_PERMISSIONS)
-  private Object permissions = null;
-
-  /**
-   * Gets or Sets status
-   */
-  @JsonAdapter(StatusEnum.Adapter.class)
-  public enum StatusEnum {
-    ACTIVE("active"),
-    
-    DISABLED("disabled"),
-    
-    SUSPENDED("suspended"),
-    
-    ERROR("error"),
-    
-    PENDING("pending");
-
-    private Object value;
-
-    StatusEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static StatusEnum fromValue(Object value) {
-      for (StatusEnum b : StatusEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<StatusEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public StatusEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return StatusEnum.fromValue(value);
-      }
-    }
-  }
+  private Object permissions = {};
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private StatusEnum status = null;
-
-  /**
-   * Gets or Sets webhookAuthType
-   */
-  @JsonAdapter(WebhookAuthTypeEnum.Adapter.class)
-  public enum WebhookAuthTypeEnum {
-    HEADER("header"),
-    
-    USERNAMEANDPASSWORD("usernameAndPassword");
-
-    private Object value;
-
-    WebhookAuthTypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static WebhookAuthTypeEnum fromValue(Object value) {
-      for (WebhookAuthTypeEnum b : WebhookAuthTypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<WebhookAuthTypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final WebhookAuthTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public WebhookAuthTypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return WebhookAuthTypeEnum.fromValue(value);
-      }
-    }
-  }
+  private Object status = pending;
 
   public static final String SERIALIZED_NAME_WEBHOOK_AUTH_TYPE = "webhookAuthType";
   @SerializedName(SERIALIZED_NAME_WEBHOOK_AUTH_TYPE)
-  private WebhookAuthTypeEnum webhookAuthType = null;
+  private Object webhookAuthType = null;
 
   public static final String SERIALIZED_NAME_WEBHOOK_USERNAME = "webhookUsername";
   @SerializedName(SERIALIZED_NAME_WEBHOOK_USERNAME)
@@ -515,7 +182,7 @@ public class Developerapps {
   }
 
 
-  public Developerapps type(TypeEnum type) {
+  public Developerapps type(Object type) {
     
     this.type = type;
     return this;
@@ -526,17 +193,17 @@ public class Developerapps {
    * @return type
   **/
   @javax.annotation.Nullable
-  public TypeEnum getType() {
+  public Object getType() {
     return type;
   }
 
 
-  public void setType(TypeEnum type) {
+  public void setType(Object type) {
     this.type = type;
   }
 
 
-  public Developerapps visibility(VisibilityEnum visibility) {
+  public Developerapps visibility(Object visibility) {
     
     this.visibility = visibility;
     return this;
@@ -547,17 +214,17 @@ public class Developerapps {
    * @return visibility
   **/
   @javax.annotation.Nullable
-  public VisibilityEnum getVisibility() {
+  public Object getVisibility() {
     return visibility;
   }
 
 
-  public void setVisibility(VisibilityEnum visibility) {
+  public void setVisibility(Object visibility) {
     this.visibility = visibility;
   }
 
 
-  public Developerapps requireId(RequireIdEnum requireId) {
+  public Developerapps requireId(Object requireId) {
     
     this.requireId = requireId;
     return this;
@@ -568,17 +235,17 @@ public class Developerapps {
    * @return requireId
   **/
   @javax.annotation.Nullable
-  public RequireIdEnum getRequireId() {
+  public Object getRequireId() {
     return requireId;
   }
 
 
-  public void setRequireId(RequireIdEnum requireId) {
+  public void setRequireId(Object requireId) {
     this.requireId = requireId;
   }
 
 
-  public Developerapps isFree(IsFreeEnum isFree) {
+  public Developerapps isFree(Object isFree) {
     
     this.isFree = isFree;
     return this;
@@ -589,12 +256,12 @@ public class Developerapps {
    * @return isFree
   **/
   @javax.annotation.Nullable
-  public IsFreeEnum getIsFree() {
+  public Object getIsFree() {
     return isFree;
   }
 
 
-  public void setIsFree(IsFreeEnum isFree) {
+  public void setIsFree(Object isFree) {
     this.isFree = isFree;
   }
 
@@ -620,7 +287,7 @@ public class Developerapps {
   }
 
 
-  public Developerapps integrationType(IntegrationTypeEnum integrationType) {
+  public Developerapps integrationType(Object integrationType) {
     
     this.integrationType = integrationType;
     return this;
@@ -631,12 +298,12 @@ public class Developerapps {
    * @return integrationType
   **/
   @javax.annotation.Nullable
-  public IntegrationTypeEnum getIntegrationType() {
+  public Object getIntegrationType() {
     return integrationType;
   }
 
 
-  public void setIntegrationType(IntegrationTypeEnum integrationType) {
+  public void setIntegrationType(Object integrationType) {
     this.integrationType = integrationType;
   }
 
@@ -788,7 +455,7 @@ public class Developerapps {
   }
 
 
-  public Developerapps status(StatusEnum status) {
+  public Developerapps status(Object status) {
     
     this.status = status;
     return this;
@@ -799,17 +466,17 @@ public class Developerapps {
    * @return status
   **/
   @javax.annotation.Nullable
-  public StatusEnum getStatus() {
+  public Object getStatus() {
     return status;
   }
 
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(Object status) {
     this.status = status;
   }
 
 
-  public Developerapps webhookAuthType(WebhookAuthTypeEnum webhookAuthType) {
+  public Developerapps webhookAuthType(Object webhookAuthType) {
     
     this.webhookAuthType = webhookAuthType;
     return this;
@@ -820,12 +487,12 @@ public class Developerapps {
    * @return webhookAuthType
   **/
   @javax.annotation.Nullable
-  public WebhookAuthTypeEnum getWebhookAuthType() {
+  public Object getWebhookAuthType() {
     return webhookAuthType;
   }
 
 
-  public void setWebhookAuthType(WebhookAuthTypeEnum webhookAuthType) {
+  public void setWebhookAuthType(Object webhookAuthType) {
     this.webhookAuthType = webhookAuthType;
   }
 

@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Authentication
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
 public class Authentication {
   public static final String SERIALIZED_NAME_USERNAME = "username";
   @SerializedName(SERIALIZED_NAME_USERNAME)
@@ -60,54 +60,9 @@ public class Authentication {
   @SerializedName(SERIALIZED_NAME_PASSWORD)
   private Object password = null;
 
-  /**
-   * Gets or Sets strategy
-   */
-  @JsonAdapter(StrategyEnum.Adapter.class)
-  public enum StrategyEnum {
-    LOCAL("local");
-
-    private Object value;
-
-    StrategyEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static StrategyEnum fromValue(Object value) {
-      for (StrategyEnum b : StrategyEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<StrategyEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final StrategyEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public StrategyEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return StrategyEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_STRATEGY = "strategy";
   @SerializedName(SERIALIZED_NAME_STRATEGY)
-  private StrategyEnum strategy = null;
+  private Object strategy = null;
 
   public Authentication() {
   }
@@ -154,7 +109,7 @@ public class Authentication {
   }
 
 
-  public Authentication strategy(StrategyEnum strategy) {
+  public Authentication strategy(Object strategy) {
     
     this.strategy = strategy;
     return this;
@@ -165,12 +120,12 @@ public class Authentication {
    * @return strategy
   **/
   @javax.annotation.Nullable
-  public StrategyEnum getStrategy() {
+  public Object getStrategy() {
     return strategy;
   }
 
 
-  public void setStrategy(StrategyEnum strategy) {
+  public void setStrategy(Object strategy) {
     this.strategy = strategy;
   }
 

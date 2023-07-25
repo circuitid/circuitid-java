@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Servers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:26:21.235Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:32:07.025Z[UTC]")
 public class Servers {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -63,78 +63,31 @@ public class Servers {
 
   public static final String SERIALIZED_NAME_PORT = "port";
   @SerializedName(SERIALIZED_NAME_PORT)
-  private Object port = null;
+  private Object port = 5060;
 
   public static final String SERIALIZED_NAME_CALLER_ID = "callerId";
   @SerializedName(SERIALIZED_NAME_CALLER_ID)
   private Object callerId = null;
 
-  /**
-   * Gets or Sets type
-   */
-  @JsonAdapter(TypeEnum.Adapter.class)
-  public enum TypeEnum {
-    SIP("sip"),
-    
-    SKYPE("skype");
-
-    private Object value;
-
-    TypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static TypeEnum fromValue(Object value) {
-      for (TypeEnum b : TypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<TypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public TypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return TypeEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
-  private TypeEnum type = null;
+  private Object type = null;
 
   public static final String SERIALIZED_NAME_DOMESTIC_OUTBOUND_CALL_LIMIT = "domesticOutboundCallLimit";
   @SerializedName(SERIALIZED_NAME_DOMESTIC_OUTBOUND_CALL_LIMIT)
-  private Object domesticOutboundCallLimit = null;
+  private Object domesticOutboundCallLimit = 10;
 
   public static final String SERIALIZED_NAME_DOMESTIC_INBOUND_CALL_LIMIT = "domesticInboundCallLimit";
   @SerializedName(SERIALIZED_NAME_DOMESTIC_INBOUND_CALL_LIMIT)
-  private Object domesticInboundCallLimit = null;
+  private Object domesticInboundCallLimit = 10;
 
   public static final String SERIALIZED_NAME_INTERNATIONAL_OUTBOUND_CALL_LIMIT = "internationalOutboundCallLimit";
   @SerializedName(SERIALIZED_NAME_INTERNATIONAL_OUTBOUND_CALL_LIMIT)
-  private Object internationalOutboundCallLimit = null;
+  private Object internationalOutboundCallLimit = 10;
 
   public static final String SERIALIZED_NAME_TOLL_FREE_CHANNEL_LIMIT = "tollFreeChannelLimit";
   @SerializedName(SERIALIZED_NAME_TOLL_FREE_CHANNEL_LIMIT)
-  private Object tollFreeChannelLimit = null;
+  private Object tollFreeChannelLimit = 10;
 
   public static final String SERIALIZED_NAME_INBOUND_SIP_TRUNKING_ORDER = "inboundSipTrunkingOrder";
   @SerializedName(SERIALIZED_NAME_INBOUND_SIP_TRUNKING_ORDER)
@@ -144,158 +97,17 @@ public class Servers {
   @SerializedName(SERIALIZED_NAME_OUTBOUND_SIP_TRUNKING_ORDER)
   private Object outboundSipTrunkingOrder = null;
 
-  /**
-   * Gets or Sets noInstantRingBack
-   */
-  @JsonAdapter(NoInstantRingBackEnum.Adapter.class)
-  public enum NoInstantRingBackEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    NoInstantRingBackEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static NoInstantRingBackEnum fromValue(Object value) {
-      for (NoInstantRingBackEnum b : NoInstantRingBackEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<NoInstantRingBackEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final NoInstantRingBackEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public NoInstantRingBackEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return NoInstantRingBackEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_NO_INSTANT_RING_BACK = "noInstantRingBack";
   @SerializedName(SERIALIZED_NAME_NO_INSTANT_RING_BACK)
-  private NoInstantRingBackEnum noInstantRingBack = null;
-
-  /**
-   * Gets or Sets bypassMedia
-   */
-  @JsonAdapter(BypassMediaEnum.Adapter.class)
-  public enum BypassMediaEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    BypassMediaEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static BypassMediaEnum fromValue(Object value) {
-      for (BypassMediaEnum b : BypassMediaEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<BypassMediaEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final BypassMediaEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public BypassMediaEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return BypassMediaEnum.fromValue(value);
-      }
-    }
-  }
+  private Object noInstantRingBack = null;
 
   public static final String SERIALIZED_NAME_BYPASS_MEDIA = "bypassMedia";
   @SerializedName(SERIALIZED_NAME_BYPASS_MEDIA)
-  private BypassMediaEnum bypassMedia = null;
-
-  /**
-   * Gets or Sets disableRTPAutoAdjust
-   */
-  @JsonAdapter(DisableRTPAutoAdjustEnum.Adapter.class)
-  public enum DisableRTPAutoAdjustEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    DisableRTPAutoAdjustEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static DisableRTPAutoAdjustEnum fromValue(Object value) {
-      for (DisableRTPAutoAdjustEnum b : DisableRTPAutoAdjustEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<DisableRTPAutoAdjustEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final DisableRTPAutoAdjustEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public DisableRTPAutoAdjustEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return DisableRTPAutoAdjustEnum.fromValue(value);
-      }
-    }
-  }
+  private Object bypassMedia = 0;
 
   public static final String SERIALIZED_NAME_DISABLE_R_T_P_AUTO_ADJUST = "disableRTPAutoAdjust";
   @SerializedName(SERIALIZED_NAME_DISABLE_R_T_P_AUTO_ADJUST)
-  private DisableRTPAutoAdjustEnum disableRTPAutoAdjust = null;
+  private Object disableRTPAutoAdjust = 0;
 
   public Servers() {
   }
@@ -384,7 +196,7 @@ public class Servers {
   }
 
 
-  public Servers type(TypeEnum type) {
+  public Servers type(Object type) {
     
     this.type = type;
     return this;
@@ -395,12 +207,12 @@ public class Servers {
    * @return type
   **/
   @javax.annotation.Nullable
-  public TypeEnum getType() {
+  public Object getType() {
     return type;
   }
 
 
-  public void setType(TypeEnum type) {
+  public void setType(Object type) {
     this.type = type;
   }
 
@@ -531,7 +343,7 @@ public class Servers {
   }
 
 
-  public Servers noInstantRingBack(NoInstantRingBackEnum noInstantRingBack) {
+  public Servers noInstantRingBack(Object noInstantRingBack) {
     
     this.noInstantRingBack = noInstantRingBack;
     return this;
@@ -542,17 +354,17 @@ public class Servers {
    * @return noInstantRingBack
   **/
   @javax.annotation.Nullable
-  public NoInstantRingBackEnum getNoInstantRingBack() {
+  public Object getNoInstantRingBack() {
     return noInstantRingBack;
   }
 
 
-  public void setNoInstantRingBack(NoInstantRingBackEnum noInstantRingBack) {
+  public void setNoInstantRingBack(Object noInstantRingBack) {
     this.noInstantRingBack = noInstantRingBack;
   }
 
 
-  public Servers bypassMedia(BypassMediaEnum bypassMedia) {
+  public Servers bypassMedia(Object bypassMedia) {
     
     this.bypassMedia = bypassMedia;
     return this;
@@ -563,17 +375,17 @@ public class Servers {
    * @return bypassMedia
   **/
   @javax.annotation.Nullable
-  public BypassMediaEnum getBypassMedia() {
+  public Object getBypassMedia() {
     return bypassMedia;
   }
 
 
-  public void setBypassMedia(BypassMediaEnum bypassMedia) {
+  public void setBypassMedia(Object bypassMedia) {
     this.bypassMedia = bypassMedia;
   }
 
 
-  public Servers disableRTPAutoAdjust(DisableRTPAutoAdjustEnum disableRTPAutoAdjust) {
+  public Servers disableRTPAutoAdjust(Object disableRTPAutoAdjust) {
     
     this.disableRTPAutoAdjust = disableRTPAutoAdjust;
     return this;
@@ -584,12 +396,12 @@ public class Servers {
    * @return disableRTPAutoAdjust
   **/
   @javax.annotation.Nullable
-  public DisableRTPAutoAdjustEnum getDisableRTPAutoAdjust() {
+  public Object getDisableRTPAutoAdjust() {
     return disableRTPAutoAdjust;
   }
 
 
-  public void setDisableRTPAutoAdjust(DisableRTPAutoAdjustEnum disableRTPAutoAdjust) {
+  public void setDisableRTPAutoAdjust(Object disableRTPAutoAdjust) {
     this.disableRTPAutoAdjust = disableRTPAutoAdjust;
   }
 
