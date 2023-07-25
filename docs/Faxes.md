@@ -12,7 +12,7 @@
 |**pages** | **Object** |  |  [optional] |
 |**statusCode** | **Object** |  |  [optional] |
 |**transferedPages** | **Object** |  |  [optional] |
-|**status** | [**StatusEnum**](#StatusEnum) |  |  |
+|**status** | **Object** |  |  |
 |**error** | **Object** |  |  [optional] |
 |**type** | **Object** |  |  |
 |**order** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
@@ -24,16 +24,6 @@
 |**invoice** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**senderEmail** | **Object** |  |  [optional] |
 |**senderName** | **Object** |  |  [optional] |
-
-
-
-## Enum: StatusEnum
-
-| Name | Value |
-|---- | -----|
-| FAILED | &quot;failed&quot; |
-| SUCCESS | &quot;success&quot; |
-| PROCESSING | &quot;processing&quot; |
 
 
 

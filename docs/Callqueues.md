@@ -19,50 +19,14 @@
 |**rejectTimeout** | **Object** |  |  [optional] |
 |**busyTimeout** | **Object** |  |  [optional] |
 |**wrapUpTimeout** | **Object** |  |  [optional] |
-|**timeBasedScore** | [**TimeBasedScoreEnum**](#TimeBasedScoreEnum) |  |  |
+|**timeBasedScore** | **Object** |  |  |
 |**tierRulesApply** | **Object** |  |  |
-|**tierRuleNoAgentNoWait** | [**TierRuleNoAgentNoWaitEnum**](#TierRuleNoAgentNoWaitEnum) |  |  |
+|**tierRuleNoAgentNoWait** | **Object** |  |  |
 |**tierRuleWaitSecond** | **Object** |  |  [optional] |
-|**tierRuleWaitMultiplyLevel** | [**TierRuleWaitMultiplyLevelEnum**](#TierRuleWaitMultiplyLevelEnum) |  |  |
-|**abandonedResumeAllowed** | [**AbandonedResumeAllowedEnum**](#AbandonedResumeAllowedEnum) |  |  |
+|**tierRuleWaitMultiplyLevel** | **Object** |  |  |
+|**abandonedResumeAllowed** | **Object** |  |  |
 |**discardAbandonedAfter** | **Object** |  |  [optional] |
 |**maxWaitTimeNoAgentTimeReached** | **Object** |  |  |
-
-
-
-## Enum: TimeBasedScoreEnum
-
-| Name | Value |
-|---- | -----|
-| QUEUE | &quot;queue&quot; |
-| SYSTEM | &quot;system&quot; |
-
-
-
-## Enum: TierRuleNoAgentNoWaitEnum
-
-| Name | Value |
-|---- | -----|
-| TRUE | &quot;true&quot; |
-| FALSE | &quot;false&quot; |
-
-
-
-## Enum: TierRuleWaitMultiplyLevelEnum
-
-| Name | Value |
-|---- | -----|
-| TRUE | &quot;true&quot; |
-| FALSE | &quot;false&quot; |
-
-
-
-## Enum: AbandonedResumeAllowedEnum
-
-| Name | Value |
-|---- | -----|
-| TRUE | &quot;true&quot; |
-| FALSE | &quot;false&quot; |
 
 
 

@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Users
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:40:30.810Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
 public class Users {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -109,172 +109,21 @@ public class Users {
   @SerializedName(SERIALIZED_NAME_AVATAR)
   private Object avatar = null;
 
-  /**
-   * Gets or Sets language
-   */
-  @JsonAdapter(LanguageEnum.Adapter.class)
-  public enum LanguageEnum {
-    FR("fr"),
-    
-    EN("en"),
-    
-    JA("ja"),
-    
-    DE("de"),
-    
-    ES("es");
-
-    private Object value;
-
-    LanguageEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static LanguageEnum fromValue(Object value) {
-      for (LanguageEnum b : LanguageEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<LanguageEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final LanguageEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public LanguageEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return LanguageEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_LANGUAGE = "language";
   @SerializedName(SERIALIZED_NAME_LANGUAGE)
-  private LanguageEnum language = en;
+  private Object language = en;
 
   public static final String SERIALIZED_NAME_IS_PRIMARY = "isPrimary";
   @SerializedName(SERIALIZED_NAME_IS_PRIMARY)
-  private Object isPrimary = null;
-
-  /**
-   * Gets or Sets status
-   */
-  @JsonAdapter(StatusEnum.Adapter.class)
-  public enum StatusEnum {
-    ACTIVE("active"),
-    
-    DISABLED("disabled"),
-    
-    TERMINATED("terminated");
-
-    private Object value;
-
-    StatusEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static StatusEnum fromValue(Object value) {
-      for (StatusEnum b : StatusEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<StatusEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public StatusEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return StatusEnum.fromValue(value);
-      }
-    }
-  }
+  private Object isPrimary = 0;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private StatusEnum status = active;
-
-  /**
-   * Gets or Sets vmGreetingType
-   */
-  @JsonAdapter(VmGreetingTypeEnum.Adapter.class)
-  public enum VmGreetingTypeEnum {
-    DEFAULT("default"),
-    
-    MP3("mp3"),
-    
-    NUMBER("number");
-
-    private Object value;
-
-    VmGreetingTypeEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static VmGreetingTypeEnum fromValue(Object value) {
-      for (VmGreetingTypeEnum b : VmGreetingTypeEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<VmGreetingTypeEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final VmGreetingTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public VmGreetingTypeEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return VmGreetingTypeEnum.fromValue(value);
-      }
-    }
-  }
+  private Object status = active;
 
   public static final String SERIALIZED_NAME_VM_GREETING_TYPE = "vmGreetingType";
   @SerializedName(SERIALIZED_NAME_VM_GREETING_TYPE)
-  private VmGreetingTypeEnum vmGreetingType = default;
+  private Object vmGreetingType = default;
 
   public static final String SERIALIZED_NAME_VM_TIMEOUT = "vmTimeout";
   @SerializedName(SERIALIZED_NAME_VM_TIMEOUT)
@@ -342,7 +191,7 @@ public class Users {
 
   public static final String SERIALIZED_NAME_VM_TRANSCRIPTION = "vmTranscription";
   @SerializedName(SERIALIZED_NAME_VM_TRANSCRIPTION)
-  private Object vmTranscription = null;
+  private Object vmTranscription = 0;
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)
@@ -645,7 +494,7 @@ public class Users {
   }
 
 
-  public Users language(LanguageEnum language) {
+  public Users language(Object language) {
     
     this.language = language;
     return this;
@@ -656,12 +505,12 @@ public class Users {
    * @return language
   **/
   @javax.annotation.Nullable
-  public LanguageEnum getLanguage() {
+  public Object getLanguage() {
     return language;
   }
 
 
-  public void setLanguage(LanguageEnum language) {
+  public void setLanguage(Object language) {
     this.language = language;
   }
 
@@ -687,7 +536,7 @@ public class Users {
   }
 
 
-  public Users status(StatusEnum status) {
+  public Users status(Object status) {
     
     this.status = status;
     return this;
@@ -698,17 +547,17 @@ public class Users {
    * @return status
   **/
   @javax.annotation.Nullable
-  public StatusEnum getStatus() {
+  public Object getStatus() {
     return status;
   }
 
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(Object status) {
     this.status = status;
   }
 
 
-  public Users vmGreetingType(VmGreetingTypeEnum vmGreetingType) {
+  public Users vmGreetingType(Object vmGreetingType) {
     
     this.vmGreetingType = vmGreetingType;
     return this;
@@ -719,12 +568,12 @@ public class Users {
    * @return vmGreetingType
   **/
   @javax.annotation.Nullable
-  public VmGreetingTypeEnum getVmGreetingType() {
+  public Object getVmGreetingType() {
     return vmGreetingType;
   }
 
 
-  public void setVmGreetingType(VmGreetingTypeEnum vmGreetingType) {
+  public void setVmGreetingType(Object vmGreetingType) {
     this.vmGreetingType = vmGreetingType;
   }
 

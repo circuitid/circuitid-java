@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Phoneoutboundruleactions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:40:30.810Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
 public class Phoneoutboundruleactions {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -65,56 +65,9 @@ public class Phoneoutboundruleactions {
   @SerializedName(SERIALIZED_NAME_PHONEOUTBOUNDRULE)
   private Object phoneoutboundrule = null;
 
-  /**
-   * Gets or Sets status
-   */
-  @JsonAdapter(StatusEnum.Adapter.class)
-  public enum StatusEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    StatusEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static StatusEnum fromValue(Object value) {
-      for (StatusEnum b : StatusEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<StatusEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public StatusEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return StatusEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private StatusEnum status = 1;
+  private Object status = 1;
 
   public static final String SERIALIZED_NAME_PRIORITY = "priority";
   @SerializedName(SERIALIZED_NAME_PRIORITY)
@@ -160,58 +113,9 @@ public class Phoneoutboundruleactions {
   @SerializedName(SERIALIZED_NAME_REMOVE_ENDING_CHARS)
   private Object removeEndingChars = null;
 
-  /**
-   * Gets or Sets route
-   */
-  @JsonAdapter(RouteEnum.Adapter.class)
-  public enum RouteEnum {
-    DEFAULT("default"),
-    
-    GROUP("group"),
-    
-    PSTN("pstn");
-
-    private Object value;
-
-    RouteEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static RouteEnum fromValue(Object value) {
-      for (RouteEnum b : RouteEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<RouteEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final RouteEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public RouteEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return RouteEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_ROUTE = "route";
   @SerializedName(SERIALIZED_NAME_ROUTE)
-  private RouteEnum route = default;
+  private Object route = default;
 
   public static final String SERIALIZED_NAME_ROUTING_TYPE = "routingType";
   @SerializedName(SERIALIZED_NAME_ROUTING_TYPE)
@@ -283,7 +187,7 @@ public class Phoneoutboundruleactions {
   }
 
 
-  public Phoneoutboundruleactions status(StatusEnum status) {
+  public Phoneoutboundruleactions status(Object status) {
     
     this.status = status;
     return this;
@@ -294,12 +198,12 @@ public class Phoneoutboundruleactions {
    * @return status
   **/
   @javax.annotation.Nullable
-  public StatusEnum getStatus() {
+  public Object getStatus() {
     return status;
   }
 
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(Object status) {
     this.status = status;
   }
 
@@ -535,7 +439,7 @@ public class Phoneoutboundruleactions {
   }
 
 
-  public Phoneoutboundruleactions route(RouteEnum route) {
+  public Phoneoutboundruleactions route(Object route) {
     
     this.route = route;
     return this;
@@ -546,12 +450,12 @@ public class Phoneoutboundruleactions {
    * @return route
   **/
   @javax.annotation.Nullable
-  public RouteEnum getRoute() {
+  public Object getRoute() {
     return route;
   }
 
 
-  public void setRoute(RouteEnum route) {
+  public void setRoute(Object route) {
     this.route = route;
   }
 

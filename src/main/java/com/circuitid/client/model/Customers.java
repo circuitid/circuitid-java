@@ -51,66 +51,15 @@ import com.circuitid.client.JSON;
 /**
  * Customers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:40:30.810Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-25T10:43:34.034Z[UTC]")
 public class Customers {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   private Object name = null;
 
-  /**
-   * Gets or Sets status
-   */
-  @JsonAdapter(StatusEnum.Adapter.class)
-  public enum StatusEnum {
-    ACTIVE("active"),
-    
-    SUSPENDED("suspended"),
-    
-    TERMINATED("terminated"),
-    
-    FRAUD("fraud");
-
-    private Object value;
-
-    StatusEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static StatusEnum fromValue(Object value) {
-      for (StatusEnum b : StatusEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<StatusEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final StatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public StatusEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return StatusEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
-  private StatusEnum status = active;
+  private Object status = active;
 
   public static final String SERIALIZED_NAME_WEBSITE_URL = "websiteUrl";
   @SerializedName(SERIALIZED_NAME_WEBSITE_URL)
@@ -122,7 +71,7 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_CREDIT = "credit";
   @SerializedName(SERIALIZED_NAME_CREDIT)
-  private Object credit = null;
+  private Object credit = 0;
 
   public static final String SERIALIZED_NAME_ADMIN_USER_ID = "adminUserId";
   @SerializedName(SERIALIZED_NAME_ADMIN_USER_ID)
@@ -146,11 +95,11 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_AUTOMATIC_REFILL_AMOUNT = "automaticRefillAmount";
   @SerializedName(SERIALIZED_NAME_AUTOMATIC_REFILL_AMOUNT)
-  private Object automaticRefillAmount = null;
+  private Object automaticRefillAmount = 0;
 
   public static final String SERIALIZED_NAME_LOW_BALANCE_ALERT_AMOUNT = "lowBalanceAlertAmount";
   @SerializedName(SERIALIZED_NAME_LOW_BALANCE_ALERT_AMOUNT)
-  private Object lowBalanceAlertAmount = null;
+  private Object lowBalanceAlertAmount = 0;
 
   public static final String SERIALIZED_NAME_LOW_BALANCE_ALERT_AT = "lowBalanceAlertAt";
   @SerializedName(SERIALIZED_NAME_LOW_BALANCE_ALERT_AT)
@@ -158,7 +107,7 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_LOW_BALANCE_ALERT_COUNT = "lowBalanceAlertCount";
   @SerializedName(SERIALIZED_NAME_LOW_BALANCE_ALERT_COUNT)
-  private Object lowBalanceAlertCount = null;
+  private Object lowBalanceAlertCount = 0;
 
   public static final String SERIALIZED_NAME_LAST_AUTOMATIC_REFILL_INVOICE = "lastAutomaticRefillInvoice";
   @SerializedName(SERIALIZED_NAME_LAST_AUTOMATIC_REFILL_INVOICE)
@@ -166,7 +115,7 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_INTERNATIONAL_CALLING = "internationalCalling";
   @SerializedName(SERIALIZED_NAME_INTERNATIONAL_CALLING)
-  private Object internationalCalling = null;
+  private Object internationalCalling = 0;
 
   public static final String SERIALIZED_NAME_CREATED_BY_I_P = "createdByIP";
   @SerializedName(SERIALIZED_NAME_CREATED_BY_I_P)
@@ -174,66 +123,19 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_CALL_DEBUG = "callDebug";
   @SerializedName(SERIALIZED_NAME_CALL_DEBUG)
-  private Object callDebug = null;
+  private Object callDebug = 0;
 
   public static final String SERIALIZED_NAME_MEDIA_BYPASS = "mediaBypass";
   @SerializedName(SERIALIZED_NAME_MEDIA_BYPASS)
-  private Object mediaBypass = null;
-
-  /**
-   * Gets or Sets accountLock
-   */
-  @JsonAdapter(AccountLockEnum.Adapter.class)
-  public enum AccountLockEnum {
-    _1("1"),
-    
-    _0("0");
-
-    private Object value;
-
-    AccountLockEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static AccountLockEnum fromValue(Object value) {
-      for (AccountLockEnum b : AccountLockEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<AccountLockEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final AccountLockEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public AccountLockEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return AccountLockEnum.fromValue(value);
-      }
-    }
-  }
+  private Object mediaBypass = 0;
 
   public static final String SERIALIZED_NAME_ACCOUNT_LOCK = "accountLock";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_LOCK)
-  private AccountLockEnum accountLock = 1;
+  private Object accountLock = 1;
 
   public static final String SERIALIZED_NAME_CALL_RECORDING = "callRecording";
   @SerializedName(SERIALIZED_NAME_CALL_RECORDING)
-  private Object callRecording = null;
+  private Object callRecording = 0;
 
   public static final String SERIALIZED_NAME_CDR_RETENTION = "cdrRetention";
   @SerializedName(SERIALIZED_NAME_CDR_RETENTION)
@@ -241,11 +143,11 @@ public class Customers {
 
   public static final String SERIALIZED_NAME_CNAM_LOOK_UPS = "cnamLookUps";
   @SerializedName(SERIALIZED_NAME_CNAM_LOOK_UPS)
-  private Object cnamLookUps = null;
+  private Object cnamLookUps = 0;
 
   public static final String SERIALIZED_NAME_HOLD_MUSIC = "holdMusic";
   @SerializedName(SERIALIZED_NAME_HOLD_MUSIC)
-  private Object holdMusic = null;
+  private Object holdMusic = 0;
 
   public static final String SERIALIZED_NAME_TRANSCRIBE_CALLS = "transcribeCalls";
   @SerializedName(SERIALIZED_NAME_TRANSCRIBE_CALLS)
@@ -255,56 +157,9 @@ public class Customers {
   @SerializedName(SERIALIZED_NAME_MAX_OUTBOUND_CALL_RATE)
   private Object maxOutboundCallRate = 1;
 
-  /**
-   * Gets or Sets defaultBillMethod
-   */
-  @JsonAdapter(DefaultBillMethodEnum.Adapter.class)
-  public enum DefaultBillMethodEnum {
-    CREDIT("credit"),
-    
-    PAYMENTMETHOD("paymentmethod");
-
-    private Object value;
-
-    DefaultBillMethodEnum(Object value) {
-      this.value = value;
-    }
-
-    public Object getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static DefaultBillMethodEnum fromValue(Object value) {
-      for (DefaultBillMethodEnum b : DefaultBillMethodEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      return null;
-    }
-
-    public static class Adapter extends TypeAdapter<DefaultBillMethodEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final DefaultBillMethodEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public DefaultBillMethodEnum read(final JsonReader jsonReader) throws IOException {
-        Object value =  jsonReader.nextObject();
-        return DefaultBillMethodEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_DEFAULT_BILL_METHOD = "defaultBillMethod";
   @SerializedName(SERIALIZED_NAME_DEFAULT_BILL_METHOD)
-  private DefaultBillMethodEnum defaultBillMethod = credit;
+  private Object defaultBillMethod = credit;
 
   public Customers() {
   }
@@ -330,7 +185,7 @@ public class Customers {
   }
 
 
-  public Customers status(StatusEnum status) {
+  public Customers status(Object status) {
     
     this.status = status;
     return this;
@@ -341,12 +196,12 @@ public class Customers {
    * @return status
   **/
   @javax.annotation.Nullable
-  public StatusEnum getStatus() {
+  public Object getStatus() {
     return status;
   }
 
 
-  public void setStatus(StatusEnum status) {
+  public void setStatus(Object status) {
     this.status = status;
   }
 
@@ -708,7 +563,7 @@ public class Customers {
   }
 
 
-  public Customers accountLock(AccountLockEnum accountLock) {
+  public Customers accountLock(Object accountLock) {
     
     this.accountLock = accountLock;
     return this;
@@ -719,12 +574,12 @@ public class Customers {
    * @return accountLock
   **/
   @javax.annotation.Nullable
-  public AccountLockEnum getAccountLock() {
+  public Object getAccountLock() {
     return accountLock;
   }
 
 
-  public void setAccountLock(AccountLockEnum accountLock) {
+  public void setAccountLock(Object accountLock) {
     this.accountLock = accountLock;
   }
 
@@ -855,7 +710,7 @@ public class Customers {
   }
 
 
-  public Customers defaultBillMethod(DefaultBillMethodEnum defaultBillMethod) {
+  public Customers defaultBillMethod(Object defaultBillMethod) {
     
     this.defaultBillMethod = defaultBillMethod;
     return this;
@@ -866,12 +721,12 @@ public class Customers {
    * @return defaultBillMethod
   **/
   @javax.annotation.Nullable
-  public DefaultBillMethodEnum getDefaultBillMethod() {
+  public Object getDefaultBillMethod() {
     return defaultBillMethod;
   }
 
 
-  public void setDefaultBillMethod(DefaultBillMethodEnum defaultBillMethod) {
+  public void setDefaultBillMethod(Object defaultBillMethod) {
     this.defaultBillMethod = defaultBillMethod;
   }
 

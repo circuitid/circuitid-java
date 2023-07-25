@@ -8,7 +8,7 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**name** | **Object** |  |  |
-|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
+|**status** | **Object** |  |  [optional] |
 |**websiteUrl** | **Object** |  |  [optional] |
 |**logo** | **Object** |  |  [optional] |
 |**credit** | **Object** |  |  [optional] |
@@ -26,43 +26,14 @@
 |**createdByIP** | **Object** |  |  [optional] |
 |**callDebug** | **Object** |  |  [optional] |
 |**mediaBypass** | **Object** |  |  [optional] |
-|**accountLock** | [**AccountLockEnum**](#AccountLockEnum) |  |  [optional] |
+|**accountLock** | **Object** |  |  [optional] |
 |**callRecording** | **Object** |  |  [optional] |
 |**cdrRetention** | **Object** |  |  [optional] |
 |**cnamLookUps** | **Object** |  |  [optional] |
 |**holdMusic** | **Object** |  |  [optional] |
 |**transcribeCalls** | **Object** |  |  [optional] |
 |**maxOutboundCallRate** | **Object** |  |  [optional] |
-|**defaultBillMethod** | [**DefaultBillMethodEnum**](#DefaultBillMethodEnum) |  |  |
-
-
-
-## Enum: StatusEnum
-
-| Name | Value |
-|---- | -----|
-| ACTIVE | &quot;active&quot; |
-| SUSPENDED | &quot;suspended&quot; |
-| TERMINATED | &quot;terminated&quot; |
-| FRAUD | &quot;fraud&quot; |
-
-
-
-## Enum: AccountLockEnum
-
-| Name | Value |
-|---- | -----|
-| _1 | &quot;1&quot; |
-| _0 | &quot;0&quot; |
-
-
-
-## Enum: DefaultBillMethodEnum
-
-| Name | Value |
-|---- | -----|
-| CREDIT | &quot;credit&quot; |
-| PAYMENTMETHOD | &quot;paymentmethod&quot; |
+|**defaultBillMethod** | **Object** |  |  |
 
 
 

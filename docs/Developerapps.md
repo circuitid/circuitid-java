@@ -12,7 +12,7 @@
 |**type** | **Object** |  |  |
 |**visibility** | **Object** |  |  |
 |**requireId** | **Object** |  |  [optional] |
-|**isFree** | [**IsFreeEnum**](#IsFreeEnum) |  |  [optional] |
+|**isFree** | **Object** |  |  [optional] |
 |**feeDescription** | **Object** |  |  [optional] |
 |**integrationType** | **Object** |  |  |
 |**services** | **Object** |  |  |
@@ -22,33 +22,12 @@
 |**termsOfServiceUrl** | **Object** |  |  [optional] |
 |**privacyPolicyUrl** | **Object** |  |  [optional] |
 |**permissions** | **Object** |  |  [optional] |
-|**status** | [**StatusEnum**](#StatusEnum) |  |  |
+|**status** | **Object** |  |  |
 |**webhookAuthType** | **Object** |  |  [optional] |
 |**webhookUsername** | **Object** |  |  [optional] |
 |**webhookPassword** | **Object** |  |  [optional] |
 |**webhookTokenName** | **Object** |  |  [optional] |
 |**webhookToken** | **Object** |  |  [optional] |
-
-
-
-## Enum: IsFreeEnum
-
-| Name | Value |
-|---- | -----|
-| _1 | &quot;1&quot; |
-| _0 | &quot;0&quot; |
-
-
-
-## Enum: StatusEnum
-
-| Name | Value |
-|---- | -----|
-| ACTIVE | &quot;active&quot; |
-| DISABLED | &quot;disabled&quot; |
-| SUSPENDED | &quot;suspended&quot; |
-| ERROR | &quot;error&quot; |
-| PENDING | &quot;pending&quot; |
 
 
 
