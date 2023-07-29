@@ -21508,7 +21508,6 @@ components:
           - exactly
           - range
           - any
-          nullable: true
           type: string
         length:
           format: int32
@@ -22213,49 +22212,41 @@ components:
           enum:
           - r
           - rw
-          nullable: true
           type: string
         billingPermission:
           enum:
           - r
           - rw
-          nullable: true
           type: string
         phonePermission:
           enum:
           - r
           - rw
-          nullable: true
           type: string
         agilePermission:
           enum:
           - r
           - rw
-          nullable: true
           type: string
         jobServerPermission:
           enum:
           - r
           - rw
-          nullable: true
           type: string
         mediaServerPermission:
           enum:
           - r
           - rw
-          nullable: true
           type: string
         mailServerPermission:
           enum:
           - r
           - rw
-          nullable: true
           type: string
         superAdminPermission:
           enum:
           - r
           - rw
-          nullable: true
           type: string
         timezone:
           default: America/New_York

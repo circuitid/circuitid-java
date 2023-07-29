@@ -22,7 +22,6 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.time.OffsetDateTime;
-import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -52,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * GetUser200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:07:56.257Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:15:00.907Z[UTC]")
 public class GetUser200Response {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -382,7 +381,7 @@ public class GetUser200Response {
           return b;
         }
       }
-      return null;
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 
     public static class Adapter extends TypeAdapter<AdminPermissionEnum> {
@@ -433,7 +432,7 @@ public class GetUser200Response {
           return b;
         }
       }
-      return null;
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 
     public static class Adapter extends TypeAdapter<BillingPermissionEnum> {
@@ -484,7 +483,7 @@ public class GetUser200Response {
           return b;
         }
       }
-      return null;
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 
     public static class Adapter extends TypeAdapter<PhonePermissionEnum> {
@@ -535,7 +534,7 @@ public class GetUser200Response {
           return b;
         }
       }
-      return null;
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 
     public static class Adapter extends TypeAdapter<AgilePermissionEnum> {
@@ -586,7 +585,7 @@ public class GetUser200Response {
           return b;
         }
       }
-      return null;
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 
     public static class Adapter extends TypeAdapter<JobServerPermissionEnum> {
@@ -637,7 +636,7 @@ public class GetUser200Response {
           return b;
         }
       }
-      return null;
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 
     public static class Adapter extends TypeAdapter<MediaServerPermissionEnum> {
@@ -688,7 +687,7 @@ public class GetUser200Response {
           return b;
         }
       }
-      return null;
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 
     public static class Adapter extends TypeAdapter<MailServerPermissionEnum> {
@@ -739,7 +738,7 @@ public class GetUser200Response {
           return b;
         }
       }
-      return null;
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
     }
 
     public static class Adapter extends TypeAdapter<SuperAdminPermissionEnum> {
@@ -2469,20 +2468,9 @@ public class GetUser200Response {
         Objects.equals(this.updatedAt, getUser200Response.updatedAt);
   }
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
-
   @Override
   public int hashCode() {
     return Objects.hash(email, password, sipPassword, turnPassword, first, last, mobilePhone, businessPhone, extension, customCallerId, jobTitle, department, office, avatar, language, isPrimary, status, vmGreetingType, vmTimeout, vmFile, vmPlaybackNumber, pin, number, region, callerIdNumber, adminPermission, billingPermission, phonePermission, agilePermission, jobServerPermission, mediaServerPermission, mailServerPermission, superAdminPermission, timezone, vmTranscription, communication, createdByUserId, updatedByUserId, createdAt, updatedAt);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override
