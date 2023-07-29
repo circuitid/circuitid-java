@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Faxes
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:55:16.707Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:03:54.608Z[UTC]")
 public class Faxes {
   public static final String SERIALIZED_NAME_CALLER_ID_NUMBER = "callerIdNumber";
   @SerializedName(SERIALIZED_NAME_CALLER_ID_NUMBER)
