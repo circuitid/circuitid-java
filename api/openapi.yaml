@@ -21,7 +21,7 @@ info:
     url: https://cdn.circuitid.com/images/logos/circuitid-logo.png
 servers:
 - description: Production
-  url: https://cloud9.circuitid.com
+  url: https://rest.circuitid.com
 security:
 - jwt: []
 tags:
@@ -22289,46 +22289,18 @@ components:
           maxLength: 45
           type: string
         sunday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
           type: object
         monday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
           type: object
         tuesday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
           type: object
         wednesday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
           type: object
         thursday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
           type: object
         friday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
           type: object
         saturday:
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
           type: object
       required:
       - friday
@@ -23136,24 +23108,6 @@ components:
           format: int32
           type: integer
         communication:
-          default:
-            notifications:
-              email: true
-              sms: true
-            missedCalls:
-              email: true
-              sms: true
-            callRecordings:
-              email: true
-              sms: true
-            newsletters:
-              email: true
-              sms: true
-            voicemails:
-              email: true
-              sms: true
-            web:
-              sounds: true
           type: object
       required:
       - email

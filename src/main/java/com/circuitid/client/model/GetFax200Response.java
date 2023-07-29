@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * GetFax200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:27:46.341Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:44:28.938Z[UTC]")
 public class GetFax200Response {
   public static final String SERIALIZED_NAME_CALLER_ID_NUMBER = "callerIdNumber";
   @SerializedName(SERIALIZED_NAME_CALLER_ID_NUMBER)

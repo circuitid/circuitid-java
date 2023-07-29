@@ -52,7 +52,7 @@ import com.circuitid.client.JSON;
 /**
  * GetUser200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:27:46.341Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:44:28.938Z[UTC]")
 public class GetUser200Response {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -2046,7 +2046,7 @@ public class GetUser200Response {
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)
-  private Object communication = {"notifications":{"email":true,"sms":true},"missedCalls":{"email":true,"sms":true},"callRecordings":{"email":true,"sms":true},"newsletters":{"email":true,"sms":true},"voicemails":{"email":true,"sms":true},"web":{"sounds":true}};
+  private Object communication;
 
   public static final String SERIALIZED_NAME_CREATED_BY_USER_ID = "createdByUserId";
   @SerializedName(SERIALIZED_NAME_CREATED_BY_USER_ID)

@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Numbers
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:27:46.341Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:44:28.938Z[UTC]")
 public class Numbers {
   /**
    * Gets or Sets inUse
