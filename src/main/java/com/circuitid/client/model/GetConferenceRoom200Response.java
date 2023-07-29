@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * GetConferenceRoom200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:15:00.907Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:23:10.920Z[UTC]")
 public class GetConferenceRoom200Response {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -65,107 +65,13 @@ public class GetConferenceRoom200Response {
   @SerializedName(SERIALIZED_NAME_DIAL_IN_PIN)
   private Integer dialInPin;
 
-  /**
-   * Gets or Sets isUserRoom
-   */
-  @JsonAdapter(IsUserRoomEnum.Adapter.class)
-  public enum IsUserRoomEnum {
-    TRUE("true"),
-    
-    FALSE("false");
-
-    private Boolean value;
-
-    IsUserRoomEnum(Boolean value) {
-      this.value = value;
-    }
-
-    public Boolean getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static IsUserRoomEnum fromValue(Boolean value) {
-      for (IsUserRoomEnum b : IsUserRoomEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
-    }
-
-    public static class Adapter extends TypeAdapter<IsUserRoomEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final IsUserRoomEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public IsUserRoomEnum read(final JsonReader jsonReader) throws IOException {
-        Boolean value =  jsonReader.nextBoolean();
-        return IsUserRoomEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_IS_USER_ROOM = "isUserRoom";
   @SerializedName(SERIALIZED_NAME_IS_USER_ROOM)
-  private IsUserRoomEnum isUserRoom;
-
-  /**
-   * Gets or Sets isChatRoom
-   */
-  @JsonAdapter(IsChatRoomEnum.Adapter.class)
-  public enum IsChatRoomEnum {
-    TRUE("true"),
-    
-    FALSE("false");
-
-    private Boolean value;
-
-    IsChatRoomEnum(Boolean value) {
-      this.value = value;
-    }
-
-    public Boolean getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static IsChatRoomEnum fromValue(Boolean value) {
-      for (IsChatRoomEnum b : IsChatRoomEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
-    }
-
-    public static class Adapter extends TypeAdapter<IsChatRoomEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final IsChatRoomEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public IsChatRoomEnum read(final JsonReader jsonReader) throws IOException {
-        Boolean value =  jsonReader.nextBoolean();
-        return IsChatRoomEnum.fromValue(value);
-      }
-    }
-  }
+  private Boolean isUserRoom;
 
   public static final String SERIALIZED_NAME_IS_CHAT_ROOM = "isChatRoom";
   @SerializedName(SERIALIZED_NAME_IS_CHAT_ROOM)
-  private IsChatRoomEnum isChatRoom;
+  private Boolean isChatRoom;
 
   /**
    * Gets or Sets lobby
@@ -406,7 +312,7 @@ public class GetConferenceRoom200Response {
   }
 
 
-  public GetConferenceRoom200Response isUserRoom(IsUserRoomEnum isUserRoom) {
+  public GetConferenceRoom200Response isUserRoom(Boolean isUserRoom) {
     
     this.isUserRoom = isUserRoom;
     return this;
@@ -417,17 +323,17 @@ public class GetConferenceRoom200Response {
    * @return isUserRoom
   **/
   @javax.annotation.Nullable
-  public IsUserRoomEnum getIsUserRoom() {
+  public Boolean getIsUserRoom() {
     return isUserRoom;
   }
 
 
-  public void setIsUserRoom(IsUserRoomEnum isUserRoom) {
+  public void setIsUserRoom(Boolean isUserRoom) {
     this.isUserRoom = isUserRoom;
   }
 
 
-  public GetConferenceRoom200Response isChatRoom(IsChatRoomEnum isChatRoom) {
+  public GetConferenceRoom200Response isChatRoom(Boolean isChatRoom) {
     
     this.isChatRoom = isChatRoom;
     return this;
@@ -438,12 +344,12 @@ public class GetConferenceRoom200Response {
    * @return isChatRoom
   **/
   @javax.annotation.Nullable
-  public IsChatRoomEnum getIsChatRoom() {
+  public Boolean getIsChatRoom() {
     return isChatRoom;
   }
 
 
-  public void setIsChatRoom(IsChatRoomEnum isChatRoom) {
+  public void setIsChatRoom(Boolean isChatRoom) {
     this.isChatRoom = isChatRoom;
   }
 

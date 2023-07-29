@@ -21,6 +21,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Users
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:15:00.907Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:23:10.920Z[UTC]")
 public class Users {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -380,7 +381,7 @@ public class Users {
           return b;
         }
       }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+      return null;
     }
 
     public static class Adapter extends TypeAdapter<AdminPermissionEnum> {
@@ -431,7 +432,7 @@ public class Users {
           return b;
         }
       }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+      return null;
     }
 
     public static class Adapter extends TypeAdapter<BillingPermissionEnum> {
@@ -482,7 +483,7 @@ public class Users {
           return b;
         }
       }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+      return null;
     }
 
     public static class Adapter extends TypeAdapter<PhonePermissionEnum> {
@@ -533,7 +534,7 @@ public class Users {
           return b;
         }
       }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+      return null;
     }
 
     public static class Adapter extends TypeAdapter<AgilePermissionEnum> {
@@ -584,7 +585,7 @@ public class Users {
           return b;
         }
       }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+      return null;
     }
 
     public static class Adapter extends TypeAdapter<JobServerPermissionEnum> {
@@ -635,7 +636,7 @@ public class Users {
           return b;
         }
       }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+      return null;
     }
 
     public static class Adapter extends TypeAdapter<MediaServerPermissionEnum> {
@@ -686,7 +687,7 @@ public class Users {
           return b;
         }
       }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+      return null;
     }
 
     public static class Adapter extends TypeAdapter<MailServerPermissionEnum> {
@@ -737,7 +738,7 @@ public class Users {
           return b;
         }
       }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+      return null;
     }
 
     public static class Adapter extends TypeAdapter<SuperAdminPermissionEnum> {
@@ -2363,9 +2364,20 @@ public class Users {
         Objects.equals(this.communication, users.communication);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(email, password, sipPassword, turnPassword, first, last, mobilePhone, businessPhone, extension, customCallerId, jobTitle, department, office, avatar, language, isPrimary, status, vmGreetingType, vmTimeout, vmFile, vmPlaybackNumber, pin, number, region, callerIdNumber, adminPermission, billingPermission, phonePermission, agilePermission, jobServerPermission, mediaServerPermission, mailServerPermission, superAdminPermission, timezone, vmTranscription, communication);
+  }
+
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
   }
 
   @Override

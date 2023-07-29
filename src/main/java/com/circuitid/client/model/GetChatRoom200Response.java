@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * GetChatRoom200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:15:00.907Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:23:10.920Z[UTC]")
 public class GetChatRoom200Response {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -65,56 +65,9 @@ public class GetChatRoom200Response {
   @SerializedName(SERIALIZED_NAME_AVATAR)
   private String avatar;
 
-  /**
-   * Gets or Sets direct
-   */
-  @JsonAdapter(DirectEnum.Adapter.class)
-  public enum DirectEnum {
-    TRUE("true"),
-    
-    FALSE("false");
-
-    private Boolean value;
-
-    DirectEnum(Boolean value) {
-      this.value = value;
-    }
-
-    public Boolean getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static DirectEnum fromValue(Boolean value) {
-      for (DirectEnum b : DirectEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
-    }
-
-    public static class Adapter extends TypeAdapter<DirectEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final DirectEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public DirectEnum read(final JsonReader jsonReader) throws IOException {
-        Boolean value =  jsonReader.nextBoolean();
-        return DirectEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_DIRECT = "direct";
   @SerializedName(SERIALIZED_NAME_DIRECT)
-  private DirectEnum direct;
+  private Boolean direct;
 
   public static final String SERIALIZED_NAME_CREATED_BY_USER_ID = "createdByUserId";
   @SerializedName(SERIALIZED_NAME_CREATED_BY_USER_ID)
@@ -198,7 +151,7 @@ public class GetChatRoom200Response {
   }
 
 
-  public GetChatRoom200Response direct(DirectEnum direct) {
+  public GetChatRoom200Response direct(Boolean direct) {
     
     this.direct = direct;
     return this;
@@ -209,12 +162,12 @@ public class GetChatRoom200Response {
    * @return direct
   **/
   @javax.annotation.Nullable
-  public DirectEnum getDirect() {
+  public Boolean getDirect() {
     return direct;
   }
 
 
-  public void setDirect(DirectEnum direct) {
+  public void setDirect(Boolean direct) {
     this.direct = direct;
   }
 

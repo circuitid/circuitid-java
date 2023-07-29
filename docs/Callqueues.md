@@ -20,11 +20,11 @@
 |**busyTimeout** | **Integer** |  |  [optional] |
 |**wrapUpTimeout** | **Integer** |  |  [optional] |
 |**timeBasedScore** | [**TimeBasedScoreEnum**](#TimeBasedScoreEnum) |  |  |
-|**tierRulesApply** | [**TierRulesApplyEnum**](#TierRulesApplyEnum) |  |  |
-|**tierRuleNoAgentNoWait** | [**TierRuleNoAgentNoWaitEnum**](#TierRuleNoAgentNoWaitEnum) |  |  |
+|**tierRulesApply** | **Boolean** |  |  |
+|**tierRuleNoAgentNoWait** | **Boolean** |  |  |
 |**tierRuleWaitSecond** | **Integer** |  |  [optional] |
-|**tierRuleWaitMultiplyLevel** | [**TierRuleWaitMultiplyLevelEnum**](#TierRuleWaitMultiplyLevelEnum) |  |  |
-|**abandonedResumeAllowed** | [**AbandonedResumeAllowedEnum**](#AbandonedResumeAllowedEnum) |  |  |
+|**tierRuleWaitMultiplyLevel** | **Boolean** |  |  |
+|**abandonedResumeAllowed** | **Boolean** |  |  |
 |**discardAbandonedAfter** | **Integer** |  |  [optional] |
 |**maxWaitTimeNoAgentTimeReached** | **Integer** |  |  |
 
@@ -51,42 +51,6 @@
 |---- | -----|
 | QUEUE | &quot;queue&quot; |
 | SYSTEM | &quot;system&quot; |
-
-
-
-## Enum: TierRulesApplyEnum
-
-| Name | Value |
-|---- | -----|
-| TRUE | &quot;true&quot; |
-| FALSE | &quot;false&quot; |
-
-
-
-## Enum: TierRuleNoAgentNoWaitEnum
-
-| Name | Value |
-|---- | -----|
-| TRUE | &quot;true&quot; |
-| FALSE | &quot;false&quot; |
-
-
-
-## Enum: TierRuleWaitMultiplyLevelEnum
-
-| Name | Value |
-|---- | -----|
-| TRUE | &quot;true&quot; |
-| FALSE | &quot;false&quot; |
-
-
-
-## Enum: AbandonedResumeAllowedEnum
-
-| Name | Value |
-|---- | -----|
-| TRUE | &quot;true&quot; |
-| FALSE | &quot;false&quot; |
 
 
 

@@ -19435,15 +19435,9 @@ components:
           type: string
         tierRulesApply:
           default: false
-          enum:
-          - true
-          - false
           type: boolean
         tierRuleNoAgentNoWait:
           default: true
-          enum:
-          - true
-          - false
           type: boolean
         tierRuleWaitSecond:
           default: 300
@@ -19451,15 +19445,9 @@ components:
           type: integer
         tierRuleWaitMultiplyLevel:
           default: true
-          enum:
-          - true
-          - false
           type: boolean
         abandonedResumeAllowed:
           default: true
-          enum:
-          - true
-          - false
           type: boolean
         discardAbandonedAfter:
           default: 14400
@@ -19529,9 +19517,6 @@ components:
           maxLength: 512
           type: string
         direct:
-          enum:
-          - true
-          - false
           type: boolean
       required:
       - users
@@ -19695,14 +19680,8 @@ components:
           format: int32
           type: integer
         isUserRoom:
-          enum:
-          - true
-          - false
           type: boolean
         isChatRoom:
-          enum:
-          - true
-          - false
           type: boolean
         lobby:
           default: 0
@@ -21508,6 +21487,7 @@ components:
           - exactly
           - range
           - any
+          nullable: true
           type: string
         length:
           format: int32
@@ -22212,41 +22192,49 @@ components:
           enum:
           - r
           - rw
+          nullable: true
           type: string
         billingPermission:
           enum:
           - r
           - rw
+          nullable: true
           type: string
         phonePermission:
           enum:
           - r
           - rw
+          nullable: true
           type: string
         agilePermission:
           enum:
           - r
           - rw
+          nullable: true
           type: string
         jobServerPermission:
           enum:
           - r
           - rw
+          nullable: true
           type: string
         mediaServerPermission:
           enum:
           - r
           - rw
+          nullable: true
           type: string
         mailServerPermission:
           enum:
           - r
           - rw
+          nullable: true
           type: string
         superAdminPermission:
           enum:
           - r
           - rw
+          nullable: true
           type: string
         timezone:
           default: America/New_York

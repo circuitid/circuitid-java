@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Callqueues
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:15:00.907Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:23:10.920Z[UTC]")
 public class Callqueues {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -210,213 +210,25 @@ public class Callqueues {
   @SerializedName(SERIALIZED_NAME_TIME_BASED_SCORE)
   private TimeBasedScoreEnum timeBasedScore = TimeBasedScoreEnum.QUEUE;
 
-  /**
-   * Gets or Sets tierRulesApply
-   */
-  @JsonAdapter(TierRulesApplyEnum.Adapter.class)
-  public enum TierRulesApplyEnum {
-    TRUE("true"),
-    
-    FALSE("false");
-
-    private Boolean value;
-
-    TierRulesApplyEnum(Boolean value) {
-      this.value = value;
-    }
-
-    public Boolean getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static TierRulesApplyEnum fromValue(Boolean value) {
-      for (TierRulesApplyEnum b : TierRulesApplyEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
-    }
-
-    public static class Adapter extends TypeAdapter<TierRulesApplyEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final TierRulesApplyEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public TierRulesApplyEnum read(final JsonReader jsonReader) throws IOException {
-        Boolean value =  jsonReader.nextBoolean();
-        return TierRulesApplyEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_TIER_RULES_APPLY = "tierRulesApply";
   @SerializedName(SERIALIZED_NAME_TIER_RULES_APPLY)
-  private TierRulesApplyEnum tierRulesApply = false;
-
-  /**
-   * Gets or Sets tierRuleNoAgentNoWait
-   */
-  @JsonAdapter(TierRuleNoAgentNoWaitEnum.Adapter.class)
-  public enum TierRuleNoAgentNoWaitEnum {
-    TRUE("true"),
-    
-    FALSE("false");
-
-    private Boolean value;
-
-    TierRuleNoAgentNoWaitEnum(Boolean value) {
-      this.value = value;
-    }
-
-    public Boolean getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static TierRuleNoAgentNoWaitEnum fromValue(Boolean value) {
-      for (TierRuleNoAgentNoWaitEnum b : TierRuleNoAgentNoWaitEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
-    }
-
-    public static class Adapter extends TypeAdapter<TierRuleNoAgentNoWaitEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final TierRuleNoAgentNoWaitEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public TierRuleNoAgentNoWaitEnum read(final JsonReader jsonReader) throws IOException {
-        Boolean value =  jsonReader.nextBoolean();
-        return TierRuleNoAgentNoWaitEnum.fromValue(value);
-      }
-    }
-  }
+  private Boolean tierRulesApply = false;
 
   public static final String SERIALIZED_NAME_TIER_RULE_NO_AGENT_NO_WAIT = "tierRuleNoAgentNoWait";
   @SerializedName(SERIALIZED_NAME_TIER_RULE_NO_AGENT_NO_WAIT)
-  private TierRuleNoAgentNoWaitEnum tierRuleNoAgentNoWait = true;
+  private Boolean tierRuleNoAgentNoWait = true;
 
   public static final String SERIALIZED_NAME_TIER_RULE_WAIT_SECOND = "tierRuleWaitSecond";
   @SerializedName(SERIALIZED_NAME_TIER_RULE_WAIT_SECOND)
   private Integer tierRuleWaitSecond = 300;
 
-  /**
-   * Gets or Sets tierRuleWaitMultiplyLevel
-   */
-  @JsonAdapter(TierRuleWaitMultiplyLevelEnum.Adapter.class)
-  public enum TierRuleWaitMultiplyLevelEnum {
-    TRUE("true"),
-    
-    FALSE("false");
-
-    private Boolean value;
-
-    TierRuleWaitMultiplyLevelEnum(Boolean value) {
-      this.value = value;
-    }
-
-    public Boolean getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static TierRuleWaitMultiplyLevelEnum fromValue(Boolean value) {
-      for (TierRuleWaitMultiplyLevelEnum b : TierRuleWaitMultiplyLevelEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
-    }
-
-    public static class Adapter extends TypeAdapter<TierRuleWaitMultiplyLevelEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final TierRuleWaitMultiplyLevelEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public TierRuleWaitMultiplyLevelEnum read(final JsonReader jsonReader) throws IOException {
-        Boolean value =  jsonReader.nextBoolean();
-        return TierRuleWaitMultiplyLevelEnum.fromValue(value);
-      }
-    }
-  }
-
   public static final String SERIALIZED_NAME_TIER_RULE_WAIT_MULTIPLY_LEVEL = "tierRuleWaitMultiplyLevel";
   @SerializedName(SERIALIZED_NAME_TIER_RULE_WAIT_MULTIPLY_LEVEL)
-  private TierRuleWaitMultiplyLevelEnum tierRuleWaitMultiplyLevel = true;
-
-  /**
-   * Gets or Sets abandonedResumeAllowed
-   */
-  @JsonAdapter(AbandonedResumeAllowedEnum.Adapter.class)
-  public enum AbandonedResumeAllowedEnum {
-    TRUE("true"),
-    
-    FALSE("false");
-
-    private Boolean value;
-
-    AbandonedResumeAllowedEnum(Boolean value) {
-      this.value = value;
-    }
-
-    public Boolean getValue() {
-      return value;
-    }
-
-    @Override
-    public String toString() {
-      return String.valueOf(value);
-    }
-
-    public static AbandonedResumeAllowedEnum fromValue(Boolean value) {
-      for (AbandonedResumeAllowedEnum b : AbandonedResumeAllowedEnum.values()) {
-        if (b.value.equals(value)) {
-          return b;
-        }
-      }
-      throw new IllegalArgumentException("Unexpected value '" + value + "'");
-    }
-
-    public static class Adapter extends TypeAdapter<AbandonedResumeAllowedEnum> {
-      @Override
-      public void write(final JsonWriter jsonWriter, final AbandonedResumeAllowedEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
-      }
-
-      @Override
-      public AbandonedResumeAllowedEnum read(final JsonReader jsonReader) throws IOException {
-        Boolean value =  jsonReader.nextBoolean();
-        return AbandonedResumeAllowedEnum.fromValue(value);
-      }
-    }
-  }
+  private Boolean tierRuleWaitMultiplyLevel = true;
 
   public static final String SERIALIZED_NAME_ABANDONED_RESUME_ALLOWED = "abandonedResumeAllowed";
   @SerializedName(SERIALIZED_NAME_ABANDONED_RESUME_ALLOWED)
-  private AbandonedResumeAllowedEnum abandonedResumeAllowed = true;
+  private Boolean abandonedResumeAllowed = true;
 
   public static final String SERIALIZED_NAME_DISCARD_ABANDONED_AFTER = "discardAbandonedAfter";
   @SerializedName(SERIALIZED_NAME_DISCARD_ABANDONED_AFTER)
@@ -702,7 +514,7 @@ public class Callqueues {
   }
 
 
-  public Callqueues tierRulesApply(TierRulesApplyEnum tierRulesApply) {
+  public Callqueues tierRulesApply(Boolean tierRulesApply) {
     
     this.tierRulesApply = tierRulesApply;
     return this;
@@ -713,17 +525,17 @@ public class Callqueues {
    * @return tierRulesApply
   **/
   @javax.annotation.Nonnull
-  public TierRulesApplyEnum getTierRulesApply() {
+  public Boolean getTierRulesApply() {
     return tierRulesApply;
   }
 
 
-  public void setTierRulesApply(TierRulesApplyEnum tierRulesApply) {
+  public void setTierRulesApply(Boolean tierRulesApply) {
     this.tierRulesApply = tierRulesApply;
   }
 
 
-  public Callqueues tierRuleNoAgentNoWait(TierRuleNoAgentNoWaitEnum tierRuleNoAgentNoWait) {
+  public Callqueues tierRuleNoAgentNoWait(Boolean tierRuleNoAgentNoWait) {
     
     this.tierRuleNoAgentNoWait = tierRuleNoAgentNoWait;
     return this;
@@ -734,12 +546,12 @@ public class Callqueues {
    * @return tierRuleNoAgentNoWait
   **/
   @javax.annotation.Nonnull
-  public TierRuleNoAgentNoWaitEnum getTierRuleNoAgentNoWait() {
+  public Boolean getTierRuleNoAgentNoWait() {
     return tierRuleNoAgentNoWait;
   }
 
 
-  public void setTierRuleNoAgentNoWait(TierRuleNoAgentNoWaitEnum tierRuleNoAgentNoWait) {
+  public void setTierRuleNoAgentNoWait(Boolean tierRuleNoAgentNoWait) {
     this.tierRuleNoAgentNoWait = tierRuleNoAgentNoWait;
   }
 
@@ -765,7 +577,7 @@ public class Callqueues {
   }
 
 
-  public Callqueues tierRuleWaitMultiplyLevel(TierRuleWaitMultiplyLevelEnum tierRuleWaitMultiplyLevel) {
+  public Callqueues tierRuleWaitMultiplyLevel(Boolean tierRuleWaitMultiplyLevel) {
     
     this.tierRuleWaitMultiplyLevel = tierRuleWaitMultiplyLevel;
     return this;
@@ -776,17 +588,17 @@ public class Callqueues {
    * @return tierRuleWaitMultiplyLevel
   **/
   @javax.annotation.Nonnull
-  public TierRuleWaitMultiplyLevelEnum getTierRuleWaitMultiplyLevel() {
+  public Boolean getTierRuleWaitMultiplyLevel() {
     return tierRuleWaitMultiplyLevel;
   }
 
 
-  public void setTierRuleWaitMultiplyLevel(TierRuleWaitMultiplyLevelEnum tierRuleWaitMultiplyLevel) {
+  public void setTierRuleWaitMultiplyLevel(Boolean tierRuleWaitMultiplyLevel) {
     this.tierRuleWaitMultiplyLevel = tierRuleWaitMultiplyLevel;
   }
 
 
-  public Callqueues abandonedResumeAllowed(AbandonedResumeAllowedEnum abandonedResumeAllowed) {
+  public Callqueues abandonedResumeAllowed(Boolean abandonedResumeAllowed) {
     
     this.abandonedResumeAllowed = abandonedResumeAllowed;
     return this;
@@ -797,12 +609,12 @@ public class Callqueues {
    * @return abandonedResumeAllowed
   **/
   @javax.annotation.Nonnull
-  public AbandonedResumeAllowedEnum getAbandonedResumeAllowed() {
+  public Boolean getAbandonedResumeAllowed() {
     return abandonedResumeAllowed;
   }
 
 
-  public void setAbandonedResumeAllowed(AbandonedResumeAllowedEnum abandonedResumeAllowed) {
+  public void setAbandonedResumeAllowed(Boolean abandonedResumeAllowed) {
     this.abandonedResumeAllowed = abandonedResumeAllowed;
   }
 
