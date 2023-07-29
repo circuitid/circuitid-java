@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Invoiceitems
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:08:07.237Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:27:46.341Z[UTC]")
 public class Invoiceitems {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)

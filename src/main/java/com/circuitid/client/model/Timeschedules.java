@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * Timeschedules
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:08:07.237Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:27:46.341Z[UTC]")
 public class Timeschedules {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -845,8 +845,6 @@ public class Timeschedules {
     
     ETC_GMT("Etc/GMT"),
     
-    ETC_GMT_0("Etc/GMT+0"),
-    
     ETC_GMT_1("Etc/GMT+1"),
     
     ETC_GMT_10("Etc/GMT+10"),
@@ -1046,10 +1044,6 @@ public class Timeschedules {
     GB_EIRE("GB-Eire"),
     
     GMT("GMT"),
-    
-    GMT_0("GMT+0"),
-    
-    GMT_0("GMT-0"),
     
     GMT0("GMT0"),
     

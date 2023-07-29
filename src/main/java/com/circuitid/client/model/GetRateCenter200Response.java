@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * GetRateCenter200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:08:07.237Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T09:27:46.341Z[UTC]")
 public class GetRateCenter200Response {
   public static final String SERIALIZED_NAME_NPA = "npa";
   @SerializedName(SERIALIZED_NAME_NPA)

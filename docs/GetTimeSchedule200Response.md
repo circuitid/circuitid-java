@@ -419,7 +419,6 @@
 | EGYPT | &quot;Egypt&quot; |
 | EIRE | &quot;Eire&quot; |
 | ETC_GMT | &quot;Etc/GMT&quot; |
-| ETC_GMT_0 | &quot;Etc/GMT+0&quot; |
 | ETC_GMT_1 | &quot;Etc/GMT+1&quot; |
 | ETC_GMT_10 | &quot;Etc/GMT+10&quot; |
 | ETC_GMT_11 | &quot;Etc/GMT+11&quot; |
@@ -520,8 +519,6 @@
 | GB | &quot;GB&quot; |
 | GB_EIRE | &quot;GB-Eire&quot; |
 | GMT | &quot;GMT&quot; |
-| GMT_0 | &quot;GMT+0&quot; |
-| GMT_0 | &quot;GMT-0&quot; |
 | GMT0 | &quot;GMT0&quot; |
 | GREENWICH | &quot;Greenwich&quot; |
 | HST | &quot;HST&quot; |
