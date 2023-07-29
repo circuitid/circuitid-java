@@ -19973,7 +19973,6 @@ components:
           maxLength: 1024
           type: string
         permissions:
-          default: {}
           type: object
         status:
           default: pending
@@ -20035,7 +20034,6 @@ components:
           maxLength: 45
           type: string
         permissions:
-          default: {}
           type: object
         requireId:
           default: 0
