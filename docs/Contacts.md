@@ -7,16 +7,16 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**email** | **Object** |  |  [optional] |
-|**first** | **Object** |  |  |
-|**last** | **Object** |  |  [optional] |
-|**mobilePhone** | **Object** |  |  [optional] |
-|**businessPhone** | **Object** |  |  [optional] |
-|**faxPhone** | **Object** |  |  [optional] |
-|**extension** | **Object** |  |  [optional] |
-|**jobTitle** | **Object** |  |  [optional] |
-|**department** | **Object** |  |  [optional] |
-|**avatar** | **Object** |  |  [optional] |
+|**email** | **String** |  |  [optional] |
+|**first** | **String** |  |  |
+|**last** | **String** |  |  [optional] |
+|**mobilePhone** | **String** |  |  [optional] |
+|**businessPhone** | **String** |  |  [optional] |
+|**faxPhone** | **String** |  |  [optional] |
+|**extension** | **Integer** |  |  [optional] |
+|**jobTitle** | **String** |  |  [optional] |
+|**department** | **String** |  |  [optional] |
+|**avatar** | **String** |  |  [optional] |
 
 
 

@@ -7,9 +7,17 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**username** | **Object** |  |  |
-|**password** | **Object** |  |  |
-|**strategy** | **Object** |  |  |
+|**username** | **String** |  |  |
+|**password** | **String** |  |  |
+|**strategy** | [**StrategyEnum**](#StrategyEnum) |  |  |
+
+
+
+## Enum: StrategyEnum
+
+| Name | Value |
+|---- | -----|
+| LOCAL | &quot;local&quot; |
 
 
 

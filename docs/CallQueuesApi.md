@@ -13,7 +13,7 @@ All URIs are relative to *https://cloud9.circuitid.com*
 
 <a id="createCallQueue"></a>
 # **createCallQueue**
-> Object createCallQueue(callqueues)
+> GetCallQueue200Response createCallQueue(callqueues)
 
 Create a new object
 
@@ -43,7 +43,7 @@ public class Example {
     CallQueuesApi apiInstance = new CallQueuesApi(defaultClient);
     Callqueues callqueues = new Callqueues(); // Callqueues | The JSON object that will be posted to the REST API endpoint.
     try {
-      Object result = apiInstance.createCallQueue(callqueues);
+      GetCallQueue200Response result = apiInstance.createCallQueue(callqueues);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CallQueuesApi#createCallQueue");
@@ -64,7 +64,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+[**GetCallQueue200Response**](GetCallQueue200Response.md)
 
 ### Authorization
 
@@ -79,15 +79,15 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the new object created |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 <a id="findCallQueues"></a>
 # **findCallQueues**
@@ -119,13 +119,13 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     CallQueuesApi apiInstance = new CallQueuesApi(defaultClient);
-    Object $search = null; // Object | Filter results by the specified value.
-    Object $limit = null; // Object | $limit will return only the number of results you specify.
-    Object $skip = null; // Object | $skip will skip the specified number of results.
+    String $search = "$search_example"; // String | Filter results by the specified value.
+    Integer $limit = 56; // Integer | $limit will return only the number of results you specify.
+    Integer $skip = 56; // Integer | $skip will skip the specified number of results.
     Object $sort = null; // Object | $sort will sort based on the object you provide. It can contain a list of properties by which to sort mapped to the order (1 ascending, -1 descending).
-    Object $select = null; // Object | $select allows to pick which fields to include in the result.
-    Object $or = null; // Object | Find all records that match any of the given criteria.
-    Object $and = null; // Object | Find all records that match all of the given criteria.
+    List<String> $select = Arrays.asList(); // List<String> | $select allows to pick which fields to include in the result.
+    List<Object> $or = null; // List<Object> | Find all records that match any of the given criteria.
+    List<Object> $and = null; // List<Object> | Find all records that match all of the given criteria.
     try {
       FindCallQueues200Response result = apiInstance.findCallQueues($search, $limit, $skip, $sort, $select, $or, $and);
       System.out.println(result);
@@ -144,13 +144,13 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **$search** | [**Object**](.md)| Filter results by the specified value. | [optional] |
-| **$limit** | [**Object**](.md)| $limit will return only the number of results you specify. | [optional] |
-| **$skip** | [**Object**](.md)| $skip will skip the specified number of results. | [optional] |
+| **$search** | **String**| Filter results by the specified value. | [optional] |
+| **$limit** | **Integer**| $limit will return only the number of results you specify. | [optional] |
+| **$skip** | **Integer**| $skip will skip the specified number of results. | [optional] |
 | **$sort** | [**Object**](.md)| $sort will sort based on the object you provide. It can contain a list of properties by which to sort mapped to the order (1 ascending, -1 descending). | [optional] |
-| **$select** | [**Object**](.md)| $select allows to pick which fields to include in the result. | [optional] |
-| **$or** | [**Object**](.md)| Find all records that match any of the given criteria. | [optional] |
-| **$and** | [**Object**](.md)| Find all records that match all of the given criteria. | [optional] |
+| **$select** | [**List&lt;String&gt;**](String.md)| $select allows to pick which fields to include in the result. | [optional] |
+| **$or** | [**List&lt;Object&gt;**](Object.md)| Find all records that match any of the given criteria. | [optional] |
+| **$and** | [**List&lt;Object&gt;**](Object.md)| Find all records that match all of the given criteria. | [optional] |
 
 ### Return type
 
@@ -169,19 +169,19 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the requested data |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 <a id="getCallQueue"></a>
 # **getCallQueue**
-> Object getCallQueue(id)
+> GetCallQueue200Response getCallQueue(id)
 
 Get object by id
 
@@ -209,9 +209,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     CallQueuesApi apiInstance = new CallQueuesApi(defaultClient);
-    Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
+    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
-      Object result = apiInstance.getCallQueue(id);
+      GetCallQueue200Response result = apiInstance.getCallQueue(id);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CallQueuesApi#getCallQueue");
@@ -228,11 +228,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**Object**](.md)| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
+| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
 
 ### Return type
 
-**Object**
+[**GetCallQueue200Response**](GetCallQueue200Response.md)
 
 ### Authorization
 
@@ -247,20 +247,20 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the requested data. |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
 | **404** | Not Found |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 <a id="patchCallQueue"></a>
 # **patchCallQueue**
-> Object patchCallQueue(id, callqueues)
+> GetCallQueue200Response patchCallQueue(id, callqueues)
 
 Patch object&#39;s data
 
@@ -288,10 +288,10 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     CallQueuesApi apiInstance = new CallQueuesApi(defaultClient);
-    Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
+    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     Callqueues callqueues = new Callqueues(); // Callqueues | The request data.
     try {
-      Object result = apiInstance.patchCallQueue(id, callqueues);
+      GetCallQueue200Response result = apiInstance.patchCallQueue(id, callqueues);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CallQueuesApi#patchCallQueue");
@@ -308,12 +308,12 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**Object**](.md)| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
+| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
 | **callqueues** | [**Callqueues**](Callqueues.md)| The request data. | |
 
 ### Return type
 
-**Object**
+[**GetCallQueue200Response**](GetCallQueue200Response.md)
 
 ### Authorization
 
@@ -328,19 +328,19 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the modified data. |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 <a id="removeCallQueue"></a>
 # **removeCallQueue**
-> Object removeCallQueue(id)
+> GetCallQueue200Response removeCallQueue(id)
 
 Delete object by id
 
@@ -368,9 +368,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     CallQueuesApi apiInstance = new CallQueuesApi(defaultClient);
-    Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
+    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
-      Object result = apiInstance.removeCallQueue(id);
+      GetCallQueue200Response result = apiInstance.removeCallQueue(id);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CallQueuesApi#removeCallQueue");
@@ -387,11 +387,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**Object**](.md)| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
+| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
 
 ### Return type
 
-**Object**
+[**GetCallQueue200Response**](GetCallQueue200Response.md)
 
 ### Authorization
 
@@ -406,13 +406,13 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the deleted data. |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 

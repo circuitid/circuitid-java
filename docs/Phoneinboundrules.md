@@ -7,9 +7,9 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  |
-|**description** | **Object** |  |  [optional] |
-|**outboundCallerId** | **Object** |  |  [optional] |
+|**name** | **String** |  |  |
+|**description** | **String** |  |  [optional] |
+|**outboundCallerId** | **String** |  |  [optional] |
 
 
 

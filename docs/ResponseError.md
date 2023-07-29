@@ -7,11 +7,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  [optional] |
-|**message** | **Object** |  |  [optional] |
-|**code** | **Object** |  |  [optional] |
-|**className** | **Object** |  |  [optional] |
-|**errors** | **Object** |  |  [optional] |
+|**name** | **String** |  |  [optional] |
+|**message** | **String** |  |  [optional] |
+|**code** | **Integer** |  |  [optional] |
+|**className** | **String** |  |  [optional] |
+|**errors** | **List&lt;String&gt;** |  |  [optional] |
 
 
 

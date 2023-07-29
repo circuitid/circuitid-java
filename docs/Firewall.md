@@ -7,17 +7,64 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  |
-|**description** | **Object** |  |  [optional] |
-|**priority** | **Object** |  |  |
-|**type** | **Object** |  |  |
-|**target** | **Object** |  |  |
-|**direction** | **Object** |  |  [optional] |
-|**param** | **Object** |  |  |
-|**hits** | **Object** |  |  [optional] |
-|**ai** | **Object** |  |  [optional] |
-|**status** | **Object** |  |  [optional] |
-|**notificationHits** | **Object** |  |  [optional] |
+|**name** | **String** |  |  |
+|**description** | **String** |  |  [optional] |
+|**priority** | **Integer** |  |  |
+|**type** | [**TypeEnum**](#TypeEnum) |  |  |
+|**target** | [**TargetEnum**](#TargetEnum) |  |  |
+|**direction** | [**DirectionEnum**](#DirectionEnum) |  |  [optional] |
+|**param** | **String** |  |  |
+|**hits** | **Integer** |  |  [optional] |
+|**ai** | [**AiEnum**](#AiEnum) |  |  [optional] |
+|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
+|**notificationHits** | **Integer** |  |  [optional] |
+
+
+
+## Enum: TypeEnum
+
+| Name | Value |
+|---- | -----|
+| ALLOW | &quot;allow&quot; |
+| DENY | &quot;deny&quot; |
+
+
+
+## Enum: TargetEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBERS | &quot;numbers&quot; |
+| IPADDRESSES | &quot;ipaddresses&quot; |
+| SMS | &quot;sms&quot; |
+
+
+
+## Enum: DirectionEnum
+
+| Name | Value |
+|---- | -----|
+| INBOUND | &quot;inbound&quot; |
+| OUTBOUND | &quot;outbound&quot; |
+| BOTH | &quot;both&quot; |
+
+
+
+## Enum: AiEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_0 | 0 |
+| NUMBER_1 | 1 |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_0 | 0 |
+| NUMBER_1 | 1 |
 
 
 

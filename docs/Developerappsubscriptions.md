@@ -7,13 +7,49 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**developerApp** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**_object** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**ref** | **Object** |  |  [optional] |
+|**developerApp** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**_object** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**ref** | **String** |  |  [optional] |
 |**permissions** | **Object** |  |  [optional] |
-|**requireId** | **Object** |  |  [optional] |
-|**services** | **Object** |  |  |
-|**events** | **Object** |  |  [optional] |
+|**requireId** | [**RequireIdEnum**](#RequireIdEnum) |  |  [optional] |
+|**services** | [**List&lt;ServicesEnum&gt;**](#List&lt;ServicesEnum&gt;) |  |  |
+|**events** | [**List&lt;EventsEnum&gt;**](#List&lt;EventsEnum&gt;) |  |  [optional] |
+
+
+
+## Enum: RequireIdEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: List&lt;ServicesEnum&gt;
+
+| Name | Value |
+|---- | -----|
+| CALENDAREVENTS | &quot;calendarevents&quot; |
+| CALLQUEUES | &quot;callqueues&quot; |
+| CDRS | &quot;cdrs&quot; |
+| CHATMESSAGES | &quot;chatmessages&quot; |
+| CONTACTS | &quot;contacts&quot; |
+| CONVERSATIONMESSAGES | &quot;conversationmessages&quot; |
+| FAXES | &quot;faxes&quot; |
+| FIREWALL | &quot;firewall&quot; |
+| USERS | &quot;users&quot; |
+| VOICEMAIL | &quot;voicemail&quot; |
+
+
+
+## Enum: List&lt;EventsEnum&gt;
+
+| Name | Value |
+|---- | -----|
+| CREATE | &quot;create&quot; |
+| PATCH | &quot;patch&quot; |
+| REMOVED | &quot;removed&quot; |
 
 
 

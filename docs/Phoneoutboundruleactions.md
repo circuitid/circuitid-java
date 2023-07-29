@@ -7,23 +7,63 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  |
-|**group** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**phoneoutboundrule** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**status** | **Object** |  |  [optional] |
-|**priority** | **Object** |  |  |
-|**startingChars** | **Object** |  |  [optional] |
-|**contains** | **Object** |  |  [optional] |
-|**lengthType** | **Object** |  |  [optional] |
-|**length** | **Object** |  |  [optional] |
-|**appendChars** | **Object** |  |  [optional] |
-|**prependChars** | **Object** |  |  [optional] |
-|**rangeStart** | **Object** |  |  [optional] |
-|**rangeEnd** | **Object** |  |  [optional] |
-|**removeStartingChars** | **Object** |  |  [optional] |
-|**removeEndingChars** | **Object** |  |  [optional] |
-|**route** | **Object** |  |  |
-|**routingType** | **Object** |  |  [optional] |
+|**name** | **String** |  |  |
+|**group** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**phoneoutboundrule** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
+|**priority** | **Integer** |  |  |
+|**startingChars** | **String** |  |  [optional] |
+|**contains** | **String** |  |  [optional] |
+|**lengthType** | [**LengthTypeEnum**](#LengthTypeEnum) |  |  [optional] |
+|**length** | **Integer** |  |  [optional] |
+|**appendChars** | **String** |  |  [optional] |
+|**prependChars** | **String** |  |  [optional] |
+|**rangeStart** | **Integer** |  |  [optional] |
+|**rangeEnd** | **Integer** |  |  [optional] |
+|**removeStartingChars** | **Integer** |  |  [optional] |
+|**removeEndingChars** | **Integer** |  |  [optional] |
+|**route** | [**RouteEnum**](#RouteEnum) |  |  |
+|**routingType** | [**RoutingTypeEnum**](#RoutingTypeEnum) |  |  [optional] |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: LengthTypeEnum
+
+| Name | Value |
+|---- | -----|
+| ATLEAST | &quot;atleast&quot; |
+| EXACTLY | &quot;exactly&quot; |
+| RANGE | &quot;range&quot; |
+| ANY | &quot;any&quot; |
+
+
+
+## Enum: RouteEnum
+
+| Name | Value |
+|---- | -----|
+| DEFAULT | &quot;default&quot; |
+| GROUP | &quot;group&quot; |
+| PSTN | &quot;pstn&quot; |
+
+
+
+## Enum: RoutingTypeEnum
+
+| Name | Value |
+|---- | -----|
+| PRIORITY | &quot;priority&quot; |
+| LB | &quot;lb&quot; |
+| SIMULTANEOUS | &quot;simultaneous&quot; |
 
 
 

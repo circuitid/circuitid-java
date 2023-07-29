@@ -7,19 +7,19 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  |
-|**streetNumber** | **Object** |  |  |
-|**streetName** | **Object** |  |  |
-|**preDirection** | **Object** |  |  [optional] |
-|**streetSuffix** | **Object** |  |  |
-|**city** | **Object** |  |  |
-|**state** | **Object** |  |  [optional] |
-|**zip** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**zipCode** | **Object** |  |  [optional] |
-|**address2** | **Object** |  |  [optional] |
-|**country** | **Object** |  |  |
+|**name** | **String** |  |  |
+|**streetNumber** | **String** |  |  |
+|**streetName** | **String** |  |  |
+|**preDirection** | **String** |  |  [optional] |
+|**streetSuffix** | **String** |  |  |
+|**city** | **String** |  |  |
+|**state** | **String** |  |  [optional] |
+|**zip** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**zipCode** | **String** |  |  [optional] |
+|**address2** | **String** |  |  [optional] |
+|**country** | **String** |  |  |
 |**providers** | **Object** |  |  [optional] |
-|**region** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**region** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 
 
 

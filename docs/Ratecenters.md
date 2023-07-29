@@ -7,11 +7,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**npa** | **Object** |  |  |
-|**nxx** | **Object** |  |  |
-|**lata** | **Object** |  |  |
-|**locState** | **Object** |  |  |
-|**rcAbbre** | **Object** |  |  |
+|**npa** | **String** |  |  |
+|**nxx** | **String** |  |  |
+|**lata** | **String** |  |  |
+|**locState** | **String** |  |  |
+|**rcAbbre** | **String** |  |  |
 
 
 

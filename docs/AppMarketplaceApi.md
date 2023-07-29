@@ -9,7 +9,7 @@ All URIs are relative to *https://cloud9.circuitid.com*
 
 <a id="findAppMarketplace"></a>
 # **findAppMarketplace**
-> Object findAppMarketplace($search, $limit, $skip, $sort, $select, $or, $and)
+> FindAppMarketplace200Response findAppMarketplace($search, $limit, $skip, $sort, $select, $or, $and)
 
 Find multiple objects
 
@@ -37,15 +37,15 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     AppMarketplaceApi apiInstance = new AppMarketplaceApi(defaultClient);
-    Object $search = null; // Object | Filter results by the specified value.
-    Object $limit = null; // Object | $limit will return only the number of results you specify.
-    Object $skip = null; // Object | $skip will skip the specified number of results.
+    String $search = "$search_example"; // String | Filter results by the specified value.
+    Integer $limit = 56; // Integer | $limit will return only the number of results you specify.
+    Integer $skip = 56; // Integer | $skip will skip the specified number of results.
     Object $sort = null; // Object | $sort will sort based on the object you provide. It can contain a list of properties by which to sort mapped to the order (1 ascending, -1 descending).
-    Object $select = null; // Object | $select allows to pick which fields to include in the result.
-    Object $or = null; // Object | Find all records that match any of the given criteria.
-    Object $and = null; // Object | Find all records that match all of the given criteria.
+    List<String> $select = Arrays.asList(); // List<String> | $select allows to pick which fields to include in the result.
+    List<Object> $or = null; // List<Object> | Find all records that match any of the given criteria.
+    List<Object> $and = null; // List<Object> | Find all records that match all of the given criteria.
     try {
-      Object result = apiInstance.findAppMarketplace($search, $limit, $skip, $sort, $select, $or, $and);
+      FindAppMarketplace200Response result = apiInstance.findAppMarketplace($search, $limit, $skip, $sort, $select, $or, $and);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AppMarketplaceApi#findAppMarketplace");
@@ -62,17 +62,17 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **$search** | [**Object**](.md)| Filter results by the specified value. | [optional] |
-| **$limit** | [**Object**](.md)| $limit will return only the number of results you specify. | [optional] |
-| **$skip** | [**Object**](.md)| $skip will skip the specified number of results. | [optional] |
+| **$search** | **String**| Filter results by the specified value. | [optional] |
+| **$limit** | **Integer**| $limit will return only the number of results you specify. | [optional] |
+| **$skip** | **Integer**| $skip will skip the specified number of results. | [optional] |
 | **$sort** | [**Object**](.md)| $sort will sort based on the object you provide. It can contain a list of properties by which to sort mapped to the order (1 ascending, -1 descending). | [optional] |
-| **$select** | [**Object**](.md)| $select allows to pick which fields to include in the result. | [optional] |
-| **$or** | [**Object**](.md)| Find all records that match any of the given criteria. | [optional] |
-| **$and** | [**Object**](.md)| Find all records that match all of the given criteria. | [optional] |
+| **$select** | [**List&lt;String&gt;**](String.md)| $select allows to pick which fields to include in the result. | [optional] |
+| **$or** | [**List&lt;Object&gt;**](Object.md)| Find all records that match any of the given criteria. | [optional] |
+| **$and** | [**List&lt;Object&gt;**](Object.md)| Find all records that match all of the given criteria. | [optional] |
 
 ### Return type
 
-**Object**
+[**FindAppMarketplace200Response**](FindAppMarketplace200Response.md)
 
 ### Authorization
 
@@ -87,13 +87,13 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the requested data |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 

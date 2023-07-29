@@ -7,10 +7,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**callqueue** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**user** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**priority** | **Object** |  |  |
-|**tier** | **Object** |  |  |
+|**callqueue** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**user** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**priority** | **Integer** |  |  |
+|**tier** | **Integer** |  |  |
 
 
 

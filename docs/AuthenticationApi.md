@@ -9,7 +9,7 @@ All URIs are relative to *https://cloud9.circuitid.com*
 
 <a id="createAuthentication"></a>
 # **createAuthentication**
-> Object createAuthentication(authentication)
+> CreateAuthentication200Response createAuthentication(authentication)
 
 Create a new object
 
@@ -39,7 +39,7 @@ public class Example {
     AuthenticationApi apiInstance = new AuthenticationApi(defaultClient);
     Authentication authentication = new Authentication(); // Authentication | The JSON object that will be posted to the REST API endpoint.
     try {
-      Object result = apiInstance.createAuthentication(authentication);
+      CreateAuthentication200Response result = apiInstance.createAuthentication(authentication);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AuthenticationApi#createAuthentication");
@@ -60,7 +60,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+[**CreateAuthentication200Response**](CreateAuthentication200Response.md)
 
 ### Authorization
 
@@ -75,13 +75,13 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the new object created |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 

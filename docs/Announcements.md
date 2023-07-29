@@ -7,10 +7,20 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  |
-|**type** | **Object** |  |  |
-|**voice** | **Object** |  |  [optional] |
-|**text** | **Object** |  |  [optional] |
+|**attachments** | **List&lt;String&gt;** |  |  [optional] |
+|**name** | **String** |  |  |
+|**type** | [**TypeEnum**](#TypeEnum) |  |  |
+|**voice** | **String** |  |  [optional] |
+|**text** | **String** |  |  [optional] |
+
+
+
+## Enum: TypeEnum
+
+| Name | Value |
+|---- | -----|
+| TTS | &quot;tts&quot; |
+| MP3 | &quot;mp3&quot; |
 
 
 

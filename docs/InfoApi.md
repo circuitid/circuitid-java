@@ -71,13 +71,13 @@ This endpoint does not need any parameter.
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the requested data |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 

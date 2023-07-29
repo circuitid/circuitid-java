@@ -7,28 +7,109 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  |
-|**campaignId** | **Object** |  |  [optional] |
-|**brandId** | **Object** |  |  |
-|**order** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**subscriberOptin** | **Object** |  |  [optional] |
-|**subscriberOptout** | **Object** |  |  [optional] |
-|**subscriberHelp** | **Object** |  |  [optional] |
-|**numberPool** | **Object** |  |  [optional] |
-|**directLending** | **Object** |  |  [optional] |
-|**embeddedLink** | **Object** |  |  [optional] |
-|**embeddedPhone** | **Object** |  |  [optional] |
-|**affiliateMarketing** | **Object** |  |  [optional] |
-|**ageGated** | **Object** |  |  [optional] |
+|**name** | **String** |  |  |
+|**campaignId** | **String** |  |  [optional] |
+|**brandId** | **String** |  |  |
+|**order** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**subscriberOptin** | [**SubscriberOptinEnum**](#SubscriberOptinEnum) |  |  [optional] |
+|**subscriberOptout** | [**SubscriberOptoutEnum**](#SubscriberOptoutEnum) |  |  [optional] |
+|**subscriberHelp** | [**SubscriberHelpEnum**](#SubscriberHelpEnum) |  |  [optional] |
+|**numberPool** | [**NumberPoolEnum**](#NumberPoolEnum) |  |  [optional] |
+|**directLending** | [**DirectLendingEnum**](#DirectLendingEnum) |  |  [optional] |
+|**embeddedLink** | [**EmbeddedLinkEnum**](#EmbeddedLinkEnum) |  |  [optional] |
+|**embeddedPhone** | [**EmbeddedPhoneEnum**](#EmbeddedPhoneEnum) |  |  [optional] |
+|**affiliateMarketing** | [**AffiliateMarketingEnum**](#AffiliateMarketingEnum) |  |  [optional] |
+|**ageGated** | [**AgeGatedEnum**](#AgeGatedEnum) |  |  [optional] |
 |**mnos** | **Object** |  |  [optional] |
-|**referenceId** | **Object** |  |  [optional] |
-|**useCase** | **Object** |  |  [optional] |
-|**subUseCases** | **Object** |  |  [optional] |
-|**sample1** | **Object** |  |  [optional] |
-|**sample2** | **Object** |  |  [optional] |
-|**sample3** | **Object** |  |  [optional] |
-|**sample4** | **Object** |  |  [optional] |
-|**sample5** | **Object** |  |  [optional] |
+|**referenceId** | **String** |  |  [optional] |
+|**useCase** | **String** |  |  [optional] |
+|**subUseCases** | **List&lt;Object&gt;** |  |  [optional] |
+|**sample1** | **String** |  |  [optional] |
+|**sample2** | **String** |  |  [optional] |
+|**sample3** | **String** |  |  [optional] |
+|**sample4** | **String** |  |  [optional] |
+|**sample5** | **String** |  |  [optional] |
+
+
+
+## Enum: SubscriberOptinEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: SubscriberOptoutEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: SubscriberHelpEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: NumberPoolEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: DirectLendingEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: EmbeddedLinkEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: EmbeddedPhoneEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: AffiliateMarketingEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
+
+
+
+## Enum: AgeGatedEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
 
 
 

@@ -7,9 +7,18 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  |
-|**description** | **Object** |  |  [optional] |
-|**status** | **Object** |  |  [optional] |
+|**name** | **String** |  |  |
+|**description** | **String** |  |  [optional] |
+|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_1 | 1 |
+| NUMBER_0 | 0 |
 
 
 

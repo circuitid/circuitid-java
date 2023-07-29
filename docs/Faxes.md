@@ -7,23 +7,42 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**callerIdNumber** | **Object** |  |  |
-|**callerDestination** | **Object** |  |  |
-|**pages** | **Object** |  |  [optional] |
-|**statusCode** | **Object** |  |  [optional] |
-|**transferedPages** | **Object** |  |  [optional] |
-|**status** | **Object** |  |  |
-|**error** | **Object** |  |  [optional] |
-|**type** | **Object** |  |  |
-|**order** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**_file** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**contact** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**number** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**faxAccount** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**retries** | **Object** |  |  [optional] |
-|**invoice** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**senderEmail** | **Object** |  |  [optional] |
-|**senderName** | **Object** |  |  [optional] |
+|**callerIdNumber** | **String** |  |  |
+|**callerDestination** | **String** |  |  |
+|**pages** | **Integer** |  |  [optional] |
+|**statusCode** | **Integer** |  |  [optional] |
+|**transferedPages** | **Integer** |  |  [optional] |
+|**status** | [**StatusEnum**](#StatusEnum) |  |  |
+|**error** | **String** |  |  [optional] |
+|**type** | [**TypeEnum**](#TypeEnum) |  |  |
+|**order** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**_file** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**contact** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**number** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**faxAccount** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**retries** | **Integer** |  |  [optional] |
+|**invoice** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**senderEmail** | **String** |  |  [optional] |
+|**senderName** | **String** |  |  [optional] |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| FAILED | &quot;failed&quot; |
+| SUCCESS | &quot;success&quot; |
+| PROCESSING | &quot;processing&quot; |
+
+
+
+## Enum: TypeEnum
+
+| Name | Value |
+|---- | -----|
+| SEND | &quot;send&quot; |
+| RECEIVE | &quot;receive&quot; |
 
 
 

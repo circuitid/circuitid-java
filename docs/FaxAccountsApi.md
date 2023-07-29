@@ -13,7 +13,7 @@ All URIs are relative to *https://cloud9.circuitid.com*
 
 <a id="createFaxAccount"></a>
 # **createFaxAccount**
-> Object createFaxAccount(faxaccounts)
+> GetFaxAccount200Response createFaxAccount(faxaccounts)
 
 Create a new object
 
@@ -43,7 +43,7 @@ public class Example {
     FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
     Faxaccounts faxaccounts = new Faxaccounts(); // Faxaccounts | The JSON object that will be posted to the REST API endpoint.
     try {
-      Object result = apiInstance.createFaxAccount(faxaccounts);
+      GetFaxAccount200Response result = apiInstance.createFaxAccount(faxaccounts);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FaxAccountsApi#createFaxAccount");
@@ -64,7 +64,7 @@ public class Example {
 
 ### Return type
 
-**Object**
+[**GetFaxAccount200Response**](GetFaxAccount200Response.md)
 
 ### Authorization
 
@@ -79,15 +79,15 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the new object created |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 <a id="findFaxAccounts"></a>
 # **findFaxAccounts**
@@ -119,13 +119,13 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
-    Object $search = null; // Object | Filter results by the specified value.
-    Object $limit = null; // Object | $limit will return only the number of results you specify.
-    Object $skip = null; // Object | $skip will skip the specified number of results.
+    String $search = "$search_example"; // String | Filter results by the specified value.
+    Integer $limit = 56; // Integer | $limit will return only the number of results you specify.
+    Integer $skip = 56; // Integer | $skip will skip the specified number of results.
     Object $sort = null; // Object | $sort will sort based on the object you provide. It can contain a list of properties by which to sort mapped to the order (1 ascending, -1 descending).
-    Object $select = null; // Object | $select allows to pick which fields to include in the result.
-    Object $or = null; // Object | Find all records that match any of the given criteria.
-    Object $and = null; // Object | Find all records that match all of the given criteria.
+    List<String> $select = Arrays.asList(); // List<String> | $select allows to pick which fields to include in the result.
+    List<Object> $or = null; // List<Object> | Find all records that match any of the given criteria.
+    List<Object> $and = null; // List<Object> | Find all records that match all of the given criteria.
     try {
       FindFaxAccounts200Response result = apiInstance.findFaxAccounts($search, $limit, $skip, $sort, $select, $or, $and);
       System.out.println(result);
@@ -144,13 +144,13 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **$search** | [**Object**](.md)| Filter results by the specified value. | [optional] |
-| **$limit** | [**Object**](.md)| $limit will return only the number of results you specify. | [optional] |
-| **$skip** | [**Object**](.md)| $skip will skip the specified number of results. | [optional] |
+| **$search** | **String**| Filter results by the specified value. | [optional] |
+| **$limit** | **Integer**| $limit will return only the number of results you specify. | [optional] |
+| **$skip** | **Integer**| $skip will skip the specified number of results. | [optional] |
 | **$sort** | [**Object**](.md)| $sort will sort based on the object you provide. It can contain a list of properties by which to sort mapped to the order (1 ascending, -1 descending). | [optional] |
-| **$select** | [**Object**](.md)| $select allows to pick which fields to include in the result. | [optional] |
-| **$or** | [**Object**](.md)| Find all records that match any of the given criteria. | [optional] |
-| **$and** | [**Object**](.md)| Find all records that match all of the given criteria. | [optional] |
+| **$select** | [**List&lt;String&gt;**](String.md)| $select allows to pick which fields to include in the result. | [optional] |
+| **$or** | [**List&lt;Object&gt;**](Object.md)| Find all records that match any of the given criteria. | [optional] |
+| **$and** | [**List&lt;Object&gt;**](Object.md)| Find all records that match all of the given criteria. | [optional] |
 
 ### Return type
 
@@ -169,19 +169,19 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the requested data |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 <a id="getFaxAccount"></a>
 # **getFaxAccount**
-> Object getFaxAccount(id)
+> GetFaxAccount200Response getFaxAccount(id)
 
 Get object by id
 
@@ -209,9 +209,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
-    Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
+    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
-      Object result = apiInstance.getFaxAccount(id);
+      GetFaxAccount200Response result = apiInstance.getFaxAccount(id);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FaxAccountsApi#getFaxAccount");
@@ -228,11 +228,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**Object**](.md)| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
+| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
 
 ### Return type
 
-**Object**
+[**GetFaxAccount200Response**](GetFaxAccount200Response.md)
 
 ### Authorization
 
@@ -247,20 +247,20 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the requested data. |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
 | **404** | Not Found |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 <a id="patchFaxAccount"></a>
 # **patchFaxAccount**
-> Object patchFaxAccount(id, faxaccounts)
+> GetFaxAccount200Response patchFaxAccount(id, faxaccounts)
 
 Patch object&#39;s data
 
@@ -288,10 +288,10 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
-    Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
+    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     Faxaccounts faxaccounts = new Faxaccounts(); // Faxaccounts | The request data.
     try {
-      Object result = apiInstance.patchFaxAccount(id, faxaccounts);
+      GetFaxAccount200Response result = apiInstance.patchFaxAccount(id, faxaccounts);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FaxAccountsApi#patchFaxAccount");
@@ -308,12 +308,12 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**Object**](.md)| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
+| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
 | **faxaccounts** | [**Faxaccounts**](Faxaccounts.md)| The request data. | |
 
 ### Return type
 
-**Object**
+[**GetFaxAccount200Response**](GetFaxAccount200Response.md)
 
 ### Authorization
 
@@ -328,19 +328,19 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the modified data. |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 
 <a id="removeFaxAccount"></a>
 # **removeFaxAccount**
-> Object removeFaxAccount(id)
+> GetFaxAccount200Response removeFaxAccount(id)
 
 Delete object by id
 
@@ -368,9 +368,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
-    Object id = null; // Object | The ObjectId (unique 12 bytes ID) of record you would like to GET.
+    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
     try {
-      Object result = apiInstance.removeFaxAccount(id);
+      GetFaxAccount200Response result = apiInstance.removeFaxAccount(id);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FaxAccountsApi#removeFaxAccount");
@@ -387,11 +387,11 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **id** | [**Object**](.md)| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
+| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
 
 ### Return type
 
-**Object**
+[**GetFaxAccount200Response**](GetFaxAccount200Response.md)
 
 ### Authorization
 
@@ -406,13 +406,13 @@ public class Example {
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 | **200** | A JSON object containing the deleted data. |  -  |
-| **400** |  |  -  |
-| **401** |  |  -  |
-| **403** |  |  -  |
-| **405** |  |  -  |
-| **406** |  |  -  |
-| **408** |  |  -  |
-| **429** |  |  -  |
-| **500** |  |  -  |
-| **503** |  |  -  |
+| **400** | Bad Request |  -  |
+| **401** | Not Authenticated |  -  |
+| **403** | Forbidden |  -  |
+| **405** | Method Not Allowed |  -  |
+| **406** | Not Acceptable |  -  |
+| **408** | Timeout |  -  |
+| **429** | Too Many Requests |  -  |
+| **500** | General Error |  -  |
+| **503** | Unavailable |  -  |
 

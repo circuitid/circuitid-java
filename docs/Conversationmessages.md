@@ -7,14 +7,23 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**conversation** | **Object** | ObjectId (unique 12 bytes ID) |  [optional] |
+|**conversation** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**from** | **Object** |  |  |
-|**fromNumber** | **Object** |  |  |
-|**to** | **Object** |  |  |
-|**text** | **Object** |  |  [optional] |
-|**direction** | **Object** |  |  |
-|**attachments** | **Object** |  |  [optional] |
-|**referenceId** | **Object** |  |  [optional] |
+|**fromNumber** | **String** |  |  |
+|**to** | **List&lt;Object&gt;** |  |  |
+|**text** | **String** |  |  [optional] |
+|**direction** | [**DirectionEnum**](#DirectionEnum) |  |  |
+|**attachments** | **List&lt;Object&gt;** |  |  [optional] |
+|**referenceId** | **String** |  |  [optional] |
+
+
+
+## Enum: DirectionEnum
+
+| Name | Value |
+|---- | -----|
+| INBOUND | &quot;inbound&quot; |
+| OUTBOUND | &quot;outbound&quot; |
 
 
 

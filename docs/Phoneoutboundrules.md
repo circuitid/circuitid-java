@@ -7,10 +7,19 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**name** | **Object** |  |  |
-|**description** | **Object** |  |  [optional] |
-|**status** | **Object** |  |  [optional] |
-|**outboundCallerId** | **Object** |  |  [optional] |
+|**name** | **String** |  |  |
+|**description** | **String** |  |  [optional] |
+|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
+|**outboundCallerId** | **String** |  |  [optional] |
+
+
+
+## Enum: StatusEnum
+
+| Name | Value |
+|---- | -----|
+| NUMBER_0 | 0 |
+| NUMBER_1 | 1 |
 
 
 

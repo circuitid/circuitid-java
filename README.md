@@ -1,8 +1,8 @@
 # circuitid-java-client
 
 Circuit ID REST API
-- API version: 0.47.17
-  - Build date: 2023-07-25T10:46:54.095Z[UTC]
+- API version: 0.47.19
+  - Build date: 2023-07-29T09:08:07.237Z[UTC]
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -48,7 +48,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.circuitid</groupId>
   <artifactId>circuitid-java-client</artifactId>
-  <version>0.47.17</version>
+  <version>0.47.19</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -64,7 +64,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.circuitid:circuitid-java-client:0.47.17"
+     implementation "com.circuitid:circuitid-java-client:0.47.19"
   }
 ```
 
@@ -78,7 +78,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/circuitid-java-client-0.47.17.jar`
+* `target/circuitid-java-client-0.47.19.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -109,7 +109,7 @@ public class Example {
     AcceptedSendersApi apiInstance = new AcceptedSendersApi(defaultClient);
     Acceptedsenders acceptedsenders = new Acceptedsenders(); // Acceptedsenders | The JSON object that will be posted to the REST API endpoint.
     try {
-      Object result = apiInstance.createAcceptedSender(acceptedsenders);
+      GetAcceptedSender200Response result = apiInstance.createAcceptedSender(acceptedsenders);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AcceptedSendersApi#createAcceptedSender");
@@ -344,6 +344,7 @@ Class | Method | HTTP request | Description
  - [Contacts](docs/Contacts.md)
  - [Conversationmessages](docs/Conversationmessages.md)
  - [Conversations](docs/Conversations.md)
+ - [CreateAuthentication200Response](docs/CreateAuthentication200Response.md)
  - [Customers](docs/Customers.md)
  - [Developerapps](docs/Developerapps.md)
  - [Developerappsubscriptions](docs/Developerappsubscriptions.md)
@@ -354,6 +355,7 @@ Class | Method | HTTP request | Description
  - [Find](docs/Find.md)
  - [FindAcceptedSenders200Response](docs/FindAcceptedSenders200Response.md)
  - [FindAnnouncements200Response](docs/FindAnnouncements200Response.md)
+ - [FindAppMarketplace200Response](docs/FindAppMarketplace200Response.md)
  - [FindCallQueueAgents200Response](docs/FindCallQueueAgents200Response.md)
  - [FindCallQueues200Response](docs/FindCallQueues200Response.md)
  - [FindChatRooms200Response](docs/FindChatRooms200Response.md)
@@ -394,6 +396,47 @@ Class | Method | HTTP request | Description
  - [FindUsers200Response](docs/FindUsers200Response.md)
  - [FindVirtualExtensions200Response](docs/FindVirtualExtensions200Response.md)
  - [Firewall](docs/Firewall.md)
+ - [GetAcceptedSender200Response](docs/GetAcceptedSender200Response.md)
+ - [GetAnnouncement200Response](docs/GetAnnouncement200Response.md)
+ - [GetCallQueue200Response](docs/GetCallQueue200Response.md)
+ - [GetCallQueueAgent200Response](docs/GetCallQueueAgent200Response.md)
+ - [GetChatRoom200Response](docs/GetChatRoom200Response.md)
+ - [GetClient200Response](docs/GetClient200Response.md)
+ - [GetConferenceRoom200Response](docs/GetConferenceRoom200Response.md)
+ - [GetContact200Response](docs/GetContact200Response.md)
+ - [GetConversation200Response](docs/GetConversation200Response.md)
+ - [GetConversationMessage200Response](docs/GetConversationMessage200Response.md)
+ - [GetCustomer200Response](docs/GetCustomer200Response.md)
+ - [GetDeveloperApp200Response](docs/GetDeveloperApp200Response.md)
+ - [GetDeveloperAppSubscription200Response](docs/GetDeveloperAppSubscription200Response.md)
+ - [GetDomain200Response](docs/GetDomain200Response.md)
+ - [GetFax200Response](docs/GetFax200Response.md)
+ - [GetFaxAccount200Response](docs/GetFaxAccount200Response.md)
+ - [GetFirewall200Response](docs/GetFirewall200Response.md)
+ - [GetGroup200Response](docs/GetGroup200Response.md)
+ - [GetGroupMember200Response](docs/GetGroupMember200Response.md)
+ - [GetHoliday200Response](docs/GetHoliday200Response.md)
+ - [GetInvoice200Response](docs/GetInvoice200Response.md)
+ - [GetInvoiceItem200Response](docs/GetInvoiceItem200Response.md)
+ - [GetLicense200Response](docs/GetLicense200Response.md)
+ - [GetMenu200Response](docs/GetMenu200Response.md)
+ - [GetMenuOption200Response](docs/GetMenuOption200Response.md)
+ - [GetMessageBrand200Response](docs/GetMessageBrand200Response.md)
+ - [GetMessageCampaign200Response](docs/GetMessageCampaign200Response.md)
+ - [GetNumber200Response](docs/GetNumber200Response.md)
+ - [GetNumberPort200Response](docs/GetNumberPort200Response.md)
+ - [GetOffice200Response](docs/GetOffice200Response.md)
+ - [GetPhoneInboundRule200Response](docs/GetPhoneInboundRule200Response.md)
+ - [GetPhoneInboundRuleAction200Response](docs/GetPhoneInboundRuleAction200Response.md)
+ - [GetPhoneOutboundRule200Response](docs/GetPhoneOutboundRule200Response.md)
+ - [GetPhoneOutboundRuleAction200Response](docs/GetPhoneOutboundRuleAction200Response.md)
+ - [GetRateCenter200Response](docs/GetRateCenter200Response.md)
+ - [GetServer200Response](docs/GetServer200Response.md)
+ - [GetTimeSchedule200Response](docs/GetTimeSchedule200Response.md)
+ - [GetUser200Response](docs/GetUser200Response.md)
+ - [GetUserToken200Response](docs/GetUserToken200Response.md)
+ - [GetVirtualExtension200Response](docs/GetVirtualExtension200Response.md)
+ - [Getdirectory200Response](docs/Getdirectory200Response.md)
  - [Groupmembers](docs/Groupmembers.md)
  - [Groups](docs/Groups.md)
  - [Holidays](docs/Holidays.md)

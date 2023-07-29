@@ -7,8 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**createdAt** | **Object** |  |  [optional] |
-|**updatedAt** | **Object** |  |  [optional] |
+|**createdAt** | **OffsetDateTime** |  |  [optional] |
+|**updatedAt** | **OffsetDateTime** |  |  [optional] |
 
 
 

@@ -7,10 +7,10 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**order** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**_object** | **Object** | ObjectId (unique 12 bytes ID) |  |
-|**ref** | **Object** |  |  |
-|**field** | **Object** |  |  [optional] |
+|**order** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**_object** | **String** | ObjectId (unique 12 bytes ID) |  |
+|**ref** | **String** |  |  |
+|**field** | **String** |  |  [optional] |
 
 
 
