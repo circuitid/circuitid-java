@@ -13,7 +13,7 @@
 
 package com.circuitid.client;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:26:19.024Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:43:38.181Z[UTC]")
 public class Pair {
     private String name = "";
     private String value = "";

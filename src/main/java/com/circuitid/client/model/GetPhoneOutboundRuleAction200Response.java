@@ -52,7 +52,7 @@ import com.circuitid.client.JSON;
 /**
  * GetPhoneOutboundRuleAction200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:26:19.024Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-29T10:43:38.181Z[UTC]")
 public class GetPhoneOutboundRuleAction200Response {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
