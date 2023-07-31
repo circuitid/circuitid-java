@@ -52,7 +52,7 @@ import com.circuitid.client.JSON;
 /**
  * Conversationmessages
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-31T20:15:30.371Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-31T20:28:34.437Z[UTC]")
 public class Conversationmessages {
   public static final String SERIALIZED_NAME_CONVERSATION = "conversation";
   @SerializedName(SERIALIZED_NAME_CONVERSATION)
