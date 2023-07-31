@@ -15,6 +15,7 @@ package com.circuitid.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.circuitid.client.model.UsersCommunicationValue;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -22,6 +23,8 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.time.OffsetDateTime;
+import java.util.HashMap;
+import java.util.Map;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -52,7 +55,7 @@ import com.circuitid.client.JSON;
 /**
  * GetUser200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-31T20:28:34.437Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-31T20:43:40.997Z[UTC]")
 public class GetUser200Response {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -1248,7 +1251,7 @@ public class GetUser200Response {
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)
-  private Object communication = {"notifications":{"email":true,"sms":true},"missedCalls":{"email":true,"sms":true},"callRecordings":{"email":true,"sms":true},"newsletters":{"email":true,"sms":true},"voicemails":{"email":true,"sms":true},"web":{"sounds":true}};
+  private Map<String, UsersCommunicationValue> communication = new HashMap<>();
 
   public static final String SERIALIZED_NAME_ID = "_id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -1882,9 +1885,17 @@ public class GetUser200Response {
   }
 
 
-  public GetUser200Response communication(Object communication) {
+  public GetUser200Response communication(Map<String, UsersCommunicationValue> communication) {
     
     this.communication = communication;
+    return this;
+  }
+
+  public GetUser200Response putCommunicationItem(String key, UsersCommunicationValue communicationItem) {
+    if (this.communication == null) {
+      this.communication = new HashMap<>();
+    }
+    this.communication.put(key, communicationItem);
     return this;
   }
 
@@ -1893,12 +1904,12 @@ public class GetUser200Response {
    * @return communication
   **/
   @javax.annotation.Nullable
-  public Object getCommunication() {
+  public Map<String, UsersCommunicationValue> getCommunication() {
     return communication;
   }
 
 
-  public void setCommunication(Object communication) {
+  public void setCommunication(Map<String, UsersCommunicationValue> communication) {
     this.communication = communication;
   }
 

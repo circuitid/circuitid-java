@@ -261,6 +261,8 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.Timeschedules.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.TimeschedulesCreateOrPatch.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.Users.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsersCommunicationValue.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsersCommunicationValueNotifications.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsersCreateOrPatch.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.Usertokens.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsertokensCreateOrPatch.CustomTypeAdapterFactory());

@@ -2,7 +2,7 @@
 
 Circuit ID REST API
 - API version: 0.47.20
-  - Build date: 2023-07-31T20:28:34.437Z[UTC]
+  - Build date: 2023-07-31T20:43:40.997Z[UTC]
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -498,6 +498,8 @@ Class | Method | HTTP request | Description
  - [Timeschedules](docs/Timeschedules.md)
  - [TimeschedulesCreateOrPatch](docs/TimeschedulesCreateOrPatch.md)
  - [Users](docs/Users.md)
+ - [UsersCommunicationValue](docs/UsersCommunicationValue.md)
+ - [UsersCommunicationValueNotifications](docs/UsersCommunicationValueNotifications.md)
  - [UsersCreateOrPatch](docs/UsersCreateOrPatch.md)
  - [Usertokens](docs/Usertokens.md)
  - [UsertokensCreateOrPatch](docs/UsertokensCreateOrPatch.md)

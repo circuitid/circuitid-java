@@ -15,12 +15,15 @@ package com.circuitid.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.circuitid.client.model.UsersCommunicationValue;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import org.openapitools.jackson.nullable.JsonNullable;
 
 import com.google.gson.Gson;
@@ -51,7 +54,7 @@ import com.circuitid.client.JSON;
 /**
  * Users
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-31T20:28:34.437Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-31T20:43:40.997Z[UTC]")
 public class Users {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -1247,7 +1250,7 @@ public class Users {
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)
-  private Object communication = {"notifications":{"email":true,"sms":true},"missedCalls":{"email":true,"sms":true},"callRecordings":{"email":true,"sms":true},"newsletters":{"email":true,"sms":true},"voicemails":{"email":true,"sms":true},"web":{"sounds":true}};
+  private Map<String, UsersCommunicationValue> communication = new HashMap<>();
 
   public Users() {
   }
@@ -1861,9 +1864,17 @@ public class Users {
   }
 
 
-  public Users communication(Object communication) {
+  public Users communication(Map<String, UsersCommunicationValue> communication) {
     
     this.communication = communication;
+    return this;
+  }
+
+  public Users putCommunicationItem(String key, UsersCommunicationValue communicationItem) {
+    if (this.communication == null) {
+      this.communication = new HashMap<>();
+    }
+    this.communication.put(key, communicationItem);
     return this;
   }
 
@@ -1872,12 +1883,12 @@ public class Users {
    * @return communication
   **/
   @javax.annotation.Nullable
-  public Object getCommunication() {
+  public Map<String, UsersCommunicationValue> getCommunication() {
     return communication;
   }
 
 
-  public void setCommunication(Object communication) {
+  public void setCommunication(Map<String, UsersCommunicationValue> communication) {
     this.communication = communication;
   }
 

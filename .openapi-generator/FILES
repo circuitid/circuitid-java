@@ -220,6 +220,8 @@ docs/TimeschedulesCreateOrPatch.md
 docs/UserTokensApi.md
 docs/Users.md
 docs/UsersApi.md
+docs/UsersCommunicationValue.md
+docs/UsersCommunicationValueNotifications.md
 docs/UsersCreateOrPatch.md
 docs/Usertokens.md
 docs/UsertokensCreateOrPatch.md
@@ -470,6 +472,8 @@ src/main/java/com/circuitid/client/model/ServersCreateOrPatch.java
 src/main/java/com/circuitid/client/model/Timeschedules.java
 src/main/java/com/circuitid/client/model/TimeschedulesCreateOrPatch.java
 src/main/java/com/circuitid/client/model/Users.java
+src/main/java/com/circuitid/client/model/UsersCommunicationValue.java
+src/main/java/com/circuitid/client/model/UsersCommunicationValueNotifications.java
 src/main/java/com/circuitid/client/model/UsersCreateOrPatch.java
 src/main/java/com/circuitid/client/model/Usertokens.java
 src/main/java/com/circuitid/client/model/UsertokensCreateOrPatch.java
@@ -690,6 +694,8 @@ src/test/java/com/circuitid/client/model/ServersCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/ServersTest.java
 src/test/java/com/circuitid/client/model/TimeschedulesCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/TimeschedulesTest.java
+src/test/java/com/circuitid/client/model/UsersCommunicationValueNotificationsTest.java
+src/test/java/com/circuitid/client/model/UsersCommunicationValueTest.java
 src/test/java/com/circuitid/client/model/UsersCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/UsersTest.java
 src/test/java/com/circuitid/client/model/UsertokensCreateOrPatchTest.java

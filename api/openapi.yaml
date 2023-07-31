@@ -22820,42 +22820,70 @@ components:
           maxLength: 45
           type: string
         sunday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         monday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         tuesday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         wednesday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         thursday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         friday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         saturday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
@@ -23232,42 +23260,70 @@ components:
           maxLength: 45
           type: string
         sunday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         monday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         tuesday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         wednesday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         thursday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         friday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         saturday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
@@ -23763,6 +23819,8 @@ components:
           format: int32
           type: integer
         communication:
+          additionalProperties:
+            $ref: '#/components/schemas/users_communication_value'
           default:
             notifications:
               email: true
@@ -24261,6 +24319,8 @@ components:
           format: int32
           type: integer
         communication:
+          additionalProperties:
+            $ref: '#/components/schemas/users_communication_value'
           default:
             notifications:
               email: true
@@ -25799,6 +25859,35 @@ components:
       - limit
       - skip
       - total
+      type: object
+    users_communication_value_notifications:
+      properties:
+        email:
+          default: true
+          type: boolean
+        sms:
+          default: true
+          type: boolean
+        sound:
+          default: true
+          type: boolean
+      type: object
+    users_communication_value:
+      properties:
+        notifications:
+          $ref: '#/components/schemas/users_communication_value_notifications'
+        missedCalls:
+          $ref: '#/components/schemas/users_communication_value_notifications'
+        callRecordings:
+          $ref: '#/components/schemas/users_communication_value_notifications'
+        newsletters:
+          $ref: '#/components/schemas/users_communication_value_notifications'
+        voicemails:
+          $ref: '#/components/schemas/users_communication_value_notifications'
+        web:
+          $ref: '#/components/schemas/users_communication_value_notifications'
+        email:
+          $ref: '#/components/schemas/users_communication_value_notifications'
       type: object
   securitySchemes:
     jwt:
