@@ -1,6 +1,6 @@
 # UserTokensApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createUserToken"></a>
 # **createUserToken**
-> GetUserToken200Response createUserToken(usertokens)
+> GetUserToken200Response createUserToken(usertokensCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.UserTokensApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     UserTokensApi apiInstance = new UserTokensApi(defaultClient);
-    Usertokens usertokens = new Usertokens(); // Usertokens | The JSON object that will be posted to the REST API endpoint.
+    UsertokensCreateOrPatch usertokensCreateOrPatch = new UsertokensCreateOrPatch(); // UsertokensCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetUserToken200Response result = apiInstance.createUserToken(usertokens);
+      GetUserToken200Response result = apiInstance.createUserToken(usertokensCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling UserTokensApi#createUserToken");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **usertokens** | [**Usertokens**](Usertokens.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **usertokensCreateOrPatch** | [**UsertokensCreateOrPatch**](UsertokensCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.UserTokensApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.UserTokensApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchUserToken"></a>
 # **patchUserToken**
-> GetUserToken200Response patchUserToken(id, usertokens)
+> GetUserToken200Response patchUserToken(id, usertokensCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.UserTokensApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     UserTokensApi apiInstance = new UserTokensApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Usertokens usertokens = new Usertokens(); // Usertokens | The request data.
+    UsertokensCreateOrPatch usertokensCreateOrPatch = new UsertokensCreateOrPatch(); // UsertokensCreateOrPatch | The request data.
     try {
-      GetUserToken200Response result = apiInstance.patchUserToken(id, usertokens);
+      GetUserToken200Response result = apiInstance.patchUserToken(id, usertokensCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling UserTokensApi#patchUserToken");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **usertokens** | [**Usertokens**](Usertokens.md)| The request data. | |
+| **usertokensCreateOrPatch** | [**UsertokensCreateOrPatch**](UsertokensCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.UserTokensApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

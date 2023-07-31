@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Menus&gt;**](Menus.md) |  |  |
+|**data** | [**List&lt;GetMenu200Response&gt;**](GetMenu200Response.md) |  |  |
 
 
 

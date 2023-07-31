@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Conversations&gt;**](Conversations.md) |  |  |
+|**data** | [**List&lt;GetConversation200Response&gt;**](GetConversation200Response.md) |  |  |
 
 
 

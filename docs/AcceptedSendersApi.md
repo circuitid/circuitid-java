@@ -1,6 +1,6 @@
 # AcceptedSendersApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createAcceptedSender"></a>
 # **createAcceptedSender**
-> GetAcceptedSender200Response createAcceptedSender(acceptedsenders)
+> GetAcceptedSender200Response createAcceptedSender(acceptedsendersCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     AcceptedSendersApi apiInstance = new AcceptedSendersApi(defaultClient);
-    Acceptedsenders acceptedsenders = new Acceptedsenders(); // Acceptedsenders | The JSON object that will be posted to the REST API endpoint.
+    AcceptedsendersCreateOrPatch acceptedsendersCreateOrPatch = new AcceptedsendersCreateOrPatch(); // AcceptedsendersCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetAcceptedSender200Response result = apiInstance.createAcceptedSender(acceptedsenders);
+      GetAcceptedSender200Response result = apiInstance.createAcceptedSender(acceptedsendersCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AcceptedSendersApi#createAcceptedSender");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **acceptedsenders** | [**Acceptedsenders**](Acceptedsenders.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **acceptedsendersCreateOrPatch** | [**AcceptedsendersCreateOrPatch**](AcceptedsendersCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchAcceptedSender"></a>
 # **patchAcceptedSender**
-> GetAcceptedSender200Response patchAcceptedSender(id, acceptedsenders)
+> GetAcceptedSender200Response patchAcceptedSender(id, acceptedsendersCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     AcceptedSendersApi apiInstance = new AcceptedSendersApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Acceptedsenders acceptedsenders = new Acceptedsenders(); // Acceptedsenders | The request data.
+    AcceptedsendersCreateOrPatch acceptedsendersCreateOrPatch = new AcceptedsendersCreateOrPatch(); // AcceptedsendersCreateOrPatch | The request data.
     try {
-      GetAcceptedSender200Response result = apiInstance.patchAcceptedSender(id, acceptedsenders);
+      GetAcceptedSender200Response result = apiInstance.patchAcceptedSender(id, acceptedsendersCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AcceptedSendersApi#patchAcceptedSender");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **acceptedsenders** | [**Acceptedsenders**](Acceptedsenders.md)| The request data. | |
+| **acceptedsendersCreateOrPatch** | [**AcceptedsendersCreateOrPatch**](AcceptedsendersCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

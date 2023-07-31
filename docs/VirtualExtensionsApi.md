@@ -1,6 +1,6 @@
 # VirtualExtensionsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createVirtualExtension"></a>
 # **createVirtualExtension**
-> GetVirtualExtension200Response createVirtualExtension(virtualextensions)
+> GetVirtualExtension200Response createVirtualExtension(virtualextensionsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.VirtualExtensionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     VirtualExtensionsApi apiInstance = new VirtualExtensionsApi(defaultClient);
-    Virtualextensions virtualextensions = new Virtualextensions(); // Virtualextensions | The JSON object that will be posted to the REST API endpoint.
+    VirtualextensionsCreateOrPatch virtualextensionsCreateOrPatch = new VirtualextensionsCreateOrPatch(); // VirtualextensionsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetVirtualExtension200Response result = apiInstance.createVirtualExtension(virtualextensions);
+      GetVirtualExtension200Response result = apiInstance.createVirtualExtension(virtualextensionsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling VirtualExtensionsApi#createVirtualExtension");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **virtualextensions** | [**Virtualextensions**](Virtualextensions.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **virtualextensionsCreateOrPatch** | [**VirtualextensionsCreateOrPatch**](VirtualextensionsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.VirtualExtensionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.VirtualExtensionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchVirtualExtension"></a>
 # **patchVirtualExtension**
-> GetVirtualExtension200Response patchVirtualExtension(id, virtualextensions)
+> GetVirtualExtension200Response patchVirtualExtension(id, virtualextensionsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.VirtualExtensionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     VirtualExtensionsApi apiInstance = new VirtualExtensionsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Virtualextensions virtualextensions = new Virtualextensions(); // Virtualextensions | The request data.
+    VirtualextensionsCreateOrPatch virtualextensionsCreateOrPatch = new VirtualextensionsCreateOrPatch(); // VirtualextensionsCreateOrPatch | The request data.
     try {
-      GetVirtualExtension200Response result = apiInstance.patchVirtualExtension(id, virtualextensions);
+      GetVirtualExtension200Response result = apiInstance.patchVirtualExtension(id, virtualextensionsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling VirtualExtensionsApi#patchVirtualExtension");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **virtualextensions** | [**Virtualextensions**](Virtualextensions.md)| The request data. | |
+| **virtualextensionsCreateOrPatch** | [**VirtualextensionsCreateOrPatch**](VirtualextensionsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.VirtualExtensionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

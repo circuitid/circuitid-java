@@ -19,7 +19,6 @@
 |**cspId** | **String** |  |  [optional] |
 |**einIssuingCountry** | **String** |  |  [optional] |
 |**universalEin** | **String** |  |  [optional] |
-|**referenceId** | **String** |  |  [optional] |
 
 
 

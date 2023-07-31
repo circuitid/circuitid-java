@@ -8,23 +8,17 @@
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
 |**name** | **String** |  |  |
-|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
 |**websiteUrl** | **String** |  |  [optional] |
 |**logo** | **String** |  |  [optional] |
 |**credit** | **Integer** |  |  [optional] |
 |**adminUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**billingUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**callRecordingUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**callForwardingCallLimit** | **Integer** |  |  [optional] |
 |**supportUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**automaticRefillAmount** | **Integer** |  |  [optional] |
 |**lowBalanceAlertAmount** | **Integer** |  |  [optional] |
-|**lowBalanceAlertAt** | **OffsetDateTime** |  |  [optional] |
-|**lowBalanceAlertCount** | **Integer** |  |  [optional] |
-|**lastAutomaticRefillInvoice** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**internationalCalling** | [**InternationalCallingEnum**](#InternationalCallingEnum) |  |  [optional] |
 |**createdByIP** | **String** |  |  [optional] |
-|**callDebug** | [**CallDebugEnum**](#CallDebugEnum) |  |  [optional] |
 |**mediaBypass** | [**MediaBypassEnum**](#MediaBypassEnum) |  |  [optional] |
 |**accountLock** | [**AccountLockEnum**](#AccountLockEnum) |  |  [optional] |
 |**callRecording** | [**CallRecordingEnum**](#CallRecordingEnum) |  |  [optional] |
@@ -37,27 +31,7 @@
 
 
 
-## Enum: StatusEnum
-
-| Name | Value |
-|---- | -----|
-| ACTIVE | &quot;active&quot; |
-| SUSPENDED | &quot;suspended&quot; |
-| TERMINATED | &quot;terminated&quot; |
-| FRAUD | &quot;fraud&quot; |
-
-
-
 ## Enum: InternationalCallingEnum
-
-| Name | Value |
-|---- | -----|
-| NUMBER_1 | 1 |
-| NUMBER_0 | 0 |
-
-
-
-## Enum: CallDebugEnum
 
 | Name | Value |
 |---- | -----|

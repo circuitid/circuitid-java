@@ -1,6 +1,6 @@
 # DomainsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createDomain"></a>
 # **createDomain**
-> GetDomain200Response createDomain(domains)
+> GetDomain200Response createDomain(domainsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.DomainsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     DomainsApi apiInstance = new DomainsApi(defaultClient);
-    Domains domains = new Domains(); // Domains | The JSON object that will be posted to the REST API endpoint.
+    DomainsCreateOrPatch domainsCreateOrPatch = new DomainsCreateOrPatch(); // DomainsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetDomain200Response result = apiInstance.createDomain(domains);
+      GetDomain200Response result = apiInstance.createDomain(domainsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DomainsApi#createDomain");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **domains** | [**Domains**](Domains.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **domainsCreateOrPatch** | [**DomainsCreateOrPatch**](DomainsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.DomainsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.DomainsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchDomain"></a>
 # **patchDomain**
-> GetDomain200Response patchDomain(id, domains)
+> GetDomain200Response patchDomain(id, domainsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.DomainsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     DomainsApi apiInstance = new DomainsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Domains domains = new Domains(); // Domains | The request data.
+    DomainsCreateOrPatch domainsCreateOrPatch = new DomainsCreateOrPatch(); // DomainsCreateOrPatch | The request data.
     try {
-      GetDomain200Response result = apiInstance.patchDomain(id, domains);
+      GetDomain200Response result = apiInstance.patchDomain(id, domainsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DomainsApi#patchDomain");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **domains** | [**Domains**](Domains.md)| The request data. | |
+| **domainsCreateOrPatch** | [**DomainsCreateOrPatch**](DomainsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.DomainsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

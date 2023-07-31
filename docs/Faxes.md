@@ -7,6 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+|**attachments** | **List&lt;String&gt;** |  |  [optional] |
+|**callerDestinations** | **List&lt;String&gt;** |  |  |
 |**callerIdNumber** | **String** |  |  |
 |**callerDestination** | **String** |  |  |
 |**pages** | **Integer** |  |  [optional] |

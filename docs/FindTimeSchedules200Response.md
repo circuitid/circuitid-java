@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Timeschedules&gt;**](Timeschedules.md) |  |  |
+|**data** | [**List&lt;GetTimeSchedule200Response&gt;**](GetTimeSchedule200Response.md) |  |  |
 
 
 

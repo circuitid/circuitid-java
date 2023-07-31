@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Domains&gt;**](Domains.md) |  |  |
+|**data** | [**List&lt;GetDomain200Response&gt;**](GetDomain200Response.md) |  |  |
 
 
 

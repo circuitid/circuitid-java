@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Messagebrands&gt;**](Messagebrands.md) |  |  |
+|**data** | [**List&lt;GetMessageBrand200Response&gt;**](GetMessageBrand200Response.md) |  |  |
 
 
 

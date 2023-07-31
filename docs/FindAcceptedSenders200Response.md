@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Acceptedsenders&gt;**](Acceptedsenders.md) |  |  |
+|**data** | [**List&lt;GetAcceptedSender200Response&gt;**](GetAcceptedSender200Response.md) |  |  |
 
 
 

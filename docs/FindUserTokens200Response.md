@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Usertokens&gt;**](Usertokens.md) |  |  |
+|**data** | [**List&lt;GetUserToken200Response&gt;**](GetUserToken200Response.md) |  |  |
 
 
 

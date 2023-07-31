@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Messagecampaigns&gt;**](Messagecampaigns.md) |  |  |
+|**data** | [**List&lt;GetMessageCampaign200Response&gt;**](GetMessageCampaign200Response.md) |  |  |
 
 
 

@@ -1,6 +1,6 @@
 # MessageCampaignsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createMessageCampaign"></a>
 # **createMessageCampaign**
-> GetMessageCampaign200Response createMessageCampaign(messagecampaigns)
+> GetMessageCampaign200Response createMessageCampaign(messagecampaignsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.MessageCampaignsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     MessageCampaignsApi apiInstance = new MessageCampaignsApi(defaultClient);
-    Messagecampaigns messagecampaigns = new Messagecampaigns(); // Messagecampaigns | The JSON object that will be posted to the REST API endpoint.
+    MessagecampaignsCreateOrPatch messagecampaignsCreateOrPatch = new MessagecampaignsCreateOrPatch(); // MessagecampaignsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetMessageCampaign200Response result = apiInstance.createMessageCampaign(messagecampaigns);
+      GetMessageCampaign200Response result = apiInstance.createMessageCampaign(messagecampaignsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling MessageCampaignsApi#createMessageCampaign");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **messagecampaigns** | [**Messagecampaigns**](Messagecampaigns.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **messagecampaignsCreateOrPatch** | [**MessagecampaignsCreateOrPatch**](MessagecampaignsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.MessageCampaignsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.MessageCampaignsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchMessageCampaign"></a>
 # **patchMessageCampaign**
-> GetMessageCampaign200Response patchMessageCampaign(id, messagecampaigns)
+> GetMessageCampaign200Response patchMessageCampaign(id, messagecampaignsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.MessageCampaignsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     MessageCampaignsApi apiInstance = new MessageCampaignsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Messagecampaigns messagecampaigns = new Messagecampaigns(); // Messagecampaigns | The request data.
+    MessagecampaignsCreateOrPatch messagecampaignsCreateOrPatch = new MessagecampaignsCreateOrPatch(); // MessagecampaignsCreateOrPatch | The request data.
     try {
-      GetMessageCampaign200Response result = apiInstance.patchMessageCampaign(id, messagecampaigns);
+      GetMessageCampaign200Response result = apiInstance.patchMessageCampaign(id, messagecampaignsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling MessageCampaignsApi#patchMessageCampaign");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **messagecampaigns** | [**Messagecampaigns**](Messagecampaigns.md)| The request data. | |
+| **messagecampaignsCreateOrPatch** | [**MessagecampaignsCreateOrPatch**](MessagecampaignsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.MessageCampaignsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

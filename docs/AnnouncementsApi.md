@@ -1,6 +1,6 @@
 # AnnouncementsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createAnnouncement"></a>
 # **createAnnouncement**
-> GetAnnouncement200Response createAnnouncement(announcements)
+> GetAnnouncement200Response createAnnouncement(announcementsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.AnnouncementsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
-    Announcements announcements = new Announcements(); // Announcements | The JSON object that will be posted to the REST API endpoint.
+    AnnouncementsCreateOrPatch announcementsCreateOrPatch = new AnnouncementsCreateOrPatch(); // AnnouncementsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetAnnouncement200Response result = apiInstance.createAnnouncement(announcements);
+      GetAnnouncement200Response result = apiInstance.createAnnouncement(announcementsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AnnouncementsApi#createAnnouncement");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **announcements** | [**Announcements**](Announcements.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **announcementsCreateOrPatch** | [**AnnouncementsCreateOrPatch**](AnnouncementsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.AnnouncementsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.AnnouncementsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchAnnouncement"></a>
 # **patchAnnouncement**
-> GetAnnouncement200Response patchAnnouncement(id, announcements)
+> GetAnnouncement200Response patchAnnouncement(id, announcementsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.AnnouncementsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     AnnouncementsApi apiInstance = new AnnouncementsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Announcements announcements = new Announcements(); // Announcements | The request data.
+    AnnouncementsCreateOrPatch announcementsCreateOrPatch = new AnnouncementsCreateOrPatch(); // AnnouncementsCreateOrPatch | The request data.
     try {
-      GetAnnouncement200Response result = apiInstance.patchAnnouncement(id, announcements);
+      GetAnnouncement200Response result = apiInstance.patchAnnouncement(id, announcementsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AnnouncementsApi#patchAnnouncement");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **announcements** | [**Announcements**](Announcements.md)| The request data. | |
+| **announcementsCreateOrPatch** | [**AnnouncementsCreateOrPatch**](AnnouncementsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.AnnouncementsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

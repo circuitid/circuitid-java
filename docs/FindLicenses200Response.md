@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Licenses&gt;**](Licenses.md) |  |  |
+|**data** | [**List&lt;GetLicense200Response&gt;**](GetLicense200Response.md) |  |  |
 
 
 

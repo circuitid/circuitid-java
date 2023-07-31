@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Customers&gt;**](Customers.md) |  |  |
+|**data** | [**List&lt;GetCustomer200Response&gt;**](GetCustomer200Response.md) |  |  |
 
 
 

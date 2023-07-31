@@ -16,12 +16,12 @@ info:
     \ team.\n                \nHappy coding!"
   termsOfService: https://www.circuitid.com/legal/legal-msa.htm
   title: Circuit ID REST API
-  version: 0.47.19
+  version: 0.47.20
   x-logo:
     url: https://cdn.circuitid.com/images/logos/circuitid-logo.png
 servers:
 - description: Production
-  url: https://rest.circuitid.com
+  url: https://cloud9.circuitid.com
 security:
 - jwt: []
 tags:
@@ -227,7 +227,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/authentication'
+              $ref: '#/components/schemas/authenticationCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -477,7 +477,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/acceptedsenders'
+              $ref: '#/components/schemas/acceptedsendersCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -689,7 +689,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/acceptedsenders'
+              $ref: '#/components/schemas/acceptedsendersCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -939,7 +939,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/announcements'
+              $ref: '#/components/schemas/announcementsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -1151,7 +1151,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/announcements'
+              $ref: '#/components/schemas/announcementsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -1537,7 +1537,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/contacts'
+              $ref: '#/components/schemas/contactsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -1749,7 +1749,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/contacts'
+              $ref: '#/components/schemas/contactsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -1999,7 +1999,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/callqueues'
+              $ref: '#/components/schemas/callqueuesCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -2211,7 +2211,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/callqueues'
+              $ref: '#/components/schemas/callqueuesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -2461,7 +2461,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/callqueueagents'
+              $ref: '#/components/schemas/callqueueagentsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -2673,7 +2673,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/callqueueagents'
+              $ref: '#/components/schemas/callqueueagentsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -2923,7 +2923,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/chatrooms'
+              $ref: '#/components/schemas/chatroomsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -3135,7 +3135,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/chatrooms'
+              $ref: '#/components/schemas/chatroomsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -3385,7 +3385,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/clients'
+              $ref: '#/components/schemas/clientsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -3597,7 +3597,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/clients'
+              $ref: '#/components/schemas/clientsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -3847,7 +3847,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/conversations'
+              $ref: '#/components/schemas/conversationsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -4059,7 +4059,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/conversations'
+              $ref: '#/components/schemas/conversationsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -4309,7 +4309,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/conversationmessages'
+              $ref: '#/components/schemas/conversationmessagesCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -4521,7 +4521,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/conversationmessages'
+              $ref: '#/components/schemas/conversationmessagesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -4771,7 +4771,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/conferencerooms'
+              $ref: '#/components/schemas/conferenceroomsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -4983,7 +4983,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/conferencerooms'
+              $ref: '#/components/schemas/conferenceroomsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -5369,7 +5369,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/customers'
+              $ref: '#/components/schemas/customersCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -5581,7 +5581,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/customers'
+              $ref: '#/components/schemas/customersCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -5831,7 +5831,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/developerapps'
+              $ref: '#/components/schemas/developerappsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -6043,7 +6043,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/developerapps'
+              $ref: '#/components/schemas/developerappsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -6293,7 +6293,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/developerappsubscriptions'
+              $ref: '#/components/schemas/developerappsubscriptionsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -6505,7 +6505,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/developerappsubscriptions'
+              $ref: '#/components/schemas/developerappsubscriptionsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -6755,7 +6755,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/directories'
+              $ref: '#/components/schemas/directoriesCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -6967,7 +6967,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/directories'
+              $ref: '#/components/schemas/directoriesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -7217,7 +7217,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/domains'
+              $ref: '#/components/schemas/domainsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -7429,7 +7429,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/domains'
+              $ref: '#/components/schemas/domainsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -7940,7 +7940,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/faxes'
+              $ref: '#/components/schemas/faxesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -8190,7 +8190,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/faxaccounts'
+              $ref: '#/components/schemas/faxaccountsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -8402,7 +8402,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/faxaccounts'
+              $ref: '#/components/schemas/faxaccountsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -8788,7 +8788,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/firewall'
+              $ref: '#/components/schemas/firewallCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -9000,7 +9000,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/firewall'
+              $ref: '#/components/schemas/firewallCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -9250,7 +9250,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/groups'
+              $ref: '#/components/schemas/groupsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -9462,7 +9462,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/groups'
+              $ref: '#/components/schemas/groupsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -9712,7 +9712,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/groupmembers'
+              $ref: '#/components/schemas/groupmembersCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -9924,7 +9924,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/groupmembers'
+              $ref: '#/components/schemas/groupmembersCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -10174,7 +10174,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/holidays'
+              $ref: '#/components/schemas/holidaysCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -10386,7 +10386,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/holidays'
+              $ref: '#/components/schemas/holidaysCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -11148,7 +11148,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/licenses'
+              $ref: '#/components/schemas/licensesCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -11360,7 +11360,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/licenses'
+              $ref: '#/components/schemas/licensesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -11610,7 +11610,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/menus'
+              $ref: '#/components/schemas/menusCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -11822,7 +11822,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/menus'
+              $ref: '#/components/schemas/menusCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -12072,7 +12072,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/menuoptions'
+              $ref: '#/components/schemas/menuoptionsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -12284,7 +12284,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/menuoptions'
+              $ref: '#/components/schemas/menuoptionsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -12534,7 +12534,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/messagecampaigns'
+              $ref: '#/components/schemas/messagecampaignsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -12746,7 +12746,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/messagecampaigns'
+              $ref: '#/components/schemas/messagecampaignsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -12816,84 +12816,6 @@ paths:
       x-content-type: application/json
       x-accepts: application/json
   /messagebrands/{id}:
-    delete:
-      description: "Delete an object by id, removing it from the service."
-      operationId: removeMessageBrand
-      parameters:
-      - description: The ObjectId (unique 12 bytes ID) of record you would like to
-          GET.
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getMessageBrand_200_response'
-          description: A JSON object containing the deleted data.
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Bad Request
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Not Authenticated
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Forbidden
-        "405":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Method Not Allowed
-        "406":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Not Acceptable
-        "408":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Timeout
-        "429":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Too Many Requests
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: General Error
-        "503":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Unavailable
-      summary: Delete object by id
-      tags:
-      - Message Brands
-      x-accepts: application/json
     get:
       description: Get an object from the REST API Endpoint by its unique id.
       operationId: getMessageBrand
@@ -12977,93 +12899,6 @@ paths:
       summary: Get object by id
       tags:
       - Message Brands
-      x-accepts: application/json
-    patch:
-      description: Make updates to specific fields within the record without replacing
-        the entire dataset.
-      operationId: patchMessageBrand
-      parameters:
-      - description: The ObjectId (unique 12 bytes ID) of record you would like to
-          GET.
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/messagebrands'
-        description: The request data.
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getMessageBrand_200_response'
-          description: A JSON object containing the modified data.
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Bad Request
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Not Authenticated
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Forbidden
-        "405":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Method Not Allowed
-        "406":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Not Acceptable
-        "408":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Timeout
-        "429":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Too Many Requests
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: General Error
-        "503":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Unavailable
-      summary: Patch object's data
-      tags:
-      - Message Brands
-      x-content-type: application/json
       x-accepts: application/json
   /messagebrands:
     get:
@@ -13208,7 +13043,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/messagebrands'
+              $ref: '#/components/schemas/messagebrandsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -13380,7 +13215,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/numbers'
+              $ref: '#/components/schemas/numbersCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -13670,93 +13505,6 @@ paths:
       tags:
       - Number Ports
       x-accepts: application/json
-    patch:
-      description: Make updates to specific fields within the record without replacing
-        the entire dataset.
-      operationId: patchNumberPort
-      parameters:
-      - description: The ObjectId (unique 12 bytes ID) of record you would like to
-          GET.
-        explode: false
-        in: path
-        name: id
-        required: true
-        schema:
-          type: string
-        style: simple
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/numberports'
-        description: The request data.
-        required: true
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/getNumberPort_200_response'
-          description: A JSON object containing the modified data.
-        "400":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Bad Request
-        "401":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Not Authenticated
-        "403":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Forbidden
-        "405":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Method Not Allowed
-        "406":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Not Acceptable
-        "408":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Timeout
-        "429":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Too Many Requests
-        "500":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: General Error
-        "503":
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/responseError'
-          description: Unavailable
-      summary: Patch object's data
-      tags:
-      - Number Ports
-      x-content-type: application/json
-      x-accepts: application/json
   /numberports:
     get:
       description: 'Search and retrieve multiple objects simultaneously. '
@@ -13900,7 +13648,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/numberports'
+              $ref: '#/components/schemas/numberportsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -14150,7 +13898,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/offices'
+              $ref: '#/components/schemas/officesCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -14362,7 +14110,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/offices'
+              $ref: '#/components/schemas/officesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -14612,7 +14360,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phoneinboundrules'
+              $ref: '#/components/schemas/phoneinboundrulesCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -14824,7 +14572,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phoneinboundrules'
+              $ref: '#/components/schemas/phoneinboundrulesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -15074,7 +14822,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phoneoutboundrules'
+              $ref: '#/components/schemas/phoneoutboundrulesCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -15286,7 +15034,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phoneoutboundrules'
+              $ref: '#/components/schemas/phoneoutboundrulesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -15536,7 +15284,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phoneinboundruleactions'
+              $ref: '#/components/schemas/phoneinboundruleactionsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -15748,7 +15496,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phoneinboundruleactions'
+              $ref: '#/components/schemas/phoneinboundruleactionsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -15998,7 +15746,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phoneoutboundruleactions'
+              $ref: '#/components/schemas/phoneoutboundruleactionsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -16210,7 +15958,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/phoneoutboundruleactions'
+              $ref: '#/components/schemas/phoneoutboundruleactionsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -16681,7 +16429,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/servers'
+              $ref: '#/components/schemas/serversCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -16893,7 +16641,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/servers'
+              $ref: '#/components/schemas/serversCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -17143,7 +16891,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/timeschedules'
+              $ref: '#/components/schemas/timeschedulesCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -17355,7 +17103,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/timeschedules'
+              $ref: '#/components/schemas/timeschedulesCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -17605,7 +17353,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/users'
+              $ref: '#/components/schemas/usersCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -17817,7 +17565,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/users'
+              $ref: '#/components/schemas/usersCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -18067,7 +17815,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/usertokens'
+              $ref: '#/components/schemas/usertokensCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -18279,7 +18027,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/usertokens'
+              $ref: '#/components/schemas/usertokensCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -18529,7 +18277,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/virtualextensions'
+              $ref: '#/components/schemas/virtualextensionsCreateOrPatch'
         description: The request data.
         required: true
       responses:
@@ -18741,7 +18489,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/virtualextensions'
+              $ref: '#/components/schemas/virtualextensionsCreateOrPatch'
         description: The JSON object that will be posted to the REST API endpoint.
         required: true
       responses:
@@ -19191,6 +18939,12 @@ components:
             type: string
           type: array
       type: object
+    _id:
+      properties:
+        _id:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+      type: object
     responseDate:
       properties:
         createdAt:
@@ -19241,12 +18995,46 @@ components:
       - strategy
       - username
       type: object
+    authenticationCreateOrPatch:
+      minProperties: 1
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+        strategy:
+          enum:
+          - local
+          type: string
+      required:
+      - password
+      - strategy
+      - username
+      type: object
     acceptedsenders:
-      example:
-        ref: users
-        service: service
-        serviceRef: serviceRef
-        object: object
+      minProperties: 1
+      properties:
+        object:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        service:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        serviceRef:
+          type: string
+        ref:
+          enum:
+          - users
+          - domains
+          - contacts
+          type: string
+      required:
+      - object
+      - ref
+      - service
+      - serviceRef
+      type: object
+    acceptedsendersCreateOrPatch:
       minProperties: 1
       properties:
         object:
@@ -19270,14 +19058,32 @@ components:
       - serviceRef
       type: object
     announcements:
-      example:
-        voice: voice
+      minProperties: 1
+      properties:
         attachments:
-        - http://example.com/aeiou
-        - http://example.com/aeiou
-        name: name
-        text: text
-        type: tts
+          items:
+            format: url
+            type: string
+          type: array
+        name:
+          maxLength: 45
+          type: string
+        type:
+          enum:
+          - tts
+          - mp3
+          type: string
+        voice:
+          type: string
+        text:
+          maxLength: 255
+          minLength: 2
+          type: string
+      required:
+      - name
+      - type
+      type: object
+    announcementsCreateOrPatch:
       minProperties: 1
       properties:
         attachments:
@@ -19304,17 +19110,6 @@ components:
       - type
       type: object
     contacts:
-      example:
-        extension: 5
-        faxPhone: faxPhone
-        last: last
-        mobilePhone: mobilePhone
-        jobTitle: jobTitle
-        businessPhone: businessPhone
-        avatar: avatar
-        department: department
-        email: email
-        first: first
       minProperties: 1
       properties:
         email:
@@ -19345,33 +19140,151 @@ components:
           maxLength: 45
           type: string
         avatar:
-          maxLength: 255
+          format: url
+          maxLength: 512
+          type: string
+      required:
+      - first
+      type: object
+    contactsCreateOrPatch:
+      minProperties: 1
+      properties:
+        email:
+          maxLength: 45
+          type: string
+        first:
+          maxLength: 45
+          type: string
+        last:
+          maxLength: 45
+          type: string
+        mobilePhone:
+          maxLength: 20
+          type: string
+        businessPhone:
+          maxLength: 20
+          type: string
+        faxPhone:
+          maxLength: 20
+          type: string
+        extension:
+          format: int32
+          type: integer
+        jobTitle:
+          maxLength: 45
+          type: string
+        department:
+          maxLength: 45
+          type: string
+        avatar:
+          format: url
+          maxLength: 512
           type: string
       required:
       - first
       type: object
     callqueues:
-      example:
-        announcePosition: 5
-        rejectTimeout: 2
-        discardAbandonedAfter: 1
-        maxNoAnswer: 9
-        abandonedResumeAllowed: true
-        callerResumeTimeout: 5
-        noAnswerDelayTimeout: 3
-        moh: deafult
-        maxWaitTime: 2
-        tierRulesApply: false
-        wrapUpTimeout: 7
-        maxWaitTimeNoAgentTimeReached: 1
-        tierRuleNoAgentNoWait: true
-        tierRuleWaitSecond: 1
-        timeBasedScore: queue
-        maxWaitTimeNoAgent: 7
-        name: name
-        busyTimeout: 4
-        strategy: ring-all
-        tierRuleWaitMultiplyLevel: true
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        strategy:
+          enum:
+          - ring-all
+          - longest-idle-agent
+          - round-robin
+          - top-down
+          - agent-with-least-talk-time
+          - agent-with-fewest-calls
+          - sequentially-by-agent-order
+          - random
+          type: string
+        announcePosition:
+          format: int32
+          type: integer
+        moh:
+          default: deafult
+          maxLength: 255
+          type: string
+        callerResumeTimeout:
+          default: 3600
+          format: int32
+          type: integer
+        maxWaitTime:
+          default: 300
+          format: int32
+          type: integer
+        maxWaitTimeNoAgent:
+          default: 300
+          format: int32
+          type: integer
+        maxNoAnswer:
+          default: 1000000
+          format: int32
+          type: integer
+        noAnswerDelayTimeout:
+          default: 60
+          format: int32
+          type: integer
+        rejectTimeout:
+          default: 60
+          format: int32
+          type: integer
+        busyTimeout:
+          default: 60
+          format: int32
+          type: integer
+        wrapUpTimeout:
+          default: 10
+          format: int32
+          type: integer
+        timeBasedScore:
+          default: queue
+          enum:
+          - queue
+          - system
+          type: string
+        tierRulesApply:
+          default: false
+          type: boolean
+        tierRuleNoAgentNoWait:
+          default: true
+          type: boolean
+        tierRuleWaitSecond:
+          default: 300
+          format: int32
+          type: integer
+        tierRuleWaitMultiplyLevel:
+          default: true
+          type: boolean
+        abandonedResumeAllowed:
+          default: true
+          type: boolean
+        discardAbandonedAfter:
+          default: 14400
+          format: int32
+          type: integer
+        maxWaitTimeNoAgentTimeReached:
+          default: 5
+          format: int32
+          type: integer
+      required:
+      - abandonedResumeAllowed
+      - callerResumeTimeout
+      - maxNoAnswer
+      - maxWaitTime
+      - maxWaitTimeNoAgent
+      - maxWaitTimeNoAgentTimeReached
+      - moh
+      - name
+      - strategy
+      - tierRuleNoAgentNoWait
+      - tierRuleWaitMultiplyLevel
+      - tierRulesApply
+      - timeBasedScore
+      type: object
+    callqueuesCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -19473,11 +19386,29 @@ components:
       - timeBasedScore
       type: object
     callqueueagents:
-      example:
-        tier: 5
-        callqueue: callqueue
-        priority: 5
-        user: user
+      minProperties: 1
+      properties:
+        callqueue:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        user:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        priority:
+          default: 1
+          format: int32
+          type: integer
+        tier:
+          default: 1
+          format: int32
+          type: integer
+      required:
+      - callqueue
+      - priority
+      - tier
+      - user
+      type: object
+    callqueueagentsCreateOrPatch:
       minProperties: 1
       properties:
         callqueue:
@@ -19501,11 +19432,6 @@ components:
       - user
       type: object
     chatrooms:
-      example:
-        name: name
-        direct: true
-        avatar: avatar
-        users: "{}"
       minProperties: 1
       properties:
         name:
@@ -19514,21 +19440,61 @@ components:
         users:
           type: object
         avatar:
+          format: url
           maxLength: 512
           type: string
-        direct:
-          type: boolean
       required:
       - users
       type: object
+    chatroomsCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 255
+          type: string
+        avatar:
+          format: url
+          maxLength: 512
+          type: string
+      type: object
     clients:
-      example:
-        manufacture: cisco
-        name: name
-        httpUserAgent: httpUserAgent
-        user: user
-        mac: mac
-        status: 5
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        user:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        mac:
+          maxLength: 45
+          minLength: 5
+          type: string
+        httpUserAgent:
+          maxLength: 45
+          minLength: 1
+          type: string
+        manufacture:
+          enum:
+          - cisco
+          - grandstream
+          - polycom
+          maxLength: 20
+          minLength: 4
+          type: string
+        status:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+      required:
+      - mac
+      - name
+      - user
+      type: object
+    clientsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -19566,15 +19532,6 @@ components:
       - user
       type: object
     conversations:
-      example:
-        number: number
-        ref: contacts
-        channel: email
-        contacts:
-        - ""
-        - ""
-        object: object
-        status: open
       minProperties: 1
       properties:
         contacts:
@@ -19609,20 +19566,22 @@ components:
       - ref
       - status
       type: object
+    conversationsCreateOrPatch:
+      minProperties: 1
+      properties:
+        number:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        status:
+          default: open
+          enum:
+          - open
+          - resolved
+          type: string
+      required:
+      - status
+      type: object
     conversationmessages:
-      example:
-        fromNumber: fromNumber
-        attachments:
-        - ""
-        - ""
-        from: "{}"
-        to:
-        - ""
-        - ""
-        text: text
-        conversation: conversation
-        referenceId: referenceId
-        direction: inbound
       minProperties: 1
       properties:
         conversation:
@@ -19656,17 +19615,62 @@ components:
       - fromNumber
       - to
       type: object
+    conversationmessagesCreateOrPatch:
+      minProperties: 1
+      properties:
+        conversation:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        text:
+          maxLength: 2048
+          type: string
+        attachments:
+          items: {}
+          type: array
+      type: object
     conferencerooms:
-      example:
-        lobby: 5
-        isUserRoom: true
-        dialInPin: 5
-        name: name
-        chatroom: chatroom
-        share: groups
-        requirePasscode: 2
-        passcode: passcode
-        isChatRoom: true
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        passcode:
+          maxLength: 20
+          minLength: 6
+          type: string
+        dialInPin:
+          format: int32
+          type: integer
+        isUserRoom:
+          type: boolean
+        isChatRoom:
+          type: boolean
+        lobby:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        requirePasscode:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        share:
+          enum:
+          - groups
+          - customers
+          type: string
+        chatroom:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+      required:
+      - name
+      type: object
+    conferenceroomsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -19709,46 +19713,10 @@ components:
       - name
       type: object
     customers:
-      example:
-        createdByIP: createdByIP
-        mediaBypass: 4
-        automaticRefillAmount: 2
-        lowBalanceAlertCount: 9
-        holdMusic: 6
-        lowBalanceAlertAt: 2000-01-23T04:56:07.000+00:00
-        websiteUrl: websiteUrl
-        logo: logo
-        credit: 5
-        transcribeCalls: 7
-        cdrRetention: 1
-        cnamLookUps: 1
-        internationalCalling: 3
-        billingUserId: billingUserId
-        adminUserId: adminUserId
-        supportUserId: supportUserId
-        accountLock: 7
-        lastAutomaticRefillInvoice: lastAutomaticRefillInvoice
-        lowBalanceAlertAmount: 7
-        callRecording: 1
-        defaultBillMethod: credit
-        callDebug: 2
-        name: name
-        maxOutboundCallRate: 1
-        callRecordingUserId: callRecordingUserId
-        callForwardingCallLimit: 5
-        status: active
       minProperties: 1
       properties:
         name:
           maxLength: 45
-          type: string
-        status:
-          default: active
-          enum:
-          - active
-          - suspended
-          - terminated
-          - fraud
           type: string
         websiteUrl:
           maxLength: 255
@@ -19769,10 +19737,6 @@ components:
         callRecordingUserId:
           description: ObjectId (unique 12 bytes ID)
           type: string
-        callForwardingCallLimit:
-          default: 10
-          format: int32
-          type: integer
         supportUserId:
           description: ObjectId (unique 12 bytes ID)
           type: string
@@ -19784,16 +19748,6 @@ components:
           default: 0
           format: int32
           type: integer
-        lowBalanceAlertAt:
-          format: date-time
-          type: string
-        lowBalanceAlertCount:
-          default: 0
-          format: int32
-          type: integer
-        lastAutomaticRefillInvoice:
-          description: ObjectId (unique 12 bytes ID)
-          type: string
         internationalCalling:
           default: 0
           enum:
@@ -19805,13 +19759,112 @@ components:
           maxLength: 45
           minLength: 8
           type: string
-        callDebug:
+        mediaBypass:
           default: 0
           enum:
           - 1
           - 0
           format: int32
           type: integer
+        accountLock:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        callRecording:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        cdrRetention:
+          default: 12
+          format: int32
+          type: integer
+        cnamLookUps:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        holdMusic:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        transcribeCalls:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        maxOutboundCallRate:
+          default: 1
+          format: int32
+          type: integer
+        defaultBillMethod:
+          default: credit
+          enum:
+          - credit
+          - paymentmethod
+          type: string
+      required:
+      - defaultBillMethod
+      - name
+      type: object
+    customersCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        websiteUrl:
+          maxLength: 255
+          type: string
+        logo:
+          maxLength: 255
+          type: string
+        credit:
+          default: 0
+          format: int32
+          type: integer
+        adminUserId:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        billingUserId:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        callRecordingUserId:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        supportUserId:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        automaticRefillAmount:
+          default: 0
+          format: int32
+          type: integer
+        lowBalanceAlertAmount:
+          default: 0
+          format: int32
+          type: integer
+        internationalCalling:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        createdByIP:
+          maxLength: 45
+          minLength: 8
+          type: string
         mediaBypass:
           default: 0
           enum:
@@ -19872,32 +19925,6 @@ components:
       - name
       type: object
     developerapps:
-      example:
-        webhookPassword: webhookPassword
-        termsOfServiceUrl: termsOfServiceUrl
-        visibility: private
-        description: description
-        services:
-        - calendarevents
-        - calendarevents
-        type: events
-        webhookTokenName: webhookTokenName
-        privacyPolicyUrl: privacyPolicyUrl
-        webhookUrl: webhookUrl
-        feeDescription: feeDescription
-        integrationType: webhook
-        requireId: 5
-        isFree: 5
-        permissions: "{}"
-        name: name
-        webhookToken: webhookToken
-        user: user
-        events:
-        - create
-        - create
-        webhookAuthType: header
-        status: pending
-        webhookUsername: webhookUsername
       minProperties: 1
       properties:
         name:
@@ -19974,15 +20001,6 @@ components:
           type: string
         permissions:
           type: object
-        status:
-          default: pending
-          enum:
-          - active
-          - disabled
-          - suspended
-          - error
-          - pending
-          type: string
         webhookAuthType:
           enum:
           - header
@@ -20004,24 +20022,161 @@ components:
       - integrationType
       - name
       - services
-      - status
+      - type
+      - user
+      - visibility
+      type: object
+    developerappsCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        description:
+          maxLength: 4096
+          type: string
+        type:
+          enum:
+          - events
+          type: string
+        visibility:
+          enum:
+          - private
+          - public
+          type: string
+        requireId:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        isFree:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        feeDescription:
+          maxLength: 4096
+          type: string
+        integrationType:
+          enum:
+          - webhook
+          - client
+          type: string
+        services:
+          items:
+            enum:
+            - calendarevents
+            - callqueues
+            - cdrs
+            - chatmessages
+            - contacts
+            - conversationmessages
+            - faxes
+            - firewall
+            - users
+            - voicemail
+            type: string
+          type: array
+        events:
+          items:
+            enum:
+            - create
+            - patch
+            - removed
+            type: string
+          type: array
+        user:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        webhookUrl:
+          maxLength: 1024
+          type: string
+        termsOfServiceUrl:
+          maxLength: 1024
+          type: string
+        privacyPolicyUrl:
+          maxLength: 1024
+          type: string
+        permissions:
+          type: object
+        webhookAuthType:
+          enum:
+          - header
+          - usernameAndPassword
+          type: string
+        webhookUsername:
+          maxLength: 255
+          type: string
+        webhookPassword:
+          maxLength: 255
+          type: string
+        webhookTokenName:
+          maxLength: 255
+          type: string
+        webhookToken:
+          maxLength: 255
+          type: string
+      required:
+      - integrationType
+      - name
+      - services
       - type
       - user
       - visibility
       type: object
     developerappsubscriptions:
-      example:
-        ref: ref
-        requireId: 5
-        permissions: "{}"
-        developerApp: developerApp
+      minProperties: 1
+      properties:
+        developerApp:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        object:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        ref:
+          maxLength: 45
+          type: string
+        permissions:
+          type: object
+        requireId:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
         services:
-        - calendarevents
-        - calendarevents
+          items:
+            enum:
+            - calendarevents
+            - callqueues
+            - cdrs
+            - chatmessages
+            - contacts
+            - conversationmessages
+            - faxes
+            - firewall
+            - users
+            - voicemail
+            type: string
+          type: array
         events:
-        - create
-        - create
-        object: object
+          items:
+            enum:
+            - create
+            - patch
+            - removed
+            type: string
+          type: array
+      required:
+      - developerApp
+      - services
+      type: object
+    developerappsubscriptionsCreateOrPatch:
       minProperties: 1
       properties:
         developerApp:
@@ -20070,13 +20225,29 @@ components:
       - services
       type: object
     directories:
-      example:
-        name: name
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        type:
+          enum:
+          - customers
+          - groups
+          type: string
         groups:
-        - groups
-        - groups
-        type: customers
-        announcement: announcement
+          items:
+            description: ObjectId (unique 12 bytes ID)
+            type: string
+          type: array
+        announcement:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+      required:
+      - name
+      - type
+      type: object
+    directoriesCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -20100,9 +20271,6 @@ components:
       - type
       type: object
     domains:
-      example:
-        name: name
-        status: 5
       minProperties: 1
       properties:
         name:
@@ -20119,27 +20287,29 @@ components:
       required:
       - name
       type: object
-    faxes:
-      example:
-        callerIdNumber: callerIdNumber
-        transferedPages: 2
-        error: error
-        type: send
-        number: number
-        retries: 7
-        senderName: senderName
-        pages: 5
-        file: file
-        callerDestination: callerDestination
-        contact: contact
-        senderEmail: senderEmail
-        faxAccount: faxAccount
-        invoice: invoice
-        statusCode: 5
-        status: processing
-        order: order
+    domainsCreateOrPatch:
       minProperties: 1
       properties:
+        status:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+      type: object
+    faxes:
+      minProperties: 1
+      properties:
+        attachments:
+          items:
+            format: url
+            type: string
+          type: array
+        callerDestinations:
+          items:
+            type: string
+          type: array
         callerIdNumber:
           maxLength: 45
           type: string
@@ -20202,19 +20372,58 @@ components:
           type: string
       required:
       - callerDestination
+      - callerDestinations
       - callerIdNumber
       - faxAccount
       - number
       - status
       - type
       type: object
+    faxesCreateOrPatch:
+      minProperties: 1
+      properties:
+        attachments:
+          items:
+            format: url
+            type: string
+          type: array
+        callerDestinations:
+          items:
+            type: string
+          type: array
+        number:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        faxAccount:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+      required:
+      - callerDestinations
+      - faxAccount
+      - number
+      type: object
     faxaccounts:
-      example:
-        number: number
-        inboundNotification: inboundNotification
-        name: name
-        outboundNotification: outboundNotification
-        order: order
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        order:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        inboundNotification:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        outboundNotification:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        number:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+      required:
+      - name
+      type: object
+    faxaccountsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -20236,18 +20445,6 @@ components:
       - name
       type: object
     firewall:
-      example:
-        hits: 5
-        notificationHits: 9
-        param: param
-        name: name
-        ai: 2
-        description: description
-        priority: 5
-        type: allow
-        target: numbers
-        direction: inbound
-        status: 7
       minProperties: 1
       properties:
         name:
@@ -20283,22 +20480,11 @@ components:
         hits:
           format: int32
           type: integer
-        ai:
-          default: 0
-          enum:
-          - 0
-          - 1
-          format: int32
-          type: integer
         status:
           default: 1
           enum:
           - 0
           - 1
-          format: int32
-          type: integer
-        notificationHits:
-          default: 1
           format: int32
           type: integer
       required:
@@ -20308,11 +20494,69 @@ components:
       - target
       - type
       type: object
+    firewallCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        description:
+          maxLength: 255
+          type: string
+        type:
+          enum:
+          - allow
+          - deny
+          type: string
+        target:
+          enum:
+          - numbers
+          - ipaddresses
+          - sms
+          type: string
+        direction:
+          enum:
+          - inbound
+          - outbound
+          - both
+          type: string
+        param:
+          maxLength: 45
+          minLength: 1
+          type: string
+        status:
+          default: 1
+          enum:
+          - 0
+          - 1
+          format: int32
+          type: integer
+      required:
+      - name
+      - param
+      - target
+      - type
+      type: object
     groups:
-      example:
-        name: name
-        description: description
-        status: 5
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        description:
+          maxLength: 255
+          type: string
+        status:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+      required:
+      - name
+      type: object
+    groupsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -20332,11 +20576,29 @@ components:
       - name
       type: object
     groupmembers:
-      example:
-        ref: users
-        priority: 5
-        group: group
-        object: object
+      minProperties: 1
+      properties:
+        group:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        object:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        priority:
+          format: int32
+          type: integer
+        ref:
+          enum:
+          - users
+          - servers
+          - ipaddresses
+          type: string
+      required:
+      - group
+      - object
+      - ref
+      type: object
+    groupmembersCreateOrPatch:
       minProperties: 1
       properties:
         group:
@@ -20360,20 +20622,68 @@ components:
       - ref
       type: object
     holidays:
-      example:
-        objectRef: objectRef
-        ref: ref
-        callForwardingDestination: callForwardingDestination
-        name: name
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        object:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        objectRef:
+          maxLength: 45
+          minLength: 2
+          type: string
         dateTimeRanges:
-        - - 2000-01-23T04:56:07.000+00:00
-          - 2000-01-23T04:56:07.000+00:00
-        - - 2000-01-23T04:56:07.000+00:00
-          - 2000-01-23T04:56:07.000+00:00
-        destination: destination
-        destinationType: announcements
-        object: object
-        status: 5
+          items:
+            items:
+              format: date-time
+              type: string
+            type: array
+          type: array
+        status:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        destinationType:
+          enum:
+          - announcements
+          - directories
+          - park
+          - numbers
+          - menus
+          - users
+          - servers
+          - inboundrules
+          - callqueues
+          - faxaccounts
+          - callforwarding
+          - hangup
+          - phoneinboundrules
+          - voicemailaccounts
+          type: string
+        destination:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        ref:
+          maxLength: 100
+          minLength: 5
+          type: string
+        callForwardingDestination:
+          maxLength: 45
+          minLength: 10
+          type: string
+      required:
+      - dateTimeRanges
+      - destinationType
+      - name
+      - object
+      - objectRef
+      type: object
+    holidaysCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -20436,15 +20746,41 @@ components:
       - objectRef
       type: object
     invoiceitems:
-      example:
-        amount: 5
-        ref: ref
-        quantity: 7
-        name: name
-        setup: 5
-        taxes: 2
-        invoice: invoice
-        object: object
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        amount:
+          format: int32
+          type: integer
+        setup:
+          format: int32
+          type: integer
+        taxes:
+          format: int32
+          type: integer
+        quantity:
+          default: 1
+          format: int32
+          type: integer
+        invoice:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        ref:
+          maxLength: 100
+          minLength: 5
+          type: string
+        object:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+      required:
+      - amount
+      - invoice
+      - name
+      - quantity
+      type: object
+    invoiceitemsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -20480,16 +20816,6 @@ components:
       - quantity
       type: object
     invoices:
-      example:
-        dueAt: 2000-01-23T04:56:07.000+00:00
-        amount: 5
-        subtotal: 5
-        setup: 7
-        discount: 9
-        tax: 2
-        closedAt: 2000-01-23T04:56:07.000+00:00
-        error: error
-        status: open
       minProperties: 1
       properties:
         amount:
@@ -20530,12 +20856,64 @@ components:
       - status
       - subtotal
       type: object
+    invoicesCreateOrPatch:
+      minProperties: 1
+      properties:
+        amount:
+          format: int32
+          type: integer
+        subtotal:
+          format: int32
+          type: integer
+        tax:
+          format: int32
+          type: integer
+        setup:
+          format: int32
+          type: integer
+        discount:
+          format: int32
+          type: integer
+        closedAt:
+          format: date-time
+          type: string
+        status:
+          default: open
+          enum:
+          - open
+          - closed
+          - collection
+          - onHold
+          - error
+          type: string
+        error:
+          type: string
+      required:
+      - amount
+      - status
+      - subtotal
+      type: object
     licenses:
-      example:
-        ref: ref
-        field: field
-        order: order
-        object: object
+      minProperties: 1
+      properties:
+        order:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        object:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        ref:
+          maxLength: 45
+          type: string
+        field:
+          maxLength: 45
+          type: string
+      required:
+      - object
+      - order
+      - ref
+      type: object
+    licensesCreateOrPatch:
       minProperties: 1
       properties:
         order:
@@ -20556,25 +20934,103 @@ components:
       - ref
       type: object
     menus:
-      example:
-        maxExtensionLength: 5
-        maxFailures: 2
-        exitSound: default
-        speechRecognition: 5
-        destination: destination
-        maxTimeouts: 7
-        directory: directory
-        menuVoice: menuVoice
-        timeout: 9
-        ref: ref
-        timeschedule: timeschedule
-        callForwardingDestination: callForwardingDestination
-        touchToneTerminators: 3
-        greetingTTS: greetingTTS
-        name: name
-        destinationType: announcements
-        greetingType: tts
-        transferAnnouncement: default
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        maxExtensionLength:
+          default: 4
+          format: int32
+          type: integer
+        speechRecognition:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        directory:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        greetingType:
+          enum:
+          - tts
+          - mp3
+          type: string
+        greetingTTS:
+          type: string
+        menuVoice:
+          type: string
+        exitSound:
+          default: default
+          enum:
+          - default
+          - mp3
+          type: string
+        transferAnnouncement:
+          default: default
+          enum:
+          - default
+          - mp3
+          - none
+          type: string
+        maxFailures:
+          default: 3
+          format: int32
+          type: integer
+        maxTimeouts:
+          default: 3
+          format: int32
+          type: integer
+        timeout:
+          default: 10
+          format: int32
+          type: integer
+        touchToneTerminators:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        timeschedule:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        destinationType:
+          enum:
+          - announcements
+          - directories
+          - park
+          - numbers
+          - menus
+          - users
+          - servers
+          - inboundrules
+          - callqueues
+          - faxaccounts
+          - callforwarding
+          - hangup
+          - phoneinboundrules
+          - voicemailaccounts
+          type: string
+        destination:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        ref:
+          maxLength: 100
+          minLength: 5
+          type: string
+        callForwardingDestination:
+          maxLength: 45
+          minLength: 10
+          type: string
+      required:
+      - greetingType
+      - maxExtensionLength
+      - name
+      type: object
+    menusCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -20672,14 +21128,50 @@ components:
       - name
       type: object
     menuoptions:
-      example:
-        ref: ref
-        callForwardingDestination: callForwardingDestination
-        name: name
-        destination: destination
-        destinationType: announcements
-        menus: ""
-        digit: 5
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        digit:
+          format: int32
+          type: integer
+        menus: {}
+        destinationType:
+          enum:
+          - announcements
+          - directories
+          - park
+          - numbers
+          - menus
+          - users
+          - servers
+          - inboundrules
+          - callqueues
+          - faxaccounts
+          - callforwarding
+          - hangup
+          - phoneinboundrules
+          - voicemailaccounts
+          type: string
+        destination:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        ref:
+          maxLength: 100
+          minLength: 5
+          type: string
+        callForwardingDestination:
+          maxLength: 45
+          minLength: 10
+          type: string
+      required:
+      - destinationType
+      - digit
+      - menus
+      - name
+      type: object
+    menuoptionsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -20724,31 +21216,106 @@ components:
       - name
       type: object
     messagecampaigns:
-      example:
-        sample1: sample1
-        campaignId: campaignId
-        directLending: 9
-        subscriberHelp: 2
-        subscriberOptin: 5
-        affiliateMarketing: 4
-        sample5: sample5
-        sample4: sample4
-        referenceId: referenceId
-        sample3: sample3
-        sample2: sample2
-        embeddedLink: 3
-        useCase: useCase
-        mnos: "{}"
-        brandId: brandId
-        name: name
-        subscriberOptout: 5
-        ageGated: 7
-        embeddedPhone: 2
-        numberPool: 7
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        campaignId:
+          maxLength: 45
+          type: string
+        brandId:
+          maxLength: 45
+          type: string
+        order:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        subscriberOptin:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        subscriberOptout:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        subscriberHelp:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        numberPool:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        directLending:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        embeddedLink:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        embeddedPhone:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        affiliateMarketing:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        ageGated:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        mnos:
+          type: object
+        referenceId:
+          maxLength: 45
+          type: string
+        useCase:
+          maxLength: 45
+          type: string
         subUseCases:
-        - ""
-        - ""
-        order: order
+          items: {}
+          type: array
+        sample1:
+          maxLength: 255
+          type: string
+        sample2:
+          maxLength: 255
+          type: string
+        sample3:
+          maxLength: 255
+          type: string
+        sample4:
+          maxLength: 255
+          type: string
+        sample5:
+          maxLength: 255
+          type: string
+      required:
+      - brandId
+      - name
+      - order
+      type: object
+    messagecampaignsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -20849,20 +21416,6 @@ components:
       - order
       type: object
     messagebrands:
-      example:
-        entityType: entityType
-        vertical: vertical
-        ein: ein
-        referenceId: referenceId
-        cspId: cspId
-        brandRelationship: brandRelationship
-        brandId: brandId
-        einIssuingCountry: einIssuingCountry
-        name: name
-        universalEin: universalEin
-        user: user
-        order: order
-        status: verified
       minProperties: 1
       properties:
         name:
@@ -20903,7 +21456,46 @@ components:
         universalEin:
           maxLength: 45
           type: string
-        referenceId:
+      required:
+      - ein
+      - name
+      - order
+      - user
+      type: object
+    messagebrandsCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        brandId:
+          maxLength: 45
+          type: string
+        ein:
+          maxLength: 20
+          type: string
+        user:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        order:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        brandRelationship:
+          maxLength: 45
+          type: string
+        vertical:
+          maxLength: 45
+          type: string
+        entityType:
+          maxLength: 45
+          type: string
+        cspId:
+          maxLength: 45
+          type: string
+        einIssuingCountry:
+          maxLength: 2
+          type: string
+        universalEin:
           maxLength: 45
           type: string
       required:
@@ -20913,44 +21505,6 @@ components:
       - user
       type: object
     numbers:
-      example:
-        voice: 9
-        directoryListingOrderDate: 2000-01-23T04:56:07.000+00:00
-        directoryListing: directoryListing
-        destination: destination
-        changeRegionOrderDate: 2000-01-23T04:56:07.000+00:00
-        callerName: callerName
-        e911OrderDate: 2000-01-23T04:56:07.000+00:00
-        mms: 4
-        ref: ref
-        messageCampaignOrderId: messageCampaignOrderId
-        callerNameSupported: 1
-        callForwardingDestination: callForwardingDestination
-        originalProvider: originalProvider
-        messageType: SMS
-        provider: provider
-        callerNameOrderId: callerNameOrderId
-        countryCode: countryCode
-        inUse: 5
-        sms: 2
-        e911OrderId: e911OrderId
-        destinationType: park
-        perMinuteRate: 2
-        directoryListingOrderId: directoryListingOrderId
-        fax: 7
-        callerNameOrderDate: 2000-01-23T04:56:07.000+00:00
-        directoryListingSupported: 1
-        amount: 5
-        e911Supported: 7
-        providerOrderId: providerOrderId
-        messagingSupported: 1
-        messageCampaignOrderDate: 2000-01-23T04:56:07.000+00:00
-        name: name
-        messageClass: P2P
-        changeRegionOrderId: changeRegionOrderId
-        e911: e911
-        messageCampaign: messageCampaign
-        status: 3
       minProperties: 1
       properties:
         inUse:
@@ -20974,15 +21528,6 @@ components:
         perMinuteRate:
           format: int32
           type: integer
-        provider:
-          description: ObjectId (unique 12 bytes ID)
-          type: string
-        originalProvider:
-          description: ObjectId (unique 12 bytes ID)
-          type: string
-        providerOrderId:
-          maxLength: 45
-          type: string
         fax:
           default: 0
           enum:
@@ -21018,41 +21563,14 @@ components:
           - 0
           format: int32
           type: integer
-        changeRegionOrderId:
-          maxLength: 45
-          minLength: 5
-          type: string
-        changeRegionOrderDate:
-          format: date-time
-          type: string
         directoryListing:
           description: ObjectId (unique 12 bytes ID)
-          type: string
-        directoryListingOrderId:
-          maxLength: 45
-          minLength: 5
-          type: string
-        directoryListingOrderDate:
-          format: date-time
           type: string
         callerName:
           maxLength: 45
           type: string
-        callerNameOrderId:
-          maxLength: 45
-          type: string
-        callerNameOrderDate:
-          format: date-time
-          type: string
         e911:
           description: ObjectId (unique 12 bytes ID)
-          type: string
-        e911OrderId:
-          maxLength: 45
-          minLength: 5
-          type: string
-        e911OrderDate:
-          format: date-time
           type: string
         messageCampaign:
           description: ObjectId (unique 12 bytes ID)
@@ -21072,12 +21590,6 @@ components:
           - SMS_ALT
           - MMS_ALT
           - SMSMMS_ALT
-          type: string
-        messageCampaignOrderId:
-          maxLength: 45
-          type: string
-        messageCampaignOrderDate:
-          format: date-time
           type: string
         e911Supported:
           default: 0
@@ -21140,31 +21652,63 @@ components:
       - countryCode
       - destinationType
       - name
-      - provider
       type: object
-    numberports:
-      example:
-        destination: destination
-        office: office
-        type: port in
-        accountNumber: accountNumber
-        accountPhoneNumber: accountPhoneNumber
-        ref: ref
-        callForwardingDestination: callForwardingDestination
-        typeOfService: business
-        name: name
-        destinationType: announcements
-        e911: 5
-        invoice: invoice
-        authorizedPerson: authorizedPerson
-        desiredDueDate: 2000-01-23T04:56:07.000+00:00
-        status: processing
+    numbersCreateOrPatch:
       minProperties: 1
       properties:
+        directoryListing:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        callerName:
+          maxLength: 45
+          type: string
+        e911:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        messageCampaign:
+          description: ObjectId (unique 12 bytes ID)
+          maxLength: 45
+          type: string
+        destinationType:
+          default: park
+          enum:
+          - announcements
+          - directories
+          - park
+          - numbers
+          - menus
+          - users
+          - servers
+          - inboundrules
+          - callqueues
+          - faxaccounts
+          - callforwarding
+          - hangup
+          - phoneinboundrules
+          - voicemailaccounts
+          type: string
+        destination:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        callForwardingDestination:
+          maxLength: 45
+          minLength: 10
+          type: string
+      required:
+      - destinationType
+      type: object
+    numberports:
+      minProperties: 1
+      properties:
+        numbers:
+          items:
+            type: string
+          type: array
         name:
           maxLength: 45
           type: string
         type:
+          default: port in
           enum:
           - port in
           - port out
@@ -21244,26 +21788,86 @@ components:
       - destinationType
       - invoice
       - name
+      - numbers
       - office
       - status
       - type
       - typeOfService
       type: object
+    numberportsCreateOrPatch:
+      minProperties: 1
+      properties:
+        numbers:
+          items:
+            type: string
+          type: array
+        name:
+          maxLength: 45
+          type: string
+        typeOfService:
+          enum:
+          - business
+          - residence
+          type: string
+        authorizedPerson:
+          maxLength: 45
+          type: string
+        desiredDueDate:
+          format: date-time
+          type: string
+        accountNumber:
+          maxLength: 45
+          type: string
+        accountPhoneNumber:
+          maxLength: 20
+          minLength: 10
+          type: string
+        office:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        e911:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        destinationType:
+          enum:
+          - announcements
+          - directories
+          - park
+          - numbers
+          - menus
+          - users
+          - servers
+          - inboundrules
+          - callqueues
+          - faxaccounts
+          - callforwarding
+          - hangup
+          - phoneinboundrules
+          - voicemailaccounts
+          type: string
+        destination:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        callForwardingDestination:
+          maxLength: 45
+          minLength: 10
+          type: string
+      required:
+      - accountNumber
+      - accountPhoneNumber
+      - authorizedPerson
+      - desiredDueDate
+      - destinationType
+      - name
+      - numbers
+      - office
+      - typeOfService
+      type: object
     offices:
-      example:
-        zip: zip
-        zipCode: zipCode
-        country: country
-        streetNumber: streetNumber
-        city: city
-        address2: address2
-        preDirection: preDirection
-        streetName: streetName
-        name: name
-        streetSuffix: streetSuffix
-        state: state
-        region: region
-        providers: "{}"
       minProperties: 1
       properties:
         name:
@@ -21288,9 +21892,6 @@ components:
         state:
           maxLength: 45
           type: string
-        zip:
-          description: ObjectId (unique 12 bytes ID)
-          type: string
         zipCode:
           maxLength: 45
           type: string
@@ -21301,8 +21902,6 @@ components:
           maxLength: 2
           minLength: 2
           type: string
-        providers:
-          type: object
         region:
           description: ObjectId (unique 12 bytes ID)
           type: string
@@ -21314,11 +21913,62 @@ components:
       - streetNumber
       - streetSuffix
       type: object
+    officesCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        streetNumber:
+          maxLength: 45
+          type: string
+        streetName:
+          maxLength: 20
+          type: string
+        preDirection:
+          maxLength: 2
+          type: string
+        streetSuffix:
+          maxLength: 4
+          minLength: 2
+          type: string
+        zipCode:
+          maxLength: 45
+          type: string
+        address2:
+          maxLength: 45
+          type: string
+        country:
+          maxLength: 2
+          minLength: 2
+          type: string
+        region:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+      required:
+      - country
+      - name
+      - streetName
+      - streetNumber
+      - streetSuffix
+      type: object
     phoneinboundrules:
-      example:
-        name: name
-        description: description
-        outboundCallerId: outboundCallerId
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        description:
+          maxLength: 255
+          type: string
+        outboundCallerId:
+          maxLength: 255
+          minLength: 1
+          type: string
+      required:
+      - name
+      type: object
+    phoneinboundrulesCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -21335,11 +21985,28 @@ components:
       - name
       type: object
     phoneoutboundrules:
-      example:
-        name: name
-        description: description
-        outboundCallerId: outboundCallerId
-        status: 5
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        description:
+          maxLength: 255
+          type: string
+        status:
+          default: 1
+          enum:
+          - 0
+          - 1
+          format: int32
+          type: integer
+        outboundCallerId:
+          maxLength: 45
+          type: string
+      required:
+      - name
+      type: object
+    phoneoutboundrulesCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -21362,17 +22029,6 @@ components:
       - name
       type: object
     phoneinboundruleactions:
-      example:
-        phoneinboundrule: phoneinboundrule
-        ref: ref
-        timeschedule: timeschedule
-        callForwardingDestination: callForwardingDestination
-        name: name
-        destination: destination
-        destinationType: announcements
-        priority: 2
-        timeout: 5
-        status: 5
       minProperties: 1
       properties:
         name:
@@ -21418,9 +22074,61 @@ components:
         destination:
           description: ObjectId (unique 12 bytes ID)
           type: string
-        ref:
-          maxLength: 100
-          minLength: 5
+        callForwardingDestination:
+          maxLength: 45
+          minLength: 10
+          type: string
+      required:
+      - destinationType
+      - name
+      - phoneinboundrule
+      - priority
+      type: object
+    phoneinboundruleactionsCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        phoneinboundrule:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        timeschedule:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        timeout:
+          format: int32
+          type: integer
+        status:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        priority:
+          default: 1
+          format: int32
+          type: integer
+        destinationType:
+          enum:
+          - announcements
+          - directories
+          - park
+          - numbers
+          - menus
+          - users
+          - servers
+          - inboundrules
+          - callqueues
+          - faxaccounts
+          - callforwarding
+          - hangup
+          - phoneinboundrules
+          - voicemailaccounts
+          type: string
+        destination:
+          description: ObjectId (unique 12 bytes ID)
           type: string
         callForwardingDestination:
           maxLength: 45
@@ -21433,24 +22141,83 @@ components:
       - priority
       type: object
     phoneoutboundruleactions:
-      example:
-        appendChars: appendChars
-        rangeStart: 7
-        length: 2
-        priority: 5
-        prependChars: prependChars
-        removeEndingChars: 2
-        rangeEnd: 9
-        removeStartingChars: 3
-        contains: contains
-        lengthType: atleast
-        route: default
-        routingType: priority
-        name: name
-        phoneoutboundrule: phoneoutboundrule
-        startingChars: startingChars
-        group: group
-        status: 5
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        group:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        phoneoutboundrule:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        status:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        priority:
+          default: 1
+          format: int32
+          type: integer
+        startingChars:
+          maxLength: 20
+          type: string
+        contains:
+          maxLength: 20
+          type: string
+        lengthType:
+          enum:
+          - atleast
+          - exactly
+          - range
+          - any
+          nullable: true
+          type: string
+        length:
+          format: int32
+          type: integer
+        appendChars:
+          maxLength: 20
+          type: string
+        prependChars:
+          maxLength: 20
+          type: string
+        rangeStart:
+          format: int32
+          type: integer
+        rangeEnd:
+          format: int32
+          type: integer
+        removeStartingChars:
+          format: int32
+          type: integer
+        removeEndingChars:
+          format: int32
+          type: integer
+        route:
+          default: default
+          enum:
+          - default
+          - group
+          - pstn
+          type: string
+        routingType:
+          enum:
+          - priority
+          - lb
+          - simultaneous
+          type: string
+      required:
+      - name
+      - phoneoutboundrule
+      - priority
+      - route
+      type: object
+    phoneoutboundruleactionsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -21528,12 +22295,35 @@ components:
       - route
       type: object
     ratecenters:
-      example:
-        lata: lata
-        locState: locState
-        rcAbbre: rcAbbre
-        npa: npa
-        nxx: nxx
+      minProperties: 1
+      properties:
+        npa:
+          maxLength: 3
+          minLength: 3
+          type: string
+        nxx:
+          maxLength: 3
+          minLength: 3
+          type: string
+        lata:
+          maxLength: 3
+          minLength: 3
+          type: string
+        locState:
+          maxLength: 2
+          minLength: 2
+          type: string
+        rcAbbre:
+          maxLength: 45
+          type: string
+      required:
+      - lata
+      - locState
+      - npa
+      - nxx
+      - rcAbbre
+      type: object
+    ratecentersCreateOrPatch:
       minProperties: 1
       properties:
         npa:
@@ -21563,21 +22353,6 @@ components:
       - rcAbbre
       type: object
     servers:
-      example:
-        domesticOutboundCallLimit: 5
-        tollFreeChannelLimit: 9
-        bypassMedia: 2
-        noInstantRingBack: 3
-        type: sip
-        disableRTPAutoAdjust: 4
-        outboundSipTrunkingOrder: outboundSipTrunkingOrder
-        port: 5
-        internationalOutboundCallLimit: 7
-        name: name
-        host: host
-        inboundSipTrunkingOrder: inboundSipTrunkingOrder
-        callerId: callerId
-        domesticInboundCallLimit: 2
       minProperties: 1
       properties:
         name:
@@ -21599,22 +22374,6 @@ components:
           - sip
           - skype
           type: string
-        domesticOutboundCallLimit:
-          default: 10
-          format: int32
-          type: integer
-        domesticInboundCallLimit:
-          default: 10
-          format: int32
-          type: integer
-        internationalOutboundCallLimit:
-          default: 10
-          format: int32
-          type: integer
-        tollFreeChannelLimit:
-          default: 10
-          format: int32
-          type: integer
         inboundSipTrunkingOrder:
           description: ObjectId (unique 12 bytes ID)
           type: string
@@ -21642,26 +22401,66 @@ components:
           format: int32
           type: integer
       required:
-      - domesticInboundCallLimit
-      - domesticOutboundCallLimit
       - host
-      - internationalOutboundCallLimit
       - name
       - port
-      - tollFreeChannelLimit
+      - type
+      type: object
+    serversCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        host:
+          maxLength: 45
+          minLength: 5
+          type: string
+        port:
+          default: 5060
+          format: int32
+          type: integer
+        callerId:
+          maxLength: 45
+          type: string
+        type:
+          enum:
+          - sip
+          - skype
+          type: string
+        inboundSipTrunkingOrder:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        outboundSipTrunkingOrder:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        noInstantRingBack:
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        bypassMedia:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        disableRTPAutoAdjust:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+      required:
+      - host
+      - name
+      - port
       - type
       type: object
     timeschedules:
-      example:
-        sunday: "{}"
-        saturday: "{}"
-        tuesday: "{}"
-        timezone: America/New_York
-        name: name
-        wednesday: "{}"
-        thursday: "{}"
-        friday: "{}"
-        monday: "{}"
       minProperties: 1
       properties:
         name:
@@ -22021,18 +22820,458 @@ components:
           maxLength: 45
           type: string
         sunday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
           type: object
         monday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
           type: object
         tuesday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
           type: object
         wednesday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
           type: object
         thursday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
           type: object
         friday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
           type: object
         saturday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
+          type: object
+      required:
+      - friday
+      - monday
+      - name
+      - saturday
+      - sunday
+      - thursday
+      - timezone
+      - tuesday
+      - wednesday
+      type: object
+    timeschedulesCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        timezone:
+          default: America/New_York
+          enum:
+          - Europe/Andorra
+          - Asia/Dubai
+          - Asia/Kabul
+          - Europe/Tirane
+          - Asia/Yerevan
+          - Antarctica/Casey
+          - Antarctica/Davis
+          - Antarctica/DumontDUrville
+          - Antarctica/Mawson
+          - Antarctica/Palmer
+          - Antarctica/Rothera
+          - Antarctica/Syowa
+          - Antarctica/Troll
+          - Antarctica/Vostok
+          - America/Argentina/Buenos_Aires
+          - America/Argentina/Cordoba
+          - America/Argentina/Salta
+          - America/Argentina/Jujuy
+          - America/Argentina/Tucuman
+          - America/Argentina/Catamarca
+          - America/Argentina/La_Rioja
+          - America/Argentina/San_Juan
+          - America/Argentina/Mendoza
+          - America/Argentina/San_Luis
+          - America/Argentina/Rio_Gallegos
+          - America/Argentina/Ushuaia
+          - Pacific/Pago_Pago
+          - Europe/Vienna
+          - Australia/Lord_Howe
+          - Antarctica/Macquarie
+          - Australia/Hobart
+          - Australia/Currie
+          - Australia/Melbourne
+          - Australia/Sydney
+          - Australia/Broken_Hill
+          - Australia/Brisbane
+          - Australia/Lindeman
+          - Australia/Adelaide
+          - Australia/Darwin
+          - Australia/Perth
+          - Australia/Eucla
+          - Asia/Baku
+          - America/Barbados
+          - Asia/Dhaka
+          - Europe/Brussels
+          - Europe/Sofia
+          - Atlantic/Bermuda
+          - Asia/Brunei
+          - America/La_Paz
+          - America/Noronha
+          - America/Belem
+          - America/Fortaleza
+          - America/Recife
+          - America/Araguaina
+          - America/Maceio
+          - America/Bahia
+          - America/Sao_Paulo
+          - America/Campo_Grande
+          - America/Cuiaba
+          - America/Santarem
+          - America/Porto_Velho
+          - America/Boa_Vista
+          - America/Manaus
+          - America/Eirunepe
+          - America/Rio_Branco
+          - America/Nassau
+          - Asia/Thimphu
+          - Europe/Minsk
+          - America/Belize
+          - America/St_Johns
+          - America/Halifax
+          - America/Glace_Bay
+          - America/Moncton
+          - America/Goose_Bay
+          - America/Blanc-Sablon
+          - America/Toronto
+          - America/Nipigon
+          - America/Thunder_Bay
+          - America/Iqaluit
+          - America/Pangnirtung
+          - America/Atikokan
+          - America/Winnipeg
+          - America/Rainy_River
+          - America/Resolute
+          - America/Rankin_Inlet
+          - America/Regina
+          - America/Swift_Current
+          - America/Edmonton
+          - America/Cambridge_Bay
+          - America/Yellowknife
+          - America/Inuvik
+          - America/Creston
+          - America/Dawson_Creek
+          - America/Fort_Nelson
+          - America/Vancouver
+          - America/Whitehorse
+          - America/Dawson
+          - Indian/Cocos
+          - Europe/Zurich
+          - Africa/Abidjan
+          - Pacific/Rarotonga
+          - America/Santiago
+          - America/Punta_Arenas
+          - Pacific/Easter
+          - Asia/Shanghai
+          - Asia/Urumqi
+          - America/Bogota
+          - America/Costa_Rica
+          - America/Havana
+          - Atlantic/Cape_Verde
+          - America/Curacao
+          - Indian/Christmas
+          - Asia/Nicosia
+          - Asia/Famagusta
+          - Europe/Prague
+          - Europe/Berlin
+          - Europe/Copenhagen
+          - America/Santo_Domingo
+          - Africa/Algiers
+          - America/Guayaquil
+          - Pacific/Galapagos
+          - Europe/Tallinn
+          - Africa/Cairo
+          - Africa/El_Aaiun
+          - Europe/Madrid
+          - Africa/Ceuta
+          - Atlantic/Canary
+          - Europe/Helsinki
+          - Pacific/Fiji
+          - Atlantic/Stanley
+          - Pacific/Chuuk
+          - Pacific/Pohnpei
+          - Pacific/Kosrae
+          - Atlantic/Faroe
+          - Europe/Paris
+          - Europe/London
+          - Asia/Tbilisi
+          - America/Cayenne
+          - Africa/Accra
+          - Europe/Gibraltar
+          - America/Godthab
+          - America/Danmarkshavn
+          - America/Scoresbysund
+          - America/Thule
+          - Europe/Athens
+          - Atlantic/South_Georgia
+          - America/Guatemala
+          - Pacific/Guam
+          - Africa/Bissau
+          - America/Guyana
+          - Asia/Hong_Kong
+          - America/Tegucigalpa
+          - America/Port-au-Prince
+          - Europe/Budapest
+          - Asia/Jakarta
+          - Asia/Pontianak
+          - Asia/Makassar
+          - Asia/Jayapura
+          - Europe/Dublin
+          - Asia/Jerusalem
+          - Asia/Kolkata
+          - Indian/Chagos
+          - Asia/Baghdad
+          - Asia/Tehran
+          - Atlantic/Reykjavik
+          - Europe/Rome
+          - America/Jamaica
+          - Asia/Amman
+          - Asia/Tokyo
+          - Africa/Nairobi
+          - Asia/Bishkek
+          - Pacific/Tarawa
+          - Pacific/Enderbury
+          - Pacific/Kiritimati
+          - Asia/Pyongyang
+          - Asia/Seoul
+          - Asia/Almaty
+          - Asia/Qyzylorda
+          - Asia/Qostanay
+          - Asia/Aqtobe
+          - Asia/Aqtau
+          - Asia/Atyrau
+          - Asia/Oral
+          - Asia/Beirut
+          - Asia/Colombo
+          - Africa/Monrovia
+          - Europe/Vilnius
+          - Europe/Luxembourg
+          - Europe/Riga
+          - Africa/Tripoli
+          - Africa/Casablanca
+          - Europe/Monaco
+          - Europe/Chisinau
+          - Pacific/Majuro
+          - Pacific/Kwajalein
+          - Asia/Yangon
+          - Asia/Ulaanbaatar
+          - Asia/Hovd
+          - Asia/Choibalsan
+          - Asia/Macau
+          - America/Martinique
+          - Europe/Malta
+          - Indian/Mauritius
+          - Indian/Maldives
+          - America/Mexico_City
+          - America/Cancun
+          - America/Merida
+          - America/Monterrey
+          - America/Matamoros
+          - America/Mazatlan
+          - America/Chihuahua
+          - America/Ojinaga
+          - America/Hermosillo
+          - America/Tijuana
+          - America/Bahia_Banderas
+          - Asia/Kuala_Lumpur
+          - Asia/Kuching
+          - Africa/Maputo
+          - Africa/Windhoek
+          - Pacific/Noumea
+          - Pacific/Norfolk
+          - Africa/Lagos
+          - America/Managua
+          - Europe/Amsterdam
+          - Europe/Oslo
+          - Asia/Kathmandu
+          - Pacific/Nauru
+          - Pacific/Niue
+          - Pacific/Auckland
+          - Pacific/Chatham
+          - America/Panama
+          - America/Lima
+          - Pacific/Tahiti
+          - Pacific/Marquesas
+          - Pacific/Gambier
+          - Pacific/Port_Moresby
+          - Pacific/Bougainville
+          - Asia/Manila
+          - Asia/Karachi
+          - Europe/Warsaw
+          - America/Miquelon
+          - Pacific/Pitcairn
+          - America/Puerto_Rico
+          - Asia/Gaza
+          - Asia/Hebron
+          - Europe/Lisbon
+          - Atlantic/Madeira
+          - Atlantic/Azores
+          - Pacific/Palau
+          - America/Asuncion
+          - Asia/Qatar
+          - Indian/Reunion
+          - Europe/Bucharest
+          - Europe/Belgrade
+          - Europe/Kaliningrad
+          - Europe/Moscow
+          - Europe/Simferopol
+          - Europe/Kirov
+          - Europe/Astrakhan
+          - Europe/Volgograd
+          - Europe/Saratov
+          - Europe/Ulyanovsk
+          - Europe/Samara
+          - Asia/Yekaterinburg
+          - Asia/Omsk
+          - Asia/Novosibirsk
+          - Asia/Barnaul
+          - Asia/Tomsk
+          - Asia/Novokuznetsk
+          - Asia/Krasnoyarsk
+          - Asia/Irkutsk
+          - Asia/Chita
+          - Asia/Yakutsk
+          - Asia/Khandyga
+          - Asia/Vladivostok
+          - Asia/Ust-Nera
+          - Asia/Magadan
+          - Asia/Sakhalin
+          - Asia/Srednekolymsk
+          - Asia/Kamchatka
+          - Asia/Anadyr
+          - Asia/Riyadh
+          - Pacific/Guadalcanal
+          - Indian/Mahe
+          - Africa/Khartoum
+          - Europe/Stockholm
+          - Asia/Singapore
+          - America/Paramaribo
+          - Africa/Juba
+          - Africa/Sao_Tome
+          - America/El_Salvador
+          - Asia/Damascus
+          - America/Grand_Turk
+          - Africa/Ndjamena
+          - Indian/Kerguelen
+          - Asia/Bangkok
+          - Asia/Dushanbe
+          - Pacific/Fakaofo
+          - Asia/Dili
+          - Asia/Ashgabat
+          - Africa/Tunis
+          - Pacific/Tongatapu
+          - Europe/Istanbul
+          - America/Port_of_Spain
+          - Pacific/Funafuti
+          - Asia/Taipei
+          - Europe/Kiev
+          - Europe/Uzhgorod
+          - Europe/Zaporozhye
+          - Pacific/Wake
+          - America/New_York
+          - America/Detroit
+          - America/Kentucky/Louisville
+          - America/Kentucky/Monticello
+          - America/Indiana/Indianapolis
+          - America/Indiana/Vincennes
+          - America/Indiana/Winamac
+          - America/Indiana/Marengo
+          - America/Indiana/Petersburg
+          - America/Indiana/Vevay
+          - America/Chicago
+          - America/Indiana/Tell_City
+          - America/Indiana/Knox
+          - America/Menominee
+          - America/North_Dakota/Center
+          - America/North_Dakota/New_Salem
+          - America/North_Dakota/Beulah
+          - America/Denver
+          - America/Boise
+          - America/Phoenix
+          - America/Los_Angeles
+          - America/Anchorage
+          - America/Juneau
+          - America/Sitka
+          - America/Metlakatla
+          - America/Yakutat
+          - America/Nome
+          - America/Adak
+          - Pacific/Honolulu
+          - America/Montevideo
+          - Asia/Samarkand
+          - Asia/Tashkent
+          - America/Caracas
+          - Asia/Ho_Chi_Minh
+          - Pacific/Efate
+          - Pacific/Wallis
+          - Pacific/Apia
+          - Africa/Johannesburg
+          maxLength: 45
+          type: string
+        sunday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
+          type: object
+        monday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
+          type: object
+        tuesday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
+          type: object
+        wednesday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
+          type: object
+        thursday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
+          type: object
+        friday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
+          type: object
+        saturday:
+          default:
+            schedules:
+            - start: 12:00 AM
+              end: 12:00 AM
           type: object
       required:
       - friday
@@ -22046,50 +23285,15 @@ components:
       - wednesday
       type: object
     users:
-      example:
-        extension: 5
-        callerIdNumber: callerIdNumber
-        timezone: America/New_York
-        jobTitle: jobTitle
-        language: en
-        office: office
-        number: number
-        password: password
-        mediaServerPermission: r
-        pin: 9
-        isPrimary: 2
-        adminPermission: r
-        superAdminPermission: r
-        department: department
-        vmTranscription: 3
-        communication: "{}"
-        email: email
-        billingPermission: r
-        last: last
-        sipPassword: sipPassword
-        vmPlaybackNumber: vmPlaybackNumber
-        mailServerPermission: r
-        avatar: avatar
-        agilePermission: r
-        vmFile: vmFile
-        jobServerPermission: r
-        phonePermission: r
-        vmGreetingType: default
-        mobilePhone: mobilePhone
-        vmTimeout: 7
-        businessPhone: businessPhone
-        turnPassword: turnPassword
-        region: region
-        first: first
-        customCallerId: 5
-        status: active
       minProperties: 1
       properties:
         email:
+          format: email
           maxLength: 255
           minLength: 5
           type: string
         password:
+          format: password
           maxLength: 255
           minLength: 8
           type: string
@@ -22130,7 +23334,8 @@ components:
           description: ObjectId (unique 12 bytes ID)
           type: string
         avatar:
-          maxLength: 255
+          format: url
+          maxLength: 512
           type: string
         language:
           default: en
@@ -22149,13 +23354,6 @@ components:
           - 0
           format: int32
           type: integer
-        status:
-          default: active
-          enum:
-          - active
-          - disabled
-          - terminated
-          type: string
         vmGreetingType:
           default: default
           enum:
@@ -22199,36 +23397,6 @@ components:
           nullable: true
           type: string
         phonePermission:
-          enum:
-          - r
-          - rw
-          nullable: true
-          type: string
-        agilePermission:
-          enum:
-          - r
-          - rw
-          nullable: true
-          type: string
-        jobServerPermission:
-          enum:
-          - r
-          - rw
-          nullable: true
-          type: string
-        mediaServerPermission:
-          enum:
-          - r
-          - rw
-          nullable: true
-          type: string
-        mailServerPermission:
-          enum:
-          - r
-          - rw
-          nullable: true
-          type: string
-        superAdminPermission:
           enum:
           - r
           - rw
@@ -22595,6 +23763,24 @@ components:
           format: int32
           type: integer
         communication:
+          default:
+            notifications:
+              email: true
+              sms: true
+            missedCalls:
+              email: true
+              sms: true
+            callRecordings:
+              email: true
+              sms: true
+            newsletters:
+              email: true
+              sms: true
+            voicemails:
+              email: true
+              sms: true
+            web:
+              sounds: true
           type: object
       required:
       - email
@@ -22604,13 +23790,504 @@ components:
       - sipPassword
       - timezone
       type: object
+    usersCreateOrPatch:
+      minProperties: 1
+      properties:
+        email:
+          format: email
+          maxLength: 255
+          minLength: 5
+          type: string
+        password:
+          format: password
+          maxLength: 255
+          minLength: 8
+          type: string
+        first:
+          maxLength: 45
+          type: string
+        last:
+          maxLength: 45
+          type: string
+        mobilePhone:
+          maxLength: 20
+          type: string
+        businessPhone:
+          maxLength: 20
+          minLength: 7
+          type: string
+        extension:
+          format: int32
+          type: integer
+        customCallerId:
+          format: int32
+          type: integer
+        jobTitle:
+          maxLength: 45
+          type: string
+        department:
+          maxLength: 45
+          type: string
+        office:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        avatar:
+          format: url
+          maxLength: 512
+          type: string
+        language:
+          default: en
+          enum:
+          - fr
+          - en
+          - ja
+          - de
+          - es
+          maxLength: 5
+          type: string
+        isPrimary:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        vmGreetingType:
+          default: default
+          enum:
+          - default
+          - mp3
+          - number
+          type: string
+        vmTimeout:
+          default: 20
+          format: int32
+          type: integer
+        vmFile:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        vmPlaybackNumber:
+          maxLength: 20
+          type: string
+        pin:
+          default: 1234
+          format: int32
+          type: integer
+        number:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        region:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        callerIdNumber:
+          maxLength: 20
+          type: string
+        adminPermission:
+          enum:
+          - r
+          - rw
+          nullable: true
+          type: string
+        billingPermission:
+          enum:
+          - r
+          - rw
+          nullable: true
+          type: string
+        phonePermission:
+          enum:
+          - r
+          - rw
+          nullable: true
+          type: string
+        timezone:
+          default: America/New_York
+          enum:
+          - Europe/Andorra
+          - Asia/Dubai
+          - Asia/Kabul
+          - Europe/Tirane
+          - Asia/Yerevan
+          - Antarctica/Casey
+          - Antarctica/Davis
+          - Antarctica/DumontDUrville
+          - Antarctica/Mawson
+          - Antarctica/Palmer
+          - Antarctica/Rothera
+          - Antarctica/Syowa
+          - Antarctica/Troll
+          - Antarctica/Vostok
+          - America/Argentina/Buenos_Aires
+          - America/Argentina/Cordoba
+          - America/Argentina/Salta
+          - America/Argentina/Jujuy
+          - America/Argentina/Tucuman
+          - America/Argentina/Catamarca
+          - America/Argentina/La_Rioja
+          - America/Argentina/San_Juan
+          - America/Argentina/Mendoza
+          - America/Argentina/San_Luis
+          - America/Argentina/Rio_Gallegos
+          - America/Argentina/Ushuaia
+          - Pacific/Pago_Pago
+          - Europe/Vienna
+          - Australia/Lord_Howe
+          - Antarctica/Macquarie
+          - Australia/Hobart
+          - Australia/Currie
+          - Australia/Melbourne
+          - Australia/Sydney
+          - Australia/Broken_Hill
+          - Australia/Brisbane
+          - Australia/Lindeman
+          - Australia/Adelaide
+          - Australia/Darwin
+          - Australia/Perth
+          - Australia/Eucla
+          - Asia/Baku
+          - America/Barbados
+          - Asia/Dhaka
+          - Europe/Brussels
+          - Europe/Sofia
+          - Atlantic/Bermuda
+          - Asia/Brunei
+          - America/La_Paz
+          - America/Noronha
+          - America/Belem
+          - America/Fortaleza
+          - America/Recife
+          - America/Araguaina
+          - America/Maceio
+          - America/Bahia
+          - America/Sao_Paulo
+          - America/Campo_Grande
+          - America/Cuiaba
+          - America/Santarem
+          - America/Porto_Velho
+          - America/Boa_Vista
+          - America/Manaus
+          - America/Eirunepe
+          - America/Rio_Branco
+          - America/Nassau
+          - Asia/Thimphu
+          - Europe/Minsk
+          - America/Belize
+          - America/St_Johns
+          - America/Halifax
+          - America/Glace_Bay
+          - America/Moncton
+          - America/Goose_Bay
+          - America/Blanc-Sablon
+          - America/Toronto
+          - America/Nipigon
+          - America/Thunder_Bay
+          - America/Iqaluit
+          - America/Pangnirtung
+          - America/Atikokan
+          - America/Winnipeg
+          - America/Rainy_River
+          - America/Resolute
+          - America/Rankin_Inlet
+          - America/Regina
+          - America/Swift_Current
+          - America/Edmonton
+          - America/Cambridge_Bay
+          - America/Yellowknife
+          - America/Inuvik
+          - America/Creston
+          - America/Dawson_Creek
+          - America/Fort_Nelson
+          - America/Vancouver
+          - America/Whitehorse
+          - America/Dawson
+          - Indian/Cocos
+          - Europe/Zurich
+          - Africa/Abidjan
+          - Pacific/Rarotonga
+          - America/Santiago
+          - America/Punta_Arenas
+          - Pacific/Easter
+          - Asia/Shanghai
+          - Asia/Urumqi
+          - America/Bogota
+          - America/Costa_Rica
+          - America/Havana
+          - Atlantic/Cape_Verde
+          - America/Curacao
+          - Indian/Christmas
+          - Asia/Nicosia
+          - Asia/Famagusta
+          - Europe/Prague
+          - Europe/Berlin
+          - Europe/Copenhagen
+          - America/Santo_Domingo
+          - Africa/Algiers
+          - America/Guayaquil
+          - Pacific/Galapagos
+          - Europe/Tallinn
+          - Africa/Cairo
+          - Africa/El_Aaiun
+          - Europe/Madrid
+          - Africa/Ceuta
+          - Atlantic/Canary
+          - Europe/Helsinki
+          - Pacific/Fiji
+          - Atlantic/Stanley
+          - Pacific/Chuuk
+          - Pacific/Pohnpei
+          - Pacific/Kosrae
+          - Atlantic/Faroe
+          - Europe/Paris
+          - Europe/London
+          - Asia/Tbilisi
+          - America/Cayenne
+          - Africa/Accra
+          - Europe/Gibraltar
+          - America/Godthab
+          - America/Danmarkshavn
+          - America/Scoresbysund
+          - America/Thule
+          - Europe/Athens
+          - Atlantic/South_Georgia
+          - America/Guatemala
+          - Pacific/Guam
+          - Africa/Bissau
+          - America/Guyana
+          - Asia/Hong_Kong
+          - America/Tegucigalpa
+          - America/Port-au-Prince
+          - Europe/Budapest
+          - Asia/Jakarta
+          - Asia/Pontianak
+          - Asia/Makassar
+          - Asia/Jayapura
+          - Europe/Dublin
+          - Asia/Jerusalem
+          - Asia/Kolkata
+          - Indian/Chagos
+          - Asia/Baghdad
+          - Asia/Tehran
+          - Atlantic/Reykjavik
+          - Europe/Rome
+          - America/Jamaica
+          - Asia/Amman
+          - Asia/Tokyo
+          - Africa/Nairobi
+          - Asia/Bishkek
+          - Pacific/Tarawa
+          - Pacific/Enderbury
+          - Pacific/Kiritimati
+          - Asia/Pyongyang
+          - Asia/Seoul
+          - Asia/Almaty
+          - Asia/Qyzylorda
+          - Asia/Qostanay
+          - Asia/Aqtobe
+          - Asia/Aqtau
+          - Asia/Atyrau
+          - Asia/Oral
+          - Asia/Beirut
+          - Asia/Colombo
+          - Africa/Monrovia
+          - Europe/Vilnius
+          - Europe/Luxembourg
+          - Europe/Riga
+          - Africa/Tripoli
+          - Africa/Casablanca
+          - Europe/Monaco
+          - Europe/Chisinau
+          - Pacific/Majuro
+          - Pacific/Kwajalein
+          - Asia/Yangon
+          - Asia/Ulaanbaatar
+          - Asia/Hovd
+          - Asia/Choibalsan
+          - Asia/Macau
+          - America/Martinique
+          - Europe/Malta
+          - Indian/Mauritius
+          - Indian/Maldives
+          - America/Mexico_City
+          - America/Cancun
+          - America/Merida
+          - America/Monterrey
+          - America/Matamoros
+          - America/Mazatlan
+          - America/Chihuahua
+          - America/Ojinaga
+          - America/Hermosillo
+          - America/Tijuana
+          - America/Bahia_Banderas
+          - Asia/Kuala_Lumpur
+          - Asia/Kuching
+          - Africa/Maputo
+          - Africa/Windhoek
+          - Pacific/Noumea
+          - Pacific/Norfolk
+          - Africa/Lagos
+          - America/Managua
+          - Europe/Amsterdam
+          - Europe/Oslo
+          - Asia/Kathmandu
+          - Pacific/Nauru
+          - Pacific/Niue
+          - Pacific/Auckland
+          - Pacific/Chatham
+          - America/Panama
+          - America/Lima
+          - Pacific/Tahiti
+          - Pacific/Marquesas
+          - Pacific/Gambier
+          - Pacific/Port_Moresby
+          - Pacific/Bougainville
+          - Asia/Manila
+          - Asia/Karachi
+          - Europe/Warsaw
+          - America/Miquelon
+          - Pacific/Pitcairn
+          - America/Puerto_Rico
+          - Asia/Gaza
+          - Asia/Hebron
+          - Europe/Lisbon
+          - Atlantic/Madeira
+          - Atlantic/Azores
+          - Pacific/Palau
+          - America/Asuncion
+          - Asia/Qatar
+          - Indian/Reunion
+          - Europe/Bucharest
+          - Europe/Belgrade
+          - Europe/Kaliningrad
+          - Europe/Moscow
+          - Europe/Simferopol
+          - Europe/Kirov
+          - Europe/Astrakhan
+          - Europe/Volgograd
+          - Europe/Saratov
+          - Europe/Ulyanovsk
+          - Europe/Samara
+          - Asia/Yekaterinburg
+          - Asia/Omsk
+          - Asia/Novosibirsk
+          - Asia/Barnaul
+          - Asia/Tomsk
+          - Asia/Novokuznetsk
+          - Asia/Krasnoyarsk
+          - Asia/Irkutsk
+          - Asia/Chita
+          - Asia/Yakutsk
+          - Asia/Khandyga
+          - Asia/Vladivostok
+          - Asia/Ust-Nera
+          - Asia/Magadan
+          - Asia/Sakhalin
+          - Asia/Srednekolymsk
+          - Asia/Kamchatka
+          - Asia/Anadyr
+          - Asia/Riyadh
+          - Pacific/Guadalcanal
+          - Indian/Mahe
+          - Africa/Khartoum
+          - Europe/Stockholm
+          - Asia/Singapore
+          - America/Paramaribo
+          - Africa/Juba
+          - Africa/Sao_Tome
+          - America/El_Salvador
+          - Asia/Damascus
+          - America/Grand_Turk
+          - Africa/Ndjamena
+          - Indian/Kerguelen
+          - Asia/Bangkok
+          - Asia/Dushanbe
+          - Pacific/Fakaofo
+          - Asia/Dili
+          - Asia/Ashgabat
+          - Africa/Tunis
+          - Pacific/Tongatapu
+          - Europe/Istanbul
+          - America/Port_of_Spain
+          - Pacific/Funafuti
+          - Asia/Taipei
+          - Europe/Kiev
+          - Europe/Uzhgorod
+          - Europe/Zaporozhye
+          - Pacific/Wake
+          - America/New_York
+          - America/Detroit
+          - America/Kentucky/Louisville
+          - America/Kentucky/Monticello
+          - America/Indiana/Indianapolis
+          - America/Indiana/Vincennes
+          - America/Indiana/Winamac
+          - America/Indiana/Marengo
+          - America/Indiana/Petersburg
+          - America/Indiana/Vevay
+          - America/Chicago
+          - America/Indiana/Tell_City
+          - America/Indiana/Knox
+          - America/Menominee
+          - America/North_Dakota/Center
+          - America/North_Dakota/New_Salem
+          - America/North_Dakota/Beulah
+          - America/Denver
+          - America/Boise
+          - America/Phoenix
+          - America/Los_Angeles
+          - America/Anchorage
+          - America/Juneau
+          - America/Sitka
+          - America/Metlakatla
+          - America/Yakutat
+          - America/Nome
+          - America/Adak
+          - Pacific/Honolulu
+          - America/Montevideo
+          - Asia/Samarkand
+          - Asia/Tashkent
+          - America/Caracas
+          - Asia/Ho_Chi_Minh
+          - Pacific/Efate
+          - Pacific/Wallis
+          - Pacific/Apia
+          - Africa/Johannesburg
+          maxLength: 45
+          type: string
+        vmTranscription:
+          default: 0
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+        communication:
+          default:
+            notifications:
+              email: true
+              sms: true
+            missedCalls:
+              email: true
+              sms: true
+            callRecordings:
+              email: true
+              sms: true
+            newsletters:
+              email: true
+              sms: true
+            voicemails:
+              email: true
+              sms: true
+            web:
+              sounds: true
+          type: object
+      required:
+      - email
+      - first
+      - last
+      - password
+      - timezone
+      type: object
     usertokens:
-      example:
-        expiresInYears: 5
-        name: name
-        user: user
-        token: token
-        status: 5
       minProperties: 1
       properties:
         name:
@@ -22639,11 +24316,48 @@ components:
       - token
       - user
       type: object
+    usertokensCreateOrPatch:
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        user:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+        expiresInYears:
+          default: 1
+          format: int32
+          type: integer
+        status:
+          default: 1
+          enum:
+          - 1
+          - 0
+          format: int32
+          type: integer
+      required:
+      - expiresInYears
+      - name
+      - user
+      type: object
     virtualextensions:
-      example:
-        phoneinboundrule: phoneinboundrule
-        extension: 5
-        name: name
+      minProperties: 1
+      properties:
+        name:
+          maxLength: 45
+          type: string
+        extension:
+          format: int32
+          type: integer
+        phoneinboundrule:
+          description: ObjectId (unique 12 bytes ID)
+          type: string
+      required:
+      - extension
+      - name
+      type: object
+    virtualextensionsCreateOrPatch:
       minProperties: 1
       properties:
         name:
@@ -22662,25 +24376,21 @@ components:
     createAuthentication_200_response:
       allOf:
       - $ref: '#/components/schemas/authentication'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     getAcceptedSender_200_response:
       allOf:
       - $ref: '#/components/schemas/acceptedsenders'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findAcceptedSenders_200_response:
       example:
         total: 0
         data:
-        - ref: users
-          service: service
-          serviceRef: serviceRef
-          object: object
-        - ref: users
-          service: service
-          serviceRef: serviceRef
-          object: object
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -22695,7 +24405,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/acceptedsenders'
+            $ref: '#/components/schemas/getAcceptedSender_200_response'
           type: array
       required:
       - data
@@ -22706,26 +24416,15 @@ components:
     getAnnouncement_200_response:
       allOf:
       - $ref: '#/components/schemas/announcements'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findAnnouncements_200_response:
       example:
         total: 0
         data:
-        - voice: voice
-          attachments:
-          - http://example.com/aeiou
-          - http://example.com/aeiou
-          name: name
-          text: text
-          type: tts
-        - voice: voice
-          attachments:
-          - http://example.com/aeiou
-          - http://example.com/aeiou
-          name: name
-          text: text
-          type: tts
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -22740,7 +24439,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/announcements'
+            $ref: '#/components/schemas/getAnnouncement_200_response'
           type: array
       required:
       - data
@@ -22778,32 +24477,15 @@ components:
     getContact_200_response:
       allOf:
       - $ref: '#/components/schemas/contacts'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findContacts_200_response:
       example:
         total: 0
         data:
-        - extension: 5
-          faxPhone: faxPhone
-          last: last
-          mobilePhone: mobilePhone
-          jobTitle: jobTitle
-          businessPhone: businessPhone
-          avatar: avatar
-          department: department
-          email: email
-          first: first
-        - extension: 5
-          faxPhone: faxPhone
-          last: last
-          mobilePhone: mobilePhone
-          jobTitle: jobTitle
-          businessPhone: businessPhone
-          avatar: avatar
-          department: department
-          email: email
-          first: first
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -22818,7 +24500,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/contacts'
+            $ref: '#/components/schemas/getContact_200_response'
           type: array
       required:
       - data
@@ -22829,52 +24511,15 @@ components:
     getCallQueue_200_response:
       allOf:
       - $ref: '#/components/schemas/callqueues'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findCallQueues_200_response:
       example:
         total: 0
         data:
-        - announcePosition: 5
-          rejectTimeout: 2
-          discardAbandonedAfter: 1
-          maxNoAnswer: 9
-          abandonedResumeAllowed: true
-          callerResumeTimeout: 5
-          noAnswerDelayTimeout: 3
-          moh: deafult
-          maxWaitTime: 2
-          tierRulesApply: false
-          wrapUpTimeout: 7
-          maxWaitTimeNoAgentTimeReached: 1
-          tierRuleNoAgentNoWait: true
-          tierRuleWaitSecond: 1
-          timeBasedScore: queue
-          maxWaitTimeNoAgent: 7
-          name: name
-          busyTimeout: 4
-          strategy: ring-all
-          tierRuleWaitMultiplyLevel: true
-        - announcePosition: 5
-          rejectTimeout: 2
-          discardAbandonedAfter: 1
-          maxNoAnswer: 9
-          abandonedResumeAllowed: true
-          callerResumeTimeout: 5
-          noAnswerDelayTimeout: 3
-          moh: deafult
-          maxWaitTime: 2
-          tierRulesApply: false
-          wrapUpTimeout: 7
-          maxWaitTimeNoAgentTimeReached: 1
-          tierRuleNoAgentNoWait: true
-          tierRuleWaitSecond: 1
-          timeBasedScore: queue
-          maxWaitTimeNoAgent: 7
-          name: name
-          busyTimeout: 4
-          strategy: ring-all
-          tierRuleWaitMultiplyLevel: true
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -22889,7 +24534,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/callqueues'
+            $ref: '#/components/schemas/getCallQueue_200_response'
           type: array
       required:
       - data
@@ -22900,20 +24545,15 @@ components:
     getCallQueue_Agent_200_response:
       allOf:
       - $ref: '#/components/schemas/callqueueagents'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findCallQueue_Agents_200_response:
       example:
         total: 0
         data:
-        - tier: 5
-          callqueue: callqueue
-          priority: 5
-          user: user
-        - tier: 5
-          callqueue: callqueue
-          priority: 5
-          user: user
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -22928,7 +24568,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/callqueueagents'
+            $ref: '#/components/schemas/getCallQueue_Agent_200_response'
           type: array
       required:
       - data
@@ -22939,20 +24579,15 @@ components:
     getChatRoom_200_response:
       allOf:
       - $ref: '#/components/schemas/chatrooms'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findChatRooms_200_response:
       example:
         total: 0
         data:
-        - name: name
-          direct: true
-          avatar: avatar
-          users: "{}"
-        - name: name
-          direct: true
-          avatar: avatar
-          users: "{}"
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -22967,7 +24602,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/chatrooms'
+            $ref: '#/components/schemas/getChatRoom_200_response'
           type: array
       required:
       - data
@@ -22978,24 +24613,15 @@ components:
     getClient_200_response:
       allOf:
       - $ref: '#/components/schemas/clients'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findClients_200_response:
       example:
         total: 0
         data:
-        - manufacture: cisco
-          name: name
-          httpUserAgent: httpUserAgent
-          user: user
-          mac: mac
-          status: 5
-        - manufacture: cisco
-          name: name
-          httpUserAgent: httpUserAgent
-          user: user
-          mac: mac
-          status: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23010,7 +24636,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/clients'
+            $ref: '#/components/schemas/getClient_200_response'
           type: array
       required:
       - data
@@ -23021,28 +24647,15 @@ components:
     getConversation_200_response:
       allOf:
       - $ref: '#/components/schemas/conversations'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findConversations_200_response:
       example:
         total: 0
         data:
-        - number: number
-          ref: contacts
-          channel: email
-          contacts:
-          - ""
-          - ""
-          object: object
-          status: open
-        - number: number
-          ref: contacts
-          channel: email
-          contacts:
-          - ""
-          - ""
-          object: object
-          status: open
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23057,7 +24670,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/conversations'
+            $ref: '#/components/schemas/getConversation_200_response'
           type: array
       required:
       - data
@@ -23068,36 +24681,15 @@ components:
     getConversationMessage_200_response:
       allOf:
       - $ref: '#/components/schemas/conversationmessages'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findConversationMessages_200_response:
       example:
         total: 0
         data:
-        - fromNumber: fromNumber
-          attachments:
-          - ""
-          - ""
-          from: "{}"
-          to:
-          - ""
-          - ""
-          text: text
-          conversation: conversation
-          referenceId: referenceId
-          direction: inbound
-        - fromNumber: fromNumber
-          attachments:
-          - ""
-          - ""
-          from: "{}"
-          to:
-          - ""
-          - ""
-          text: text
-          conversation: conversation
-          referenceId: referenceId
-          direction: inbound
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23112,7 +24704,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/conversationmessages'
+            $ref: '#/components/schemas/getConversationMessage_200_response'
           type: array
       required:
       - data
@@ -23123,30 +24715,15 @@ components:
     getConferenceRoom_200_response:
       allOf:
       - $ref: '#/components/schemas/conferencerooms'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findConferenceRooms_200_response:
       example:
         total: 0
         data:
-        - lobby: 5
-          isUserRoom: true
-          dialInPin: 5
-          name: name
-          chatroom: chatroom
-          share: groups
-          requirePasscode: 2
-          passcode: passcode
-          isChatRoom: true
-        - lobby: 5
-          isUserRoom: true
-          dialInPin: 5
-          name: name
-          chatroom: chatroom
-          share: groups
-          requirePasscode: 2
-          passcode: passcode
-          isChatRoom: true
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23161,7 +24738,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/conferencerooms'
+            $ref: '#/components/schemas/getConferenceRoom_200_response'
           type: array
       required:
       - data
@@ -23172,66 +24749,15 @@ components:
     getCustomer_200_response:
       allOf:
       - $ref: '#/components/schemas/customers'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findCustomers_200_response:
       example:
         total: 0
         data:
-        - createdByIP: createdByIP
-          mediaBypass: 4
-          automaticRefillAmount: 2
-          lowBalanceAlertCount: 9
-          holdMusic: 6
-          lowBalanceAlertAt: 2000-01-23T04:56:07.000+00:00
-          websiteUrl: websiteUrl
-          logo: logo
-          credit: 5
-          transcribeCalls: 7
-          cdrRetention: 1
-          cnamLookUps: 1
-          internationalCalling: 3
-          billingUserId: billingUserId
-          adminUserId: adminUserId
-          supportUserId: supportUserId
-          accountLock: 7
-          lastAutomaticRefillInvoice: lastAutomaticRefillInvoice
-          lowBalanceAlertAmount: 7
-          callRecording: 1
-          defaultBillMethod: credit
-          callDebug: 2
-          name: name
-          maxOutboundCallRate: 1
-          callRecordingUserId: callRecordingUserId
-          callForwardingCallLimit: 5
-          status: active
-        - createdByIP: createdByIP
-          mediaBypass: 4
-          automaticRefillAmount: 2
-          lowBalanceAlertCount: 9
-          holdMusic: 6
-          lowBalanceAlertAt: 2000-01-23T04:56:07.000+00:00
-          websiteUrl: websiteUrl
-          logo: logo
-          credit: 5
-          transcribeCalls: 7
-          cdrRetention: 1
-          cnamLookUps: 1
-          internationalCalling: 3
-          billingUserId: billingUserId
-          adminUserId: adminUserId
-          supportUserId: supportUserId
-          accountLock: 7
-          lastAutomaticRefillInvoice: lastAutomaticRefillInvoice
-          lowBalanceAlertAmount: 7
-          callRecording: 1
-          defaultBillMethod: credit
-          callDebug: 2
-          name: name
-          maxOutboundCallRate: 1
-          callRecordingUserId: callRecordingUserId
-          callForwardingCallLimit: 5
-          status: active
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23246,7 +24772,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/customers'
+            $ref: '#/components/schemas/getCustomer_200_response'
           type: array
       required:
       - data
@@ -23257,62 +24783,15 @@ components:
     getDeveloperApp_200_response:
       allOf:
       - $ref: '#/components/schemas/developerapps'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findDeveloperApps_200_response:
       example:
         total: 0
         data:
-        - webhookPassword: webhookPassword
-          termsOfServiceUrl: termsOfServiceUrl
-          visibility: private
-          description: description
-          services:
-          - calendarevents
-          - calendarevents
-          type: events
-          webhookTokenName: webhookTokenName
-          privacyPolicyUrl: privacyPolicyUrl
-          webhookUrl: webhookUrl
-          feeDescription: feeDescription
-          integrationType: webhook
-          requireId: 5
-          isFree: 5
-          permissions: "{}"
-          name: name
-          webhookToken: webhookToken
-          user: user
-          events:
-          - create
-          - create
-          webhookAuthType: header
-          status: pending
-          webhookUsername: webhookUsername
-        - webhookPassword: webhookPassword
-          termsOfServiceUrl: termsOfServiceUrl
-          visibility: private
-          description: description
-          services:
-          - calendarevents
-          - calendarevents
-          type: events
-          webhookTokenName: webhookTokenName
-          privacyPolicyUrl: privacyPolicyUrl
-          webhookUrl: webhookUrl
-          feeDescription: feeDescription
-          integrationType: webhook
-          requireId: 5
-          isFree: 5
-          permissions: "{}"
-          name: name
-          webhookToken: webhookToken
-          user: user
-          events:
-          - create
-          - create
-          webhookAuthType: header
-          status: pending
-          webhookUsername: webhookUsername
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23327,7 +24806,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/developerapps'
+            $ref: '#/components/schemas/getDeveloperApp_200_response'
           type: array
       required:
       - data
@@ -23338,34 +24817,15 @@ components:
     getDeveloperApp_Subscription_200_response:
       allOf:
       - $ref: '#/components/schemas/developerappsubscriptions'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findDeveloperApp_Subscriptions_200_response:
       example:
         total: 0
         data:
-        - ref: ref
-          requireId: 5
-          permissions: "{}"
-          developerApp: developerApp
-          services:
-          - calendarevents
-          - calendarevents
-          events:
-          - create
-          - create
-          object: object
-        - ref: ref
-          requireId: 5
-          permissions: "{}"
-          developerApp: developerApp
-          services:
-          - calendarevents
-          - calendarevents
-          events:
-          - create
-          - create
-          object: object
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23380,7 +24840,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/developerappsubscriptions'
+            $ref: '#/components/schemas/getDeveloperApp_Subscription_200_response'
           type: array
       required:
       - data
@@ -23391,24 +24851,15 @@ components:
     getdirectory_200_response:
       allOf:
       - $ref: '#/components/schemas/directories'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findDirectories_200_response:
       example:
         total: 0
         data:
-        - name: name
-          groups:
-          - groups
-          - groups
-          type: customers
-          announcement: announcement
-        - name: name
-          groups:
-          - groups
-          - groups
-          type: customers
-          announcement: announcement
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23423,7 +24874,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/directories'
+            $ref: '#/components/schemas/getdirectory_200_response'
           type: array
       required:
       - data
@@ -23434,16 +24885,15 @@ components:
     getDomain_200_response:
       allOf:
       - $ref: '#/components/schemas/domains'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findDomains_200_response:
       example:
         total: 0
         data:
-        - name: name
-          status: 5
-        - name: name
-          status: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23458,7 +24908,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/domains'
+            $ref: '#/components/schemas/getDomain_200_response'
           type: array
       required:
       - data
@@ -23469,46 +24919,15 @@ components:
     getFax_200_response:
       allOf:
       - $ref: '#/components/schemas/faxes'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findFaxes_200_response:
       example:
         total: 0
         data:
-        - callerIdNumber: callerIdNumber
-          transferedPages: 2
-          error: error
-          type: send
-          number: number
-          retries: 7
-          senderName: senderName
-          pages: 5
-          file: file
-          callerDestination: callerDestination
-          contact: contact
-          senderEmail: senderEmail
-          faxAccount: faxAccount
-          invoice: invoice
-          statusCode: 5
-          status: processing
-          order: order
-        - callerIdNumber: callerIdNumber
-          transferedPages: 2
-          error: error
-          type: send
-          number: number
-          retries: 7
-          senderName: senderName
-          pages: 5
-          file: file
-          callerDestination: callerDestination
-          contact: contact
-          senderEmail: senderEmail
-          faxAccount: faxAccount
-          invoice: invoice
-          statusCode: 5
-          status: processing
-          order: order
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23523,7 +24942,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/faxes'
+            $ref: '#/components/schemas/getFax_200_response'
           type: array
       required:
       - data
@@ -23534,22 +24953,15 @@ components:
     getFaxAccount_200_response:
       allOf:
       - $ref: '#/components/schemas/faxaccounts'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findFaxAccounts_200_response:
       example:
         total: 0
         data:
-        - number: number
-          inboundNotification: inboundNotification
-          name: name
-          outboundNotification: outboundNotification
-          order: order
-        - number: number
-          inboundNotification: inboundNotification
-          name: name
-          outboundNotification: outboundNotification
-          order: order
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23564,7 +24976,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/faxaccounts'
+            $ref: '#/components/schemas/getFaxAccount_200_response'
           type: array
       required:
       - data
@@ -23575,34 +24987,15 @@ components:
     getFirewall_200_response:
       allOf:
       - $ref: '#/components/schemas/firewall'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findFirewall_200_response:
       example:
         total: 0
         data:
-        - hits: 5
-          notificationHits: 9
-          param: param
-          name: name
-          ai: 2
-          description: description
-          priority: 5
-          type: allow
-          target: numbers
-          direction: inbound
-          status: 7
-        - hits: 5
-          notificationHits: 9
-          param: param
-          name: name
-          ai: 2
-          description: description
-          priority: 5
-          type: allow
-          target: numbers
-          direction: inbound
-          status: 7
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23617,7 +25010,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/firewall'
+            $ref: '#/components/schemas/getFirewall_200_response'
           type: array
       required:
       - data
@@ -23628,18 +25021,15 @@ components:
     getGroup_200_response:
       allOf:
       - $ref: '#/components/schemas/groups'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findGroups_200_response:
       example:
         total: 0
         data:
-        - name: name
-          description: description
-          status: 5
-        - name: name
-          description: description
-          status: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23654,7 +25044,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/groups'
+            $ref: '#/components/schemas/getGroup_200_response'
           type: array
       required:
       - data
@@ -23665,20 +25055,15 @@ components:
     getGroupMember_200_response:
       allOf:
       - $ref: '#/components/schemas/groupmembers'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findGroupMembers_200_response:
       example:
         total: 0
         data:
-        - ref: users
-          priority: 5
-          group: group
-          object: object
-        - ref: users
-          priority: 5
-          group: group
-          object: object
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23693,7 +25078,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/groupmembers'
+            $ref: '#/components/schemas/getGroupMember_200_response'
           type: array
       required:
       - data
@@ -23704,38 +25089,15 @@ components:
     getHoliday_200_response:
       allOf:
       - $ref: '#/components/schemas/holidays'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findHolidays_200_response:
       example:
         total: 0
         data:
-        - objectRef: objectRef
-          ref: ref
-          callForwardingDestination: callForwardingDestination
-          name: name
-          dateTimeRanges:
-          - - 2000-01-23T04:56:07.000+00:00
-            - 2000-01-23T04:56:07.000+00:00
-          - - 2000-01-23T04:56:07.000+00:00
-            - 2000-01-23T04:56:07.000+00:00
-          destination: destination
-          destinationType: announcements
-          object: object
-          status: 5
-        - objectRef: objectRef
-          ref: ref
-          callForwardingDestination: callForwardingDestination
-          name: name
-          dateTimeRanges:
-          - - 2000-01-23T04:56:07.000+00:00
-            - 2000-01-23T04:56:07.000+00:00
-          - - 2000-01-23T04:56:07.000+00:00
-            - 2000-01-23T04:56:07.000+00:00
-          destination: destination
-          destinationType: announcements
-          object: object
-          status: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23750,7 +25112,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/holidays'
+            $ref: '#/components/schemas/getHoliday_200_response'
           type: array
       required:
       - data
@@ -23761,28 +25123,15 @@ components:
     getInvoiceItem_200_response:
       allOf:
       - $ref: '#/components/schemas/invoiceitems'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findInvoiceItems_200_response:
       example:
         total: 0
         data:
-        - amount: 5
-          ref: ref
-          quantity: 7
-          name: name
-          setup: 5
-          taxes: 2
-          invoice: invoice
-          object: object
-        - amount: 5
-          ref: ref
-          quantity: 7
-          name: name
-          setup: 5
-          taxes: 2
-          invoice: invoice
-          object: object
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23797,7 +25146,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/invoiceitems'
+            $ref: '#/components/schemas/getInvoiceItem_200_response'
           type: array
       required:
       - data
@@ -23808,30 +25157,15 @@ components:
     getInvoice_200_response:
       allOf:
       - $ref: '#/components/schemas/invoices'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findInvoices_200_response:
       example:
         total: 0
         data:
-        - dueAt: 2000-01-23T04:56:07.000+00:00
-          amount: 5
-          subtotal: 5
-          setup: 7
-          discount: 9
-          tax: 2
-          closedAt: 2000-01-23T04:56:07.000+00:00
-          error: error
-          status: open
-        - dueAt: 2000-01-23T04:56:07.000+00:00
-          amount: 5
-          subtotal: 5
-          setup: 7
-          discount: 9
-          tax: 2
-          closedAt: 2000-01-23T04:56:07.000+00:00
-          error: error
-          status: open
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23846,7 +25180,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/invoices'
+            $ref: '#/components/schemas/getInvoice_200_response'
           type: array
       required:
       - data
@@ -23857,20 +25191,15 @@ components:
     getLicense_200_response:
       allOf:
       - $ref: '#/components/schemas/licenses'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findLicenses_200_response:
       example:
         total: 0
         data:
-        - ref: ref
-          field: field
-          order: order
-          object: object
-        - ref: ref
-          field: field
-          order: order
-          object: object
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23885,7 +25214,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/licenses'
+            $ref: '#/components/schemas/getLicense_200_response'
           type: array
       required:
       - data
@@ -23896,48 +25225,15 @@ components:
     getMenu_200_response:
       allOf:
       - $ref: '#/components/schemas/menus'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findMenus_200_response:
       example:
         total: 0
         data:
-        - maxExtensionLength: 5
-          maxFailures: 2
-          exitSound: default
-          speechRecognition: 5
-          destination: destination
-          maxTimeouts: 7
-          directory: directory
-          menuVoice: menuVoice
-          timeout: 9
-          ref: ref
-          timeschedule: timeschedule
-          callForwardingDestination: callForwardingDestination
-          touchToneTerminators: 3
-          greetingTTS: greetingTTS
-          name: name
-          destinationType: announcements
-          greetingType: tts
-          transferAnnouncement: default
-        - maxExtensionLength: 5
-          maxFailures: 2
-          exitSound: default
-          speechRecognition: 5
-          destination: destination
-          maxTimeouts: 7
-          directory: directory
-          menuVoice: menuVoice
-          timeout: 9
-          ref: ref
-          timeschedule: timeschedule
-          callForwardingDestination: callForwardingDestination
-          touchToneTerminators: 3
-          greetingTTS: greetingTTS
-          name: name
-          destinationType: announcements
-          greetingType: tts
-          transferAnnouncement: default
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23952,7 +25248,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/menus'
+            $ref: '#/components/schemas/getMenu_200_response'
           type: array
       required:
       - data
@@ -23963,26 +25259,15 @@ components:
     getMenuOption_200_response:
       allOf:
       - $ref: '#/components/schemas/menuoptions'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findMenuOptions_200_response:
       example:
         total: 0
         data:
-        - ref: ref
-          callForwardingDestination: callForwardingDestination
-          name: name
-          destination: destination
-          destinationType: announcements
-          menus: ""
-          digit: 5
-        - ref: ref
-          callForwardingDestination: callForwardingDestination
-          name: name
-          destination: destination
-          destinationType: announcements
-          menus: ""
-          digit: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -23997,7 +25282,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/menuoptions'
+            $ref: '#/components/schemas/getMenuOption_200_response'
           type: array
       required:
       - data
@@ -24008,60 +25293,15 @@ components:
     getMessageCampaign_200_response:
       allOf:
       - $ref: '#/components/schemas/messagecampaigns'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findMessageCampaigns_200_response:
       example:
         total: 0
         data:
-        - sample1: sample1
-          campaignId: campaignId
-          directLending: 9
-          subscriberHelp: 2
-          subscriberOptin: 5
-          affiliateMarketing: 4
-          sample5: sample5
-          sample4: sample4
-          referenceId: referenceId
-          sample3: sample3
-          sample2: sample2
-          embeddedLink: 3
-          useCase: useCase
-          mnos: "{}"
-          brandId: brandId
-          name: name
-          subscriberOptout: 5
-          ageGated: 7
-          embeddedPhone: 2
-          numberPool: 7
-          subUseCases:
-          - ""
-          - ""
-          order: order
-        - sample1: sample1
-          campaignId: campaignId
-          directLending: 9
-          subscriberHelp: 2
-          subscriberOptin: 5
-          affiliateMarketing: 4
-          sample5: sample5
-          sample4: sample4
-          referenceId: referenceId
-          sample3: sample3
-          sample2: sample2
-          embeddedLink: 3
-          useCase: useCase
-          mnos: "{}"
-          brandId: brandId
-          name: name
-          subscriberOptout: 5
-          ageGated: 7
-          embeddedPhone: 2
-          numberPool: 7
-          subUseCases:
-          - ""
-          - ""
-          order: order
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24076,7 +25316,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/messagecampaigns'
+            $ref: '#/components/schemas/getMessageCampaign_200_response'
           type: array
       required:
       - data
@@ -24087,38 +25327,15 @@ components:
     getMessageBrand_200_response:
       allOf:
       - $ref: '#/components/schemas/messagebrands'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findMessageBrands_200_response:
       example:
         total: 0
         data:
-        - entityType: entityType
-          vertical: vertical
-          ein: ein
-          referenceId: referenceId
-          cspId: cspId
-          brandRelationship: brandRelationship
-          brandId: brandId
-          einIssuingCountry: einIssuingCountry
-          name: name
-          universalEin: universalEin
-          user: user
-          order: order
-          status: verified
-        - entityType: entityType
-          vertical: vertical
-          ein: ein
-          referenceId: referenceId
-          cspId: cspId
-          brandRelationship: brandRelationship
-          brandId: brandId
-          einIssuingCountry: einIssuingCountry
-          name: name
-          universalEin: universalEin
-          user: user
-          order: order
-          status: verified
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24133,7 +25350,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/messagebrands'
+            $ref: '#/components/schemas/getMessageBrand_200_response'
           type: array
       required:
       - data
@@ -24144,86 +25361,15 @@ components:
     getNumber_200_response:
       allOf:
       - $ref: '#/components/schemas/numbers'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findNumbers_200_response:
       example:
         total: 0
         data:
-        - voice: 9
-          directoryListingOrderDate: 2000-01-23T04:56:07.000+00:00
-          directoryListing: directoryListing
-          destination: destination
-          changeRegionOrderDate: 2000-01-23T04:56:07.000+00:00
-          callerName: callerName
-          e911OrderDate: 2000-01-23T04:56:07.000+00:00
-          mms: 4
-          ref: ref
-          messageCampaignOrderId: messageCampaignOrderId
-          callerNameSupported: 1
-          callForwardingDestination: callForwardingDestination
-          originalProvider: originalProvider
-          messageType: SMS
-          provider: provider
-          callerNameOrderId: callerNameOrderId
-          countryCode: countryCode
-          inUse: 5
-          sms: 2
-          e911OrderId: e911OrderId
-          destinationType: park
-          perMinuteRate: 2
-          directoryListingOrderId: directoryListingOrderId
-          fax: 7
-          callerNameOrderDate: 2000-01-23T04:56:07.000+00:00
-          directoryListingSupported: 1
-          amount: 5
-          e911Supported: 7
-          providerOrderId: providerOrderId
-          messagingSupported: 1
-          messageCampaignOrderDate: 2000-01-23T04:56:07.000+00:00
-          name: name
-          messageClass: P2P
-          changeRegionOrderId: changeRegionOrderId
-          e911: e911
-          messageCampaign: messageCampaign
-          status: 3
-        - voice: 9
-          directoryListingOrderDate: 2000-01-23T04:56:07.000+00:00
-          directoryListing: directoryListing
-          destination: destination
-          changeRegionOrderDate: 2000-01-23T04:56:07.000+00:00
-          callerName: callerName
-          e911OrderDate: 2000-01-23T04:56:07.000+00:00
-          mms: 4
-          ref: ref
-          messageCampaignOrderId: messageCampaignOrderId
-          callerNameSupported: 1
-          callForwardingDestination: callForwardingDestination
-          originalProvider: originalProvider
-          messageType: SMS
-          provider: provider
-          callerNameOrderId: callerNameOrderId
-          countryCode: countryCode
-          inUse: 5
-          sms: 2
-          e911OrderId: e911OrderId
-          destinationType: park
-          perMinuteRate: 2
-          directoryListingOrderId: directoryListingOrderId
-          fax: 7
-          callerNameOrderDate: 2000-01-23T04:56:07.000+00:00
-          directoryListingSupported: 1
-          amount: 5
-          e911Supported: 7
-          providerOrderId: providerOrderId
-          messagingSupported: 1
-          messageCampaignOrderDate: 2000-01-23T04:56:07.000+00:00
-          name: name
-          messageClass: P2P
-          changeRegionOrderId: changeRegionOrderId
-          e911: e911
-          messageCampaign: messageCampaign
-          status: 3
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24238,7 +25384,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/numbers'
+            $ref: '#/components/schemas/getNumber_200_response'
           type: array
       required:
       - data
@@ -24249,42 +25395,15 @@ components:
     getNumberPort_200_response:
       allOf:
       - $ref: '#/components/schemas/numberports'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findNumberPorts_200_response:
       example:
         total: 0
         data:
-        - destination: destination
-          office: office
-          type: port in
-          accountNumber: accountNumber
-          accountPhoneNumber: accountPhoneNumber
-          ref: ref
-          callForwardingDestination: callForwardingDestination
-          typeOfService: business
-          name: name
-          destinationType: announcements
-          e911: 5
-          invoice: invoice
-          authorizedPerson: authorizedPerson
-          desiredDueDate: 2000-01-23T04:56:07.000+00:00
-          status: processing
-        - destination: destination
-          office: office
-          type: port in
-          accountNumber: accountNumber
-          accountPhoneNumber: accountPhoneNumber
-          ref: ref
-          callForwardingDestination: callForwardingDestination
-          typeOfService: business
-          name: name
-          destinationType: announcements
-          e911: 5
-          invoice: invoice
-          authorizedPerson: authorizedPerson
-          desiredDueDate: 2000-01-23T04:56:07.000+00:00
-          status: processing
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24299,7 +25418,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/numberports'
+            $ref: '#/components/schemas/getNumberPort_200_response'
           type: array
       required:
       - data
@@ -24310,38 +25429,15 @@ components:
     getOffice_200_response:
       allOf:
       - $ref: '#/components/schemas/offices'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findOffices_200_response:
       example:
         total: 0
         data:
-        - zip: zip
-          zipCode: zipCode
-          country: country
-          streetNumber: streetNumber
-          city: city
-          address2: address2
-          preDirection: preDirection
-          streetName: streetName
-          name: name
-          streetSuffix: streetSuffix
-          state: state
-          region: region
-          providers: "{}"
-        - zip: zip
-          zipCode: zipCode
-          country: country
-          streetNumber: streetNumber
-          city: city
-          address2: address2
-          preDirection: preDirection
-          streetName: streetName
-          name: name
-          streetSuffix: streetSuffix
-          state: state
-          region: region
-          providers: "{}"
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24356,7 +25452,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/offices'
+            $ref: '#/components/schemas/getOffice_200_response'
           type: array
       required:
       - data
@@ -24367,18 +25463,15 @@ components:
     getPhoneInbound_Rule_200_response:
       allOf:
       - $ref: '#/components/schemas/phoneinboundrules'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findPhoneInbound_Rules_200_response:
       example:
         total: 0
         data:
-        - name: name
-          description: description
-          outboundCallerId: outboundCallerId
-        - name: name
-          description: description
-          outboundCallerId: outboundCallerId
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24393,7 +25486,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/phoneinboundrules'
+            $ref: '#/components/schemas/getPhoneInbound_Rule_200_response'
           type: array
       required:
       - data
@@ -24404,20 +25497,15 @@ components:
     getPhoneOutbound_Rule_200_response:
       allOf:
       - $ref: '#/components/schemas/phoneoutboundrules'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findPhoneOutbound_Rules_200_response:
       example:
         total: 0
         data:
-        - name: name
-          description: description
-          outboundCallerId: outboundCallerId
-          status: 5
-        - name: name
-          description: description
-          outboundCallerId: outboundCallerId
-          status: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24432,7 +25520,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/phoneoutboundrules'
+            $ref: '#/components/schemas/getPhoneOutbound_Rule_200_response'
           type: array
       required:
       - data
@@ -24443,32 +25531,15 @@ components:
     getPhoneInbound_Rule_Action_200_response:
       allOf:
       - $ref: '#/components/schemas/phoneinboundruleactions'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findPhoneInbound_Rule_Actions_200_response:
       example:
         total: 0
         data:
-        - phoneinboundrule: phoneinboundrule
-          ref: ref
-          timeschedule: timeschedule
-          callForwardingDestination: callForwardingDestination
-          name: name
-          destination: destination
-          destinationType: announcements
-          priority: 2
-          timeout: 5
-          status: 5
-        - phoneinboundrule: phoneinboundrule
-          ref: ref
-          timeschedule: timeschedule
-          callForwardingDestination: callForwardingDestination
-          name: name
-          destination: destination
-          destinationType: announcements
-          priority: 2
-          timeout: 5
-          status: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24483,7 +25554,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/phoneinboundruleactions'
+            $ref: '#/components/schemas/getPhoneInbound_Rule_Action_200_response'
           type: array
       required:
       - data
@@ -24494,46 +25565,15 @@ components:
     getPhoneOutbound_Rule_Action_200_response:
       allOf:
       - $ref: '#/components/schemas/phoneoutboundruleactions'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findPhoneOutbound_Rule_Actions_200_response:
       example:
         total: 0
         data:
-        - appendChars: appendChars
-          rangeStart: 7
-          length: 2
-          priority: 5
-          prependChars: prependChars
-          removeEndingChars: 2
-          rangeEnd: 9
-          removeStartingChars: 3
-          contains: contains
-          lengthType: atleast
-          route: default
-          routingType: priority
-          name: name
-          phoneoutboundrule: phoneoutboundrule
-          startingChars: startingChars
-          group: group
-          status: 5
-        - appendChars: appendChars
-          rangeStart: 7
-          length: 2
-          priority: 5
-          prependChars: prependChars
-          removeEndingChars: 2
-          rangeEnd: 9
-          removeStartingChars: 3
-          contains: contains
-          lengthType: atleast
-          route: default
-          routingType: priority
-          name: name
-          phoneoutboundrule: phoneoutboundrule
-          startingChars: startingChars
-          group: group
-          status: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24548,7 +25588,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/phoneoutboundruleactions'
+            $ref: '#/components/schemas/getPhoneOutbound_Rule_Action_200_response'
           type: array
       required:
       - data
@@ -24559,22 +25599,15 @@ components:
     getRateCenter_200_response:
       allOf:
       - $ref: '#/components/schemas/ratecenters'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findRateCenters_200_response:
       example:
         total: 0
         data:
-        - lata: lata
-          locState: locState
-          rcAbbre: rcAbbre
-          npa: npa
-          nxx: nxx
-        - lata: lata
-          locState: locState
-          rcAbbre: rcAbbre
-          npa: npa
-          nxx: nxx
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24589,7 +25622,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/ratecenters'
+            $ref: '#/components/schemas/getRateCenter_200_response'
           type: array
       required:
       - data
@@ -24600,40 +25633,15 @@ components:
     getServer_200_response:
       allOf:
       - $ref: '#/components/schemas/servers'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findServers_200_response:
       example:
         total: 0
         data:
-        - domesticOutboundCallLimit: 5
-          tollFreeChannelLimit: 9
-          bypassMedia: 2
-          noInstantRingBack: 3
-          type: sip
-          disableRTPAutoAdjust: 4
-          outboundSipTrunkingOrder: outboundSipTrunkingOrder
-          port: 5
-          internationalOutboundCallLimit: 7
-          name: name
-          host: host
-          inboundSipTrunkingOrder: inboundSipTrunkingOrder
-          callerId: callerId
-          domesticInboundCallLimit: 2
-        - domesticOutboundCallLimit: 5
-          tollFreeChannelLimit: 9
-          bypassMedia: 2
-          noInstantRingBack: 3
-          type: sip
-          disableRTPAutoAdjust: 4
-          outboundSipTrunkingOrder: outboundSipTrunkingOrder
-          port: 5
-          internationalOutboundCallLimit: 7
-          name: name
-          host: host
-          inboundSipTrunkingOrder: inboundSipTrunkingOrder
-          callerId: callerId
-          domesticInboundCallLimit: 2
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24648,7 +25656,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/servers'
+            $ref: '#/components/schemas/getServer_200_response'
           type: array
       required:
       - data
@@ -24659,30 +25667,15 @@ components:
     getTimeSchedule_200_response:
       allOf:
       - $ref: '#/components/schemas/timeschedules'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findTimeSchedules_200_response:
       example:
         total: 0
         data:
-        - sunday: "{}"
-          saturday: "{}"
-          tuesday: "{}"
-          timezone: America/New_York
-          name: name
-          wednesday: "{}"
-          thursday: "{}"
-          friday: "{}"
-          monday: "{}"
-        - sunday: "{}"
-          saturday: "{}"
-          tuesday: "{}"
-          timezone: America/New_York
-          name: name
-          wednesday: "{}"
-          thursday: "{}"
-          friday: "{}"
-          monday: "{}"
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24697,7 +25690,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/timeschedules'
+            $ref: '#/components/schemas/getTimeSchedule_200_response'
           type: array
       required:
       - data
@@ -24708,84 +25701,15 @@ components:
     getUser_200_response:
       allOf:
       - $ref: '#/components/schemas/users'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findUsers_200_response:
       example:
         total: 0
         data:
-        - extension: 5
-          callerIdNumber: callerIdNumber
-          timezone: America/New_York
-          jobTitle: jobTitle
-          language: en
-          office: office
-          number: number
-          password: password
-          mediaServerPermission: r
-          pin: 9
-          isPrimary: 2
-          adminPermission: r
-          superAdminPermission: r
-          department: department
-          vmTranscription: 3
-          communication: "{}"
-          email: email
-          billingPermission: r
-          last: last
-          sipPassword: sipPassword
-          vmPlaybackNumber: vmPlaybackNumber
-          mailServerPermission: r
-          avatar: avatar
-          agilePermission: r
-          vmFile: vmFile
-          jobServerPermission: r
-          phonePermission: r
-          vmGreetingType: default
-          mobilePhone: mobilePhone
-          vmTimeout: 7
-          businessPhone: businessPhone
-          turnPassword: turnPassword
-          region: region
-          first: first
-          customCallerId: 5
-          status: active
-        - extension: 5
-          callerIdNumber: callerIdNumber
-          timezone: America/New_York
-          jobTitle: jobTitle
-          language: en
-          office: office
-          number: number
-          password: password
-          mediaServerPermission: r
-          pin: 9
-          isPrimary: 2
-          adminPermission: r
-          superAdminPermission: r
-          department: department
-          vmTranscription: 3
-          communication: "{}"
-          email: email
-          billingPermission: r
-          last: last
-          sipPassword: sipPassword
-          vmPlaybackNumber: vmPlaybackNumber
-          mailServerPermission: r
-          avatar: avatar
-          agilePermission: r
-          vmFile: vmFile
-          jobServerPermission: r
-          phonePermission: r
-          vmGreetingType: default
-          mobilePhone: mobilePhone
-          vmTimeout: 7
-          businessPhone: businessPhone
-          turnPassword: turnPassword
-          region: region
-          first: first
-          customCallerId: 5
-          status: active
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24800,7 +25724,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/users'
+            $ref: '#/components/schemas/getUser_200_response'
           type: array
       required:
       - data
@@ -24811,22 +25735,15 @@ components:
     getUserToken_200_response:
       allOf:
       - $ref: '#/components/schemas/usertokens'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findUserTokens_200_response:
       example:
         total: 0
         data:
-        - expiresInYears: 5
-          name: name
-          user: user
-          token: token
-          status: 5
-        - expiresInYears: 5
-          name: name
-          user: user
-          token: token
-          status: 5
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24841,7 +25758,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/usertokens'
+            $ref: '#/components/schemas/getUserToken_200_response'
           type: array
       required:
       - data
@@ -24852,18 +25769,15 @@ components:
     getVirtualExtension_200_response:
       allOf:
       - $ref: '#/components/schemas/virtualextensions'
+      - $ref: '#/components/schemas/_id'
       - $ref: '#/components/schemas/responseUsers'
       - $ref: '#/components/schemas/responseDate'
     findVirtualExtensions_200_response:
       example:
         total: 0
         data:
-        - phoneinboundrule: phoneinboundrule
-          extension: 5
-          name: name
-        - phoneinboundrule: phoneinboundrule
-          extension: 5
-          name: name
+        - null
+        - null
         limit: 6
         skip: 1
       properties:
@@ -24878,7 +25792,7 @@ components:
           type: integer
         data:
           items:
-            $ref: '#/components/schemas/virtualextensions'
+            $ref: '#/components/schemas/getVirtualExtension_200_response'
           type: array
       required:
       - data

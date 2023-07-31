@@ -1,6 +1,6 @@
 # NumbersApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -30,7 +30,7 @@ import com.circuitid.client.api.NumbersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -120,7 +120,7 @@ import com.circuitid.client.api.NumbersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -180,7 +180,7 @@ public class Example {
 
 <a id="patchNumber"></a>
 # **patchNumber**
-> GetNumber200Response patchNumber(id, numbers)
+> GetNumber200Response patchNumber(id, numbersCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -199,7 +199,7 @@ import com.circuitid.client.api.NumbersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -209,9 +209,9 @@ public class Example {
 
     NumbersApi apiInstance = new NumbersApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Numbers numbers = new Numbers(); // Numbers | The request data.
+    NumbersCreateOrPatch numbersCreateOrPatch = new NumbersCreateOrPatch(); // NumbersCreateOrPatch | The request data.
     try {
-      GetNumber200Response result = apiInstance.patchNumber(id, numbers);
+      GetNumber200Response result = apiInstance.patchNumber(id, numbersCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling NumbersApi#patchNumber");
@@ -229,7 +229,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **numbers** | [**Numbers**](Numbers.md)| The request data. | |
+| **numbersCreateOrPatch** | [**NumbersCreateOrPatch**](NumbersCreateOrPatch.md)| The request data. | |
 
 ### Return type
 

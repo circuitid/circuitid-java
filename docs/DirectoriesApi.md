@@ -1,6 +1,6 @@
 # DirectoriesApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createdirectory"></a>
 # **createdirectory**
-> Getdirectory200Response createdirectory(directories)
+> Getdirectory200Response createdirectory(directoriesCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     DirectoriesApi apiInstance = new DirectoriesApi(defaultClient);
-    Directories directories = new Directories(); // Directories | The JSON object that will be posted to the REST API endpoint.
+    DirectoriesCreateOrPatch directoriesCreateOrPatch = new DirectoriesCreateOrPatch(); // DirectoriesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      Getdirectory200Response result = apiInstance.createdirectory(directories);
+      Getdirectory200Response result = apiInstance.createdirectory(directoriesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DirectoriesApi#createdirectory");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **directories** | [**Directories**](Directories.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **directoriesCreateOrPatch** | [**DirectoriesCreateOrPatch**](DirectoriesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchdirectory"></a>
 # **patchdirectory**
-> Getdirectory200Response patchdirectory(id, directories)
+> Getdirectory200Response patchdirectory(id, directoriesCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     DirectoriesApi apiInstance = new DirectoriesApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Directories directories = new Directories(); // Directories | The request data.
+    DirectoriesCreateOrPatch directoriesCreateOrPatch = new DirectoriesCreateOrPatch(); // DirectoriesCreateOrPatch | The request data.
     try {
-      Getdirectory200Response result = apiInstance.patchdirectory(id, directories);
+      Getdirectory200Response result = apiInstance.patchdirectory(id, directoriesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DirectoriesApi#patchdirectory");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **directories** | [**Directories**](Directories.md)| The request data. | |
+| **directoriesCreateOrPatch** | [**DirectoriesCreateOrPatch**](DirectoriesCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.DirectoriesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

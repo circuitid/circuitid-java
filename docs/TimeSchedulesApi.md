@@ -1,6 +1,6 @@
 # TimeSchedulesApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createTimeSchedule"></a>
 # **createTimeSchedule**
-> GetTimeSchedule200Response createTimeSchedule(timeschedules)
+> GetTimeSchedule200Response createTimeSchedule(timeschedulesCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.TimeSchedulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     TimeSchedulesApi apiInstance = new TimeSchedulesApi(defaultClient);
-    Timeschedules timeschedules = new Timeschedules(); // Timeschedules | The JSON object that will be posted to the REST API endpoint.
+    TimeschedulesCreateOrPatch timeschedulesCreateOrPatch = new TimeschedulesCreateOrPatch(); // TimeschedulesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetTimeSchedule200Response result = apiInstance.createTimeSchedule(timeschedules);
+      GetTimeSchedule200Response result = apiInstance.createTimeSchedule(timeschedulesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling TimeSchedulesApi#createTimeSchedule");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **timeschedules** | [**Timeschedules**](Timeschedules.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **timeschedulesCreateOrPatch** | [**TimeschedulesCreateOrPatch**](TimeschedulesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.TimeSchedulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.TimeSchedulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchTimeSchedule"></a>
 # **patchTimeSchedule**
-> GetTimeSchedule200Response patchTimeSchedule(id, timeschedules)
+> GetTimeSchedule200Response patchTimeSchedule(id, timeschedulesCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.TimeSchedulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     TimeSchedulesApi apiInstance = new TimeSchedulesApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Timeschedules timeschedules = new Timeschedules(); // Timeschedules | The request data.
+    TimeschedulesCreateOrPatch timeschedulesCreateOrPatch = new TimeschedulesCreateOrPatch(); // TimeschedulesCreateOrPatch | The request data.
     try {
-      GetTimeSchedule200Response result = apiInstance.patchTimeSchedule(id, timeschedules);
+      GetTimeSchedule200Response result = apiInstance.patchTimeSchedule(id, timeschedulesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling TimeSchedulesApi#patchTimeSchedule");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **timeschedules** | [**Timeschedules**](Timeschedules.md)| The request data. | |
+| **timeschedulesCreateOrPatch** | [**TimeschedulesCreateOrPatch**](TimeschedulesCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.TimeSchedulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

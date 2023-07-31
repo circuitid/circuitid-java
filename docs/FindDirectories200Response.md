@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Directories&gt;**](Directories.md) |  |  |
+|**data** | [**List&lt;Getdirectory200Response&gt;**](Getdirectory200Response.md) |  |  |
 
 
 

@@ -15,9 +15,7 @@
 |**direction** | [**DirectionEnum**](#DirectionEnum) |  |  [optional] |
 |**param** | **String** |  |  |
 |**hits** | **Integer** |  |  [optional] |
-|**ai** | [**AiEnum**](#AiEnum) |  |  [optional] |
 |**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
-|**notificationHits** | **Integer** |  |  [optional] |
 
 
 
@@ -47,15 +45,6 @@
 | INBOUND | &quot;inbound&quot; |
 | OUTBOUND | &quot;outbound&quot; |
 | BOTH | &quot;both&quot; |
-
-
-
-## Enum: AiEnum
-
-| Name | Value |
-|---- | -----|
-| NUMBER_0 | 0 |
-| NUMBER_1 | 1 |
 
 
 

@@ -22,7 +22,6 @@
 |**termsOfServiceUrl** | **String** |  |  [optional] |
 |**privacyPolicyUrl** | **String** |  |  [optional] |
 |**permissions** | **Object** |  |  [optional] |
-|**status** | [**StatusEnum**](#StatusEnum) |  |  |
 |**webhookAuthType** | [**WebhookAuthTypeEnum**](#WebhookAuthTypeEnum) |  |  [optional] |
 |**webhookUsername** | **String** |  |  [optional] |
 |**webhookPassword** | **String** |  |  [optional] |
@@ -99,18 +98,6 @@
 | CREATE | &quot;create&quot; |
 | PATCH | &quot;patch&quot; |
 | REMOVED | &quot;removed&quot; |
-
-
-
-## Enum: StatusEnum
-
-| Name | Value |
-|---- | -----|
-| ACTIVE | &quot;active&quot; |
-| DISABLED | &quot;disabled&quot; |
-| SUSPENDED | &quot;suspended&quot; |
-| ERROR | &quot;error&quot; |
-| PENDING | &quot;pending&quot; |
 
 
 

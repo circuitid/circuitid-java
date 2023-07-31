@@ -15,7 +15,6 @@
 |**priority** | **Integer** |  |  |
 |**destinationType** | [**DestinationTypeEnum**](#DestinationTypeEnum) |  |  |
 |**destination** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**ref** | **String** |  |  [optional] |
 |**callForwardingDestination** | **String** |  |  [optional] |
 
 

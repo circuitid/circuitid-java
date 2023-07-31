@@ -1,6 +1,6 @@
 # FirewallApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createFirewall"></a>
 # **createFirewall**
-> GetFirewall200Response createFirewall(firewall)
+> GetFirewall200Response createFirewall(firewallCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.FirewallApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     FirewallApi apiInstance = new FirewallApi(defaultClient);
-    Firewall firewall = new Firewall(); // Firewall | The JSON object that will be posted to the REST API endpoint.
+    FirewallCreateOrPatch firewallCreateOrPatch = new FirewallCreateOrPatch(); // FirewallCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetFirewall200Response result = apiInstance.createFirewall(firewall);
+      GetFirewall200Response result = apiInstance.createFirewall(firewallCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FirewallApi#createFirewall");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **firewall** | [**Firewall**](Firewall.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **firewallCreateOrPatch** | [**FirewallCreateOrPatch**](FirewallCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.FirewallApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.FirewallApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchFirewall"></a>
 # **patchFirewall**
-> GetFirewall200Response patchFirewall(id, firewall)
+> GetFirewall200Response patchFirewall(id, firewallCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.FirewallApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     FirewallApi apiInstance = new FirewallApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Firewall firewall = new Firewall(); // Firewall | The request data.
+    FirewallCreateOrPatch firewallCreateOrPatch = new FirewallCreateOrPatch(); // FirewallCreateOrPatch | The request data.
     try {
-      GetFirewall200Response result = apiInstance.patchFirewall(id, firewall);
+      GetFirewall200Response result = apiInstance.patchFirewall(id, firewallCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FirewallApi#patchFirewall");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **firewall** | [**Firewall**](Firewall.md)| The request data. | |
+| **firewallCreateOrPatch** | [**FirewallCreateOrPatch**](FirewallCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.FirewallApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

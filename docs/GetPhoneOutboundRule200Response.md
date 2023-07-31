@@ -11,6 +11,7 @@
 |**description** | **String** |  |  [optional] |
 |**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
 |**outboundCallerId** | **String** |  |  [optional] |
+|**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdAt** | **OffsetDateTime** |  |  [optional] |

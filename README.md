@@ -1,8 +1,8 @@
 # circuitid-java-client
 
 Circuit ID REST API
-- API version: 0.47.19
-  - Build date: 2023-07-29T10:43:38.181Z[UTC]
+- API version: 0.47.20
+  - Build date: 2023-07-31T19:48:25.560Z[UTC]
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -48,7 +48,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.circuitid</groupId>
   <artifactId>circuitid-java-client</artifactId>
-  <version>0.47.19</version>
+  <version>0.47.20</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -64,7 +64,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.circuitid:circuitid-java-client:0.47.19"
+     implementation "com.circuitid:circuitid-java-client:0.47.20"
   }
 ```
 
@@ -78,7 +78,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/circuitid-java-client-0.47.19.jar`
+* `target/circuitid-java-client-0.47.20.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -98,7 +98,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -107,9 +107,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     AcceptedSendersApi apiInstance = new AcceptedSendersApi(defaultClient);
-    Acceptedsenders acceptedsenders = new Acceptedsenders(); // Acceptedsenders | The JSON object that will be posted to the REST API endpoint.
+    AcceptedsendersCreateOrPatch acceptedsendersCreateOrPatch = new AcceptedsendersCreateOrPatch(); // AcceptedsendersCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetAcceptedSender200Response result = apiInstance.createAcceptedSender(acceptedsenders);
+      GetAcceptedSender200Response result = apiInstance.createAcceptedSender(acceptedsendersCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AcceptedSendersApi#createAcceptedSender");
@@ -125,7 +125,7 @@ public class Example {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -261,8 +261,6 @@ Class | Method | HTTP request | Description
 *MessageBrandsApi* | [**createMessageBrand**](docs/MessageBrandsApi.md#createMessageBrand) | **POST** /messagebrands | Create a new object
 *MessageBrandsApi* | [**findMessageBrands**](docs/MessageBrandsApi.md#findMessageBrands) | **GET** /messagebrands | Find multiple objects
 *MessageBrandsApi* | [**getMessageBrand**](docs/MessageBrandsApi.md#getMessageBrand) | **GET** /messagebrands/{id} | Get object by id
-*MessageBrandsApi* | [**patchMessageBrand**](docs/MessageBrandsApi.md#patchMessageBrand) | **PATCH** /messagebrands/{id} | Patch object&#39;s data
-*MessageBrandsApi* | [**removeMessageBrand**](docs/MessageBrandsApi.md#removeMessageBrand) | **DELETE** /messagebrands/{id} | Delete object by id
 *MessageCampaignsApi* | [**createMessageCampaign**](docs/MessageCampaignsApi.md#createMessageCampaign) | **POST** /messagecampaigns | Create a new object
 *MessageCampaignsApi* | [**findMessageCampaigns**](docs/MessageCampaignsApi.md#findMessageCampaigns) | **GET** /messagecampaigns | Find multiple objects
 *MessageCampaignsApi* | [**getMessageCampaign**](docs/MessageCampaignsApi.md#getMessageCampaign) | **GET** /messagecampaigns/{id} | Get object by id
@@ -271,7 +269,6 @@ Class | Method | HTTP request | Description
 *NumberPortsApi* | [**createNumberPort**](docs/NumberPortsApi.md#createNumberPort) | **POST** /numberports | Create a new object
 *NumberPortsApi* | [**findNumberPorts**](docs/NumberPortsApi.md#findNumberPorts) | **GET** /numberports | Find multiple objects
 *NumberPortsApi* | [**getNumberPort**](docs/NumberPortsApi.md#getNumberPort) | **GET** /numberports/{id} | Get object by id
-*NumberPortsApi* | [**patchNumberPort**](docs/NumberPortsApi.md#patchNumberPort) | **PATCH** /numberports/{id} | Patch object&#39;s data
 *NumbersApi* | [**findNumbers**](docs/NumbersApi.md#findNumbers) | **GET** /numbers | Find multiple objects
 *NumbersApi* | [**getNumber**](docs/NumbersApi.md#getNumber) | **GET** /numbers/{id} | Get object by id
 *NumbersApi* | [**patchNumber**](docs/NumbersApi.md#patchNumber) | **PATCH** /numbers/{id} | Patch object&#39;s data
@@ -334,24 +331,42 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [Acceptedsenders](docs/Acceptedsenders.md)
+ - [AcceptedsendersCreateOrPatch](docs/AcceptedsendersCreateOrPatch.md)
  - [Announcements](docs/Announcements.md)
+ - [AnnouncementsCreateOrPatch](docs/AnnouncementsCreateOrPatch.md)
  - [Authentication](docs/Authentication.md)
+ - [AuthenticationCreateOrPatch](docs/AuthenticationCreateOrPatch.md)
  - [Callqueueagents](docs/Callqueueagents.md)
+ - [CallqueueagentsCreateOrPatch](docs/CallqueueagentsCreateOrPatch.md)
  - [Callqueues](docs/Callqueues.md)
+ - [CallqueuesCreateOrPatch](docs/CallqueuesCreateOrPatch.md)
  - [Chatrooms](docs/Chatrooms.md)
+ - [ChatroomsCreateOrPatch](docs/ChatroomsCreateOrPatch.md)
  - [Clients](docs/Clients.md)
+ - [ClientsCreateOrPatch](docs/ClientsCreateOrPatch.md)
  - [Conferencerooms](docs/Conferencerooms.md)
+ - [ConferenceroomsCreateOrPatch](docs/ConferenceroomsCreateOrPatch.md)
  - [Contacts](docs/Contacts.md)
+ - [ContactsCreateOrPatch](docs/ContactsCreateOrPatch.md)
  - [Conversationmessages](docs/Conversationmessages.md)
+ - [ConversationmessagesCreateOrPatch](docs/ConversationmessagesCreateOrPatch.md)
  - [Conversations](docs/Conversations.md)
+ - [ConversationsCreateOrPatch](docs/ConversationsCreateOrPatch.md)
  - [CreateAuthentication200Response](docs/CreateAuthentication200Response.md)
  - [Customers](docs/Customers.md)
+ - [CustomersCreateOrPatch](docs/CustomersCreateOrPatch.md)
  - [Developerapps](docs/Developerapps.md)
+ - [DeveloperappsCreateOrPatch](docs/DeveloperappsCreateOrPatch.md)
  - [Developerappsubscriptions](docs/Developerappsubscriptions.md)
+ - [DeveloperappsubscriptionsCreateOrPatch](docs/DeveloperappsubscriptionsCreateOrPatch.md)
  - [Directories](docs/Directories.md)
+ - [DirectoriesCreateOrPatch](docs/DirectoriesCreateOrPatch.md)
  - [Domains](docs/Domains.md)
+ - [DomainsCreateOrPatch](docs/DomainsCreateOrPatch.md)
  - [Faxaccounts](docs/Faxaccounts.md)
+ - [FaxaccountsCreateOrPatch](docs/FaxaccountsCreateOrPatch.md)
  - [Faxes](docs/Faxes.md)
+ - [FaxesCreateOrPatch](docs/FaxesCreateOrPatch.md)
  - [Find](docs/Find.md)
  - [FindAcceptedSenders200Response](docs/FindAcceptedSenders200Response.md)
  - [FindAnnouncements200Response](docs/FindAnnouncements200Response.md)
@@ -396,6 +411,7 @@ Class | Method | HTTP request | Description
  - [FindUsers200Response](docs/FindUsers200Response.md)
  - [FindVirtualExtensions200Response](docs/FindVirtualExtensions200Response.md)
  - [Firewall](docs/Firewall.md)
+ - [FirewallCreateOrPatch](docs/FirewallCreateOrPatch.md)
  - [GetAcceptedSender200Response](docs/GetAcceptedSender200Response.md)
  - [GetAnnouncement200Response](docs/GetAnnouncement200Response.md)
  - [GetCallQueue200Response](docs/GetCallQueue200Response.md)
@@ -438,31 +454,55 @@ Class | Method | HTTP request | Description
  - [GetVirtualExtension200Response](docs/GetVirtualExtension200Response.md)
  - [Getdirectory200Response](docs/Getdirectory200Response.md)
  - [Groupmembers](docs/Groupmembers.md)
+ - [GroupmembersCreateOrPatch](docs/GroupmembersCreateOrPatch.md)
  - [Groups](docs/Groups.md)
+ - [GroupsCreateOrPatch](docs/GroupsCreateOrPatch.md)
  - [Holidays](docs/Holidays.md)
+ - [HolidaysCreateOrPatch](docs/HolidaysCreateOrPatch.md)
+ - [Id](docs/Id.md)
  - [Invoiceitems](docs/Invoiceitems.md)
+ - [InvoiceitemsCreateOrPatch](docs/InvoiceitemsCreateOrPatch.md)
  - [Invoices](docs/Invoices.md)
+ - [InvoicesCreateOrPatch](docs/InvoicesCreateOrPatch.md)
  - [Licenses](docs/Licenses.md)
+ - [LicensesCreateOrPatch](docs/LicensesCreateOrPatch.md)
  - [Menuoptions](docs/Menuoptions.md)
+ - [MenuoptionsCreateOrPatch](docs/MenuoptionsCreateOrPatch.md)
  - [Menus](docs/Menus.md)
+ - [MenusCreateOrPatch](docs/MenusCreateOrPatch.md)
  - [Messagebrands](docs/Messagebrands.md)
+ - [MessagebrandsCreateOrPatch](docs/MessagebrandsCreateOrPatch.md)
  - [Messagecampaigns](docs/Messagecampaigns.md)
+ - [MessagecampaignsCreateOrPatch](docs/MessagecampaignsCreateOrPatch.md)
  - [Numberports](docs/Numberports.md)
+ - [NumberportsCreateOrPatch](docs/NumberportsCreateOrPatch.md)
  - [Numbers](docs/Numbers.md)
+ - [NumbersCreateOrPatch](docs/NumbersCreateOrPatch.md)
  - [Offices](docs/Offices.md)
+ - [OfficesCreateOrPatch](docs/OfficesCreateOrPatch.md)
  - [Phoneinboundruleactions](docs/Phoneinboundruleactions.md)
+ - [PhoneinboundruleactionsCreateOrPatch](docs/PhoneinboundruleactionsCreateOrPatch.md)
  - [Phoneinboundrules](docs/Phoneinboundrules.md)
+ - [PhoneinboundrulesCreateOrPatch](docs/PhoneinboundrulesCreateOrPatch.md)
  - [Phoneoutboundruleactions](docs/Phoneoutboundruleactions.md)
+ - [PhoneoutboundruleactionsCreateOrPatch](docs/PhoneoutboundruleactionsCreateOrPatch.md)
  - [Phoneoutboundrules](docs/Phoneoutboundrules.md)
+ - [PhoneoutboundrulesCreateOrPatch](docs/PhoneoutboundrulesCreateOrPatch.md)
  - [Ratecenters](docs/Ratecenters.md)
+ - [RatecentersCreateOrPatch](docs/RatecentersCreateOrPatch.md)
  - [ResponseDate](docs/ResponseDate.md)
  - [ResponseError](docs/ResponseError.md)
  - [ResponseUsers](docs/ResponseUsers.md)
  - [Servers](docs/Servers.md)
+ - [ServersCreateOrPatch](docs/ServersCreateOrPatch.md)
  - [Timeschedules](docs/Timeschedules.md)
+ - [TimeschedulesCreateOrPatch](docs/TimeschedulesCreateOrPatch.md)
  - [Users](docs/Users.md)
+ - [UsersCreateOrPatch](docs/UsersCreateOrPatch.md)
  - [Usertokens](docs/Usertokens.md)
+ - [UsertokensCreateOrPatch](docs/UsertokensCreateOrPatch.md)
  - [Virtualextensions](docs/Virtualextensions.md)
+ - [VirtualextensionsCreateOrPatch](docs/VirtualextensionsCreateOrPatch.md)
 
 
 <a id="documentation-for-authorization"></a>

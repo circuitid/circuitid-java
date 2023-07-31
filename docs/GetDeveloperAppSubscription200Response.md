@@ -14,6 +14,7 @@
 |**requireId** | [**RequireIdEnum**](#RequireIdEnum) |  |  [optional] |
 |**services** | [**List&lt;ServicesEnum&gt;**](#List&lt;ServicesEnum&gt;) |  |  |
 |**events** | [**List&lt;EventsEnum&gt;**](#List&lt;EventsEnum&gt;) |  |  [optional] |
+|**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdAt** | **OffsetDateTime** |  |  [optional] |

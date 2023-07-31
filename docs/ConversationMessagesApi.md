@@ -1,6 +1,6 @@
 # ConversationMessagesApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createConversationMessage"></a>
 # **createConversationMessage**
-> GetConversationMessage200Response createConversationMessage(conversationmessages)
+> GetConversationMessage200Response createConversationMessage(conversationmessagesCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.ConversationMessagesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     ConversationMessagesApi apiInstance = new ConversationMessagesApi(defaultClient);
-    Conversationmessages conversationmessages = new Conversationmessages(); // Conversationmessages | The JSON object that will be posted to the REST API endpoint.
+    ConversationmessagesCreateOrPatch conversationmessagesCreateOrPatch = new ConversationmessagesCreateOrPatch(); // ConversationmessagesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetConversationMessage200Response result = apiInstance.createConversationMessage(conversationmessages);
+      GetConversationMessage200Response result = apiInstance.createConversationMessage(conversationmessagesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ConversationMessagesApi#createConversationMessage");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **conversationmessages** | [**Conversationmessages**](Conversationmessages.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **conversationmessagesCreateOrPatch** | [**ConversationmessagesCreateOrPatch**](ConversationmessagesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.ConversationMessagesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.ConversationMessagesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchConversationMessage"></a>
 # **patchConversationMessage**
-> GetConversationMessage200Response patchConversationMessage(id, conversationmessages)
+> GetConversationMessage200Response patchConversationMessage(id, conversationmessagesCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.ConversationMessagesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     ConversationMessagesApi apiInstance = new ConversationMessagesApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Conversationmessages conversationmessages = new Conversationmessages(); // Conversationmessages | The request data.
+    ConversationmessagesCreateOrPatch conversationmessagesCreateOrPatch = new ConversationmessagesCreateOrPatch(); // ConversationmessagesCreateOrPatch | The request data.
     try {
-      GetConversationMessage200Response result = apiInstance.patchConversationMessage(id, conversationmessages);
+      GetConversationMessage200Response result = apiInstance.patchConversationMessage(id, conversationmessagesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ConversationMessagesApi#patchConversationMessage");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **conversationmessages** | [**Conversationmessages**](Conversationmessages.md)| The request data. | |
+| **conversationmessagesCreateOrPatch** | [**ConversationmessagesCreateOrPatch**](ConversationmessagesCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.ConversationMessagesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

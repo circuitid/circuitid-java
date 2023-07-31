@@ -10,7 +10,6 @@
 |**name** | **String** |  |  [optional] |
 |**users** | **Object** |  |  |
 |**avatar** | **String** |  |  [optional] |
-|**direct** | **Boolean** |  |  [optional] |
 
 
 

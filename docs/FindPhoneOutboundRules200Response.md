@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Phoneoutboundrules&gt;**](Phoneoutboundrules.md) |  |  |
+|**data** | [**List&lt;GetPhoneOutboundRule200Response&gt;**](GetPhoneOutboundRule200Response.md) |  |  |
 
 
 

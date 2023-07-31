@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Faxaccounts&gt;**](Faxaccounts.md) |  |  |
+|**data** | [**List&lt;GetFaxAccount200Response&gt;**](GetFaxAccount200Response.md) |  |  |
 
 
 

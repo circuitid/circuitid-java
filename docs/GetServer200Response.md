@@ -12,15 +12,12 @@
 |**port** | **Integer** |  |  |
 |**callerId** | **String** |  |  [optional] |
 |**type** | [**TypeEnum**](#TypeEnum) |  |  |
-|**domesticOutboundCallLimit** | **Integer** |  |  |
-|**domesticInboundCallLimit** | **Integer** |  |  |
-|**internationalOutboundCallLimit** | **Integer** |  |  |
-|**tollFreeChannelLimit** | **Integer** |  |  |
 |**inboundSipTrunkingOrder** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**outboundSipTrunkingOrder** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**noInstantRingBack** | [**NoInstantRingBackEnum**](#NoInstantRingBackEnum) |  |  [optional] |
 |**bypassMedia** | [**BypassMediaEnum**](#BypassMediaEnum) |  |  [optional] |
 |**disableRTPAutoAdjust** | [**DisableRTPAutoAdjustEnum**](#DisableRTPAutoAdjustEnum) |  |  [optional] |
+|**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdAt** | **OffsetDateTime** |  |  [optional] |

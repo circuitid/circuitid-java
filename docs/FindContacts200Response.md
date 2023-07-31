@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Contacts&gt;**](Contacts.md) |  |  |
+|**data** | [**List&lt;GetContact200Response&gt;**](GetContact200Response.md) |  |  |
 
 
 

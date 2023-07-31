@@ -12,10 +12,6 @@
 |**port** | **Integer** |  |  |
 |**callerId** | **String** |  |  [optional] |
 |**type** | [**TypeEnum**](#TypeEnum) |  |  |
-|**domesticOutboundCallLimit** | **Integer** |  |  |
-|**domesticInboundCallLimit** | **Integer** |  |  |
-|**internationalOutboundCallLimit** | **Integer** |  |  |
-|**tollFreeChannelLimit** | **Integer** |  |  |
 |**inboundSipTrunkingOrder** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**outboundSipTrunkingOrder** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**noInstantRingBack** | [**NoInstantRingBackEnum**](#NoInstantRingBackEnum) |  |  [optional] |

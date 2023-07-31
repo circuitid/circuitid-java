@@ -1,19 +1,17 @@
 # MessageBrandsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**createMessageBrand**](MessageBrandsApi.md#createMessageBrand) | **POST** /messagebrands | Create a new object |
 | [**findMessageBrands**](MessageBrandsApi.md#findMessageBrands) | **GET** /messagebrands | Find multiple objects |
 | [**getMessageBrand**](MessageBrandsApi.md#getMessageBrand) | **GET** /messagebrands/{id} | Get object by id |
-| [**patchMessageBrand**](MessageBrandsApi.md#patchMessageBrand) | **PATCH** /messagebrands/{id} | Patch object&#39;s data |
-| [**removeMessageBrand**](MessageBrandsApi.md#removeMessageBrand) | **DELETE** /messagebrands/{id} | Delete object by id |
 
 
 <a id="createMessageBrand"></a>
 # **createMessageBrand**
-> GetMessageBrand200Response createMessageBrand(messagebrands)
+> GetMessageBrand200Response createMessageBrand(messagebrandsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +30,7 @@ import com.circuitid.client.api.MessageBrandsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +39,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     MessageBrandsApi apiInstance = new MessageBrandsApi(defaultClient);
-    Messagebrands messagebrands = new Messagebrands(); // Messagebrands | The JSON object that will be posted to the REST API endpoint.
+    MessagebrandsCreateOrPatch messagebrandsCreateOrPatch = new MessagebrandsCreateOrPatch(); // MessagebrandsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetMessageBrand200Response result = apiInstance.createMessageBrand(messagebrands);
+      GetMessageBrand200Response result = apiInstance.createMessageBrand(messagebrandsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling MessageBrandsApi#createMessageBrand");
@@ -60,7 +58,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **messagebrands** | [**Messagebrands**](Messagebrands.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **messagebrandsCreateOrPatch** | [**MessagebrandsCreateOrPatch**](MessagebrandsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +108,7 @@ import com.circuitid.client.api.MessageBrandsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +198,7 @@ import com.circuitid.client.api.MessageBrandsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -251,164 +249,6 @@ public class Example {
 | **401** | Not Authenticated |  -  |
 | **403** | Forbidden |  -  |
 | **404** | Not Found |  -  |
-| **405** | Method Not Allowed |  -  |
-| **406** | Not Acceptable |  -  |
-| **408** | Timeout |  -  |
-| **429** | Too Many Requests |  -  |
-| **500** | General Error |  -  |
-| **503** | Unavailable |  -  |
-
-<a id="patchMessageBrand"></a>
-# **patchMessageBrand**
-> GetMessageBrand200Response patchMessageBrand(id, messagebrands)
-
-Patch object&#39;s data
-
-Make updates to specific fields within the record without replacing the entire dataset.
-
-### Example
-```java
-// Import classes:
-import com.circuitid.client.ApiClient;
-import com.circuitid.client.ApiException;
-import com.circuitid.client.Configuration;
-import com.circuitid.client.auth.*;
-import com.circuitid.client.models.*;
-import com.circuitid.client.api.MessageBrandsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
-    
-    // Configure API key authorization: jwt
-    ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
-    jwt.setApiKey("YOUR API KEY");
-    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //jwt.setApiKeyPrefix("Token");
-
-    MessageBrandsApi apiInstance = new MessageBrandsApi(defaultClient);
-    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Messagebrands messagebrands = new Messagebrands(); // Messagebrands | The request data.
-    try {
-      GetMessageBrand200Response result = apiInstance.patchMessageBrand(id, messagebrands);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessageBrandsApi#patchMessageBrand");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **messagebrands** | [**Messagebrands**](Messagebrands.md)| The request data. | |
-
-### Return type
-
-[**GetMessageBrand200Response**](GetMessageBrand200Response.md)
-
-### Authorization
-
-[jwt](../README.md#jwt)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | A JSON object containing the modified data. |  -  |
-| **400** | Bad Request |  -  |
-| **401** | Not Authenticated |  -  |
-| **403** | Forbidden |  -  |
-| **405** | Method Not Allowed |  -  |
-| **406** | Not Acceptable |  -  |
-| **408** | Timeout |  -  |
-| **429** | Too Many Requests |  -  |
-| **500** | General Error |  -  |
-| **503** | Unavailable |  -  |
-
-<a id="removeMessageBrand"></a>
-# **removeMessageBrand**
-> GetMessageBrand200Response removeMessageBrand(id)
-
-Delete object by id
-
-Delete an object by id, removing it from the service.
-
-### Example
-```java
-// Import classes:
-import com.circuitid.client.ApiClient;
-import com.circuitid.client.ApiException;
-import com.circuitid.client.Configuration;
-import com.circuitid.client.auth.*;
-import com.circuitid.client.models.*;
-import com.circuitid.client.api.MessageBrandsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
-    
-    // Configure API key authorization: jwt
-    ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
-    jwt.setApiKey("YOUR API KEY");
-    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //jwt.setApiKeyPrefix("Token");
-
-    MessageBrandsApi apiInstance = new MessageBrandsApi(defaultClient);
-    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    try {
-      GetMessageBrand200Response result = apiInstance.removeMessageBrand(id);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling MessageBrandsApi#removeMessageBrand");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-
-### Return type
-
-[**GetMessageBrand200Response**](GetMessageBrand200Response.md)
-
-### Authorization
-
-[jwt](../README.md#jwt)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | A JSON object containing the deleted data. |  -  |
-| **400** | Bad Request |  -  |
-| **401** | Not Authenticated |  -  |
-| **403** | Forbidden |  -  |
 | **405** | Method Not Allowed |  -  |
 | **406** | Not Acceptable |  -  |
 | **408** | Timeout |  -  |

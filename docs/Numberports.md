@@ -7,6 +7,7 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+|**numbers** | **List&lt;String&gt;** |  |  |
 |**name** | **String** |  |  |
 |**type** | [**TypeEnum**](#TypeEnum) |  |  |
 |**typeOfService** | [**TypeOfServiceEnum**](#TypeOfServiceEnum) |  |  |

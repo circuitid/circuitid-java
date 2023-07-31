@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Users&gt;**](Users.md) |  |  |
+|**data** | [**List&lt;GetUser200Response&gt;**](GetUser200Response.md) |  |  |
 
 
 

@@ -1,6 +1,6 @@
 # PhoneOutboundRuleActionsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createPhoneOutboundRuleAction"></a>
 # **createPhoneOutboundRuleAction**
-> GetPhoneOutboundRuleAction200Response createPhoneOutboundRuleAction(phoneoutboundruleactions)
+> GetPhoneOutboundRuleAction200Response createPhoneOutboundRuleAction(phoneoutboundruleactionsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.PhoneOutboundRuleActionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     PhoneOutboundRuleActionsApi apiInstance = new PhoneOutboundRuleActionsApi(defaultClient);
-    Phoneoutboundruleactions phoneoutboundruleactions = new Phoneoutboundruleactions(); // Phoneoutboundruleactions | The JSON object that will be posted to the REST API endpoint.
+    PhoneoutboundruleactionsCreateOrPatch phoneoutboundruleactionsCreateOrPatch = new PhoneoutboundruleactionsCreateOrPatch(); // PhoneoutboundruleactionsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetPhoneOutboundRuleAction200Response result = apiInstance.createPhoneOutboundRuleAction(phoneoutboundruleactions);
+      GetPhoneOutboundRuleAction200Response result = apiInstance.createPhoneOutboundRuleAction(phoneoutboundruleactionsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling PhoneOutboundRuleActionsApi#createPhoneOutboundRuleAction");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **phoneoutboundruleactions** | [**Phoneoutboundruleactions**](Phoneoutboundruleactions.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **phoneoutboundruleactionsCreateOrPatch** | [**PhoneoutboundruleactionsCreateOrPatch**](PhoneoutboundruleactionsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.PhoneOutboundRuleActionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.PhoneOutboundRuleActionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchPhoneOutboundRuleAction"></a>
 # **patchPhoneOutboundRuleAction**
-> GetPhoneOutboundRuleAction200Response patchPhoneOutboundRuleAction(id, phoneoutboundruleactions)
+> GetPhoneOutboundRuleAction200Response patchPhoneOutboundRuleAction(id, phoneoutboundruleactionsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.PhoneOutboundRuleActionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     PhoneOutboundRuleActionsApi apiInstance = new PhoneOutboundRuleActionsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Phoneoutboundruleactions phoneoutboundruleactions = new Phoneoutboundruleactions(); // Phoneoutboundruleactions | The request data.
+    PhoneoutboundruleactionsCreateOrPatch phoneoutboundruleactionsCreateOrPatch = new PhoneoutboundruleactionsCreateOrPatch(); // PhoneoutboundruleactionsCreateOrPatch | The request data.
     try {
-      GetPhoneOutboundRuleAction200Response result = apiInstance.patchPhoneOutboundRuleAction(id, phoneoutboundruleactions);
+      GetPhoneOutboundRuleAction200Response result = apiInstance.patchPhoneOutboundRuleAction(id, phoneoutboundruleactionsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling PhoneOutboundRuleActionsApi#patchPhoneOutboundRuleAction");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **phoneoutboundruleactions** | [**Phoneoutboundruleactions**](Phoneoutboundruleactions.md)| The request data. | |
+| **phoneoutboundruleactionsCreateOrPatch** | [**PhoneoutboundruleactionsCreateOrPatch**](PhoneoutboundruleactionsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.PhoneOutboundRuleActionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

@@ -1,6 +1,6 @@
 # ConferenceRoomsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createConferenceRoom"></a>
 # **createConferenceRoom**
-> GetConferenceRoom200Response createConferenceRoom(conferencerooms)
+> GetConferenceRoom200Response createConferenceRoom(conferenceroomsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     ConferenceRoomsApi apiInstance = new ConferenceRoomsApi(defaultClient);
-    Conferencerooms conferencerooms = new Conferencerooms(); // Conferencerooms | The JSON object that will be posted to the REST API endpoint.
+    ConferenceroomsCreateOrPatch conferenceroomsCreateOrPatch = new ConferenceroomsCreateOrPatch(); // ConferenceroomsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetConferenceRoom200Response result = apiInstance.createConferenceRoom(conferencerooms);
+      GetConferenceRoom200Response result = apiInstance.createConferenceRoom(conferenceroomsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ConferenceRoomsApi#createConferenceRoom");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **conferencerooms** | [**Conferencerooms**](Conferencerooms.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **conferenceroomsCreateOrPatch** | [**ConferenceroomsCreateOrPatch**](ConferenceroomsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchConferenceRoom"></a>
 # **patchConferenceRoom**
-> GetConferenceRoom200Response patchConferenceRoom(id, conferencerooms)
+> GetConferenceRoom200Response patchConferenceRoom(id, conferenceroomsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     ConferenceRoomsApi apiInstance = new ConferenceRoomsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Conferencerooms conferencerooms = new Conferencerooms(); // Conferencerooms | The request data.
+    ConferenceroomsCreateOrPatch conferenceroomsCreateOrPatch = new ConferenceroomsCreateOrPatch(); // ConferenceroomsCreateOrPatch | The request data.
     try {
-      GetConferenceRoom200Response result = apiInstance.patchConferenceRoom(id, conferencerooms);
+      GetConferenceRoom200Response result = apiInstance.patchConferenceRoom(id, conferenceroomsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ConferenceRoomsApi#patchConferenceRoom");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **conferencerooms** | [**Conferencerooms**](Conferencerooms.md)| The request data. | |
+| **conferenceroomsCreateOrPatch** | [**ConferenceroomsCreateOrPatch**](ConferenceroomsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

@@ -1,6 +1,6 @@
 # DeveloperAppSubscriptionsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createDeveloperAppSubscription"></a>
 # **createDeveloperAppSubscription**
-> GetDeveloperAppSubscription200Response createDeveloperAppSubscription(developerappsubscriptions)
+> GetDeveloperAppSubscription200Response createDeveloperAppSubscription(developerappsubscriptionsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.DeveloperAppSubscriptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     DeveloperAppSubscriptionsApi apiInstance = new DeveloperAppSubscriptionsApi(defaultClient);
-    Developerappsubscriptions developerappsubscriptions = new Developerappsubscriptions(); // Developerappsubscriptions | The JSON object that will be posted to the REST API endpoint.
+    DeveloperappsubscriptionsCreateOrPatch developerappsubscriptionsCreateOrPatch = new DeveloperappsubscriptionsCreateOrPatch(); // DeveloperappsubscriptionsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetDeveloperAppSubscription200Response result = apiInstance.createDeveloperAppSubscription(developerappsubscriptions);
+      GetDeveloperAppSubscription200Response result = apiInstance.createDeveloperAppSubscription(developerappsubscriptionsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DeveloperAppSubscriptionsApi#createDeveloperAppSubscription");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **developerappsubscriptions** | [**Developerappsubscriptions**](Developerappsubscriptions.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **developerappsubscriptionsCreateOrPatch** | [**DeveloperappsubscriptionsCreateOrPatch**](DeveloperappsubscriptionsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.DeveloperAppSubscriptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.DeveloperAppSubscriptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchDeveloperAppSubscription"></a>
 # **patchDeveloperAppSubscription**
-> GetDeveloperAppSubscription200Response patchDeveloperAppSubscription(id, developerappsubscriptions)
+> GetDeveloperAppSubscription200Response patchDeveloperAppSubscription(id, developerappsubscriptionsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.DeveloperAppSubscriptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     DeveloperAppSubscriptionsApi apiInstance = new DeveloperAppSubscriptionsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Developerappsubscriptions developerappsubscriptions = new Developerappsubscriptions(); // Developerappsubscriptions | The request data.
+    DeveloperappsubscriptionsCreateOrPatch developerappsubscriptionsCreateOrPatch = new DeveloperappsubscriptionsCreateOrPatch(); // DeveloperappsubscriptionsCreateOrPatch | The request data.
     try {
-      GetDeveloperAppSubscription200Response result = apiInstance.patchDeveloperAppSubscription(id, developerappsubscriptions);
+      GetDeveloperAppSubscription200Response result = apiInstance.patchDeveloperAppSubscription(id, developerappsubscriptionsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DeveloperAppSubscriptionsApi#patchDeveloperAppSubscription");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **developerappsubscriptions** | [**Developerappsubscriptions**](Developerappsubscriptions.md)| The request data. | |
+| **developerappsubscriptionsCreateOrPatch** | [**DeveloperappsubscriptionsCreateOrPatch**](DeveloperappsubscriptionsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.DeveloperAppSubscriptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

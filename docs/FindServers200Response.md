@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Servers&gt;**](Servers.md) |  |  |
+|**data** | [**List&lt;GetServer200Response&gt;**](GetServer200Response.md) |  |  |
 
 
 

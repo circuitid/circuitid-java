@@ -12,30 +12,17 @@
 |**countryCode** | **String** |  |  |
 |**amount** | **Integer** |  |  [optional] |
 |**perMinuteRate** | **Integer** |  |  [optional] |
-|**provider** | **String** | ObjectId (unique 12 bytes ID) |  |
-|**originalProvider** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**providerOrderId** | **String** |  |  [optional] |
 |**fax** | [**FaxEnum**](#FaxEnum) |  |  [optional] |
 |**voice** | [**VoiceEnum**](#VoiceEnum) |  |  [optional] |
 |**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
 |**sms** | [**SmsEnum**](#SmsEnum) |  |  [optional] |
 |**mms** | [**MmsEnum**](#MmsEnum) |  |  [optional] |
-|**changeRegionOrderId** | **String** |  |  [optional] |
-|**changeRegionOrderDate** | **OffsetDateTime** |  |  [optional] |
 |**directoryListing** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**directoryListingOrderId** | **String** |  |  [optional] |
-|**directoryListingOrderDate** | **OffsetDateTime** |  |  [optional] |
 |**callerName** | **String** |  |  [optional] |
-|**callerNameOrderId** | **String** |  |  [optional] |
-|**callerNameOrderDate** | **OffsetDateTime** |  |  [optional] |
 |**e911** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
-|**e911OrderId** | **String** |  |  [optional] |
-|**e911OrderDate** | **OffsetDateTime** |  |  [optional] |
 |**messageCampaign** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**messageClass** | [**MessageClassEnum**](#MessageClassEnum) |  |  [optional] |
 |**messageType** | [**MessageTypeEnum**](#MessageTypeEnum) |  |  [optional] |
-|**messageCampaignOrderId** | **String** |  |  [optional] |
-|**messageCampaignOrderDate** | **OffsetDateTime** |  |  [optional] |
 |**e911Supported** | [**E911SupportedEnum**](#E911SupportedEnum) |  |  [optional] |
 |**callerNameSupported** | [**CallerNameSupportedEnum**](#CallerNameSupportedEnum) |  |  [optional] |
 |**directoryListingSupported** | [**DirectoryListingSupportedEnum**](#DirectoryListingSupportedEnum) |  |  [optional] |
@@ -44,6 +31,7 @@
 |**destination** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**ref** | **String** |  |  [optional] |
 |**callForwardingDestination** | **String** |  |  [optional] |
+|**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdAt** | **OffsetDateTime** |  |  [optional] |

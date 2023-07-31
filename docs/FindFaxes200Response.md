@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Faxes&gt;**](Faxes.md) |  |  |
+|**data** | [**List&lt;GetFax200Response&gt;**](GetFax200Response.md) |  |  |
 
 
 

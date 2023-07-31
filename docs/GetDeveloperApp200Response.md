@@ -22,12 +22,12 @@
 |**termsOfServiceUrl** | **String** |  |  [optional] |
 |**privacyPolicyUrl** | **String** |  |  [optional] |
 |**permissions** | **Object** |  |  [optional] |
-|**status** | [**StatusEnum**](#StatusEnum) |  |  |
 |**webhookAuthType** | [**WebhookAuthTypeEnum**](#WebhookAuthTypeEnum) |  |  [optional] |
 |**webhookUsername** | **String** |  |  [optional] |
 |**webhookPassword** | **String** |  |  [optional] |
 |**webhookTokenName** | **String** |  |  [optional] |
 |**webhookToken** | **String** |  |  [optional] |
+|**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdAt** | **OffsetDateTime** |  |  [optional] |
@@ -103,18 +103,6 @@
 | CREATE | &quot;create&quot; |
 | PATCH | &quot;patch&quot; |
 | REMOVED | &quot;removed&quot; |
-
-
-
-## Enum: StatusEnum
-
-| Name | Value |
-|---- | -----|
-| ACTIVE | &quot;active&quot; |
-| DISABLED | &quot;disabled&quot; |
-| SUSPENDED | &quot;suspended&quot; |
-| ERROR | &quot;error&quot; |
-| PENDING | &quot;pending&quot; |
 
 
 

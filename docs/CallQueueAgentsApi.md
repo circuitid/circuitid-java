@@ -1,6 +1,6 @@
 # CallQueueAgentsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createCallQueueAgent"></a>
 # **createCallQueueAgent**
-> GetCallQueueAgent200Response createCallQueueAgent(callqueueagents)
+> GetCallQueueAgent200Response createCallQueueAgent(callqueueagentsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.CallQueueAgentsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     CallQueueAgentsApi apiInstance = new CallQueueAgentsApi(defaultClient);
-    Callqueueagents callqueueagents = new Callqueueagents(); // Callqueueagents | The JSON object that will be posted to the REST API endpoint.
+    CallqueueagentsCreateOrPatch callqueueagentsCreateOrPatch = new CallqueueagentsCreateOrPatch(); // CallqueueagentsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetCallQueueAgent200Response result = apiInstance.createCallQueueAgent(callqueueagents);
+      GetCallQueueAgent200Response result = apiInstance.createCallQueueAgent(callqueueagentsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CallQueueAgentsApi#createCallQueueAgent");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **callqueueagents** | [**Callqueueagents**](Callqueueagents.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **callqueueagentsCreateOrPatch** | [**CallqueueagentsCreateOrPatch**](CallqueueagentsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.CallQueueAgentsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.CallQueueAgentsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchCallQueueAgent"></a>
 # **patchCallQueueAgent**
-> GetCallQueueAgent200Response patchCallQueueAgent(id, callqueueagents)
+> GetCallQueueAgent200Response patchCallQueueAgent(id, callqueueagentsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.CallQueueAgentsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     CallQueueAgentsApi apiInstance = new CallQueueAgentsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Callqueueagents callqueueagents = new Callqueueagents(); // Callqueueagents | The request data.
+    CallqueueagentsCreateOrPatch callqueueagentsCreateOrPatch = new CallqueueagentsCreateOrPatch(); // CallqueueagentsCreateOrPatch | The request data.
     try {
-      GetCallQueueAgent200Response result = apiInstance.patchCallQueueAgent(id, callqueueagents);
+      GetCallQueueAgent200Response result = apiInstance.patchCallQueueAgent(id, callqueueagentsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CallQueueAgentsApi#patchCallQueueAgent");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **callqueueagents** | [**Callqueueagents**](Callqueueagents.md)| The request data. | |
+| **callqueueagentsCreateOrPatch** | [**CallqueueagentsCreateOrPatch**](CallqueueagentsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.CallQueueAgentsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

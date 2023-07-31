@@ -1,6 +1,6 @@
 # ChatRoomsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createChatRoom"></a>
 # **createChatRoom**
-> GetChatRoom200Response createChatRoom(chatrooms)
+> GetChatRoom200Response createChatRoom(chatroomsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.ChatRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     ChatRoomsApi apiInstance = new ChatRoomsApi(defaultClient);
-    Chatrooms chatrooms = new Chatrooms(); // Chatrooms | The JSON object that will be posted to the REST API endpoint.
+    ChatroomsCreateOrPatch chatroomsCreateOrPatch = new ChatroomsCreateOrPatch(); // ChatroomsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetChatRoom200Response result = apiInstance.createChatRoom(chatrooms);
+      GetChatRoom200Response result = apiInstance.createChatRoom(chatroomsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ChatRoomsApi#createChatRoom");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **chatrooms** | [**Chatrooms**](Chatrooms.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **chatroomsCreateOrPatch** | [**ChatroomsCreateOrPatch**](ChatroomsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.ChatRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.ChatRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchChatRoom"></a>
 # **patchChatRoom**
-> GetChatRoom200Response patchChatRoom(id, chatrooms)
+> GetChatRoom200Response patchChatRoom(id, chatroomsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.ChatRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     ChatRoomsApi apiInstance = new ChatRoomsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Chatrooms chatrooms = new Chatrooms(); // Chatrooms | The request data.
+    ChatroomsCreateOrPatch chatroomsCreateOrPatch = new ChatroomsCreateOrPatch(); // ChatroomsCreateOrPatch | The request data.
     try {
-      GetChatRoom200Response result = apiInstance.patchChatRoom(id, chatrooms);
+      GetChatRoom200Response result = apiInstance.patchChatRoom(id, chatroomsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling ChatRoomsApi#patchChatRoom");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **chatrooms** | [**Chatrooms**](Chatrooms.md)| The request data. | |
+| **chatroomsCreateOrPatch** | [**ChatroomsCreateOrPatch**](ChatroomsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.ChatRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

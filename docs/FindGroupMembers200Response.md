@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Groupmembers&gt;**](Groupmembers.md) |  |  |
+|**data** | [**List&lt;GetGroupMember200Response&gt;**](GetGroupMember200Response.md) |  |  |
 
 
 

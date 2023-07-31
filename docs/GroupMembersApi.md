@@ -1,6 +1,6 @@
 # GroupMembersApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createGroupMember"></a>
 # **createGroupMember**
-> GetGroupMember200Response createGroupMember(groupmembers)
+> GetGroupMember200Response createGroupMember(groupmembersCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.GroupMembersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     GroupMembersApi apiInstance = new GroupMembersApi(defaultClient);
-    Groupmembers groupmembers = new Groupmembers(); // Groupmembers | The JSON object that will be posted to the REST API endpoint.
+    GroupmembersCreateOrPatch groupmembersCreateOrPatch = new GroupmembersCreateOrPatch(); // GroupmembersCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetGroupMember200Response result = apiInstance.createGroupMember(groupmembers);
+      GetGroupMember200Response result = apiInstance.createGroupMember(groupmembersCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling GroupMembersApi#createGroupMember");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **groupmembers** | [**Groupmembers**](Groupmembers.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **groupmembersCreateOrPatch** | [**GroupmembersCreateOrPatch**](GroupmembersCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.GroupMembersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.GroupMembersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchGroupMember"></a>
 # **patchGroupMember**
-> GetGroupMember200Response patchGroupMember(id, groupmembers)
+> GetGroupMember200Response patchGroupMember(id, groupmembersCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.GroupMembersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     GroupMembersApi apiInstance = new GroupMembersApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Groupmembers groupmembers = new Groupmembers(); // Groupmembers | The request data.
+    GroupmembersCreateOrPatch groupmembersCreateOrPatch = new GroupmembersCreateOrPatch(); // GroupmembersCreateOrPatch | The request data.
     try {
-      GetGroupMember200Response result = apiInstance.patchGroupMember(id, groupmembers);
+      GetGroupMember200Response result = apiInstance.patchGroupMember(id, groupmembersCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling GroupMembersApi#patchGroupMember");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **groupmembers** | [**Groupmembers**](Groupmembers.md)| The request data. | |
+| **groupmembersCreateOrPatch** | [**GroupmembersCreateOrPatch**](GroupmembersCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.GroupMembersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

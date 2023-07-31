@@ -7,6 +7,8 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
+|**attachments** | **List&lt;String&gt;** |  |  [optional] |
+|**callerDestinations** | **List&lt;String&gt;** |  |  |
 |**callerIdNumber** | **String** |  |  |
 |**callerDestination** | **String** |  |  |
 |**pages** | **Integer** |  |  [optional] |
@@ -24,6 +26,7 @@
 |**invoice** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**senderEmail** | **String** |  |  [optional] |
 |**senderName** | **String** |  |  [optional] |
+|**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdAt** | **OffsetDateTime** |  |  [optional] |

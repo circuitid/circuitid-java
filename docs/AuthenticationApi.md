@@ -1,6 +1,6 @@
 # AuthenticationApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -9,7 +9,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createAuthentication"></a>
 # **createAuthentication**
-> CreateAuthentication200Response createAuthentication(authentication)
+> CreateAuthentication200Response createAuthentication(authenticationCreateOrPatch)
 
 Create a new object
 
@@ -28,7 +28,7 @@ import com.circuitid.client.api.AuthenticationApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -37,9 +37,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     AuthenticationApi apiInstance = new AuthenticationApi(defaultClient);
-    Authentication authentication = new Authentication(); // Authentication | The JSON object that will be posted to the REST API endpoint.
+    AuthenticationCreateOrPatch authenticationCreateOrPatch = new AuthenticationCreateOrPatch(); // AuthenticationCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      CreateAuthentication200Response result = apiInstance.createAuthentication(authentication);
+      CreateAuthentication200Response result = apiInstance.createAuthentication(authenticationCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling AuthenticationApi#createAuthentication");
@@ -56,7 +56,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **authentication** | [**Authentication**](Authentication.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **authenticationCreateOrPatch** | [**AuthenticationCreateOrPatch**](AuthenticationCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 

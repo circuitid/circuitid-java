@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Invoices&gt;**](Invoices.md) |  |  |
+|**data** | [**List&lt;GetInvoice200Response&gt;**](GetInvoice200Response.md) |  |  |
 
 
 

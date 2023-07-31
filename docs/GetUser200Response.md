@@ -23,7 +23,6 @@
 |**avatar** | **String** |  |  [optional] |
 |**language** | [**LanguageEnum**](#LanguageEnum) |  |  [optional] |
 |**isPrimary** | [**IsPrimaryEnum**](#IsPrimaryEnum) |  |  [optional] |
-|**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
 |**vmGreetingType** | [**VmGreetingTypeEnum**](#VmGreetingTypeEnum) |  |  [optional] |
 |**vmTimeout** | **Integer** |  |  [optional] |
 |**vmFile** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
@@ -35,14 +34,10 @@
 |**adminPermission** | [**AdminPermissionEnum**](#AdminPermissionEnum) |  |  [optional] |
 |**billingPermission** | [**BillingPermissionEnum**](#BillingPermissionEnum) |  |  [optional] |
 |**phonePermission** | [**PhonePermissionEnum**](#PhonePermissionEnum) |  |  [optional] |
-|**agilePermission** | [**AgilePermissionEnum**](#AgilePermissionEnum) |  |  [optional] |
-|**jobServerPermission** | [**JobServerPermissionEnum**](#JobServerPermissionEnum) |  |  [optional] |
-|**mediaServerPermission** | [**MediaServerPermissionEnum**](#MediaServerPermissionEnum) |  |  [optional] |
-|**mailServerPermission** | [**MailServerPermissionEnum**](#MailServerPermissionEnum) |  |  [optional] |
-|**superAdminPermission** | [**SuperAdminPermissionEnum**](#SuperAdminPermissionEnum) |  |  [optional] |
 |**timezone** | [**TimezoneEnum**](#TimezoneEnum) |  |  |
 |**vmTranscription** | [**VmTranscriptionEnum**](#VmTranscriptionEnum) |  |  [optional] |
 |**communication** | **Object** |  |  [optional] |
+|**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdAt** | **OffsetDateTime** |  |  [optional] |
@@ -68,16 +63,6 @@
 |---- | -----|
 | NUMBER_1 | 1 |
 | NUMBER_0 | 0 |
-
-
-
-## Enum: StatusEnum
-
-| Name | Value |
-|---- | -----|
-| ACTIVE | &quot;active&quot; |
-| DISABLED | &quot;disabled&quot; |
-| TERMINATED | &quot;terminated&quot; |
 
 
 
@@ -110,51 +95,6 @@
 
 
 ## Enum: PhonePermissionEnum
-
-| Name | Value |
-|---- | -----|
-| R | &quot;r&quot; |
-| RW | &quot;rw&quot; |
-
-
-
-## Enum: AgilePermissionEnum
-
-| Name | Value |
-|---- | -----|
-| R | &quot;r&quot; |
-| RW | &quot;rw&quot; |
-
-
-
-## Enum: JobServerPermissionEnum
-
-| Name | Value |
-|---- | -----|
-| R | &quot;r&quot; |
-| RW | &quot;rw&quot; |
-
-
-
-## Enum: MediaServerPermissionEnum
-
-| Name | Value |
-|---- | -----|
-| R | &quot;r&quot; |
-| RW | &quot;rw&quot; |
-
-
-
-## Enum: MailServerPermissionEnum
-
-| Name | Value |
-|---- | -----|
-| R | &quot;r&quot; |
-| RW | &quot;rw&quot; |
-
-
-
-## Enum: SuperAdminPermissionEnum
 
 | Name | Value |
 |---- | -----|

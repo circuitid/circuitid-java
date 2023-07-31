@@ -15,9 +15,8 @@
 |**direction** | [**DirectionEnum**](#DirectionEnum) |  |  [optional] |
 |**param** | **String** |  |  |
 |**hits** | **Integer** |  |  [optional] |
-|**ai** | [**AiEnum**](#AiEnum) |  |  [optional] |
 |**status** | [**StatusEnum**](#StatusEnum) |  |  [optional] |
-|**notificationHits** | **Integer** |  |  [optional] |
+|**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdAt** | **OffsetDateTime** |  |  [optional] |
@@ -51,15 +50,6 @@
 | INBOUND | &quot;inbound&quot; |
 | OUTBOUND | &quot;outbound&quot; |
 | BOTH | &quot;both&quot; |
-
-
-
-## Enum: AiEnum
-
-| Name | Value |
-|---- | -----|
-| NUMBER_0 | 0 |
-| NUMBER_1 | 1 |
 
 
 

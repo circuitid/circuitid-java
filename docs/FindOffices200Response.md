@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Offices&gt;**](Offices.md) |  |  |
+|**data** | [**List&lt;GetOffice200Response&gt;**](GetOffice200Response.md) |  |  |
 
 
 

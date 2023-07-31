@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Chatrooms&gt;**](Chatrooms.md) |  |  |
+|**data** | [**List&lt;GetChatRoom200Response&gt;**](GetChatRoom200Response.md) |  |  |
 
 
 

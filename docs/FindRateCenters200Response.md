@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Ratecenters&gt;**](Ratecenters.md) |  |  |
+|**data** | [**List&lt;GetRateCenter200Response&gt;**](GetRateCenter200Response.md) |  |  |
 
 
 

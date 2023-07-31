@@ -1,6 +1,6 @@
 # PhoneInboundRulesApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createPhoneInboundRule"></a>
 # **createPhoneInboundRule**
-> GetPhoneInboundRule200Response createPhoneInboundRule(phoneinboundrules)
+> GetPhoneInboundRule200Response createPhoneInboundRule(phoneinboundrulesCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.PhoneInboundRulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     PhoneInboundRulesApi apiInstance = new PhoneInboundRulesApi(defaultClient);
-    Phoneinboundrules phoneinboundrules = new Phoneinboundrules(); // Phoneinboundrules | The JSON object that will be posted to the REST API endpoint.
+    PhoneinboundrulesCreateOrPatch phoneinboundrulesCreateOrPatch = new PhoneinboundrulesCreateOrPatch(); // PhoneinboundrulesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetPhoneInboundRule200Response result = apiInstance.createPhoneInboundRule(phoneinboundrules);
+      GetPhoneInboundRule200Response result = apiInstance.createPhoneInboundRule(phoneinboundrulesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling PhoneInboundRulesApi#createPhoneInboundRule");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **phoneinboundrules** | [**Phoneinboundrules**](Phoneinboundrules.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **phoneinboundrulesCreateOrPatch** | [**PhoneinboundrulesCreateOrPatch**](PhoneinboundrulesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.PhoneInboundRulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.PhoneInboundRulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchPhoneInboundRule"></a>
 # **patchPhoneInboundRule**
-> GetPhoneInboundRule200Response patchPhoneInboundRule(id, phoneinboundrules)
+> GetPhoneInboundRule200Response patchPhoneInboundRule(id, phoneinboundrulesCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.PhoneInboundRulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     PhoneInboundRulesApi apiInstance = new PhoneInboundRulesApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Phoneinboundrules phoneinboundrules = new Phoneinboundrules(); // Phoneinboundrules | The request data.
+    PhoneinboundrulesCreateOrPatch phoneinboundrulesCreateOrPatch = new PhoneinboundrulesCreateOrPatch(); // PhoneinboundrulesCreateOrPatch | The request data.
     try {
-      GetPhoneInboundRule200Response result = apiInstance.patchPhoneInboundRule(id, phoneinboundrules);
+      GetPhoneInboundRule200Response result = apiInstance.patchPhoneInboundRule(id, phoneinboundrulesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling PhoneInboundRulesApi#patchPhoneInboundRule");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **phoneinboundrules** | [**Phoneinboundrules**](Phoneinboundrules.md)| The request data. | |
+| **phoneinboundrulesCreateOrPatch** | [**PhoneinboundrulesCreateOrPatch**](PhoneinboundrulesCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.PhoneInboundRulesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

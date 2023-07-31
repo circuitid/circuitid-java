@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Developerapps&gt;**](Developerapps.md) |  |  |
+|**data** | [**List&lt;GetDeveloperApp200Response&gt;**](GetDeveloperApp200Response.md) |  |  |
 
 
 

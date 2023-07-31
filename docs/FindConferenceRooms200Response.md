@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Conferencerooms&gt;**](Conferencerooms.md) |  |  |
+|**data** | [**List&lt;GetConferenceRoom200Response&gt;**](GetConferenceRoom200Response.md) |  |  |
 
 
 

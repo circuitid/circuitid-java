@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Callqueueagents&gt;**](Callqueueagents.md) |  |  |
+|**data** | [**List&lt;GetCallQueueAgent200Response&gt;**](GetCallQueueAgent200Response.md) |  |  |
 
 
 

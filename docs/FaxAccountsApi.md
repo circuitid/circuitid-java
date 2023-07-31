@@ -1,6 +1,6 @@
 # FaxAccountsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createFaxAccount"></a>
 # **createFaxAccount**
-> GetFaxAccount200Response createFaxAccount(faxaccounts)
+> GetFaxAccount200Response createFaxAccount(faxaccountsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.FaxAccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
-    Faxaccounts faxaccounts = new Faxaccounts(); // Faxaccounts | The JSON object that will be posted to the REST API endpoint.
+    FaxaccountsCreateOrPatch faxaccountsCreateOrPatch = new FaxaccountsCreateOrPatch(); // FaxaccountsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetFaxAccount200Response result = apiInstance.createFaxAccount(faxaccounts);
+      GetFaxAccount200Response result = apiInstance.createFaxAccount(faxaccountsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FaxAccountsApi#createFaxAccount");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **faxaccounts** | [**Faxaccounts**](Faxaccounts.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **faxaccountsCreateOrPatch** | [**FaxaccountsCreateOrPatch**](FaxaccountsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.FaxAccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.FaxAccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchFaxAccount"></a>
 # **patchFaxAccount**
-> GetFaxAccount200Response patchFaxAccount(id, faxaccounts)
+> GetFaxAccount200Response patchFaxAccount(id, faxaccountsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.FaxAccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     FaxAccountsApi apiInstance = new FaxAccountsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Faxaccounts faxaccounts = new Faxaccounts(); // Faxaccounts | The request data.
+    FaxaccountsCreateOrPatch faxaccountsCreateOrPatch = new FaxaccountsCreateOrPatch(); // FaxaccountsCreateOrPatch | The request data.
     try {
-      GetFaxAccount200Response result = apiInstance.patchFaxAccount(id, faxaccounts);
+      GetFaxAccount200Response result = apiInstance.patchFaxAccount(id, faxaccountsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FaxAccountsApi#patchFaxAccount");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **faxaccounts** | [**Faxaccounts**](Faxaccounts.md)| The request data. | |
+| **faxaccountsCreateOrPatch** | [**FaxaccountsCreateOrPatch**](FaxaccountsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.FaxAccountsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

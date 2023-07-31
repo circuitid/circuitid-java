@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Numberports&gt;**](Numberports.md) |  |  |
+|**data** | [**List&lt;GetNumberPort200Response&gt;**](GetNumberPort200Response.md) |  |  |
 
 
 

@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Virtualextensions&gt;**](Virtualextensions.md) |  |  |
+|**data** | [**List&lt;GetVirtualExtension200Response&gt;**](GetVirtualExtension200Response.md) |  |  |
 
 
 

@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Developerappsubscriptions&gt;**](Developerappsubscriptions.md) |  |  |
+|**data** | [**List&lt;GetDeveloperAppSubscription200Response&gt;**](GetDeveloperAppSubscription200Response.md) |  |  |
 
 
 

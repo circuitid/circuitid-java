@@ -1,6 +1,6 @@
 # HolidaysApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createHoliday"></a>
 # **createHoliday**
-> GetHoliday200Response createHoliday(holidays)
+> GetHoliday200Response createHoliday(holidaysCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.HolidaysApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     HolidaysApi apiInstance = new HolidaysApi(defaultClient);
-    Holidays holidays = new Holidays(); // Holidays | The JSON object that will be posted to the REST API endpoint.
+    HolidaysCreateOrPatch holidaysCreateOrPatch = new HolidaysCreateOrPatch(); // HolidaysCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetHoliday200Response result = apiInstance.createHoliday(holidays);
+      GetHoliday200Response result = apiInstance.createHoliday(holidaysCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling HolidaysApi#createHoliday");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **holidays** | [**Holidays**](Holidays.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **holidaysCreateOrPatch** | [**HolidaysCreateOrPatch**](HolidaysCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.HolidaysApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.HolidaysApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchHoliday"></a>
 # **patchHoliday**
-> GetHoliday200Response patchHoliday(id, holidays)
+> GetHoliday200Response patchHoliday(id, holidaysCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.HolidaysApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     HolidaysApi apiInstance = new HolidaysApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Holidays holidays = new Holidays(); // Holidays | The request data.
+    HolidaysCreateOrPatch holidaysCreateOrPatch = new HolidaysCreateOrPatch(); // HolidaysCreateOrPatch | The request data.
     try {
-      GetHoliday200Response result = apiInstance.patchHoliday(id, holidays);
+      GetHoliday200Response result = apiInstance.patchHoliday(id, holidaysCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling HolidaysApi#patchHoliday");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **holidays** | [**Holidays**](Holidays.md)| The request data. | |
+| **holidaysCreateOrPatch** | [**HolidaysCreateOrPatch**](HolidaysCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.HolidaysApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

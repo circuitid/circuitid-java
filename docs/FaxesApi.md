@@ -1,6 +1,6 @@
 # FaxesApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -12,7 +12,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createFax"></a>
 # **createFax**
-> GetFax200Response createFax(faxes)
+> GetFax200Response createFax(faxesCreateOrPatch)
 
 Create a new object
 
@@ -31,7 +31,7 @@ import com.circuitid.client.api.FaxesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -40,9 +40,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     FaxesApi apiInstance = new FaxesApi(defaultClient);
-    Faxes faxes = new Faxes(); // Faxes | The JSON object that will be posted to the REST API endpoint.
+    FaxesCreateOrPatch faxesCreateOrPatch = new FaxesCreateOrPatch(); // FaxesCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetFax200Response result = apiInstance.createFax(faxes);
+      GetFax200Response result = apiInstance.createFax(faxesCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling FaxesApi#createFax");
@@ -59,7 +59,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **faxes** | [**Faxes**](Faxes.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **faxesCreateOrPatch** | [**FaxesCreateOrPatch**](FaxesCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -109,7 +109,7 @@ import com.circuitid.client.api.FaxesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -199,7 +199,7 @@ import com.circuitid.client.api.FaxesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -278,7 +278,7 @@ import com.circuitid.client.api.FaxesApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

@@ -1,6 +1,6 @@
 # MenuOptionsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createMenuOption"></a>
 # **createMenuOption**
-> GetMenuOption200Response createMenuOption(menuoptions)
+> GetMenuOption200Response createMenuOption(menuoptionsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.MenuOptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     MenuOptionsApi apiInstance = new MenuOptionsApi(defaultClient);
-    Menuoptions menuoptions = new Menuoptions(); // Menuoptions | The JSON object that will be posted to the REST API endpoint.
+    MenuoptionsCreateOrPatch menuoptionsCreateOrPatch = new MenuoptionsCreateOrPatch(); // MenuoptionsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetMenuOption200Response result = apiInstance.createMenuOption(menuoptions);
+      GetMenuOption200Response result = apiInstance.createMenuOption(menuoptionsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling MenuOptionsApi#createMenuOption");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **menuoptions** | [**Menuoptions**](Menuoptions.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **menuoptionsCreateOrPatch** | [**MenuoptionsCreateOrPatch**](MenuoptionsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.MenuOptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.MenuOptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchMenuOption"></a>
 # **patchMenuOption**
-> GetMenuOption200Response patchMenuOption(id, menuoptions)
+> GetMenuOption200Response patchMenuOption(id, menuoptionsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.MenuOptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     MenuOptionsApi apiInstance = new MenuOptionsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Menuoptions menuoptions = new Menuoptions(); // Menuoptions | The request data.
+    MenuoptionsCreateOrPatch menuoptionsCreateOrPatch = new MenuoptionsCreateOrPatch(); // MenuoptionsCreateOrPatch | The request data.
     try {
-      GetMenuOption200Response result = apiInstance.patchMenuOption(id, menuoptions);
+      GetMenuOption200Response result = apiInstance.patchMenuOption(id, menuoptionsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling MenuOptionsApi#patchMenuOption");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **menuoptions** | [**Menuoptions**](Menuoptions.md)| The request data. | |
+| **menuoptionsCreateOrPatch** | [**MenuoptionsCreateOrPatch**](MenuoptionsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.MenuOptionsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

@@ -1,18 +1,17 @@
 # NumberPortsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
 | [**createNumberPort**](NumberPortsApi.md#createNumberPort) | **POST** /numberports | Create a new object |
 | [**findNumberPorts**](NumberPortsApi.md#findNumberPorts) | **GET** /numberports | Find multiple objects |
 | [**getNumberPort**](NumberPortsApi.md#getNumberPort) | **GET** /numberports/{id} | Get object by id |
-| [**patchNumberPort**](NumberPortsApi.md#patchNumberPort) | **PATCH** /numberports/{id} | Patch object&#39;s data |
 
 
 <a id="createNumberPort"></a>
 # **createNumberPort**
-> GetNumberPort200Response createNumberPort(numberports)
+> GetNumberPort200Response createNumberPort(numberportsCreateOrPatch)
 
 Create a new object
 
@@ -31,7 +30,7 @@ import com.circuitid.client.api.NumberPortsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -40,9 +39,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     NumberPortsApi apiInstance = new NumberPortsApi(defaultClient);
-    Numberports numberports = new Numberports(); // Numberports | The JSON object that will be posted to the REST API endpoint.
+    NumberportsCreateOrPatch numberportsCreateOrPatch = new NumberportsCreateOrPatch(); // NumberportsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetNumberPort200Response result = apiInstance.createNumberPort(numberports);
+      GetNumberPort200Response result = apiInstance.createNumberPort(numberportsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling NumberPortsApi#createNumberPort");
@@ -59,7 +58,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **numberports** | [**Numberports**](Numberports.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **numberportsCreateOrPatch** | [**NumberportsCreateOrPatch**](NumberportsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -109,7 +108,7 @@ import com.circuitid.client.api.NumberPortsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -199,7 +198,7 @@ import com.circuitid.client.api.NumberPortsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -250,86 +249,6 @@ public class Example {
 | **401** | Not Authenticated |  -  |
 | **403** | Forbidden |  -  |
 | **404** | Not Found |  -  |
-| **405** | Method Not Allowed |  -  |
-| **406** | Not Acceptable |  -  |
-| **408** | Timeout |  -  |
-| **429** | Too Many Requests |  -  |
-| **500** | General Error |  -  |
-| **503** | Unavailable |  -  |
-
-<a id="patchNumberPort"></a>
-# **patchNumberPort**
-> GetNumberPort200Response patchNumberPort(id, numberports)
-
-Patch object&#39;s data
-
-Make updates to specific fields within the record without replacing the entire dataset.
-
-### Example
-```java
-// Import classes:
-import com.circuitid.client.ApiClient;
-import com.circuitid.client.ApiException;
-import com.circuitid.client.Configuration;
-import com.circuitid.client.auth.*;
-import com.circuitid.client.models.*;
-import com.circuitid.client.api.NumberPortsApi;
-
-public class Example {
-  public static void main(String[] args) {
-    ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
-    
-    // Configure API key authorization: jwt
-    ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
-    jwt.setApiKey("YOUR API KEY");
-    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-    //jwt.setApiKeyPrefix("Token");
-
-    NumberPortsApi apiInstance = new NumberPortsApi(defaultClient);
-    String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Numberports numberports = new Numberports(); // Numberports | The request data.
-    try {
-      GetNumberPort200Response result = apiInstance.patchNumberPort(id, numberports);
-      System.out.println(result);
-    } catch (ApiException e) {
-      System.err.println("Exception when calling NumberPortsApi#patchNumberPort");
-      System.err.println("Status code: " + e.getCode());
-      System.err.println("Reason: " + e.getResponseBody());
-      System.err.println("Response headers: " + e.getResponseHeaders());
-      e.printStackTrace();
-    }
-  }
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-|------------- | ------------- | ------------- | -------------|
-| **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **numberports** | [**Numberports**](Numberports.md)| The request data. | |
-
-### Return type
-
-[**GetNumberPort200Response**](GetNumberPort200Response.md)
-
-### Authorization
-
-[jwt](../README.md#jwt)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-### HTTP response details
-| Status code | Description | Response headers |
-|-------------|-------------|------------------|
-| **200** | A JSON object containing the modified data. |  -  |
-| **400** | Bad Request |  -  |
-| **401** | Not Authenticated |  -  |
-| **403** | Forbidden |  -  |
 | **405** | Method Not Allowed |  -  |
 | **406** | Not Acceptable |  -  |
 | **408** | Timeout |  -  |

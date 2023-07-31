@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Callqueues&gt;**](Callqueues.md) |  |  |
+|**data** | [**List&lt;GetCallQueue200Response&gt;**](GetCallQueue200Response.md) |  |  |
 
 
 

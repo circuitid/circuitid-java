@@ -1,6 +1,6 @@
 # DeveloperAppsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -13,7 +13,7 @@ All URIs are relative to *https://rest.circuitid.com*
 
 <a id="createDeveloperApp"></a>
 # **createDeveloperApp**
-> GetDeveloperApp200Response createDeveloperApp(developerapps)
+> GetDeveloperApp200Response createDeveloperApp(developerappsCreateOrPatch)
 
 Create a new object
 
@@ -32,7 +32,7 @@ import com.circuitid.client.api.DeveloperAppsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -41,9 +41,9 @@ public class Example {
     //jwt.setApiKeyPrefix("Token");
 
     DeveloperAppsApi apiInstance = new DeveloperAppsApi(defaultClient);
-    Developerapps developerapps = new Developerapps(); // Developerapps | The JSON object that will be posted to the REST API endpoint.
+    DeveloperappsCreateOrPatch developerappsCreateOrPatch = new DeveloperappsCreateOrPatch(); // DeveloperappsCreateOrPatch | The JSON object that will be posted to the REST API endpoint.
     try {
-      GetDeveloperApp200Response result = apiInstance.createDeveloperApp(developerapps);
+      GetDeveloperApp200Response result = apiInstance.createDeveloperApp(developerappsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DeveloperAppsApi#createDeveloperApp");
@@ -60,7 +60,7 @@ public class Example {
 
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
-| **developerapps** | [**Developerapps**](Developerapps.md)| The JSON object that will be posted to the REST API endpoint. | |
+| **developerappsCreateOrPatch** | [**DeveloperappsCreateOrPatch**](DeveloperappsCreateOrPatch.md)| The JSON object that will be posted to the REST API endpoint. | |
 
 ### Return type
 
@@ -110,7 +110,7 @@ import com.circuitid.client.api.DeveloperAppsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.DeveloperAppsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -260,7 +260,7 @@ public class Example {
 
 <a id="patchDeveloperApp"></a>
 # **patchDeveloperApp**
-> GetDeveloperApp200Response patchDeveloperApp(id, developerapps)
+> GetDeveloperApp200Response patchDeveloperApp(id, developerappsCreateOrPatch)
 
 Patch object&#39;s data
 
@@ -279,7 +279,7 @@ import com.circuitid.client.api.DeveloperAppsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -289,9 +289,9 @@ public class Example {
 
     DeveloperAppsApi apiInstance = new DeveloperAppsApi(defaultClient);
     String id = "id_example"; // String | The ObjectId (unique 12 bytes ID) of record you would like to GET.
-    Developerapps developerapps = new Developerapps(); // Developerapps | The request data.
+    DeveloperappsCreateOrPatch developerappsCreateOrPatch = new DeveloperappsCreateOrPatch(); // DeveloperappsCreateOrPatch | The request data.
     try {
-      GetDeveloperApp200Response result = apiInstance.patchDeveloperApp(id, developerapps);
+      GetDeveloperApp200Response result = apiInstance.patchDeveloperApp(id, developerappsCreateOrPatch);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling DeveloperAppsApi#patchDeveloperApp");
@@ -309,7 +309,7 @@ public class Example {
 | Name | Type | Description  | Notes |
 |------------- | ------------- | ------------- | -------------|
 | **id** | **String**| The ObjectId (unique 12 bytes ID) of record you would like to GET. | |
-| **developerapps** | [**Developerapps**](Developerapps.md)| The request data. | |
+| **developerappsCreateOrPatch** | [**DeveloperappsCreateOrPatch**](DeveloperappsCreateOrPatch.md)| The request data. | |
 
 ### Return type
 
@@ -359,7 +359,7 @@ import com.circuitid.client.api.DeveloperAppsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

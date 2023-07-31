@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Numbers&gt;**](Numbers.md) |  |  |
+|**data** | [**List&lt;GetNumber200Response&gt;**](GetNumber200Response.md) |  |  |
 
 
 

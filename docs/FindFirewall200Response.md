@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Firewall&gt;**](Firewall.md) |  |  |
+|**data** | [**List&lt;GetFirewall200Response&gt;**](GetFirewall200Response.md) |  |  |
 
 
 

@@ -10,7 +10,7 @@
 |**total** | **Integer** |  |  |
 |**limit** | **Integer** |  |  |
 |**skip** | **Integer** |  |  |
-|**data** | [**List&lt;Holidays&gt;**](Holidays.md) |  |  |
+|**data** | [**List&lt;GetHoliday200Response&gt;**](GetHoliday200Response.md) |  |  |
 
 
 
