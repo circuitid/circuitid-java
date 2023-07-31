@@ -53,7 +53,7 @@ import com.circuitid.client.JSON;
 /**
  * FindChatRooms200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-31T20:43:40.997Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-07-31T21:08:48.173Z[UTC]")
 public class FindChatRooms200Response {
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)

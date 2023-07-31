@@ -2,7 +2,7 @@
 
 Circuit ID REST API
 - API version: 0.47.20
-  - Build date: 2023-07-31T20:43:40.997Z[UTC]
+  - Build date: 2023-07-31T21:08:48.173Z[UTC]
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -98,7 +98,7 @@ import com.circuitid.client.api.AcceptedSendersApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://cloud9.circuitid.com");
+    defaultClient.setBasePath("https://rest.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -125,7 +125,7 @@ public class Example {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://cloud9.circuitid.com*
+All URIs are relative to *https://rest.circuitid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

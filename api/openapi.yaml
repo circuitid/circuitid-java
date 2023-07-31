@@ -21,7 +21,7 @@ info:
     url: https://cdn.circuitid.com/images/logos/circuitid-logo.png
 servers:
 - description: Production
-  url: https://cloud9.circuitid.com
+  url: https://rest.circuitid.com
 security:
 - jwt: []
 tags:

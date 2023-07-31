@@ -60,10 +60,10 @@ import com.circuitid.client.auth.ApiKeyAuth;
  */
 public class ApiClient {
 
-    private String basePath = "https://cloud9.circuitid.com";
+    private String basePath = "https://rest.circuitid.com";
     protected List<ServerConfiguration> servers = new ArrayList<ServerConfiguration>(Arrays.asList(
     new ServerConfiguration(
-      "https://cloud9.circuitid.com",
+      "https://rest.circuitid.com",
       "Production",
       new HashMap<String, ServerVariable>()
     )
@@ -157,7 +157,7 @@ public class ApiClient {
     /**
      * Set base path
      *
-     * @param basePath Base path of the URL (e.g https://cloud9.circuitid.com
+     * @param basePath Base path of the URL (e.g https://rest.circuitid.com
      * @return An instance of OkHttpClient
      */
     public ApiClient setBasePath(String basePath) {
