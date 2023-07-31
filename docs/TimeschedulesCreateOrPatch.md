@@ -9,13 +9,13 @@
 |------------ | ------------- | ------------- | -------------|
 |**name** | **String** |  |  |
 |**timezone** | [**TimezoneEnum**](#TimezoneEnum) |  |  |
-|**sunday** | **Object** |  |  |
-|**monday** | **Object** |  |  |
-|**tuesday** | **Object** |  |  |
-|**wednesday** | **Object** |  |  |
-|**thursday** | **Object** |  |  |
-|**friday** | **Object** |  |  |
-|**saturday** | **Object** |  |  |
+|**sunday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
+|**monday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
+|**tuesday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
+|**wednesday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
+|**thursday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
+|**friday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
+|**saturday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
 
 
 

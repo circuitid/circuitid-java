@@ -22820,42 +22820,70 @@ components:
           maxLength: 45
           type: string
         sunday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         monday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         tuesday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         wednesday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         thursday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         friday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         saturday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
@@ -23232,42 +23260,70 @@ components:
           maxLength: 45
           type: string
         sunday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         monday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         tuesday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         wednesday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         thursday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         friday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
               end: 12:00 AM
           type: object
         saturday:
+          additionalProperties:
+            items:
+              type: object
+            type: array
           default:
             schedules:
             - start: 12:00 AM
