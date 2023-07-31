@@ -165,10 +165,8 @@ docs/Id.md
 docs/InfoApi.md
 docs/InvoiceItemsApi.md
 docs/Invoiceitems.md
-docs/InvoiceitemsCreateOrPatch.md
 docs/Invoices.md
 docs/InvoicesApi.md
-docs/InvoicesCreateOrPatch.md
 docs/Licenses.md
 docs/LicensesApi.md
 docs/LicensesCreateOrPatch.md
@@ -207,7 +205,6 @@ docs/Phoneoutboundrules.md
 docs/PhoneoutboundrulesCreateOrPatch.md
 docs/RateCentersApi.md
 docs/Ratecenters.md
-docs/RatecentersCreateOrPatch.md
 docs/ResponseDate.md
 docs/ResponseError.md
 docs/ResponseUsers.md
@@ -435,9 +432,7 @@ src/main/java/com/circuitid/client/model/Holidays.java
 src/main/java/com/circuitid/client/model/HolidaysCreateOrPatch.java
 src/main/java/com/circuitid/client/model/Id.java
 src/main/java/com/circuitid/client/model/Invoiceitems.java
-src/main/java/com/circuitid/client/model/InvoiceitemsCreateOrPatch.java
 src/main/java/com/circuitid/client/model/Invoices.java
-src/main/java/com/circuitid/client/model/InvoicesCreateOrPatch.java
 src/main/java/com/circuitid/client/model/Licenses.java
 src/main/java/com/circuitid/client/model/LicensesCreateOrPatch.java
 src/main/java/com/circuitid/client/model/Menuoptions.java
@@ -463,7 +458,6 @@ src/main/java/com/circuitid/client/model/PhoneoutboundruleactionsCreateOrPatch.j
 src/main/java/com/circuitid/client/model/Phoneoutboundrules.java
 src/main/java/com/circuitid/client/model/PhoneoutboundrulesCreateOrPatch.java
 src/main/java/com/circuitid/client/model/Ratecenters.java
-src/main/java/com/circuitid/client/model/RatecentersCreateOrPatch.java
 src/main/java/com/circuitid/client/model/ResponseDate.java
 src/main/java/com/circuitid/client/model/ResponseError.java
 src/main/java/com/circuitid/client/model/ResponseUsers.java
@@ -657,9 +651,7 @@ src/test/java/com/circuitid/client/model/GroupsTest.java
 src/test/java/com/circuitid/client/model/HolidaysCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/HolidaysTest.java
 src/test/java/com/circuitid/client/model/IdTest.java
-src/test/java/com/circuitid/client/model/InvoiceitemsCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/InvoiceitemsTest.java
-src/test/java/com/circuitid/client/model/InvoicesCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/InvoicesTest.java
 src/test/java/com/circuitid/client/model/LicensesCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/LicensesTest.java
@@ -685,7 +677,6 @@ src/test/java/com/circuitid/client/model/PhoneoutboundruleactionsCreateOrPatchTe
 src/test/java/com/circuitid/client/model/PhoneoutboundruleactionsTest.java
 src/test/java/com/circuitid/client/model/PhoneoutboundrulesCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/PhoneoutboundrulesTest.java
-src/test/java/com/circuitid/client/model/RatecentersCreateOrPatchTest.java
 src/test/java/com/circuitid/client/model/RatecentersTest.java
 src/test/java/com/circuitid/client/model/ResponseDateTest.java
 src/test/java/com/circuitid/client/model/ResponseErrorTest.java

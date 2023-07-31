@@ -2,7 +2,7 @@ lazy val root = (project in file(".")).
   settings(
     organization := "com.circuitid",
     name := "circuitid-java-client",
-    version := "0.47.20",
+    version := "0.47.21",
     scalaVersion := "2.11.4",
     scalacOptions ++= Seq("-feature"),
     javacOptions in compile ++= Seq("-Xlint:deprecation"),

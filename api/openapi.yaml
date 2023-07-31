@@ -16,7 +16,7 @@ info:
     \ team.\n                \nHappy coding!"
   termsOfService: https://www.circuitid.com/legal/legal-msa.htm
   title: Circuit ID REST API
-  version: 0.47.20
+  version: 0.47.21
   x-logo:
     url: https://cdn.circuitid.com/images/logos/circuitid-logo.png
 servers:
@@ -20780,41 +20780,6 @@ components:
       - name
       - quantity
       type: object
-    invoiceitemsCreateOrPatch:
-      minProperties: 1
-      properties:
-        name:
-          maxLength: 45
-          type: string
-        amount:
-          format: int32
-          type: integer
-        setup:
-          format: int32
-          type: integer
-        taxes:
-          format: int32
-          type: integer
-        quantity:
-          default: 1
-          format: int32
-          type: integer
-        invoice:
-          description: ObjectId (unique 12 bytes ID)
-          type: string
-        ref:
-          maxLength: 100
-          minLength: 5
-          type: string
-        object:
-          description: ObjectId (unique 12 bytes ID)
-          type: string
-      required:
-      - amount
-      - invoice
-      - name
-      - quantity
-      type: object
     invoices:
       minProperties: 1
       properties:
@@ -20853,43 +20818,6 @@ components:
       required:
       - amount
       - dueAt
-      - status
-      - subtotal
-      type: object
-    invoicesCreateOrPatch:
-      minProperties: 1
-      properties:
-        amount:
-          format: int32
-          type: integer
-        subtotal:
-          format: int32
-          type: integer
-        tax:
-          format: int32
-          type: integer
-        setup:
-          format: int32
-          type: integer
-        discount:
-          format: int32
-          type: integer
-        closedAt:
-          format: date-time
-          type: string
-        status:
-          default: open
-          enum:
-          - open
-          - closed
-          - collection
-          - onHold
-          - error
-          type: string
-        error:
-          type: string
-      required:
-      - amount
       - status
       - subtotal
       type: object
@@ -22295,35 +22223,6 @@ components:
       - route
       type: object
     ratecenters:
-      minProperties: 1
-      properties:
-        npa:
-          maxLength: 3
-          minLength: 3
-          type: string
-        nxx:
-          maxLength: 3
-          minLength: 3
-          type: string
-        lata:
-          maxLength: 3
-          minLength: 3
-          type: string
-        locState:
-          maxLength: 2
-          minLength: 2
-          type: string
-        rcAbbre:
-          maxLength: 45
-          type: string
-      required:
-      - lata
-      - locState
-      - npa
-      - nxx
-      - rcAbbre
-      type: object
-    ratecentersCreateOrPatch:
       minProperties: 1
       properties:
         npa:

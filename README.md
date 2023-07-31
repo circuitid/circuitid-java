@@ -1,8 +1,8 @@
 # circuitid-java-client
 
 Circuit ID REST API
-- API version: 0.47.20
-  - Build date: 2023-07-31T21:08:48.173Z[UTC]
+- API version: 0.47.21
+  - Build date: 2023-07-31T21:56:43.797Z[UTC]
 
 # Introduction
 Circuit ID&reg; is an innovative cloud communications platform that redefines your connectivity experience. Our cutting-edge AI-powered solution seamlessly integrates calling, meetings, messaging, voicemail, fax, SIP Trunking, mobile broadband, and mobile phone services, accessible wherever you and your devices go.
@@ -48,7 +48,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.circuitid</groupId>
   <artifactId>circuitid-java-client</artifactId>
-  <version>0.47.20</version>
+  <version>0.47.21</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -64,7 +64,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "com.circuitid:circuitid-java-client:0.47.20"
+     implementation "com.circuitid:circuitid-java-client:0.47.21"
   }
 ```
 
@@ -78,7 +78,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/circuitid-java-client-0.47.20.jar`
+* `target/circuitid-java-client-0.47.21.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
@@ -461,9 +461,7 @@ Class | Method | HTTP request | Description
  - [HolidaysCreateOrPatch](docs/HolidaysCreateOrPatch.md)
  - [Id](docs/Id.md)
  - [Invoiceitems](docs/Invoiceitems.md)
- - [InvoiceitemsCreateOrPatch](docs/InvoiceitemsCreateOrPatch.md)
  - [Invoices](docs/Invoices.md)
- - [InvoicesCreateOrPatch](docs/InvoicesCreateOrPatch.md)
  - [Licenses](docs/Licenses.md)
  - [LicensesCreateOrPatch](docs/LicensesCreateOrPatch.md)
  - [Menuoptions](docs/Menuoptions.md)
@@ -489,7 +487,6 @@ Class | Method | HTTP request | Description
  - [Phoneoutboundrules](docs/Phoneoutboundrules.md)
  - [PhoneoutboundrulesCreateOrPatch](docs/PhoneoutboundrulesCreateOrPatch.md)
  - [Ratecenters](docs/Ratecenters.md)
- - [RatecentersCreateOrPatch](docs/RatecentersCreateOrPatch.md)
  - [ResponseDate](docs/ResponseDate.md)
  - [ResponseError](docs/ResponseError.md)
  - [ResponseUsers](docs/ResponseUsers.md)
