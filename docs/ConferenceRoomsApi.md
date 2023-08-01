@@ -1,6 +1,6 @@
 # ConferenceRoomsApi
 
-All URIs are relative to *https://rest.circuitid.com*
+All URIs are relative to *https://cloud9.circuitid.com*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
@@ -32,7 +32,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -110,7 +110,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -200,7 +200,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -279,7 +279,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");
@@ -359,7 +359,7 @@ import com.circuitid.client.api.ConferenceRoomsApi;
 public class Example {
   public static void main(String[] args) {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
-    defaultClient.setBasePath("https://rest.circuitid.com");
+    defaultClient.setBasePath("https://cloud9.circuitid.com");
     
     // Configure API key authorization: jwt
     ApiKeyAuth jwt = (ApiKeyAuth) defaultClient.getAuthentication("jwt");

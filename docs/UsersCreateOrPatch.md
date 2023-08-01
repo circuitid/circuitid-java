@@ -34,7 +34,7 @@
 |**phonePermission** | [**PhonePermissionEnum**](#PhonePermissionEnum) |  |  [optional] |
 |**timezone** | [**TimezoneEnum**](#TimezoneEnum) |  |  |
 |**vmTranscription** | [**VmTranscriptionEnum**](#VmTranscriptionEnum) |  |  [optional] |
-|**communication** | [**Map&lt;String, UsersCommunicationValue&gt;**](UsersCommunicationValue.md) |  |  [optional] |
+|**communication** | **Object** |  |  [optional] |
 
 
 

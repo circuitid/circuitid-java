@@ -36,7 +36,7 @@
 |**phonePermission** | [**PhonePermissionEnum**](#PhonePermissionEnum) |  |  [optional] |
 |**timezone** | [**TimezoneEnum**](#TimezoneEnum) |  |  |
 |**vmTranscription** | [**VmTranscriptionEnum**](#VmTranscriptionEnum) |  |  [optional] |
-|**communication** | [**Map&lt;String, UsersCommunicationValue&gt;**](UsersCommunicationValue.md) |  |  [optional] |
+|**communication** | **Object** |  |  [optional] |
 |**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |

@@ -16,12 +16,12 @@ info:
     \ team.\n                \nHappy coding!"
   termsOfService: https://www.circuitid.com/legal/legal-msa.htm
   title: Circuit ID REST API
-  version: 0.47.21
+  version: 0.47.22
   x-logo:
     url: https://cdn.circuitid.com/images/logos/circuitid-logo.png
 servers:
 - description: Production
-  url: https://rest.circuitid.com
+  url: https://cloud9.circuitid.com
 security:
 - jwt: []
 tags:
@@ -23718,8 +23718,6 @@ components:
           format: int32
           type: integer
         communication:
-          additionalProperties:
-            $ref: '#/components/schemas/users_communication_value'
           default:
             notifications:
               email: true
@@ -24218,8 +24216,6 @@ components:
           format: int32
           type: integer
         communication:
-          additionalProperties:
-            $ref: '#/components/schemas/users_communication_value'
           default:
             notifications:
               email: true
@@ -25758,35 +25754,6 @@ components:
       - limit
       - skip
       - total
-      type: object
-    users_communication_value_notifications:
-      properties:
-        email:
-          default: true
-          type: boolean
-        sms:
-          default: true
-          type: boolean
-        sound:
-          default: true
-          type: boolean
-      type: object
-    users_communication_value:
-      properties:
-        notifications:
-          $ref: '#/components/schemas/users_communication_value_notifications'
-        missedCalls:
-          $ref: '#/components/schemas/users_communication_value_notifications'
-        callRecordings:
-          $ref: '#/components/schemas/users_communication_value_notifications'
-        newsletters:
-          $ref: '#/components/schemas/users_communication_value_notifications'
-        voicemails:
-          $ref: '#/components/schemas/users_communication_value_notifications'
-        web:
-          $ref: '#/components/schemas/users_communication_value_notifications'
-        email:
-          $ref: '#/components/schemas/users_communication_value_notifications'
       type: object
   securitySchemes:
     jwt:
