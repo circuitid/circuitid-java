@@ -53,7 +53,7 @@ import com.circuitid.client.JSON;
 /**
  * TimeschedulesSunday
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:31:01.524Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:49:36.657Z[UTC]")
 public class TimeschedulesSunday {
   public static final String SERIALIZED_NAME_SCHEDULES = "schedules";
   @SerializedName(SERIALIZED_NAME_SCHEDULES)
