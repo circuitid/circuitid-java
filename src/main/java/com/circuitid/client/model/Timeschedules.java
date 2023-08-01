@@ -15,15 +15,13 @@ package com.circuitid.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.circuitid.client.model.TimeschedulesSunday;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -53,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * Timeschedules
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T18:58:54.607Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:31:01.524Z[UTC]")
 public class Timeschedules {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -804,31 +802,31 @@ public class Timeschedules {
 
   public static final String SERIALIZED_NAME_SUNDAY = "sunday";
   @SerializedName(SERIALIZED_NAME_SUNDAY)
-  private Map<String, List<Object>> sunday = new HashMap<>();
+  private TimeschedulesSunday sunday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
 
   public static final String SERIALIZED_NAME_MONDAY = "monday";
   @SerializedName(SERIALIZED_NAME_MONDAY)
-  private Map<String, List<Object>> monday = new HashMap<>();
+  private TimeschedulesSunday monday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
 
   public static final String SERIALIZED_NAME_TUESDAY = "tuesday";
   @SerializedName(SERIALIZED_NAME_TUESDAY)
-  private Map<String, List<Object>> tuesday = new HashMap<>();
+  private TimeschedulesSunday tuesday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
 
   public static final String SERIALIZED_NAME_WEDNESDAY = "wednesday";
   @SerializedName(SERIALIZED_NAME_WEDNESDAY)
-  private Map<String, List<Object>> wednesday = new HashMap<>();
+  private TimeschedulesSunday wednesday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
 
   public static final String SERIALIZED_NAME_THURSDAY = "thursday";
   @SerializedName(SERIALIZED_NAME_THURSDAY)
-  private Map<String, List<Object>> thursday = new HashMap<>();
+  private TimeschedulesSunday thursday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
 
   public static final String SERIALIZED_NAME_FRIDAY = "friday";
   @SerializedName(SERIALIZED_NAME_FRIDAY)
-  private Map<String, List<Object>> friday = new HashMap<>();
+  private TimeschedulesSunday friday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
 
   public static final String SERIALIZED_NAME_SATURDAY = "saturday";
   @SerializedName(SERIALIZED_NAME_SATURDAY)
-  private Map<String, List<Object>> saturday = new HashMap<>();
+  private TimeschedulesSunday saturday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
 
   public Timeschedules() {
   }
@@ -875,17 +873,9 @@ public class Timeschedules {
   }
 
 
-  public Timeschedules sunday(Map<String, List<Object>> sunday) {
+  public Timeschedules sunday(TimeschedulesSunday sunday) {
     
     this.sunday = sunday;
-    return this;
-  }
-
-  public Timeschedules putSundayItem(String key, List<Object> sundayItem) {
-    if (this.sunday == null) {
-      this.sunday = new HashMap<>();
-    }
-    this.sunday.put(key, sundayItem);
     return this;
   }
 
@@ -894,27 +884,19 @@ public class Timeschedules {
    * @return sunday
   **/
   @javax.annotation.Nonnull
-  public Map<String, List<Object>> getSunday() {
+  public TimeschedulesSunday getSunday() {
     return sunday;
   }
 
 
-  public void setSunday(Map<String, List<Object>> sunday) {
+  public void setSunday(TimeschedulesSunday sunday) {
     this.sunday = sunday;
   }
 
 
-  public Timeschedules monday(Map<String, List<Object>> monday) {
+  public Timeschedules monday(TimeschedulesSunday monday) {
     
     this.monday = monday;
-    return this;
-  }
-
-  public Timeschedules putMondayItem(String key, List<Object> mondayItem) {
-    if (this.monday == null) {
-      this.monday = new HashMap<>();
-    }
-    this.monday.put(key, mondayItem);
     return this;
   }
 
@@ -923,27 +905,19 @@ public class Timeschedules {
    * @return monday
   **/
   @javax.annotation.Nonnull
-  public Map<String, List<Object>> getMonday() {
+  public TimeschedulesSunday getMonday() {
     return monday;
   }
 
 
-  public void setMonday(Map<String, List<Object>> monday) {
+  public void setMonday(TimeschedulesSunday monday) {
     this.monday = monday;
   }
 
 
-  public Timeschedules tuesday(Map<String, List<Object>> tuesday) {
+  public Timeschedules tuesday(TimeschedulesSunday tuesday) {
     
     this.tuesday = tuesday;
-    return this;
-  }
-
-  public Timeschedules putTuesdayItem(String key, List<Object> tuesdayItem) {
-    if (this.tuesday == null) {
-      this.tuesday = new HashMap<>();
-    }
-    this.tuesday.put(key, tuesdayItem);
     return this;
   }
 
@@ -952,27 +926,19 @@ public class Timeschedules {
    * @return tuesday
   **/
   @javax.annotation.Nonnull
-  public Map<String, List<Object>> getTuesday() {
+  public TimeschedulesSunday getTuesday() {
     return tuesday;
   }
 
 
-  public void setTuesday(Map<String, List<Object>> tuesday) {
+  public void setTuesday(TimeschedulesSunday tuesday) {
     this.tuesday = tuesday;
   }
 
 
-  public Timeschedules wednesday(Map<String, List<Object>> wednesday) {
+  public Timeschedules wednesday(TimeschedulesSunday wednesday) {
     
     this.wednesday = wednesday;
-    return this;
-  }
-
-  public Timeschedules putWednesdayItem(String key, List<Object> wednesdayItem) {
-    if (this.wednesday == null) {
-      this.wednesday = new HashMap<>();
-    }
-    this.wednesday.put(key, wednesdayItem);
     return this;
   }
 
@@ -981,27 +947,19 @@ public class Timeschedules {
    * @return wednesday
   **/
   @javax.annotation.Nonnull
-  public Map<String, List<Object>> getWednesday() {
+  public TimeschedulesSunday getWednesday() {
     return wednesday;
   }
 
 
-  public void setWednesday(Map<String, List<Object>> wednesday) {
+  public void setWednesday(TimeschedulesSunday wednesday) {
     this.wednesday = wednesday;
   }
 
 
-  public Timeschedules thursday(Map<String, List<Object>> thursday) {
+  public Timeschedules thursday(TimeschedulesSunday thursday) {
     
     this.thursday = thursday;
-    return this;
-  }
-
-  public Timeschedules putThursdayItem(String key, List<Object> thursdayItem) {
-    if (this.thursday == null) {
-      this.thursday = new HashMap<>();
-    }
-    this.thursday.put(key, thursdayItem);
     return this;
   }
 
@@ -1010,27 +968,19 @@ public class Timeschedules {
    * @return thursday
   **/
   @javax.annotation.Nonnull
-  public Map<String, List<Object>> getThursday() {
+  public TimeschedulesSunday getThursday() {
     return thursday;
   }
 
 
-  public void setThursday(Map<String, List<Object>> thursday) {
+  public void setThursday(TimeschedulesSunday thursday) {
     this.thursday = thursday;
   }
 
 
-  public Timeschedules friday(Map<String, List<Object>> friday) {
+  public Timeschedules friday(TimeschedulesSunday friday) {
     
     this.friday = friday;
-    return this;
-  }
-
-  public Timeschedules putFridayItem(String key, List<Object> fridayItem) {
-    if (this.friday == null) {
-      this.friday = new HashMap<>();
-    }
-    this.friday.put(key, fridayItem);
     return this;
   }
 
@@ -1039,27 +989,19 @@ public class Timeschedules {
    * @return friday
   **/
   @javax.annotation.Nonnull
-  public Map<String, List<Object>> getFriday() {
+  public TimeschedulesSunday getFriday() {
     return friday;
   }
 
 
-  public void setFriday(Map<String, List<Object>> friday) {
+  public void setFriday(TimeschedulesSunday friday) {
     this.friday = friday;
   }
 
 
-  public Timeschedules saturday(Map<String, List<Object>> saturday) {
+  public Timeschedules saturday(TimeschedulesSunday saturday) {
     
     this.saturday = saturday;
-    return this;
-  }
-
-  public Timeschedules putSaturdayItem(String key, List<Object> saturdayItem) {
-    if (this.saturday == null) {
-      this.saturday = new HashMap<>();
-    }
-    this.saturday.put(key, saturdayItem);
     return this;
   }
 
@@ -1068,12 +1010,12 @@ public class Timeschedules {
    * @return saturday
   **/
   @javax.annotation.Nonnull
-  public Map<String, List<Object>> getSaturday() {
+  public TimeschedulesSunday getSaturday() {
     return saturday;
   }
 
 
-  public void setSaturday(Map<String, List<Object>> saturday) {
+  public void setSaturday(TimeschedulesSunday saturday) {
     this.saturday = saturday;
   }
 
@@ -1195,6 +1137,20 @@ public class Timeschedules {
       if (!jsonObj.get("timezone").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `timezone` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timezone").toString()));
       }
+      // validate the required field `sunday`
+      TimeschedulesSunday.validateJsonObject(jsonObj.getAsJsonObject("sunday"));
+      // validate the required field `monday`
+      TimeschedulesSunday.validateJsonObject(jsonObj.getAsJsonObject("monday"));
+      // validate the required field `tuesday`
+      TimeschedulesSunday.validateJsonObject(jsonObj.getAsJsonObject("tuesday"));
+      // validate the required field `wednesday`
+      TimeschedulesSunday.validateJsonObject(jsonObj.getAsJsonObject("wednesday"));
+      // validate the required field `thursday`
+      TimeschedulesSunday.validateJsonObject(jsonObj.getAsJsonObject("thursday"));
+      // validate the required field `friday`
+      TimeschedulesSunday.validateJsonObject(jsonObj.getAsJsonObject("friday"));
+      // validate the required field `saturday`
+      TimeschedulesSunday.validateJsonObject(jsonObj.getAsJsonObject("saturday"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

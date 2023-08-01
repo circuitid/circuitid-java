@@ -9,13 +9,13 @@
 |------------ | ------------- | ------------- | -------------|
 |**name** | **String** |  |  |
 |**timezone** | [**TimezoneEnum**](#TimezoneEnum) |  |  |
-|**sunday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
-|**monday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
-|**tuesday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
-|**wednesday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
-|**thursday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
-|**friday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
-|**saturday** | **Map&lt;String, List&lt;Object&gt;&gt;** |  |  |
+|**sunday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  |  |
+|**monday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  |  |
+|**tuesday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  |  |
+|**wednesday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  |  |
+|**thursday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  |  |
+|**friday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  |  |
+|**saturday** | [**TimeschedulesSunday**](TimeschedulesSunday.md) |  |  |
 |**id** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**createdByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |
 |**updatedByUserId** | **String** | ObjectId (unique 12 bytes ID) |  [optional] |

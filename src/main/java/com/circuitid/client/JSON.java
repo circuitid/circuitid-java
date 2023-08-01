@@ -257,7 +257,12 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.ServersCreateOrPatch.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.Timeschedules.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.TimeschedulesCreateOrPatch.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.TimeschedulesSunday.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.TimeschedulesSundaySchedulesInner.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.Users.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsersCommunication.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsersCommunicationNotifications.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsersCommunicationWeb.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsersCreateOrPatch.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.Usertokens.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new com.circuitid.client.model.UsertokensCreateOrPatch.CustomTypeAdapterFactory());

@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * DomainsCreateOrPatch
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T18:58:54.607Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:31:01.524Z[UTC]")
 public class DomainsCreateOrPatch {
   /**
    * Gets or Sets status

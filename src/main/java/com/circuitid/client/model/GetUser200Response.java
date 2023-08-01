@@ -15,6 +15,7 @@ package com.circuitid.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.circuitid.client.model.UsersCommunication;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -52,7 +53,7 @@ import com.circuitid.client.JSON;
 /**
  * GetUser200Response
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T18:58:54.607Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:31:01.524Z[UTC]")
 public class GetUser200Response {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -1248,7 +1249,7 @@ public class GetUser200Response {
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)
-  private Object communication = {"notifications":{"email":true,"sms":true},"missedCalls":{"email":true,"sms":true},"callRecordings":{"email":true,"sms":true},"newsletters":{"email":true,"sms":true},"voicemails":{"email":true,"sms":true},"web":{"sounds":true}};
+  private UsersCommunication communication = {"notifications":{"email":true,"sms":true,"sound":true},"missedCalls":{"email":true,"sms":true,"sound":true},"callRecordings":{"email":true,"sms":true,"sound":true},"newsletters":{"email":true,"sms":true,"sound":true},"voicemails":{"email":true,"sms":true,"sound":true},"web":{"sounds":true}};
 
   public static final String SERIALIZED_NAME_ID = "_id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -1882,7 +1883,7 @@ public class GetUser200Response {
   }
 
 
-  public GetUser200Response communication(Object communication) {
+  public GetUser200Response communication(UsersCommunication communication) {
     
     this.communication = communication;
     return this;
@@ -1893,12 +1894,12 @@ public class GetUser200Response {
    * @return communication
   **/
   @javax.annotation.Nullable
-  public Object getCommunication() {
+  public UsersCommunication getCommunication() {
     return communication;
   }
 
 
-  public void setCommunication(Object communication) {
+  public void setCommunication(UsersCommunication communication) {
     this.communication = communication;
   }
 
@@ -2273,6 +2274,10 @@ public class GetUser200Response {
       }
       if (!jsonObj.get("timezone").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `timezone` to be a primitive type in the JSON string but got `%s`", jsonObj.get("timezone").toString()));
+      }
+      // validate the optional field `communication`
+      if (jsonObj.get("communication") != null && !jsonObj.get("communication").isJsonNull()) {
+        UsersCommunication.validateJsonObject(jsonObj.getAsJsonObject("communication"));
       }
       if ((jsonObj.get("_id") != null && !jsonObj.get("_id").isJsonNull()) && !jsonObj.get("_id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("_id").toString()));

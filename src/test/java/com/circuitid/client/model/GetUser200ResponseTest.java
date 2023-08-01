@@ -13,6 +13,7 @@
 
 package com.circuitid.client.model;
 
+import com.circuitid.client.model.UsersCommunication;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;

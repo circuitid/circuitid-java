@@ -22719,75 +22719,19 @@ components:
           maxLength: 45
           type: string
         sunday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         monday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         tuesday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         wednesday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         thursday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         friday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         saturday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
       required:
       - friday
       - monday
@@ -23159,75 +23103,19 @@ components:
           maxLength: 45
           type: string
         sunday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         monday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         tuesday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         wednesday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         thursday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         friday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
         saturday:
-          additionalProperties:
-            items:
-              type: object
-            type: array
-          default:
-            schedules:
-            - start: 12:00 AM
-              end: 12:00 AM
-          type: object
+          $ref: '#/components/schemas/timeschedules_sunday'
       required:
       - friday
       - monday
@@ -23718,25 +23606,7 @@ components:
           format: int32
           type: integer
         communication:
-          default:
-            notifications:
-              email: true
-              sms: true
-            missedCalls:
-              email: true
-              sms: true
-            callRecordings:
-              email: true
-              sms: true
-            newsletters:
-              email: true
-              sms: true
-            voicemails:
-              email: true
-              sms: true
-            web:
-              sounds: true
-          type: object
+          $ref: '#/components/schemas/users_communication'
       required:
       - email
       - first
@@ -24216,25 +24086,7 @@ components:
           format: int32
           type: integer
         communication:
-          default:
-            notifications:
-              email: true
-              sms: true
-            missedCalls:
-              email: true
-              sms: true
-            callRecordings:
-              email: true
-              sms: true
-            newsletters:
-              email: true
-              sms: true
-            voicemails:
-              email: true
-              sms: true
-            web:
-              sounds: true
-          type: object
+          $ref: '#/components/schemas/users_communication'
       required:
       - email
       - first
@@ -25754,6 +25606,80 @@ components:
       - limit
       - skip
       - total
+      type: object
+    timeschedules_sunday_schedules_inner:
+      properties:
+        start:
+          type: string
+        end:
+          type: string
+      type: object
+    timeschedules_sunday:
+      default:
+        schedules:
+        - start: 12:00 AM
+          end: 12:00 AM
+      properties:
+        schedules:
+          items:
+            $ref: '#/components/schemas/timeschedules_sunday_schedules_inner'
+          type: array
+      type: object
+    users_communication_notifications:
+      properties:
+        email:
+          default: true
+          type: boolean
+        sms:
+          default: true
+          type: boolean
+        sound:
+          default: true
+          type: boolean
+      type: object
+    users_communication_web:
+      properties:
+        sound:
+          default: true
+          type: boolean
+      type: object
+    users_communication:
+      default:
+        notifications:
+          email: true
+          sms: true
+          sound: true
+        missedCalls:
+          email: true
+          sms: true
+          sound: true
+        callRecordings:
+          email: true
+          sms: true
+          sound: true
+        newsletters:
+          email: true
+          sms: true
+          sound: true
+        voicemails:
+          email: true
+          sms: true
+          sound: true
+        web:
+          sounds: true
+      properties:
+        notifications:
+          $ref: '#/components/schemas/users_communication_notifications'
+        missedCalls:
+          $ref: '#/components/schemas/users_communication_notifications'
+        callRecordings:
+          $ref: '#/components/schemas/users_communication_notifications'
+        newsletters:
+          $ref: '#/components/schemas/users_communication_notifications'
+        voicemails:
+          $ref: '#/components/schemas/users_communication_notifications'
+        web:
+          $ref: '#/components/schemas/users_communication_web'
       type: object
   securitySchemes:
     jwt:
