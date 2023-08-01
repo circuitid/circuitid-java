@@ -25610,8 +25610,10 @@ components:
     timeschedules_sunday_schedules_inner:
       properties:
         start:
+          format: date-time
           type: string
         end:
+          format: date-time
           type: string
       type: object
     timeschedules_sunday:

@@ -21,6 +21,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.time.OffsetDateTime;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -50,20 +51,20 @@ import com.circuitid.client.JSON;
 /**
  * TimeschedulesSundaySchedulesInner
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:58:42.294Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T20:00:37.621Z[UTC]")
 public class TimeschedulesSundaySchedulesInner {
   public static final String SERIALIZED_NAME_START = "start";
   @SerializedName(SERIALIZED_NAME_START)
-  private String start;
+  private OffsetDateTime start;
 
   public static final String SERIALIZED_NAME_END = "end";
   @SerializedName(SERIALIZED_NAME_END)
-  private String end;
+  private OffsetDateTime end;
 
   public TimeschedulesSundaySchedulesInner() {
   }
 
-  public TimeschedulesSundaySchedulesInner start(String start) {
+  public TimeschedulesSundaySchedulesInner start(OffsetDateTime start) {
     
     this.start = start;
     return this;
@@ -74,17 +75,17 @@ public class TimeschedulesSundaySchedulesInner {
    * @return start
   **/
   @javax.annotation.Nullable
-  public String getStart() {
+  public OffsetDateTime getStart() {
     return start;
   }
 
 
-  public void setStart(String start) {
+  public void setStart(OffsetDateTime start) {
     this.start = start;
   }
 
 
-  public TimeschedulesSundaySchedulesInner end(String end) {
+  public TimeschedulesSundaySchedulesInner end(OffsetDateTime end) {
     
     this.end = end;
     return this;
@@ -95,12 +96,12 @@ public class TimeschedulesSundaySchedulesInner {
    * @return end
   **/
   @javax.annotation.Nullable
-  public String getEnd() {
+  public OffsetDateTime getEnd() {
     return end;
   }
 
 
-  public void setEnd(String end) {
+  public void setEnd(OffsetDateTime end) {
     this.end = end;
   }
 
@@ -178,12 +179,6 @@ public class TimeschedulesSundaySchedulesInner {
         if (!TimeschedulesSundaySchedulesInner.openapiFields.contains(entry.getKey())) {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `TimeschedulesSundaySchedulesInner` properties. JSON: %s", entry.getKey(), jsonObj.toString()));
         }
-      }
-      if ((jsonObj.get("start") != null && !jsonObj.get("start").isJsonNull()) && !jsonObj.get("start").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `start` to be a primitive type in the JSON string but got `%s`", jsonObj.get("start").toString()));
-      }
-      if ((jsonObj.get("end") != null && !jsonObj.get("end").isJsonNull()) && !jsonObj.get("end").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `end` to be a primitive type in the JSON string but got `%s`", jsonObj.get("end").toString()));
       }
   }
 
