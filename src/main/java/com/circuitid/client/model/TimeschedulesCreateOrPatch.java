@@ -51,7 +51,7 @@ import com.circuitid.client.JSON;
 /**
  * TimeschedulesCreateOrPatch
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:55:27.020Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:58:42.294Z[UTC]")
 public class TimeschedulesCreateOrPatch {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -802,31 +802,31 @@ public class TimeschedulesCreateOrPatch {
 
   public static final String SERIALIZED_NAME_SUNDAY = "sunday";
   @SerializedName(SERIALIZED_NAME_SUNDAY)
-  private TimeschedulesSunday sunday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
+  private TimeschedulesSunday sunday;
 
   public static final String SERIALIZED_NAME_MONDAY = "monday";
   @SerializedName(SERIALIZED_NAME_MONDAY)
-  private TimeschedulesSunday monday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
+  private TimeschedulesSunday monday;
 
   public static final String SERIALIZED_NAME_TUESDAY = "tuesday";
   @SerializedName(SERIALIZED_NAME_TUESDAY)
-  private TimeschedulesSunday tuesday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
+  private TimeschedulesSunday tuesday;
 
   public static final String SERIALIZED_NAME_WEDNESDAY = "wednesday";
   @SerializedName(SERIALIZED_NAME_WEDNESDAY)
-  private TimeschedulesSunday wednesday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
+  private TimeschedulesSunday wednesday;
 
   public static final String SERIALIZED_NAME_THURSDAY = "thursday";
   @SerializedName(SERIALIZED_NAME_THURSDAY)
-  private TimeschedulesSunday thursday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
+  private TimeschedulesSunday thursday;
 
   public static final String SERIALIZED_NAME_FRIDAY = "friday";
   @SerializedName(SERIALIZED_NAME_FRIDAY)
-  private TimeschedulesSunday friday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
+  private TimeschedulesSunday friday;
 
   public static final String SERIALIZED_NAME_SATURDAY = "saturday";
   @SerializedName(SERIALIZED_NAME_SATURDAY)
-  private TimeschedulesSunday saturday = {"schedules":[{"start":"12:00 AM","end":"12:00 AM"}]};
+  private TimeschedulesSunday saturday;
 
   public TimeschedulesCreateOrPatch() {
   }

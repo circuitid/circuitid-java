@@ -52,7 +52,7 @@ import com.circuitid.client.JSON;
 /**
  * Users
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:55:27.020Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:58:42.294Z[UTC]")
 public class Users {
   public static final String SERIALIZED_NAME_EMAIL = "email";
   @SerializedName(SERIALIZED_NAME_EMAIL)
@@ -1248,7 +1248,7 @@ public class Users {
 
   public static final String SERIALIZED_NAME_COMMUNICATION = "communication";
   @SerializedName(SERIALIZED_NAME_COMMUNICATION)
-  private UsersCommunication communication = {"notifications":{"email":true,"sms":true,"sound":true},"missedCalls":{"email":true,"sms":true,"sound":true},"callRecordings":{"email":true,"sms":true,"sound":true},"newsletters":{"email":true,"sms":true,"sound":true},"voicemails":{"email":true,"sms":true,"sound":true},"web":{"sounds":true}};
+  private UsersCommunication communication;
 
   public Users() {
   }

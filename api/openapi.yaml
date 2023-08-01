@@ -25615,10 +25615,6 @@ components:
           type: string
       type: object
     timeschedules_sunday:
-      default:
-        schedules:
-        - start: 12:00 AM
-          end: 12:00 AM
       properties:
         schedules:
           items:
@@ -25644,29 +25640,6 @@ components:
           type: boolean
       type: object
     users_communication:
-      default:
-        notifications:
-          email: true
-          sms: true
-          sound: true
-        missedCalls:
-          email: true
-          sms: true
-          sound: true
-        callRecordings:
-          email: true
-          sms: true
-          sound: true
-        newsletters:
-          email: true
-          sms: true
-          sound: true
-        voicemails:
-          email: true
-          sms: true
-          sound: true
-        web:
-          sounds: true
       properties:
         notifications:
           $ref: '#/components/schemas/users_communication_notifications'
