@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * NumbersCreateOrPatch
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:49:36.657Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:52:01.559Z[UTC]")
 public class NumbersCreateOrPatch {
   public static final String SERIALIZED_NAME_DIRECTORY_LISTING = "directoryListing";
   @SerializedName(SERIALIZED_NAME_DIRECTORY_LISTING)

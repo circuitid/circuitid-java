@@ -50,7 +50,7 @@ import com.circuitid.client.JSON;
 /**
  * UsersCommunicationWeb
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:49:36.657Z[UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2023-08-01T19:52:01.559Z[UTC]")
 public class UsersCommunicationWeb {
   public static final String SERIALIZED_NAME_SOUND = "sound";
   @SerializedName(SERIALIZED_NAME_SOUND)
